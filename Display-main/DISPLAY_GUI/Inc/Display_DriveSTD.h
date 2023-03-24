@@ -1,0 +1,38 @@
+
+#define __DISPLAY_DRIVESTD_H
+
+
+#ifndef __MAIN_H
+#include "main.h"
+#endif
+
+#ifndef __CAR_DATA_H
+#include "CAR_DATA.h"
+#endif
+
+
+extern uint8_t Display_DriveSTD_Initialized;
+
+extern DisplayGui_DataGuiTypeDef DriveSTD_noData;
+extern DisplayGui_DataGuiTypeDef DriveSTD_waterTemp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_oilTemp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_fuelTemp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_airTemp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_fuelPressure;
+extern DisplayGui_DataGuiTypeDef DriveSTD_oilPressure;
+extern DisplayGui_DataGuiTypeDef DriveSTD_batteryVoltage;
+extern DisplayGui_DataGuiTypeDef DriveSTD_tps;
+extern DisplayGui_DataGuiTypeDef DriveSTD_speed;
+extern DisplayGui_DataGuiTypeDef DriveSTD_traction;
+extern DisplayGui_DataGuiTypeDef DriveSTD_map;
+extern DisplayGui_DataGuiTypeDef DriveSTD_drsStatus;
+extern DisplayGui_DataGuiTypeDef DriveSTD_brakeBias;
+extern DisplayGui_DataGuiTypeDef DriveSTD_brake;
+extern DisplayGui_DataGuiTypeDef DriveSTD_brakeRear;
+extern DisplayGui_DataGuiTypeDef DriveSTD_FL_Ty_Temp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_RL_Ty_Temp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_FR_Ty_Temp;
+extern DisplayGui_DataGuiTypeDef DriveSTD_RR_Ty_Temp;
+
+
+void Display_DriveSTD(DisplayGui_DataGuiTypeDef *data, uint32_t frameColor);

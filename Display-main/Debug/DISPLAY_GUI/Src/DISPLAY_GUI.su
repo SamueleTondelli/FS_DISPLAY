@@ -1,0 +1,4 @@
+../DISPLAY_GUI/Src/DISPLAY_GUI.c:47:6:DisplayGui_Init	8	static
+../DISPLAY_GUI/Src/DISPLAY_GUI.c:61:6:DisplayOFF	8	static
+../DISPLAY_GUI/Src/DISPLAY_GUI.c:67:6:DisplayON	8	static
+../DISPLAY_GUI/Src/DISPLAY_GUI.c:74:6:DisplayGui	8	static

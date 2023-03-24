@@ -1,0 +1,4 @@
+../DISPLAY_GUI/Src/Display_DataLog.c:44:6:Display_DataLog	112	static
+../DISPLAY_GUI/Src/Display_DataLog.c:298:6:Display_DataLogFrame	8	static
+../DISPLAY_GUI/Src/Display_DataLog.c:311:6:Display_DataLogArmature	16	static
+../DISPLAY_GUI/Src/Display_DataLog.c:335:6:Display_DenseDataLogArmature	16	static

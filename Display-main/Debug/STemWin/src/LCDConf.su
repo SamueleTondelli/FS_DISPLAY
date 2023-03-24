@@ -1,0 +1,13 @@
+../STemWin/src/LCDConf.c:180:19:LCD_LL_GetPixelformat	16	static
+../STemWin/src/LCDConf.c:331:6:HAL_LTDC_LineEventCallback	32	static
+../STemWin/src/LCDConf.c:367:6:LCD_X_Config	16	static
+../STemWin/src/LCDConf.c:452:5:LCD_X_DisplayDriver	56	static
+../STemWin/src/LCDConf.c:547:13:LCD_LL_LayerInit	72	static
+../STemWin/src/LCDConf.c:585:13:LCD_LL_Init	8	static
+../STemWin/src/LCDConf.c:644:13:DMA2D_CopyBuffer	32	static
+../STemWin/src/LCDConf.c:681:13:DMA2D_FillBuffer	32	static
+../STemWin/src/LCDConf.c:718:12:GetBufferSize	24	static
+../STemWin/src/LCDConf.c:733:13:CUSTOM_CopyBuffer	72	static
+../STemWin/src/LCDConf.c:754:13:CUSTOM_CopyRect	72	static
+../STemWin/src/LCDConf.c:773:13:CUSTOM_FillRect	64	static
+../STemWin/src/LCDConf.c:806:13:CUSTOM_DrawBitmap32bpp	64	static

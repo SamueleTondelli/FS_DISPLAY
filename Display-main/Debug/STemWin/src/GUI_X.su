@@ -1,0 +1,7 @@
+../STemWin/src/GUI_X.c:73:16:GUI_X_GetTime	4	static
+../STemWin/src/GUI_X.c:77:6:GUI_X_Delay	24	static
+../STemWin/src/GUI_X.c:92:6:GUI_X_Init	4	static
+../STemWin/src/GUI_X.c:103:6:GUI_X_ExecIdle	4	static
+../STemWin/src/GUI_X.c:119:6:GUI_X_Log	16	static
+../STemWin/src/GUI_X.c:120:6:GUI_X_Warn	16	static
+../STemWin/src/GUI_X.c:121:6:GUI_X_ErrorOut	16	static

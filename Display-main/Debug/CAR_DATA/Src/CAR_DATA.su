@@ -1,0 +1,17 @@
+../CAR_DATA/Src/CAR_DATA.c:61:6:CAR_CAN_Init	16	static
+../CAR_DATA/Src/CAR_DATA.c:230:6:CAR_DATA_Init	4	static
+../CAR_DATA/Src/CAR_DATA.c:923:6:CAR_DATA_Read	8	static
+../CAR_DATA/Src/CAR_DATA.c:960:6:GPIO_IN_Read	8	static
+../CAR_DATA/Src/CAR_DATA.c:996:6:CAN1_DATA_Read	56	static
+../CAR_DATA/Src/CAR_DATA.c:1639:6:tractionAcquisition	16	static
+../CAR_DATA/Src/CAR_DATA.c:1719:6:CAR_DATA_Calculations	8	static
+../CAR_DATA/Src/CAR_DATA.c:1934:6:CAR_DATA_GuiAlarm_Init	40	static
+../CAR_DATA/Src/CAR_DATA.c:1972:6:CAN_Data_AlarmDetection	40	static
+../CAR_DATA/Src/CAR_DATA.c:2239:6:AlarmPage	96	static
+../CAR_DATA/Src/CAR_DATA.c:2475:9:CAN_DATA_GuiChangePopUp_Add	32	static
+../CAR_DATA/Src/CAR_DATA.c:2517:9:CAN_DATA_GuiRangePopUp_Add	32	static
+../CAR_DATA/Src/CAR_DATA.c:2560:9:CAN_DATA_GuiPopUp_Disable	24	static
+../CAR_DATA/Src/CAR_DATA.c:2576:6:CAN_DATA_GuiPopUp_DisableAll	16	static
+../CAR_DATA/Src/CAR_DATA.c:2586:9:CAN_DATA_GuiChangePopUp_Enable	24	static
+../CAR_DATA/Src/CAR_DATA.c:2602:9:CAN_DATA_GuiRangePopUp_Enable	24	static
+../CAR_DATA/Src/CAR_DATA.c:2624:6:canDataGenerationForDebug	4	static

@@ -1,0 +1,14 @@
+../MDM_Functions/Src/MDM_Functions.c:19:9:map_int32	24	static
+../MDM_Functions/Src/MDM_Functions.c:24:9:min_int32	16	static
+../MDM_Functions/Src/MDM_Functions.c:30:9:max_int32	16	static
+../MDM_Functions/Src/MDM_Functions.c:36:7:map_float	32	static
+../MDM_Functions/Src/MDM_Functions.c:41:9:MDM_pow	24	static
+../MDM_Functions/Src/MDM_Functions.c:60:9:bitRead	24	static
+../MDM_Functions/Src/MDM_Functions.c:68:6:reverse	32	static
+../MDM_Functions/Src/MDM_Functions.c:84:5:intToStr	32	static
+../MDM_Functions/Src/MDM_Functions.c:111:6:ftoa	48	static
+../MDM_Functions/Src/MDM_Functions.c:136:5:dtoa	48	static
+../MDM_Functions/Src/MDM_Functions.c:166:5:dtoa_decimalPart	48	static
+../MDM_Functions/Src/MDM_Functions.c:191:5:dtoa_sign	120	static
+../MDM_Functions/Src/MDM_Functions.c:269:9:GPIO_AdvancedRead_old	16	static
+../MDM_Functions/Src/MDM_Functions.c:297:9:GPIO_AdvancedRead	16	static
