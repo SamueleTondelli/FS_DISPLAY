@@ -1,0 +1,10 @@
+DataStatus.c:5:6:initializeDataStatus	16	static
+DataStatus.c:21:6:setCanStatus	16	static
+DataStatus.c:26:8:getCanStatus	24	static
+DataStatus.c:31:9:getCanStatusValue	16	static
+DataStatus.c:35:6:setInverterStatus	16	static
+DataStatus.c:40:8:getInverterStatus	24	static
+DataStatus.c:45:9:getInverterStatusValue	16	static
+DataStatus.c:49:6:setCVStatus	16	static
+DataStatus.c:54:8:getCVStatus	24	static
+DataStatus.c:59:9:getCVStatusValue	16	static

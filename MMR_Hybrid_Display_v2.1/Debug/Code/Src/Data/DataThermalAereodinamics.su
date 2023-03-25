@@ -1,0 +1,2 @@
+DataThermalAereodinamics.c:7:6:initializeDataThermalAerodynamics	16	static
+DataThermalAereodinamics.c:35:6:setFlagNotUpdatedDataThermalAerodynamics	16	static

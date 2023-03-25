@@ -1,5 +1,0 @@
-../DISPLAY_GUI/Src/Display_DriveSTD.c:139:6:rectInitialization	4	static
-../DISPLAY_GUI/Src/Display_DriveSTD.c:221:6:defaultDataInitialization	4	static
-../DISPLAY_GUI/Src/Display_DriveSTD.c:1206:6:Display_DriveSTD	144	static
-../DISPLAY_GUI/Src/Display_DriveSTD.c:1884:6:Display_Frame	16	static
-../DISPLAY_GUI/Src/Display_DriveSTD.c:1897:6:Display_Armature	8	static

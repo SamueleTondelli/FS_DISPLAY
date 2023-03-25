@@ -1,0 +1,9 @@
+DataScreen.c:6:6:initializeDataScreen	16	static
+DataScreen.c:28:9:getCurrentScreen	16	static
+DataScreen.c:32:6:incrementCurrentScreen	24	static
+DataScreen.c:54:9:getFpsScreen	16	static
+DataScreen.c:58:6:incrementFps	16	static
+DataScreen.c:62:6:setMessagePilot	32	static
+DataScreen.c:72:8:getPilotMessage	16	static
+DataScreen.c:76:6:cleanPilotMessage	16	static
+DataScreen.c:80:6:setMessagePilotReady	16	static

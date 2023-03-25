@@ -1,0 +1,7 @@
+DataAlarm.c:4:6:initializeDataAlarm	16	static
+DataAlarm.c:10:6:setPoilAlarm	24	static
+DataAlarm.c:16:9:isPoilAlarm	16	static
+DataAlarm.c:23:6:setToilAlarm	24	static
+DataAlarm.c:29:9:isToilAlarm	16	static
+DataAlarm.c:36:6:setTwaterAlarm	24	static
+DataAlarm.c:42:9:isTwaterAlarm	16	static

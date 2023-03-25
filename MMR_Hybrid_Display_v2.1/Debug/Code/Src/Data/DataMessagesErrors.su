@@ -1,0 +1,4 @@
+DataMessagesErrors.c:5:6:initializeDataMessagesErrors	16	static
+DataMessagesErrors.c:45:9:isDataNotificationDriverType	24	static
+DataMessagesErrors.c:70:9:isDataNotificationWarningType	24	static
+DataMessagesErrors.c:96:9:isDataNotificationAlarmType	24	static

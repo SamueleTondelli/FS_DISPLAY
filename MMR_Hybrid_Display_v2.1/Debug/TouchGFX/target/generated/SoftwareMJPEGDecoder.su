@@ -1,0 +1,25 @@
+MJPEGDecoder.hpp:10:13:MJPEGDecoder::~MJPEGDecoder()	16	static
+MJPEGDecoder.hpp:10:13:virtual MJPEGDecoder::~MJPEGDecoder()	16	static
+SoftwareMJPEGDecoder.hpp:27:22:virtual uint32_t SoftwareMJPEGDecoder::getCurrentFrameNumber() const	16	static
+SoftwareMJPEGDecoder.hpp:35:15:virtual MJPEGDecoder::AVIErrors SoftwareMJPEGDecoder::getLastError()	16	static
+MJPEGDecoder.hpp:7:7:constexpr MJPEGDecoder::MJPEGDecoder()	16	static
+SoftwareMJPEGDecoder.cpp:20:1:SoftwareMJPEGDecoder::SoftwareMJPEGDecoder(uint8_t*)	16	static
+SoftwareMJPEGDecoder.cpp:31:5:int SoftwareMJPEGDecoder::compare(uint32_t, const char*, uint32_t)	32	static
+SoftwareMJPEGDecoder.cpp:46:17:uint32_t SoftwareMJPEGDecoder::getU32(uint32_t)	24	static
+SoftwareMJPEGDecoder.cpp:61:17:uint32_t SoftwareMJPEGDecoder::getU16(uint32_t)	24	static
+SoftwareMJPEGDecoder.cpp:76:16:const uint8_t* SoftwareMJPEGDecoder::readData(uint32_t, uint32_t)	24	static
+SoftwareMJPEGDecoder.cpp:99:6:virtual bool SoftwareMJPEGDecoder::decodeNextFrame(uint8_t*, uint16_t, uint16_t, uint32_t)	64	static
+SoftwareMJPEGDecoder.cpp:150:6:virtual bool SoftwareMJPEGDecoder::gotoNextFrame()	32	static
+SoftwareMJPEGDecoder.cpp:187:6:virtual void SoftwareMJPEGDecoder::setVideoData(const uint8_t*, uint32_t)	24	static
+SoftwareMJPEGDecoder.cpp:196:6:virtual void SoftwareMJPEGDecoder::setVideoData(touchgfx::VideoDataReader&)	16	static
+SoftwareMJPEGDecoder.cpp:205:6:virtual bool SoftwareMJPEGDecoder::hasVideo()	16	static
+SoftwareMJPEGDecoder.cpp:210:6:void SoftwareMJPEGDecoder::readVideoHeader()	48	static
+SoftwareMJPEGDecoder.cpp:313:6:void SoftwareMJPEGDecoder::decodeMJPEGFrame(const uint8_t*, uint32_t, uint8_t*, uint16_t, uint16_t, uint32_t)	688	static
+SoftwareMJPEGDecoder.cpp:386:6:virtual bool SoftwareMJPEGDecoder::decodeFrame(const touchgfx::Rect&, uint8_t*, uint32_t)	720	static
+SoftwareMJPEGDecoder.cpp:486:6:virtual bool SoftwareMJPEGDecoder::decodeThumbnail(uint32_t, uint8_t*, uint16_t, uint16_t)	24	static
+SoftwareMJPEGDecoder.cpp:492:6:virtual void SoftwareMJPEGDecoder::gotoFrame(uint32_t)	24	static
+SoftwareMJPEGDecoder.cpp:512:10:virtual uint32_t SoftwareMJPEGDecoder::getNumberOfFrames()	16	static
+SoftwareMJPEGDecoder.cpp:517:6:virtual void SoftwareMJPEGDecoder::getVideoInfo(touchgfx::VideoInformation*)	16	static
+SoftwareMJPEGDecoder.cpp:531:8:size_t jpeg_read_file(FILE*, uint8_t*, uint32_t)	24	static
+SoftwareMJPEGDecoder.hpp:6:7:SoftwareMJPEGDecoder::~SoftwareMJPEGDecoder()	16	static
+SoftwareMJPEGDecoder.hpp:6:7:virtual SoftwareMJPEGDecoder::~SoftwareMJPEGDecoder()	16	static

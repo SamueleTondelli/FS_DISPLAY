@@ -1,0 +1,3 @@
+freertos.c:89:6:vApplicationGetIdleTaskMemory	24	static
+freertos.c:103:6:MX_FREERTOS_Init	48	static
+freertos.c:142:6:StartTouchGFXTask	16	static

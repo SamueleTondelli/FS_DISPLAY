@@ -1,6 +1,0 @@
-../Core/Src/fmc.c:46:6:MDM_SDRAM_Initialization_sequence	32	static
-../Core/Src/fmc.c:109:6:MX_FMC_Init	40	static
-../Core/Src/fmc.c:159:13:HAL_FMC_MspInit	32	static
-../Core/Src/fmc.c:300:6:HAL_SDRAM_MspInit	16	static
-../Core/Src/fmc.c:312:13:HAL_FMC_MspDeInit	8	static
-../Core/Src/fmc.c:410:6:HAL_SDRAM_MspDeInit	16	static

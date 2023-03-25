@@ -1,0 +1,45 @@
+//TODO Leggera la temperatura del dispositivo sullo schematico lato display
+
+Versione TouchGFX 4.18
+
+TIM1 (0.033s Timer per aggiornamento display [30fps]) -> APB2
+prescaler:		216-1
+counter:		33000-1
+time:			0.033s
+
+TIM2 (0.250s Timer per sincronizzazione lettura dati da file durante Simulation Mode) -> APB1
+prescaler:		216-1
+counter:		125000-1
+time:			0.250s
+
+TIM3 (1s Timer per calcolo FPS, Update Data) -> APB1
+prescaler:		10000-1
+counter:		10800-1
+time:			1s
+
+TIM4 (2s Timer per ScreenName ) -> APB1
+prescaler:		10000-1
+counter:		21600-1
+time:			1s
+
+TIM5 (5s Timer per Notification) -> APB 1
+prescaler:		10000-1
+counter:		54000-1
+time:			1s
+
+CAN1 
+ 6
+ 6
+ 2
+ 1 Mbps
+ 
+ 18
+ 16
+ 7
+ 125 Kbps
+ 
+ INTERRUPT WATCHDOG
+ prescaler:			32
+ window value: 		999-1
+ down counter:		999-1
+ 

@@ -1,4 +1,0 @@
-../Core/Src/ltdc.c:34:6:MDM_LCD_SetLayerVisible	16	static
-../Core/Src/ltdc.c:52:6:MX_LTDC_Init	64	static
-../Core/Src/ltdc.c:154:6:HAL_LTDC_MspInit	88	static
-../Core/Src/ltdc.c:311:6:HAL_LTDC_MspDeInit	16	static

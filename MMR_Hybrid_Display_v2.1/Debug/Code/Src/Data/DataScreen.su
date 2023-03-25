@@ -1,0 +1,13 @@
+DataScreen.c:6:6:initializeDataScreen	16	static
+DataScreen.c:64:9:getCurrentScreen	16	static
+DataScreen.c:68:6:incrementCurrentScreen	24	static
+DataScreen.c:91:9:getFpsScreen	16	static
+DataScreen.c:95:6:setFpsScreen	16	static
+DataScreen.c:99:6:setFpsScreenFromStruct	16	static
+DataScreen.c:103:6:cleanFpsCounter	16	static
+DataScreen.c:107:6:changeBlinkFlag	16	static
+DataScreen.c:111:6:changeDisplayMode	24	static
+DataScreen.c:167:9:isDisplayModeNormal	24	static
+DataScreen.c:176:9:isDiplayModeRace	24	static
+DataScreen.c:185:9:isDisplayModeSimulation	24	static
+DataScreen.c:194:9:isDisplayModePresentation	24	static
