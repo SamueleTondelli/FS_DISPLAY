@@ -1,0 +1,50 @@
+/--------DATA STRUCTURES-----------/
+-)thermal & pressure
+	waterT
+	oilP
+	oilT
+	fuelP
+	airT
+	fuelT
+-)mechanics
+	rpm
+	gear
+	slip
+	speed
+	tps
+-)controls
+	batteryV
+	launchControlStatus -> 0/1
+	pedal -> posizione pedale accelleratore
+	brake -> pressione freno generale?
+	brakeRear -> freno posteriore
+-)tyreData
+	...
+
+/-------CAN ID---------------/
+0x200)	rpm = [0] << 8 | [1]
+	tps = [2] << 8 | [3]
+	waterT = [4] << 8 | [5]
+	oilP = [6] << 8 | [7]
+
+0x204)	gear = [4]
+	oilT = [0] << 8 | [1]
+	batteryV = [6] << 8 | [7]
+
+0x220)	launchControlStatus = [3]
+
+0x208)	fuelP = [2] << 8 | [3]
+	airT = [4] << 8 | [5]
+
+0x20C)	pedal = [0]
+	slip = [1]
+	speed = [2] << 8 | [3]
+	brake = [4]
+
+0x30C)	brakeRear = [0] << 8 | [1]
+
+0x312)	fuelT = [0] << 8 | [1]
+
+
+
+
