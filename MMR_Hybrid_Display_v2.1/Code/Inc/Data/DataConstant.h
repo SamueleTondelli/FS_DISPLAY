@@ -8,6 +8,9 @@
 #include "DataConstantLVElectronics.h"
 #include "DataConstantThermalAereodinamics.h"
 #include "DataConstantNotification.h"
+#include "DataConstantThermalPressure.h"
+#include "DataConstantMechanics.h"
+#include "DataConstantControls.h"
 
 // DATA CONSTANT
 
