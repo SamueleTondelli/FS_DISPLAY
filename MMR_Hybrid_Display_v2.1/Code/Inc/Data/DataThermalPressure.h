@@ -1,5 +1,5 @@
-#ifndef INC_DATA_DATATHERMALPRESSURE_H_
-#define INC_DATA_DATATHERMALPRESSURE_H_
+#ifndef DATATHERMALPRESSURE_H_
+#define DATATHERMALPRESSURE_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -29,4 +29,4 @@ typedef struct {
 }
 #endif
 
-#endif /* INC_DATA_DATATHERMALPRESSURE_H_ */
+#endif /* DATATHERMALPRESSURE_H_ */
