@@ -25,6 +25,18 @@ typedef struct {
 	Data waterTemperature;
 } DataThermalPressure;
 
+/*
+ * Initialize DataThermalPressure Struct
+ * @param dataThermalPressure	-> DataThermalPressure Struct
+ */
+void initializeDataThermalPressure(DataThermalPressure* dataThermalPressure);
+
+/*
+ * Unset Flag Updated to All Datas include in this Dataset
+ * @param dataThermalPressure	-> DataThermalPressure Struct
+ */
+void setFlagNotUpdatedDataThermalPressure(DataThermalPressure* dataThermalPressure);
+
 #ifdef __cplusplus
 }
 #endif
