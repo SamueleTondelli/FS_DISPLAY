@@ -1,13 +1,6 @@
 #ifndef DATA_CONSTANT_H
 #define DATA_CONSTANT_H
 
-#include "DataConstantDinamics.h"
-#include "DataConstantPowerUnit.h"
-#include "DataConstantHVElectronicsBMS.h"
-#include "DataConstantHVElectronicsInverter.h"
-#include "DataConstantLVElectronics.h"
-#include "DataConstantThermalAereodinamics.h"
-#include "DataConstantNotification.h"
 #include "DataConstantThermalPressure.h"
 #include "DataConstantMechanics.h"
 #include "DataConstantControls.h"
