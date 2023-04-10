@@ -23,6 +23,18 @@ typedef struct {
 	Data tps;
 } DataMechanics;
 
+/*
+ * Initialize DataMechanics Struct
+ * @param dataMechanics	-> DataMechanics Struct
+ */
+void initializeDataMechanics(DataMechanics* dataMechanics);
+
+/*
+ * Unset Flag Updated to All Datas include in this Dataset
+ * @param dataMehcanics	-> DataMechanics Struct
+ */
+void setFlagNotUpdatedDataMechanics(DataMechanics* dataMechanics);
+
 #ifdef __cplusplus
 }
 #endif
