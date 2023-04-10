@@ -10,7 +10,7 @@ void initializeDataMechanics(DataMechanics* dataMechanics) {
 	intializeData(&(dataMechanics->tps), EMPTY_VALUE, TPS_CONVERSION_FACTOR);
 }
 
-void setFlagNotUpdatedMechanics(DataMechanics* dataMechanics) {
+void setFlagNotUpdatedDataMechanics(DataMechanics* dataMechanics) {
 	setFlagNotUpdated(&(dataMechanics->rpm));
 	setFlagNotUpdated(&(dataMechanics->gear));
 	setFlagNotUpdated(&(dataMechanics->slip));
