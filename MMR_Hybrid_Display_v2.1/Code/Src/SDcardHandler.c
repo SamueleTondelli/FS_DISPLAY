@@ -249,6 +249,7 @@ int decodifyFileRow(Dataset* ds, char* data) {
 }
 
 void insertRowDataToDataset(Dataset* ds, float newValue, uint16_t dataCounter) {
+	/*
 	switch(dataCounter) {
 		case(0):
 			setValueDataNoConversion(&(ds->powerUnit.rpm), newValue);
@@ -260,6 +261,7 @@ void insertRowDataToDataset(Dataset* ds, float newValue, uint16_t dataCounter) {
 			setValueDataNoConversion(&(ds->hvElectronicsBMS.soc), newValue);
 			break;
 	}
+	*/
 }
 
 void closeFile(DataSDcard* sdCard) {
