@@ -33,7 +33,7 @@ void initializeDataControls(DataControls* dataControls);
  * Unset Flag Updated to All Datas include in this Dataset
  * @param dataControls	-> DataControls Struct
  */
-void setFlagNotUpdatedDataControls(DataMechanics* dataControls);
+void setFlagNotUpdatedDataControls(DataControls* dataControls);
 
 #ifdef __cplusplus
 }
