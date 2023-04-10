@@ -19,7 +19,7 @@ void startSimulationMode(Dataset* dataset, DataScreen* dataScreen, TimersList* t
 	if((res = initializeSDCard(fileName)) == 0) {
 	//if((res = example()) >= 0) {	// DEBUG
 		dataset->screen.isSimulationModeEnabled = 1;
-		inizializeDataset(dataset);
+		initializeDataset(dataset);
 		setMessageTypeDataNotification(&(dataset->messageErrors.driverMessage), 0);
 		setMessageLengthDataNotification(&(dataset->messageErrors.driverMessage), 24);
 		setMessageDataNotification(&(dataset->messageErrors.driverMessage), "Message\nSimulator\nStart!", 24, 0, 23);
@@ -50,7 +50,7 @@ void stopSimulationMode(Dataset* dataset, TimersList* timers, int error) {
 		setMessageLengthDataNotification(&(dataset->messageErrors.driverMessage), 24);
 		setMessageDataNotification(&(dataset->messageErrors.driverMessage), message, messageLenght, 0, messageLenght - 1);
 		checkForNotificationActivated(dataset, timers);
-		inizializeDataset(dataset);
+		initializeDataset(dataset);
 	}
 }
 

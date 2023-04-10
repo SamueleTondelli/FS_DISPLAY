@@ -43,7 +43,7 @@ typedef struct {
  * Initialize Dataset Struct
  * @param *dataset 	-> DataSet Struct
  */
-void inizializeDataset(Dataset *dataset);
+void initializeDataset(Dataset *dataset);
 /*
  * Set All Datas contained in Dataset not Updated
  * @param *dataset 	-> DataSet Struct

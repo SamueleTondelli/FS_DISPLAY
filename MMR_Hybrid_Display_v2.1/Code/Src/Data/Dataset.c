@@ -16,7 +16,7 @@ extern CAN_TxHeaderTypeDef ptxHeader;
 extern uint32_t txMailbox;
 #endif
 
-void inizializeDataset(Dataset *dataset) {
+void initializeDataset(Dataset *dataset) {
 	initializeDataPowerUnit(&(dataset->powerUnit));
 	initializeDataHVElectronicsBMS(&(dataset->hvElectronicsBMS));
 	initializeDataHVElectronicsInverter(&(dataset->hvElectronicsInverter));

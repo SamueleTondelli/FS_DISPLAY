@@ -5,22 +5,22 @@
 // END
 
 void initializeDataHVElectronicsInverter(DataHVElectronicsInverter* dataHVElectronicsInverter) {
-	inizializeData(&(dataHVElectronicsInverter->electricMotorSpeed), EMPTY_VALUE, ELECTRIC_MOTOR_SPEED_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->electricMotorTorque), EMPTY_VALUE, ELECTRIC_MOTOR_TORQUE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->electricMotorTemperature), EMPTY_VALUE, ELECTRIC_MOTOR_TEMPERATURE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->targetID), EMPTY_VALUE, TARGET_ID_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->targetIQ), EMPTY_VALUE, TARGET_IQ_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->currentID), EMPTY_VALUE, ID_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->currentIQ), EMPTY_VALUE, IQ_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterCapacitorVoltage), EMPTY_VALUE, INVERTER_CAPACITOR_VOLTAGE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterTemperature), EMPTY_VALUE, INVERTER_TEMPERATURE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterBatteryCurrent), EMPTY_VALUE, INVERTER_BATTERY_CURRENT_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterBatteryVoltage), EMPTY_VALUE, INVERTER_BATTERY_VOLTAGE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterTorqueMax), EMPTY_VALUE, INVERTER_MAX_TORQUE_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->inverterSpeedMax), EMPTY_VALUE, INVERTER_MAX_SPEED_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->batteryDischargeCurrentMax), EMPTY_VALUE, BATTERY_DISCHARGE_CURRENT_MAX_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->batteryChargeCurrentMax), EMPTY_VALUE, BATTERY_CHARGE_CURRENT_MAX_CONVERSION_FACTOR);
-	inizializeData(&(dataHVElectronicsInverter->actualPowerProvidedElectric), EMPTY_VALUE, ACTUAL_POWER_PROVIDED_ELECTRIC_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->electricMotorSpeed), EMPTY_VALUE, ELECTRIC_MOTOR_SPEED_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->electricMotorTorque), EMPTY_VALUE, ELECTRIC_MOTOR_TORQUE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->electricMotorTemperature), EMPTY_VALUE, ELECTRIC_MOTOR_TEMPERATURE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->targetID), EMPTY_VALUE, TARGET_ID_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->targetIQ), EMPTY_VALUE, TARGET_IQ_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->currentID), EMPTY_VALUE, ID_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->currentIQ), EMPTY_VALUE, IQ_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterCapacitorVoltage), EMPTY_VALUE, INVERTER_CAPACITOR_VOLTAGE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterTemperature), EMPTY_VALUE, INVERTER_TEMPERATURE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterBatteryCurrent), EMPTY_VALUE, INVERTER_BATTERY_CURRENT_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterBatteryVoltage), EMPTY_VALUE, INVERTER_BATTERY_VOLTAGE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterTorqueMax), EMPTY_VALUE, INVERTER_MAX_TORQUE_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->inverterSpeedMax), EMPTY_VALUE, INVERTER_MAX_SPEED_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->batteryDischargeCurrentMax), EMPTY_VALUE, BATTERY_DISCHARGE_CURRENT_MAX_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->batteryChargeCurrentMax), EMPTY_VALUE, BATTERY_CHARGE_CURRENT_MAX_CONVERSION_FACTOR);
+	initializeData(&(dataHVElectronicsInverter->actualPowerProvidedElectric), EMPTY_VALUE, ACTUAL_POWER_PROVIDED_ELECTRIC_CONVERSION_FACTOR);
 }
 
 void setFlagNotUpdatedDataHVElectronicsInverter(DataHVElectronicsInverter* dataHVElectronicsInverter) {

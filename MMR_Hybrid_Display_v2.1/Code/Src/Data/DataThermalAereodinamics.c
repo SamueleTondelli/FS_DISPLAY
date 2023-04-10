@@ -5,19 +5,19 @@
 // END
 
 void initializeDataThermalAerodynamics(DataThermalAerodynamics* dataThermalAerodynamics) {
-	inizializeData(&(dataThermalAerodynamics->coolantTemperatureEV), EMPTY_VALUE, COOLANT_TEMPERATURE_EV_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->coolantFan1), EMPTY_VALUE, COOLANT_FAN1_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->coolantFan1TemperatureLimit), EMPTY_VALUE, COOLANT_FAN1_TEMPERATURE_LIMIT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->coolantFan2), EMPTY_VALUE, COOLANT_FAN2_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->coolantFan2TemperatureLimit), EMPTY_VALUE, COOLANT_FAN2_TEMPERATURE_LIMIT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTemperatureFrontRight), EMPTY_VALUE, BRAKE_TEMPERATURE_FRONT_RIGHT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTemperatureFrontLeft), EMPTY_VALUE, BRAKE_TEMPERATURE_FRONT_LEFT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTemperatureRearRight), EMPTY_VALUE, BRAKE_TEMPERATURE_REAR_RIGHT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTemperatureRearLeft), EMPTY_VALUE, BRAKE_TEMPERATURE_REAR_LEFT_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTermocouple0), EMPTY_VALUE, BRAKE_THERMOCOUPLE_0_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTermocouple1), EMPTY_VALUE, BRAKE_THERMOCOUPLE_1_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTermocouple2), EMPTY_VALUE, BRAKE_THERMOCOUPLE_2_CONVERSION_FACTOR);
-	inizializeData(&(dataThermalAerodynamics->brakeTermocouple3), EMPTY_VALUE, BRAKE_THERMOCOUPLE_3_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->coolantTemperatureEV), EMPTY_VALUE, COOLANT_TEMPERATURE_EV_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->coolantFan1), EMPTY_VALUE, COOLANT_FAN1_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->coolantFan1TemperatureLimit), EMPTY_VALUE, COOLANT_FAN1_TEMPERATURE_LIMIT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->coolantFan2), EMPTY_VALUE, COOLANT_FAN2_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->coolantFan2TemperatureLimit), EMPTY_VALUE, COOLANT_FAN2_TEMPERATURE_LIMIT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTemperatureFrontRight), EMPTY_VALUE, BRAKE_TEMPERATURE_FRONT_RIGHT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTemperatureFrontLeft), EMPTY_VALUE, BRAKE_TEMPERATURE_FRONT_LEFT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTemperatureRearRight), EMPTY_VALUE, BRAKE_TEMPERATURE_REAR_RIGHT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTemperatureRearLeft), EMPTY_VALUE, BRAKE_TEMPERATURE_REAR_LEFT_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTermocouple0), EMPTY_VALUE, BRAKE_THERMOCOUPLE_0_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTermocouple1), EMPTY_VALUE, BRAKE_THERMOCOUPLE_1_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTermocouple2), EMPTY_VALUE, BRAKE_THERMOCOUPLE_2_CONVERSION_FACTOR);
+	initializeData(&(dataThermalAerodynamics->brakeTermocouple3), EMPTY_VALUE, BRAKE_THERMOCOUPLE_3_CONVERSION_FACTOR);
 	
 	initializeDataStatus(&(dataThermalAerodynamics->coolantFanInputMode));
 	dataThermalAerodynamics->coolantFanInputMode.statusDef[0] = "Auto";

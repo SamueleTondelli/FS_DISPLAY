@@ -26,7 +26,7 @@ typedef struct {
  * @param  value	-> default value
  * @param *convA	-> conversionFactor
  */
-void inizializeData(Data *data, float value, float conv);
+void initializeData(Data *data, float value, float conv);
 /*
  * Get converted value from Data Struct
  * @param *data		-> Data Struct

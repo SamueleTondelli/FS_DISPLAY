@@ -5,18 +5,18 @@
 // END
 
 void initializeDataLVElectronics(DataLVElectronics* dataLVElectronics) {
-	inizializeData(&(dataLVElectronics->voltageBatteryLV), EMPTY_VALUE, BATTERY_LV_VOLTAGE_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->throttlePedal), EMPTY_VALUE, THROTTLE_PEDAL_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->throttlePosition), EMPTY_VALUE, THROTTLE_POSITION_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->tps1), EMPTY_VALUE, TPS1_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->tps2), EMPTY_VALUE, TPS2_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->apps1), EMPTY_VALUE, APPS1_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->apps2), EMPTY_VALUE, APPS2_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->bseFront), EMPTY_VALUE, BSE_FRONT_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->bseRear), EMPTY_VALUE, BSE_REAR_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->ecuCpuUsage), EMPTY_VALUE, ECU_CPU_USAGE_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->ecuLed), EMPTY_VALUE, ECU_LED_CONVERSION_FACTOR);
-	inizializeData(&(dataLVElectronics->ecuTemperature), EMPTY_VALUE, ECU_TEMPERATURE_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->voltageBatteryLV), EMPTY_VALUE, BATTERY_LV_VOLTAGE_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->throttlePedal), EMPTY_VALUE, THROTTLE_PEDAL_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->throttlePosition), EMPTY_VALUE, THROTTLE_POSITION_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->tps1), EMPTY_VALUE, TPS1_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->tps2), EMPTY_VALUE, TPS2_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->apps1), EMPTY_VALUE, APPS1_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->apps2), EMPTY_VALUE, APPS2_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->bseFront), EMPTY_VALUE, BSE_FRONT_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->bseRear), EMPTY_VALUE, BSE_REAR_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->ecuCpuUsage), EMPTY_VALUE, ECU_CPU_USAGE_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->ecuLed), EMPTY_VALUE, ECU_LED_CONVERSION_FACTOR);
+	initializeData(&(dataLVElectronics->ecuTemperature), EMPTY_VALUE, ECU_TEMPERATURE_CONVERSION_FACTOR);
 
 	initializeDataStatus(&(dataLVElectronics->can1Diagnostic));	//TODO aggingere 4 al valore in canMessage perchè l'enumeration in centralina ha valori negativi
 	dataLVElectronics->can1Diagnostic.statusDef[0]  = "InvalidCanbus";

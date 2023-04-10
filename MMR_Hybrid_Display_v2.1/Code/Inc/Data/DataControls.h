@@ -23,6 +23,18 @@ typedef struct {
 	Data brakeRear;
 } DataControls;
 
+/*
+ * Initialize DataControls Struct
+ * @param dataMechanics	-> DataMechanics Struct
+ */
+void initializeDataControls(DataControls* dataControls);
+
+/*
+ * Unset Flag Updated to All Datas include in this Dataset
+ * @param dataControls	-> DataControls Struct
+ */
+void setFlagNotUpdatedDataControls(DataMechanics* dataControls);
+
 #ifdef __cplusplus
 }
 #endif

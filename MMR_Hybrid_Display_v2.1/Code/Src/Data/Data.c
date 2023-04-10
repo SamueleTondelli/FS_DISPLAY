@@ -2,7 +2,7 @@
 #include "Data/Data.h"
 // END
 
-void inizializeData(Data *data, float value, float conv) {
+void initializeData(Data *data, float value, float conv) {
 	data->value = value;
 	data->conversionFactor = conv;
 	data->isUpdated = 0;

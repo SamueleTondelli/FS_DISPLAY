@@ -118,7 +118,7 @@ int main(void)
   MPU_Config();
 
   // Initialize Dataset
-  inizializeDataset(&ds);
+  initializeDataset(&ds);
 
   // Initialize Timer List
   initializeTimersList(&timList, &htim1, 1);
