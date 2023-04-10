@@ -16,135 +16,43 @@ extern uint32_t txMailbox;
 void decodifyCanMsg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload) {
 	switch (id) {
 	case 0x200:
+		setValueData(&(dataset->mechanics.rpm), ((payload[0] << 8) | payload[1]));
+		setValueData(&(dataset->mechanics.tps), ((payload[2] << 8) | payload[3]));
+		setValueData(&(dataset->thermalPressure.waterTemperature), ((payload[4] << 8) | payload[5]));
+		setValueData(&(dataset->thermalPressure.oilPressure), ((payload[6] << 8) | payload[7]));
 		break;
 
 	case 0x204:
+		setValueData(&(dataset->thermalPressure.oilTemperature), ((payload[0] << 8) | payload[1]));
+		setValueData(&(dataset->mechanics.gear), payload[4]);
+		setValueData(&(dataset->controls.batteryVoltage), payload[6] << 8 | payload[7]);
 		break;
 
 	case 0x208:
-		break;
-
-	case 0x220:
+		setValueData(&(dataset->thermalPressure.fuelPressure), ((payload[2] << 8) | payload[3]));
+		setValueData(&(dataset->thermalPressure.airTemperature), ((payload[4] << 8) | payload[5]));
 		break;
 
 	case 0x20C:
+		setValueData(&(dataset->controls.pedal), payload[0]);
+		setValueData(&(dataset->mechanics.slip), payload[1]);
+		setValueData(&(dataset->mechanics.speed), ((payload[2] << 8) | payload[3]));
+		setValueData(&(dataset->controls.brake), payload[4]);
+		break;
+
+	case 0x220:
+		setValueData(&(dataset->controls.launchControlStatus), payload[3]);
 		break;
 
 	case 0x30C:
-
+		setValueData(&(dataset->controls.brakeRear), ((payload[0] << 8) | payload[1]));
 		break;
 
-	case 0x321:
+	case 0x312:
+		setValueData(&(dataset->thermalPressure.fuelTemperature), ((payload[0] << 8) | payload[1]));
 		break;
-
-	case 0x240:
-
-		break;
-
-	case 0x244:
-
-		break;
-
-	case 0x24C:
-
-		break;
-
-	case 0x26C:
-
-		break;
-
-	case 0x254:
-
-		break;
-
-	case 0x25C:
-
-		break;
-
-	case 0x260:
-
-		break;
-
-	case 0x264:
-
-		break;
-
 	default:
-
 		break;
-	}
-
-	/*
-	 * MESSAGES & ERRORS
-	 */
-	if ((id >= 0x290) && (id <= 0x29f)) {
-		if (id == 0x290) {
-			setDataStatus(&(dataset->messageErrors.pressureOilAlarm), payload[0]);
-			setDataStatus(&(dataset->messageErrors.oilTemperatureAlarm), payload[1]);
-			setDataStatus(&(dataset->messageErrors.waterTemperatureAlarm), payload[2]);
-			setDataStatus(&(dataset->messageErrors.warningSource), payload[3]);
-#ifdef DEBUG_CANFUNCTION
-			//DEBUG
-			//uint8_t dummyData[8] = {0};
-			ptxHeader.StdId = 0x290;
-			ptxHeader.DLC = 8;
-			HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, payload, &txMailbox);
-#endif
-		} else if (id == 0x291) {
-			if(dataset->screen.notificationFlag == 0) {
-				setMessageTypeDataNotification(&(dataset->messageErrors.driverMessage), payload[0]);
-				setMessageLengthDataNotification(&(dataset->messageErrors.driverMessage), payload[1]);
-				loadDriverMessage(&(dataset->messageErrors.driverMessage), payload, 1);
-#ifdef DEBUG_CANFUNCTION
-				//DEBUG
-				//uint8_t dummyData[8] = {0};
-				//dummyData[0] = dataset->messageErrors.driverMessage.notificationCounter;
-				ptxHeader.StdId = 0x291;
-				ptxHeader.DLC = 8;
-				HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, payload, &txMailbox);
-#endif
-			}
-		} else if (id == 0x292) {
-			if(dataset->screen.notificationFlag == 0) {
-				loadDriverMessage(&(dataset->messageErrors.driverMessage), payload, 2);
-#ifdef DEBUG_CANFUNCTION
-				//DEBUG
-				//uint8_t dummyData[8] = {0};
-				//dummyData[0] = dataset->messageErrors.driverMessage.notificationCounter;
-				ptxHeader.StdId = 0x292;
-				ptxHeader.DLC = 8;
-				HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, payload, &txMailbox);
-#endif
-			}
-		} else if (id == 0x293) {
-			if(dataset->screen.notificationFlag == 0) {
-				loadDriverMessage(&(dataset->messageErrors.driverMessage), payload, 3);
-#ifdef DEBUG_CANFUNCTION
-				//DEBUG
-				//uint8_t dummyData[8] = {0};
-				//dummyData[0] = dataset->messageErrors.driverMessage.notificationCounter;
-				ptxHeader.StdId = 0x293;
-				ptxHeader.DLC = 8;
-				HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, payload, &txMailbox);
-#endif
-			}
-		} else if (id == 0x294) {
-			if(dataset->screen.notificationFlag == 0) {
-				loadDriverMessage(&(dataset->messageErrors.driverMessage), payload, 4);
-#ifdef DEBUG_CANFUNCTION
-				//DEBUG
-				//uint8_t dummyData[8] = {0};
-				//dummyData[0] = dataset->messageErrors.driverMessage.notificationCounter;
-				ptxHeader.StdId = 0x294;
-				ptxHeader.DLC = 8;
-				HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, payload, &txMailbox);
-#endif
-			}
-		} else if (id == 0x295) {
-			changeDisplayMode(&(dataset->screen), payload[0]);
-		} else if (id == 0x296) {
-			// TODO Implementare funzione di decodifica per il LapTime
-		}
 	}
 }
 
