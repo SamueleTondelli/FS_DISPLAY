@@ -21,7 +21,7 @@ typedef struct {
 	Data pedal;
 	Data brake;
 	Data brakeRear;
-} DataMechanics;
+} DataControls;
 
 #ifdef __cplusplus
 }

@@ -16,33 +16,18 @@ extern uint32_t txMailbox;
 void decodifyCanMsg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload) {
 	switch (id) {
 	case 0x200:
-		setDataValue(&(dataset->powerUnit.rpm), ((payload[0] << 8) | payload[1]));
-		setDataValue(&(dataset->lvElectronics.tps1), payload[2]); //not sure about this, it's 2 different vars while in old code
-		setDataValue(&(dataset->lvElectronics.tps2), payload[3]); //was only one with (RxData_CAN1[2] << 8 | RxData_CAN1[3]) / 10
-		//tWater in [4] [5]
-		setDataValue(&(dataset->powerUnit.oilPressure), ((payload[6] << 8) | payload[7]));
 		break;
 
 	case 0x204:
-		setDataValue(&(dataset->powerUnit.oilTemperature), ((payload[0] << 8) | payload[1]));
-		setDataValue(&(dataset->powerUnit.gear), payload[4]); //could be [3], weird old comments
-		setDataValue(&(dataset->lvElectronics.voltageBatteryLV), ((payload[6] << 8) | payload[7])); //should be LV, not too sure
 		break;
 
 	case 0x208:
-		setDataValue(&(dataset->powerUnit.oilPressure), ((payload[2] << 8) | payload[3]));
-		setDataValue(&(dataset->powerUnit.airTemperature), ((payload[4] << 8) | payload[5]));
 		break;
 
 	case 0x220:
-		//launchcontrol[3]
 		break;
 
 	case 0x20C:
-		setDataValue(&(dataset->lvElectronics.throttlePedal), payload[0]);
-		//slip [1]
-		setDataValue(&(dataset->powerUnit.vehicleSpeed), ((payload[2] << 8) | payload[3]));
-		//break [4]
 		break;
 
 	case 0x30C:
@@ -50,7 +35,6 @@ void decodifyCanMsg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload
 		break;
 
 	case 0x321:
-		//drsTarget [4] [5]
 		break;
 
 	case 0x240:

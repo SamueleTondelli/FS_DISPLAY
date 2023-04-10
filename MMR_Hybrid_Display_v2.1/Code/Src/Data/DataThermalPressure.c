@@ -1,5 +1,6 @@
 #include "Data/DataThermalPressure.h"
 #include "Data/DataConstant.h"
+#include "DisplayConstant.h"
 
 void initializeDataThermalPressure(DataThermalPressure* dataThermalPressure) {
 	initializeData(&(dataThermalPressure->oilPressure), EMPTY_VALUE, OIL_PRESSURE_CONVERSION_FACTOR);
