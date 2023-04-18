@@ -14,15 +14,10 @@ extern "C" {
 
 /*
  * Dataset Struct (Collection of all needed group of Datas)
- * @param alarm		-> DataAlarm Struct
- * @param cv		-> DataCV Struct
- * @param ev		-> DataEV Struct
- * @param general	-> DataGeneral Struct
- * @param hv		-> DataHV Struct
- * @param inverter	-> DataInverter Struct
- * @param lv		-> DataLV Struct
+ * @param thermalPressure		-> DataThermalPressure Struct
+ * @param mechanics		-> DataMechanics Struct
+ * @param controls		-> DataControls Struct
  * @param screen	-> DataScreen Struct
- * @param status	-> DataStatus Struct
  */
 typedef struct {
 	DataThermalPressure thermalPressure;
