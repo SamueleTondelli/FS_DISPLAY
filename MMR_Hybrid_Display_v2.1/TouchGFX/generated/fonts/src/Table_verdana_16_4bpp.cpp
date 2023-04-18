@@ -116,6 +116,6 @@ touchgfx::GeneratedFont& getFont_verdana_16_4bpp();
 
 touchgfx::GeneratedFont& getFont_verdana_16_4bpp()
 {
-    static touchgfx::GeneratedFont verdana_16_4bpp(glyphs_verdana_16_4bpp, 95, 16, 3, 4, 1, 1, 1, unicodes_verdana_16_4bpp, kerning_verdana_16_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont verdana_16_4bpp(glyphs_verdana_16_4bpp, 95, 19, 16, 0, 0, 4, 1, 1, 1, unicodes_verdana_16_4bpp, kerning_verdana_16_4bpp, 63, 0, 0, 0);
     return verdana_16_4bpp;
 }

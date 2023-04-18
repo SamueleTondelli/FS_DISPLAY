@@ -13,61 +13,67 @@ class FlashDataReader;
 
 struct Typography
 {
-    static const touchgfx::FontId DEFAULT = 0;
-    static const touchgfx::FontId LARGE = 1;
-    static const touchgfx::FontId SMALL = 2;
-    static const touchgfx::FontId BIG = 3;
-    static const touchgfx::FontId TXTMESSAGE = 4;
-    static const touchgfx::FontId TYGEAR80 = 5;
-    static const touchgfx::FontId TYMESSAGE = 6;
-    static const touchgfx::FontId TYGEAR60 = 7;
-    static const touchgfx::FontId TYRPMNUMBERSLAYOUT2 = 8;
-    static const touchgfx::FontId TYALARM = 9;
-    static const touchgfx::FontId TYLABEL13 = 10;
-    static const touchgfx::FontId TYTEXT20 = 11;
-    static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 12;
-    static const touchgfx::FontId TYTEXT10 = 13;
-    static const touchgfx::FontId TYSCREENNAME = 14;
-    static const touchgfx::FontId TYGEAR140 = 15;
-    static const touchgfx::FontId TYTEXT20MOD = 16;
-    static const touchgfx::FontId TYTEXT25 = 17;
-    static const touchgfx::FontId TYLABEL18 = 18;
-    static const touchgfx::FontId TYTEXT15 = 19;
-    static const touchgfx::FontId TYTEXT13 = 20;
-    static const touchgfx::FontId TYPOGRAPHY_01 = 21;
-    static const touchgfx::FontId TYPOGRAPHY_02 = 22;
-    static const touchgfx::FontId TYPOGRAPHY_03 = 23;
+    static const touchgfx::FontId TYTEXT25 = 0;
+    static const touchgfx::FontId TYLABEL18 = 1;
+    static const touchgfx::FontId TYGEAR140 = 2;
+    static const touchgfx::FontId TYTEXT10 = 3;
+    static const touchgfx::FontId TYPOGRAPHY_02 = 4;
+    static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 5;
+    static const touchgfx::FontId TYPOGRAPHY_01 = 6;
+    static const touchgfx::FontId TYGEAR80 = 7;
+    static const touchgfx::FontId TYTEXT20 = 8;
+    static const touchgfx::FontId TXTMESSAGE = 9;
+    static const touchgfx::FontId SMALL = 10;
+    static const touchgfx::FontId TYGEAR60 = 11;
+    static const touchgfx::FontId TYPOGRAPHY_03 = 12;
+    static const touchgfx::FontId TYSCREENNAME = 13;
+    static const touchgfx::FontId TYRPMNUMBERSLAYOUT2 = 14;
+    static const touchgfx::FontId TYTEXT20MOD = 15;
+    static const touchgfx::FontId TYTEXT15 = 16;
+    static const touchgfx::FontId TYTEXT13 = 17;
+    static const touchgfx::FontId LARGE = 18;
+    static const touchgfx::FontId TYALARM = 19;
+    static const touchgfx::FontId TYLABEL13 = 20;
+    static const touchgfx::FontId DEFAULT = 21;
+    static const touchgfx::FontId BIG = 22;
+    static const touchgfx::FontId TYMESSAGE = 23;
     static const touchgfx::FontId TXTPRESENTATION = 24;
+    static const touchgfx::FontId TYGEAR = 25;
+    static const touchgfx::FontId TYKMH = 26;
+    static const touchgfx::FontId TYGEAR80BOLDITALIC = 27;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0;             // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;               // verdana_40_4bpp
-    static const touchgfx::FontId SMALL = 2;               // verdana_10_4bpp
-    static const touchgfx::FontId BIG = 3;                 // verdana_140_4bpp
-    static const touchgfx::FontId TXTMESSAGE = 0;          // verdana_20_4bpp
-    static const touchgfx::FontId TYGEAR80 = 4;            // verdana_80_4bpp
-    static const touchgfx::FontId TYMESSAGE = 0;           // verdana_20_4bpp
-    static const touchgfx::FontId TYGEAR60 = 5;            // verdana_60_4bpp
-    static const touchgfx::FontId TYRPMNUMBERSLAYOUT2 = 6; // verdana_30_4bpp
-    static const touchgfx::FontId TYALARM = 5;             // verdana_60_4bpp
-    static const touchgfx::FontId TYLABEL13 = 7;           // verdana_13_4bpp
-    static const touchgfx::FontId TYTEXT20 = 0;            // verdana_20_4bpp
-    static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 0;  // verdana_20_4bpp
-    static const touchgfx::FontId TYTEXT10 = 2;            // verdana_10_4bpp
-    static const touchgfx::FontId TYSCREENNAME = 1;        // verdana_40_4bpp
-    static const touchgfx::FontId TYGEAR140 = 3;           // verdana_140_4bpp
-    static const touchgfx::FontId TYTEXT20MOD = 0;         // verdana_20_4bpp
-    static const touchgfx::FontId TYTEXT25 = 8;            // verdana_25_4bpp
-    static const touchgfx::FontId TYLABEL18 = 9;           // verdana_18_4bpp
-    static const touchgfx::FontId TYTEXT15 = 10;            // verdana_15_4bpp
-    static const touchgfx::FontId TYTEXT13 = 7;            // verdana_13_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_01 = 11;       // verdana_17_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_02 = 12;       // verdana_16_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_03 = 13;       // verdana_14_4bpp
+    static const touchgfx::FontId TYTEXT25 = 0;            // verdana_25_4bpp
+    static const touchgfx::FontId TYLABEL18 = 1;           // verdana_18_4bpp
+    static const touchgfx::FontId TYGEAR140 = 2;           // verdana_140_4bpp
+    static const touchgfx::FontId TYTEXT10 = 3;            // verdana_10_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_02 = 4;       // verdana_16_4bpp
+    static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 5;  // verdana_20_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_01 = 6;       // verdana_17_4bpp
+    static const touchgfx::FontId TYGEAR80 = 7;            // verdana_80_4bpp
+    static const touchgfx::FontId TYTEXT20 = 5;            // verdana_20_4bpp
+    static const touchgfx::FontId TXTMESSAGE = 5;          // verdana_20_4bpp
+    static const touchgfx::FontId SMALL = 3;               // verdana_10_4bpp
+    static const touchgfx::FontId TYGEAR60 = 8;            // verdana_60_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_03 = 9;       // verdana_14_4bpp
+    static const touchgfx::FontId TYSCREENNAME = 10;        // verdana_40_4bpp
+    static const touchgfx::FontId TYRPMNUMBERSLAYOUT2 = 11; // verdana_30_4bpp
+    static const touchgfx::FontId TYTEXT20MOD = 5;         // verdana_20_4bpp
+    static const touchgfx::FontId TYTEXT15 = 12;            // verdana_15_4bpp
+    static const touchgfx::FontId TYTEXT13 = 13;            // verdana_13_4bpp
+    static const touchgfx::FontId LARGE = 10;               // verdana_40_4bpp
+    static const touchgfx::FontId TYALARM = 8;             // verdana_60_4bpp
+    static const touchgfx::FontId TYLABEL13 = 13;           // verdana_13_4bpp
+    static const touchgfx::FontId DEFAULT = 5;             // verdana_20_4bpp
+    static const touchgfx::FontId BIG = 2;                 // verdana_140_4bpp
+    static const touchgfx::FontId TYMESSAGE = 5;           // verdana_20_4bpp
     static const touchgfx::FontId TXTPRESENTATION = 14;     // ariblk_35_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 15;
+    static const touchgfx::FontId TYGEAR = 15;              // verdana_120_4bpp
+    static const touchgfx::FontId TYKMH = 16;               // verdana_8_4bpp
+    static const touchgfx::FontId TYGEAR80BOLDITALIC = 17;  // verdanaz_80_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 18;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider
@@ -75,9 +81,10 @@ class ApplicationFontProvider : public touchgfx::FontProvider
 public:
     virtual touchgfx::Font* getFont(touchgfx::FontId typography);
 
-    static void setFlashReader(touchgfx::FlashDataReader* /* flashReader */)
+    static void setFlashReader(touchgfx::FlashDataReader* /*flashReader*/)
     {
     }
+
     static touchgfx::FlashDataReader* getFlashReader()
     {
         return 0;

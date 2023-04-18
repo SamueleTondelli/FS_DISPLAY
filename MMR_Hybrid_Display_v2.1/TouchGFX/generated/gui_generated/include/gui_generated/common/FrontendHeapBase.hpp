@@ -12,22 +12,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screen0_screen/Screen0View.hpp>
-#include <gui/screen0_screen/Screen0Presenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <gui/screen2_screen/Screen2View.hpp>
-#include <gui/screen2_screen/Screen2Presenter.hpp>
-#include <gui/screen3_screen/Screen3View.hpp>
-#include <gui/screen3_screen/Screen3Presenter.hpp>
-#include <gui/screen4_screen/Screen4View.hpp>
-#include <gui/screen4_screen/Screen4Presenter.hpp>
-#include <gui/screen5_screen/Screen5View.hpp>
-#include <gui/screen5_screen/Screen5Presenter.hpp>
-#include <gui/screen6_screen/Screen6View.hpp>
-#include <gui/screen6_screen/Screen6Presenter.hpp>
-#include <gui/screen7_screen/Screen7View.hpp>
-#include <gui/screen7_screen/Screen7Presenter.hpp>
+#include <gui/screen1combustion_screen/Screen1CombustionView.hpp>
+#include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
+#include <gui/home_screen/HOMEView.hpp>
+#include <gui/home_screen/HOMEPresenter.hpp>
 
 
 /**
@@ -50,15 +38,9 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen0View,
-            touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::TypeList< Screen2View,
-            touchgfx::meta::TypeList< Screen3View,
-            touchgfx::meta::TypeList< Screen4View,
-            touchgfx::meta::TypeList< Screen5View,
-            touchgfx::meta::TypeList< Screen6View,
-            touchgfx::meta::TypeList< Screen7View,
-            touchgfx::meta::Nil > > > > > > >
+    typedef touchgfx::meta::TypeList< Screen1CombustionView,
+            touchgfx::meta::TypeList< HOMEView,
+            touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
     /**
@@ -70,15 +52,9 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen0Presenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::TypeList< Screen2Presenter,
-            touchgfx::meta::TypeList< Screen3Presenter,
-            touchgfx::meta::TypeList< Screen4Presenter,
-            touchgfx::meta::TypeList< Screen5Presenter,
-            touchgfx::meta::TypeList< Screen6Presenter,
-            touchgfx::meta::TypeList< Screen7Presenter,
-            touchgfx::meta::Nil > > > > > > >
+    typedef touchgfx::meta::TypeList< Screen1CombustionPresenter,
+            touchgfx::meta::TypeList< HOMEPresenter,
+            touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
     /**
@@ -101,7 +77,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreen0ScreenNoTransition();
+        app.gotoScreen1CombustionScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

@@ -15,52 +15,21 @@ public:
     FrontendApplicationBase(Model& m, FrontendHeap& heap);
     virtual ~FrontendApplicationBase() { }
 
-    // Screen0
-    void gotoScreen0ScreenNoTransition();
+    virtual void changeToStartScreen()
+    {
+        gotoScreen1CombustionScreenNoTransition();
+    }
 
-    // Screen1
-    void gotoScreen1ScreenNoTransition();
-
-    // Screen2
-    void gotoScreen2ScreenNoTransition();
-
-    // Screen3
-    void gotoScreen3ScreenNoTransition();
-
-    // Screen4
-    void gotoScreen4ScreenNoTransition();
-
-    // Screen5
-    void gotoScreen5ScreenNoTransition();
-
-    // Screen6
-    void gotoScreen6ScreenNoTransition();
+    // Screen1Combustion
+    void gotoScreen1CombustionScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Screen0
-    void gotoScreen0ScreenNoTransitionImpl();
-
-    // Screen1
-    void gotoScreen1ScreenNoTransitionImpl();
-
-    // Screen2
-    void gotoScreen2ScreenNoTransitionImpl();
-
-    // Screen3
-    void gotoScreen3ScreenNoTransitionImpl();
-
-    // Screen4
-    void gotoScreen4ScreenNoTransitionImpl();
-
-    // Screen5
-    void gotoScreen5ScreenNoTransitionImpl();
-
-    // Screen6
-    void gotoScreen6ScreenNoTransitionImpl();
+    // Screen1Combustion
+    void gotoScreen1CombustionScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

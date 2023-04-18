@@ -212,6 +212,6 @@ touchgfx::GeneratedFont& getFont_ariblk_35_4bpp();
 
 touchgfx::GeneratedFont& getFont_ariblk_35_4bpp()
 {
-    static touchgfx::GeneratedFont ariblk_35_4bpp(glyphs_ariblk_35_4bpp, 191, 35, 8, 4, 1, 2, 1, unicodes_ariblk_35_4bpp, kerning_ariblk_35_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont ariblk_35_4bpp(glyphs_ariblk_35_4bpp, 191, 43, 35, 0, 0, 4, 1, 2, 1, unicodes_ariblk_35_4bpp, kerning_ariblk_35_4bpp, 63, 0, 0, 0);
     return ariblk_35_4bpp;
 }
