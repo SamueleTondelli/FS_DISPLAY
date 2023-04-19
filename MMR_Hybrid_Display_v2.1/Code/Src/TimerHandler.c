@@ -127,7 +127,7 @@ void timerHandlerOld(TIM_HandleTypeDef *htim) {
 }
 
 void timerHandler(TIM_HandleTypeDef* htim, TimersList* timers, Dataset* dataset) {
-
+/*
 	if(htim == timList.timUpdateDisplay) {	// 33ms for 30 FPS Display Update
 		dataset->screen.updateFlag = 1;
 	} else if(htim == timList.timSimulationModeRead) {	// Simulation Mode Read Row activation Flag
@@ -148,7 +148,7 @@ void timerHandler(TIM_HandleTypeDef* htim, TimersList* timers, Dataset* dataset)
 				}
 			}
 			*/
-		}
+		/*}
 	} else if(htim == timList.tim1sec) {	// 1s timeout for FPS counter, Blink Flag and Not-Update Data
 
 		// Update FPS
@@ -214,4 +214,4 @@ void timerHandler(TIM_HandleTypeDef* htim, TimersList* timers, Dataset* dataset)
 		HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, dummyData, &txMailbox);
 #endif
     }
-}
+*/}

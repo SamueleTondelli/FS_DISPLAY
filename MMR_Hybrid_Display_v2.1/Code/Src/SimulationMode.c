@@ -8,7 +8,7 @@
 // END
 
 void startSimulationMode(Dataset* dataset, DataScreen* dataScreen, TimersList* timers) {
-
+/*
 	char fileName[] = SIMULATION_MODE_FILE_NAME;
 	int res = 0;
 
@@ -20,10 +20,10 @@ void startSimulationMode(Dataset* dataset, DataScreen* dataScreen, TimersList* t
 	//if((res = example()) >= 0) {	// DEBUG
 		dataset->screen.isSimulationModeEnabled = 1;
 		initializeDataset(dataset);
-		setMessageTypeDataNotification(&(dataset->messageErrors.driverMessage), 0);
-		setMessageLengthDataNotification(&(dataset->messageErrors.driverMessage), 24);
-		setMessageDataNotification(&(dataset->messageErrors.driverMessage), "Message\nSimulator\nStart!", 24, 0, 23);
-		checkForNotificationActivated(dataset, timers);
+		//setMessageTypeDataNotification(&(dataset->messageErrors.driverMessage), 0);
+		//setMessageLengthDataNotification(&(dataset->messageErrors.driverMessage), 24);
+		//setMessageDataNotification(&(dataset->messageErrors.driverMessage), "Message\nSimulator\nStart!", 24, 0, 23);
+		//checkForNotificationActivated(dataset, timers);
 	} else {
 		char message[DATA_NOTIFICATION_LENGHT] = {0};
 		sprintf(message, "Message\nSimulator\nError: %d", res);
@@ -33,9 +33,11 @@ void startSimulationMode(Dataset* dataset, DataScreen* dataScreen, TimersList* t
 		setMessageDataNotification(&(dataset->messageErrors.driverMessage), message, messageLenght, 0, messageLenght - 1);
 		checkForNotificationActivated(dataset, timers);
 	}
+	*/
 }
 
 void stopSimulationMode(Dataset* dataset, TimersList* timers, int error) {
+	/*
 	if(dataset->screen.simulationFlag == 1 && dataset->screen.isSimulationModeEnabled == 0) {
 		dataset->screen.simulationFlag = 0;
 		dataset->screen.isSimulationModeEnabled = 1;
@@ -52,6 +54,7 @@ void stopSimulationMode(Dataset* dataset, TimersList* timers, int error) {
 		checkForNotificationActivated(dataset, timers);
 		initializeDataset(dataset);
 	}
+	*/
 }
 
 
