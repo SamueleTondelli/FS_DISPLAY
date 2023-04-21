@@ -71,6 +71,9 @@ protected:
     touchgfx::Image imageSpeed;
     touchgfx::TextArea txtKmH;
     touchgfx::TextArea txtSpeed;
+    touchgfx::Image imageRPM;
+    touchgfx::TextArea nameRPM;
+    touchgfx::TextArea txtRPM;
     touchgfx::TextArea nameC1;
     touchgfx::TextArea nameC2;
     touchgfx::TextArea NameC3;

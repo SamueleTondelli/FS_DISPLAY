@@ -13,10 +13,10 @@
 #include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
-#include <gui/drag_1_screen/DRAG_1View.hpp>
-#include <gui/drag_1_screen/DRAG_1Presenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/drag_2_screen/DRAG_2View.hpp>
+#include <gui/drag_2_screen/DRAG_2Presenter.hpp>
 
 using namespace touchgfx;
 
@@ -35,15 +35,15 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// Screen1Combustion
+// HOME
 
-void FrontendApplicationBase::gotoScreen1CombustionScreenNoTransition()
+void FrontendApplicationBase::gotoHOMEScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1CombustionScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoHOMEScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen1CombustionScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoHOMEScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<Screen1CombustionView, Screen1CombustionPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<HOMEView, HOMEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

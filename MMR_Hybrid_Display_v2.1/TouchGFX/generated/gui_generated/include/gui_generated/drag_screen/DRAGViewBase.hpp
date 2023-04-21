@@ -9,6 +9,10 @@
 #include <gui/drag_screen/DRAGPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/canvas/Shape.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Image.hpp>
 
@@ -29,28 +33,74 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::BoxWithBorder bxBackGround;
+    touchgfx::Container ctRPM;
+    touchgfx::BoxWithBorder boxWithBorder1;
+    touchgfx::Shape<4> centralRPM;
+    touchgfx::PainterRGB565 centralRPMPainter;
+    touchgfx::Shape<4> lateralsxRPM;
+    touchgfx::PainterRGB565 lateralsxRPMPainter;
+    touchgfx::Shape<4> lateraldxRPM;
+    touchgfx::PainterRGB565 lateraldxRPMPainter;
+    touchgfx::Shape<4> downTXT;
+    touchgfx::PainterRGB565 downTXTPainter;
+    touchgfx::Line line1;
+    touchgfx::PainterRGB565 line1Painter;
+    touchgfx::Line line1_2;
+    touchgfx::PainterRGB565 line1_2Painter;
+    touchgfx::Line line1_1;
+    touchgfx::PainterRGB565 line1_1Painter;
+    touchgfx::Line line1_1_1;
+    touchgfx::PainterRGB565 line1_1_1Painter;
+    touchgfx::Line line2;
+    touchgfx::PainterRGB565 line2Painter;
+    touchgfx::Line line2_1;
+    touchgfx::PainterRGB565 line2_1Painter;
+    touchgfx::Line line2_1_1;
+    touchgfx::PainterRGB565 line2_1_1Painter;
     touchgfx::TextArea nameRPM;
+    touchgfx::TextArea txtRPM;
+    touchgfx::Container ctNumberLeft;
+    touchgfx::TextArea textArea1_4_1_1;
+    touchgfx::TextArea textArea1_4_2;
+    touchgfx::TextArea textArea1_3_1;
+    touchgfx::TextArea textArea1_2_1;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextArea textArea1_5;
+    touchgfx::Container ctNumberRight;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::TextArea textArea1_2;
+    touchgfx::TextArea textArea1_3;
+    touchgfx::TextArea textArea1_4;
+    touchgfx::TextArea textArea1_4_1;
+    touchgfx::Container ctGear;
+    touchgfx::TextArea nameGear;
+    touchgfx::Image imageGear;
+    touchgfx::TextArea txtGear;
+    touchgfx::Container ctDown;
     touchgfx::TextArea nameSpeed;
     touchgfx::Image imageSpeed;
-    touchgfx::Image imageRPM;
     touchgfx::TextArea txtSpeed;
     touchgfx::TextArea txtKmH;
-    touchgfx::TextArea txtRPM;
     touchgfx::Image imageTraction;
     touchgfx::Image imageLaunchControl;
     touchgfx::TextArea nameTraction;
     touchgfx::TextArea txtTraction;
     touchgfx::TextArea txtLaunchControl;
+    touchgfx::TextArea nameLaunchControl;
+    touchgfx::Container ctSW;
     touchgfx::TextArea txtSteeringWheel;
     touchgfx::TextArea txtSteeringWheelGrade;
-    touchgfx::TextArea nameLaunchControl;
     touchgfx::TextArea nameSteeringWheel;
-    touchgfx::TextArea nameGear;
     touchgfx::Image imageSteeringWheel;
-    touchgfx::Image imageGear;
-    touchgfx::TextArea txtGear;
 
 private:
+
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint32_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 

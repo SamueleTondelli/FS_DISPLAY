@@ -1,17 +1,17 @@
-#ifndef DRAG_1PRESENTER_HPP
-#define DRAG_1PRESENTER_HPP
+#ifndef DRAG_2PRESENTER_HPP
+#define DRAG_2PRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class DRAG_1View;
+class DRAG_2View;
 
-class DRAG_1Presenter : public touchgfx::Presenter, public ModelListener
+class DRAG_2Presenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    DRAG_1Presenter(DRAG_1View& v);
+    DRAG_2Presenter(DRAG_2View& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,12 +25,12 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~DRAG_1Presenter() {};
+    virtual ~DRAG_2Presenter() {};
 
 private:
-    DRAG_1Presenter();
+    DRAG_2Presenter();
 
-    DRAG_1View& view;
+    DRAG_2View& view;
 };
 
-#endif // DRAG_1PRESENTER_HPP
+#endif // DRAG_2PRESENTER_HPP

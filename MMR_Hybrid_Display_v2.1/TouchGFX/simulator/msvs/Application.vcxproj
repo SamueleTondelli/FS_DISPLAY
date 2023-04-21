@@ -27,12 +27,12 @@
     <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen1combustion_screen\Screen1CombustionViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\drag_1_screen\DRAG_1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\drag_1_screen\DRAG_1View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\drag_1_screen\DRAG_1ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_2_screen\DRAG_2Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_2_screen\DRAG_2View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\drag_2_screen\DRAG_2ViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -189,12 +189,12 @@
     <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1combustion_screen\Screen1CombustionViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\drag_1_screen\DRAG_1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\drag_1_screen\DRAG_1View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_1_screen\DRAG_1ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_2_screen\DRAG_2Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_2_screen\DRAG_2View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_2_screen\DRAG_2ViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

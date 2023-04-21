@@ -34,39 +34,39 @@ HOMEViewBase::HOMEViewBase()
     nameOilP.setXY(52, 19);
     nameOilP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameOilP.setLinespacing(0);
-    nameOilP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PZTK));
+    nameOilP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2801));
     ctLeft.add(nameOilP);
 
     nameFuelT.setXY(45, 80);
     nameFuelT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameFuelT.setLinespacing(0);
-    nameFuelT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YDHZ));
+    nameFuelT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MMH7));
     ctLeft.add(nameFuelT);
 
     nameFuelP.setXY(47, 140);
     nameFuelP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameFuelP.setLinespacing(0);
-    nameFuelP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BZVZ));
+    nameFuelP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9PQ8));
     ctLeft.add(nameFuelP);
 
     txtOilP.setXY(47, 39);
     txtOilP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtOilP.setLinespacing(0);
-    txtOilP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N94V));
+    txtOilP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VJSA));
     txtOilP.setVisible(false);
     ctLeft.add(txtOilP);
 
     txtFuelT.setXY(47, 99);
     txtFuelT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFuelT.setLinespacing(0);
-    txtFuelT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PF57));
+    txtFuelT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WNCC));
     txtFuelT.setVisible(false);
     ctLeft.add(txtFuelT);
 
     txtFuelP.setXY(47, 159);
     txtFuelP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFuelP.setLinespacing(0);
-    txtFuelP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6PMN));
+    txtFuelP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C7UZ));
     txtFuelP.setVisible(false);
     ctLeft.add(txtFuelP);
 
@@ -76,7 +76,7 @@ HOMEViewBase::HOMEViewBase()
     nameAirT_1.setXY(24, 140);
     nameAirT_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameAirT_1.setLinespacing(0);
-    nameAirT_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_35XN));
+    nameAirT_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AH3D));
     ctRight.add(nameAirT_1);
 
     imageWaterT.setXY(1, 32);
@@ -94,39 +94,39 @@ HOMEViewBase::HOMEViewBase()
     nameWaterT.setXY(17, 19);
     nameWaterT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameWaterT.setLinespacing(0);
-    nameWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5A10));
+    nameWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_654D));
     ctRight.add(nameWaterT);
 
     nameOilT.setXY(26, 80);
     nameOilT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameOilT.setLinespacing(0);
-    nameOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FOHV));
+    nameOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P7JX));
     ctRight.add(nameOilT);
 
     nameAirT.setXY(24, 140);
     nameAirT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameAirT.setLinespacing(0);
-    nameAirT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DW7Z));
+    nameAirT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_48K2));
     ctRight.add(nameAirT);
 
     txtAirT.setXY(24, 159);
     txtAirT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtAirT.setLinespacing(0);
-    txtAirT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VHUP));
+    txtAirT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_18HI));
     txtAirT.setVisible(false);
     ctRight.add(txtAirT);
 
     txtOilT.setXY(24, 99);
     txtOilT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtOilT.setLinespacing(0);
-    txtOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MIZF));
+    txtOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S4GK));
     txtOilT.setVisible(false);
     ctRight.add(txtOilT);
 
     txtWaterT.setXY(24, 39);
     txtWaterT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtWaterT.setLinespacing(0);
-    txtWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_K6ID));
+    txtWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G02S));
     txtWaterT.setVisible(false);
     ctRight.add(txtWaterT);
 
@@ -156,111 +156,129 @@ HOMEViewBase::HOMEViewBase()
     txtGear.setPosition(93, 55, 75, 103);
     txtGear.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtGear.setLinespacing(0);
-    txtGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_72EX));
+    txtGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_79E4));
     ctUp.add(txtGear);
 
     nameGear.setXY(112, 30);
     nameGear.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameGear.setLinespacing(0);
-    nameGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S9WB));
+    nameGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NB0E));
     ctUp.add(nameGear);
 
     nameFL.setXY(47, 42);
     nameFL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameFL.setLinespacing(0);
-    nameFL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FYZT));
+    nameFL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SEAD));
     ctUp.add(nameFL);
 
     nameFR.setXY(204, 42);
     nameFR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameFR.setLinespacing(0);
-    nameFR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_V0UT));
+    nameFR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UMTY));
     ctUp.add(nameFR);
 
     nameRL.setXY(47, 102);
     nameRL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameRL.setLinespacing(0);
-    nameRL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IJ2Q));
+    nameRL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_94GY));
     ctUp.add(nameRL);
 
     nameRR.setXY(204, 102);
     nameRR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameRR.setLinespacing(0);
-    nameRR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YOPI));
+    nameRR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DJKD));
     ctUp.add(nameRR);
 
     txtFL.setXY(34, 60);
     txtFL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFL.setLinespacing(0);
-    txtFL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_71DG));
+    txtFL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZMGF));
     txtFL.setVisible(false);
     ctUp.add(txtFL);
 
     txtFR.setXY(193, 60);
     txtFR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFR.setLinespacing(0);
-    txtFR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OPXW));
+    txtFR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BT6G));
     txtFR.setVisible(false);
     ctUp.add(txtFR);
 
     txtRL.setXY(35, 121);
     txtRL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRL.setLinespacing(0);
-    txtRL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AIP7));
+    txtRL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DMFP));
     txtRL.setVisible(false);
     ctUp.add(txtRL);
 
     txtRR.setXY(193, 121);
     txtRR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRR.setLinespacing(0);
-    txtRR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3KHV));
+    txtRR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2OJ3));
     txtRR.setVisible(false);
     ctUp.add(txtRR);
 
-    nameSpeed.setXY(117, 161);
+    nameSpeed.setXY(56, 161);
     nameSpeed.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameSpeed.setLinespacing(0);
-    nameSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XF6M));
+    nameSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IFKX));
     ctUp.add(nameSpeed);
 
-    imageSpeed.setXY(77, 174);
+    imageSpeed.setXY(16, 174);
     imageSpeed.setBitmap(touchgfx::Bitmap(BITMAP_RECTANGLE_20_ID));
     ctUp.add(imageSpeed);
 
-    txtKmH.setXY(163, 202);
+    txtKmH.setXY(102, 202);
     txtKmH.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtKmH.setLinespacing(0);
-    txtKmH.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OD1T));
+    txtKmH.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8EXG));
     ctUp.add(txtKmH);
 
-    txtSpeed.setXY(115, 179);
+    txtSpeed.setXY(54, 179);
     txtSpeed.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSpeed.setLinespacing(0);
-    txtSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HYSW));
+    txtSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LSLL));
+    txtSpeed.setVisible(false);
     ctUp.add(txtSpeed);
+
+    imageRPM.setXY(137, 174);
+    imageRPM.setBitmap(touchgfx::Bitmap(BITMAP_RECTANGLE_20_ID));
+    ctUp.add(imageRPM);
+
+    nameRPM.setXY(183, 161);
+    nameRPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    nameRPM.setLinespacing(0);
+    nameRPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KI9X));
+    ctUp.add(nameRPM);
+
+    txtRPM.setXY(175, 179);
+    txtRPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    txtRPM.setLinespacing(0);
+    txtRPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CKPD));
+    txtRPM.setVisible(false);
+    ctUp.add(txtRPM);
 
     nameC1.setPosition(77, 85, 15, 16);
     nameC1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameC1.setLinespacing(0);
-    nameC1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_501L));
+    nameC1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UEPY));
     ctUp.add(nameC1);
 
     nameC2.setPosition(77, 145, 15, 16);
     nameC2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameC2.setLinespacing(0);
-    nameC2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XEJE));
+    nameC2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZAEB));
     ctUp.add(nameC2);
 
     NameC3.setPosition(234, 85, 15, 16);
     NameC3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     NameC3.setLinespacing(0);
-    NameC3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1BFB));
+    NameC3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4UD9));
     ctUp.add(NameC3);
 
     nameC4.setPosition(234, 145, 15, 16);
     nameC4.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameC4.setLinespacing(0);
-    nameC4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G3AY));
+    nameC4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_H49I));
     ctUp.add(nameC4);
 
     add(ctUp);
@@ -281,40 +299,40 @@ HOMEViewBase::HOMEViewBase()
     txtVbat.setXY(21, 20);
     txtVbat.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtVbat.setLinespacing(0);
-    txtVbat.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N5RN));
+    txtVbat.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GD5U));
     txtVbat.setVisible(false);
     ctDown.add(txtVbat);
 
     txtTps.setXY(115, 20);
     txtTps.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTps.setLinespacing(0);
-    txtTps.setTypedText(touchgfx::TypedText(T___SINGLEUSE_11EN));
+    txtTps.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UMQ8));
     txtTps.setVisible(false);
     ctDown.add(txtTps);
 
     txtTraction.setXY(207, 20);
     txtTraction.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTraction.setLinespacing(0);
-    txtTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VSEG));
+    txtTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9WFV));
     txtTraction.setVisible(false);
     ctDown.add(txtTraction);
 
     nameVbat.setXY(24, 0);
     nameVbat.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameVbat.setLinespacing(0);
-    nameVbat.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C8TA));
+    nameVbat.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YA4S));
     ctDown.add(nameVbat);
 
     nameTps.setXY(124, 0);
     nameTps.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameTps.setLinespacing(0);
-    nameTps.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G3BR));
+    nameTps.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IVW9));
     ctDown.add(nameTps);
 
     nameTraction.setXY(199, 0);
     nameTraction.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameTraction.setLinespacing(0);
-    nameTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WWH1));
+    nameTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6R02));
     ctDown.add(nameTraction);
 
     add(ctDown);

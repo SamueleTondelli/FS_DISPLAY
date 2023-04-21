@@ -16,10 +16,10 @@
 #include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
-#include <gui/drag_1_screen/DRAG_1View.hpp>
-#include <gui/drag_1_screen/DRAG_1Presenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/drag_2_screen/DRAG_2View.hpp>
+#include <gui/drag_2_screen/DRAG_2Presenter.hpp>
 
 
 /**
@@ -44,8 +44,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1CombustionView,
             touchgfx::meta::TypeList< HOMEView,
-            touchgfx::meta::TypeList< DRAG_1View,
             touchgfx::meta::TypeList< DRAGView,
+            touchgfx::meta::TypeList< DRAG_2View,
             touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
@@ -60,8 +60,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1CombustionPresenter,
             touchgfx::meta::TypeList< HOMEPresenter,
-            touchgfx::meta::TypeList< DRAG_1Presenter,
             touchgfx::meta::TypeList< DRAGPresenter,
+            touchgfx::meta::TypeList< DRAG_2Presenter,
             touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
@@ -85,7 +85,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreen1CombustionScreenNoTransition();
+        app.gotoHOMEScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)
