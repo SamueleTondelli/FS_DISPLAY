@@ -8,9 +8,12 @@
 
 const uint16_t BITMAP_M22H_ID = 0;
 const uint16_t BITMAP_RECTANGLE_10_ID = 1;
-const uint16_t BITMAP_RECTANGLE_20_ID = 2;
-const uint16_t BITMAP_RECTANGLE_22_ID = 3;
-const uint16_t BITMAP_SECOND_SCREEN_MIN_ID = 4;
+const uint16_t BITMAP_RECTANGLE_19_ID = 2;
+const uint16_t BITMAP_RECTANGLE_20_ID = 3;
+const uint16_t BITMAP_RECTANGLE_22_ID = 4;
+const uint16_t BITMAP_RECTANGLE_23_ID = 5;
+const uint16_t BITMAP_SECOND_SCREEN_MIN_ID = 6;
+const uint16_t BITMAP_STEERING_WHEEL_ID = 7;
 
 namespace BitmapDatabase
 {

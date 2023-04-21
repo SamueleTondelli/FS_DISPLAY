@@ -25,6 +25,7 @@ Model::Model() : modelListener(0), currentScreenIndex(0) {
 }
 
 void Model::tick() {
+	/*
 
 	if(ds.screen.updateFlag) {
 		ds.screen.updateFlag = 0;
@@ -76,6 +77,7 @@ void Model::tick() {
 			updateDisplay();
 		}
 	}
+	*/
 }
 
 void Model::saveCurrentScreenIndex(uint8_t cScreen) {

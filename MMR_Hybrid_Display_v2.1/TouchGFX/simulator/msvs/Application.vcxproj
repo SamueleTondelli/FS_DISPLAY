@@ -20,21 +20,6 @@
     <ClCompile Include="..\..\gui\src\common\FrontendApplication.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen0_screen\Screen0Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen0_screen\Screen0View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen4_screen\Screen4Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen4_screen\Screen4View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen5_screen\Screen5Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen5_screen\Screen5View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen6_screen\Screen6Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen6_screen\Screen6View.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen7_screen\Screen7View.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
     <ClCompile Include="..\..\gui\src\home_screen\HOMEPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\home_screen\HOMEView.cpp"/>
@@ -42,6 +27,12 @@
     <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen1combustion_screen\Screen1CombustionViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_1_screen\DRAG_1Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_1_screen\DRAG_1View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\drag_1_screen\DRAG_1ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_screen\DRAGPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\drag_screen\DRAGView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -189,20 +180,6 @@
     <ClInclude Include="..\..\gui\include\gui\model\Model.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen0_screen\Screen0Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen0_screen\Screen0View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen4_screen\Screen4Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen4_screen\Screen4View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen5_screen\Screen5Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen5_screen\Screen5View.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen6_screen\Screen6Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen6_screen\Screen6View.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\DirectFrameBufferVideoController.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\MJPEGDecoder.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
@@ -212,6 +189,12 @@
     <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1combustion_screen\Screen1CombustionViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_1_screen\DRAG_1Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_1_screen\DRAG_1View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_1_screen\DRAG_1ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

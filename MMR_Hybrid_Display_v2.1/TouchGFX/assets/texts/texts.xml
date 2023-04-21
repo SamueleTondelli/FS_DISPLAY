@@ -6,6 +6,126 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_YKIU" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_PFZO" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">10</Translation>
+      </Text>
+      <Text Id="__SingleUse_RPBW" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_KQQ0" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_GSYW" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_GXBO" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_QIG0" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_37OQ" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">10</Translation>
+      </Text>
+      <Text Id="__SingleUse_I3CZ" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_FN9F" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_7YGB" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_L0NS" Alignment="Left" TypographyId="tyText13">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_8AD0" Alignment="Center" TypographyId="tyGear80BoldItalic">
+        <Translation Language="GB">N</Translation>
+      </Text>
+      <Text Id="__SingleUse_OYK2" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">GEAR</Translation>
+      </Text>
+      <Text Id="__SingleUse_1YQQ" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">STEERING WHEEL</Translation>
+      </Text>
+      <Text Id="__SingleUse_LWG5" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">LAUNCH CONTROL</Translation>
+      </Text>
+      <Text Id="__SingleUse_R489" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">°</Translation>
+      </Text>
+      <Text Id="__SingleUse_XNH1" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_DRKW" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_PWEQ" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_CXD7" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">TRACTION</Translation>
+      </Text>
+      <Text Id="__SingleUse_T260" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_TQVT" Alignment="Left" TypographyId="TyKmH">
+        <Translation Language="GB">KM/H</Translation>
+      </Text>
+      <Text Id="__SingleUse_TQAW" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_FBFK" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">SPEED</Translation>
+      </Text>
+      <Text Id="__SingleUse_OPY2" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">RPM</Translation>
+      </Text>
+      <Text Id="__SingleUse_U5YC" Alignment="Center" TypographyId="tyGear80BoldItalic">
+        <Translation Language="GB">N</Translation>
+      </Text>
+      <Text Id="__SingleUse_4RKQ" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">GEAR</Translation>
+      </Text>
+      <Text Id="__SingleUse_VPX9" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">°</Translation>
+      </Text>
+      <Text Id="__SingleUse_F8OO" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_HQCZ" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_S368" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_0NDU" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">STEERING WHEEL</Translation>
+      </Text>
+      <Text Id="__SingleUse_0FAM" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">LAUNCH CONTROL</Translation>
+      </Text>
+      <Text Id="__SingleUse_0LY5" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">TRACTION</Translation>
+      </Text>
+      <Text Id="__SingleUse_8S4F" Alignment="Left" TypographyId="TyKmH">
+        <Translation Language="GB">KM/H</Translation>
+      </Text>
+      <Text Id="__SingleUse_24QQ" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_STAO" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_C471" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">RPM</Translation>
+      </Text>
+      <Text Id="__SingleUse_N1E4" Alignment="Left" TypographyId="tyText10">
+        <Translation Language="GB">SPEED</Translation>
+      </Text>
       <Text Id="__SingleUse_G3AY" Alignment="Left" TypographyId="TyKmH">
         <Translation Language="GB">°C</Translation>
       </Text>

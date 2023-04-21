@@ -29,7 +29,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::BoxWithBorder boxWithBorder1;
+    touchgfx::BoxWithBorder bxBackGround;
     touchgfx::Container ctLeft;
     touchgfx::Image imageOilP;
     touchgfx::Image imageFuelT;

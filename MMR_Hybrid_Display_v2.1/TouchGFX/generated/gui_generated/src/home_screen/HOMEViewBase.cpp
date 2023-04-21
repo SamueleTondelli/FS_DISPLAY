@@ -12,11 +12,11 @@ HOMEViewBase::HOMEViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    boxWithBorder1.setPosition(0, 0, 480, 272);
-    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(13, 13, 13));
-    boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(13, 13, 13));
-    boxWithBorder1.setBorderSize(5);
-    add(boxWithBorder1);
+    bxBackGround.setPosition(0, 0, 480, 272);
+    bxBackGround.setColor(touchgfx::Color::getColorFromRGB(13, 13, 13));
+    bxBackGround.setBorderColor(touchgfx::Color::getColorFromRGB(13, 13, 13));
+    bxBackGround.setBorderSize(5);
+    add(bxBackGround);
 
     ctLeft.setPosition(0, -10, 107, 266);
     imageOilP.setXY(24, 32);

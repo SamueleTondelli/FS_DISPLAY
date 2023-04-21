@@ -16,6 +16,10 @@
 #include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
+#include <gui/drag_1_screen/DRAG_1View.hpp>
+#include <gui/drag_1_screen/DRAG_1Presenter.hpp>
+#include <gui/drag_screen/DRAGView.hpp>
+#include <gui/drag_screen/DRAGPresenter.hpp>
 
 
 /**
@@ -40,7 +44,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1CombustionView,
             touchgfx::meta::TypeList< HOMEView,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< DRAG_1View,
+            touchgfx::meta::TypeList< DRAGView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -54,7 +60,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1CombustionPresenter,
             touchgfx::meta::TypeList< HOMEPresenter,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< DRAG_1Presenter,
+            touchgfx::meta::TypeList< DRAGPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**
