@@ -8,36 +8,23 @@ FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
 
 //MODIFIED
 
-	//Screen1
-void FrontendApplication::gotoScreen1ScreenNoTransition()
+void goToScreenHomeNoTransition()
 {
-    //transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenHomeNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
-}
-	//Screen2
-void FrontendApplication::gotoScreen2ScreenNoTransition()
-{
-    //transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen2ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-	//Screen3
-void FrontendApplication::gotoScreen3ScreenNoTransition()
-{
-    //transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen3ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-	//Screen4
-void FrontendApplication::gotoScreen4ScreenNoTransition()
-{
-    //transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen4ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
+
 }
 
-	//Screen5
-void FrontendApplication::gotoScreen5ScreenNoTransition()
+void goToScreenDragNoTransition()
 {
-    //transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen5ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
+	transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenDragNoTransitionImpl);
+	pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void goToScreenDrag2NoTransition()
+{
+	transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenDrag2NoTransitionImpl);
+	pendingScreenTransitionCallback = &transitionCallback;
 }
 
 //END MODIFIED

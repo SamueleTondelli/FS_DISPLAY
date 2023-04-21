@@ -15,20 +15,9 @@ public:
 
     //MODIFIED
 
-    // Screen1
-	void gotoScreen1ScreenNoTransition();
-
-	// Screen2
-	void gotoScreen2ScreenNoTransition();
-
-	// Screen3
-	void gotoScreen3ScreenNoTransition();
-
-	// Screen4
-	void gotoScreen4ScreenNoTransition();
-
-	//Screen5
-	void gotoScreen5ScreenNoTransition();
+    void goToScreenHomeNoTransition();
+    void goToScreenDragNoTransition();
+    void goToScreenDrag2NoTransition();
 
     //END MODIFIED
 

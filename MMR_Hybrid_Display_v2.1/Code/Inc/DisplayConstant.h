@@ -3,6 +3,11 @@
 
 // DISPLAY CONSTANTS
 
+	// SCREEN NAMES
+#define HOME 0
+#define DRAG 1
+#define DRAG_2 2
+
 	// ALARMS
 #define POIL_ALARM 				"OIL\nPRESSURE\nLOW"
 #define POIL_ALARM_LENGTH 		16

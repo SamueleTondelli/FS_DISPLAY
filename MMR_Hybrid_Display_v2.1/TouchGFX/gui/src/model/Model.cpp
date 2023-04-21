@@ -25,21 +25,11 @@ Model::Model() : modelListener(0), currentScreenIndex(0) {
 }
 
 void Model::tick() {
-	/*
-
 	if(ds.screen.updateFlag) {
 		ds.screen.updateFlag = 0;
 
 		// Display Sanity Check
 		HAL_IWDG_Refresh(&hiwdg);
-
-		// Check for Alarms
-		//checkForAlarmActivated2(&(ds));
-		checkForAlarmActivated(&ds, &timList);
-
-		// Check for Notifications
-		//checkForNotificationActivated2(&(ds));
-		checkForNotificationActivated(&ds, &timList);
 
 		// Check for Changed Screen Event
 		uint8_t currentScreen = Model::getCurrentScreenIndex();
@@ -58,26 +48,24 @@ void Model::tick() {
 			//startTimer(&htim4);
 			startTimer(timList.tim2sec);
 
-			if(screen == 1) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen1ScreenNoTransition();
-			} else if(screen == 2) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
-			} else if(screen == 3) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen3ScreenNoTransition();
-			} else if(screen == 4) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen4ScreenNoTransition();
-			} else if(screen == 5) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen5ScreenNoTransition();
-			} else if(screen == 6) {
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen6ScreenNoTransition();
-			} else {
+			switch (screen)
+			{
+			case HOME:
+				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenHomeNoTransition();
+				break;
+			case DRAG:
+				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenDragNoTransition();
+				break;
+			case DRAG_2:
+				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenDrag2NoTransition();
+				break;
+			default:
 				updateDisplay();
 			}
 		} else {
 			updateDisplay();
 		}
 	}
-	*/
 }
 
 void Model::saveCurrentScreenIndex(uint8_t cScreen) {
