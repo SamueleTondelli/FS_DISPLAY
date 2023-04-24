@@ -122,7 +122,7 @@ void timerHandlerOld(TIM_HandleTypeDef *htim) {
     } else if(htim == &htim5) {
     	stopTimer(&htim5);
     	// Check if there are Notification Active. If yes de-Activate them
-    	checkForNotificationDeActivated2(&ds);
+    	//checkForNotificationDeActivated2(&ds);
     }
 }
 
