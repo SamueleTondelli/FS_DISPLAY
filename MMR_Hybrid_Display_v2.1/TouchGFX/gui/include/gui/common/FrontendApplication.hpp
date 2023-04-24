@@ -15,9 +15,8 @@ public:
 
     //MODIFIED
 
-    void goToScreenHomeNoTransition();
-    void goToScreenDragNoTransition();
-    void goToScreenDrag2NoTransition();
+    void gotoHOMEScreenNoTransition();
+    //missing DRAG and DRAG_2 screen transitions
 
     //END MODIFIED
 

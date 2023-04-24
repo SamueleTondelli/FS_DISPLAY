@@ -8,23 +8,10 @@ FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
 
 //MODIFIED
 
-void goToScreenHomeNoTransition()
+void FrontendApplication::gotoHOMEScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenHomeNoTransitionImpl);
+	transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoHOMEScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
-
-}
-
-void goToScreenDragNoTransition()
-{
-	transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenDragNoTransitionImpl);
-	pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void goToScreenDrag2NoTransition()
-{
-	transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::goToScreenDrag2NoTransitionImpl);
-	pendingScreenTransitionCallback = &transitionCallback;
 }
 
 //END MODIFIED

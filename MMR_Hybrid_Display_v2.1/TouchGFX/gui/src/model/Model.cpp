@@ -51,13 +51,13 @@ void Model::tick() {
 			switch (screen)
 			{
 			case HOME:
-				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenHomeNoTransition();
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoHOMEScreenNoTransition();
 				break;
 			case DRAG:
-				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenDragNoTransition();
+				//call gotoDRAGScreen
 				break;
 			case DRAG_2:
-				static_cast<FrontendApplication*>(Application::getInstance())->goToScreenDrag2NoTransition();
+				//call gotoDRAGScreen
 				break;
 			default:
 				updateDisplay();
