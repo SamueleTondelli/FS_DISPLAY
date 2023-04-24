@@ -16,3 +16,8 @@ void HOMEPresenter::deactivate()
 {
 
 }
+
+void HOMEPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}

@@ -27,6 +27,8 @@ public:
 
     virtual ~HOMEPresenter() {};
 
+    virtual void updateDisplay();
+
 private:
     HOMEPresenter();
 
