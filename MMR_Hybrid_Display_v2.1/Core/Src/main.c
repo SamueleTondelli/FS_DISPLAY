@@ -184,10 +184,6 @@ int main(void)
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
-  //Enable adc3 conversion for traction control
-  HAL_ADC_Start(&hadc3);
-
-
   // Backlight GPIO [set the Screen backlight]
   HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_Port, LCD_BL_CTRL_Pin, 1);
   // Switch on the Screen
