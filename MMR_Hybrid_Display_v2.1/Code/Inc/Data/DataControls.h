@@ -14,6 +14,7 @@ extern "C" {
  * @attr pedal					->throttle pedal position (0 - 100)
  * @attr brake
  * @attr brakeRear
+ * @attr tractionControl		->from 0 to 4, read from adc1
  */
 typedef struct {
 	Data batteryVoltage;
@@ -21,6 +22,7 @@ typedef struct {
 	Data pedal;
 	Data brake;
 	Data brakeRear;
+	uint8_t tractionControl;
 } DataControls;
 
 /*
@@ -34,6 +36,12 @@ void initializeDataControls(DataControls* dataControls);
  * @param dataControls	-> DataControls Struct
  */
 void setFlagNotUpdatedDataControls(DataControls* dataControls);
+
+/*
+ * Reads current traction control level from adc1
+ * @param dataControls	-> DataControls Struct
+ */
+void readTractionControlData(DataControls* dataControls);
 
 #ifdef __cplusplus
 }

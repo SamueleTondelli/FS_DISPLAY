@@ -158,7 +158,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
+  MX_DMA_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
   MX_CAN3_Init();
@@ -170,9 +170,9 @@ int main(void)
   MX_DMA2D_Init();
   MX_CRC_Init();
   MX_ADC2_Init();
-  MX_ADC3_Init();
+  MX_ADC3_Init(); //traction control
   MX_TIM2_Init();
-  MX_DMA_Init();
+  MX_ADC1_Init();
   MX_SDMMC1_SD_Init();
   MX_FATFS_Init();
   MX_TIM3_Init();
@@ -183,6 +183,10 @@ int main(void)
   MX_IWDG_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
+
+  //Enable adc3 conversion for traction control
+  HAL_ADC_Start(&hadc3);
+
 
   // Backlight GPIO [set the Screen backlight]
   HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_Port, LCD_BL_CTRL_Pin, 1);
