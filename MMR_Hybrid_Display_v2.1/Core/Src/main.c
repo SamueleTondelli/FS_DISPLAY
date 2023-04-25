@@ -103,7 +103,6 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 /**
@@ -170,7 +169,7 @@ int main(void)
   MX_DMA2D_Init();
   MX_CRC_Init();
   MX_ADC2_Init();
-  MX_ADC3_Init(); //traction control
+  MX_ADC3_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
   MX_SDMMC1_SD_Init();

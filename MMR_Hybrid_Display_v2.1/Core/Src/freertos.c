@@ -69,6 +69,7 @@ extern TIM_HandleTypeDef htim8;
 
 /* USER CODE END Variables */
 osThreadId touchGFXTaskHandle;
+osThreadId tractionTaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -76,6 +77,7 @@ osThreadId touchGFXTaskHandle;
 /* USER CODE END FunctionPrototypes */
 
 void StartTouchGFXTask(void const * argument);
+void tractionAcquisition(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -126,6 +128,10 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(touchGFXTask, StartTouchGFXTask, osPriorityNormal, 0, 8192);
   touchGFXTaskHandle = osThreadCreate(osThread(touchGFXTask), NULL);
 
+  /* definition and creation of tractionTask */
+  osThreadDef(tractionTask, tractionAcquisition, osPriorityNormal, 0, 128);
+  tractionTaskHandle = osThreadCreate(osThread(tractionTask), NULL);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -162,6 +168,25 @@ void StartTouchGFXTask(void const * argument)
     osDelay(1);
   }
   /* USER CODE END StartTouchGFXTask */
+}
+
+/* USER CODE BEGIN Header_tractionAcquisition */
+/**
+* @brief Function implementing the tractionTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_tractionAcquisition */
+void tractionAcquisition(void const * argument)
+{
+  /* USER CODE BEGIN tractionAcquisition */
+  /* Infinite loop */
+  for(;;)
+  {
+	readTractionControlData(&(ds.controls));
+    osDelay(1);
+  }
+  /* USER CODE END tractionAcquisition */
 }
 
 /* Private application code --------------------------------------------------*/
