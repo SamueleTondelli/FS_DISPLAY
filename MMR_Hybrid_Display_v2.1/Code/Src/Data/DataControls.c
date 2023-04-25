@@ -23,7 +23,7 @@ void setFlagNotUpdatedDataControls(DataControls* dataControls) {
 }
 
 void readTractionControlData(DataControls* dataControls) {
-	HAL_ADC_Start(&hadc3);
+	HAL_ADC_Start(&hadc3); //start adc conversion
 	//add time check?
 	while (HAL_ADC_PollForConversion(&hadc3, 1) != HAL_OK) {} //wait for available data
 
