@@ -1591,7 +1591,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1609,7 +1610,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1627,7 +1629,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               }
             ]
           },
@@ -1639,23 +1642,6 @@
             "Width": 107,
             "Height": 266,
             "Components": [
-              {
-                "Type": "TextArea",
-                "Name": "nameAirT_1",
-                "X": 24,
-                "Y": 140,
-                "Width": 33,
-                "Height": 13,
-                "LockPosition": true,
-                "TextId": "__SingleUse_AH3D",
-                "TextRotation": "0",
-                "Color": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "AutoSize": true
-              },
               {
                 "Type": "Image",
                 "Name": "imageWaterT",
@@ -1753,7 +1739,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1771,7 +1758,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1789,7 +1777,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               }
             ]
           },
@@ -1848,6 +1837,7 @@
                 "Y": 54,
                 "Width": 79,
                 "Height": 104,
+                "LockPosition": true,
                 "RelativeFilename": "Rectangle 22.png"
               },
               {
@@ -1857,13 +1847,15 @@
                 "Y": 55,
                 "Width": 75,
                 "Height": 103,
+                "LockPosition": true,
                 "TextId": "__SingleUse_79E4",
                 "TextRotation": "0",
                 "Color": {
                   "Red": 255,
                   "Green": 255,
                   "Blue": 255
-                }
+                },
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1872,6 +1864,7 @@
                 "Y": 30,
                 "Width": 42,
                 "Height": 19,
+                "LockPosition": true,
                 "TextId": "__SingleUse_NB0E",
                 "TextRotation": "0",
                 "Color": {
@@ -1965,7 +1958,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -1983,7 +1977,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2001,7 +1996,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2019,7 +2015,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2081,7 +2078,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "Image",
@@ -2126,7 +2124,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2248,7 +2247,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2266,7 +2266,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2284,7 +2285,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -2659,7 +2661,6 @@
                 "Name": "txtRPM",
                 "X": 87,
                 "Y": 122,
-                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_T260",
@@ -2669,7 +2670,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "Container",
@@ -2946,7 +2948,8 @@
                   "Red": 255,
                   "Green": 255,
                   "Blue": 255
-                }
+                },
+                "Wildcard1": {}
               }
             ]
           },
@@ -2956,7 +2959,6 @@
             "Y": 177,
             "Width": 480,
             "Height": 83,
-            "LockPosition": true,
             "Components": [
               {
                 "Type": "TextArea",
@@ -2989,7 +2991,6 @@
                 "Name": "txtSpeed",
                 "X": 222,
                 "Y": 23,
-                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_TQAW",
@@ -2999,7 +3000,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -3059,7 +3061,6 @@
                 "Name": "txtTraction",
                 "X": 69,
                 "Y": 23,
-                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_PWEQ",
@@ -3069,14 +3070,14 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
                 "Name": "txtLaunchControl",
                 "X": 374,
                 "Y": 23,
-                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_DRKW",
@@ -3086,7 +3087,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",
@@ -3113,13 +3115,13 @@
             "Y": 10,
             "Width": 100,
             "Height": 150,
+            "LockPosition": true,
             "Components": [
               {
                 "Type": "TextArea",
                 "Name": "txtSteeringWheel",
                 "X": 32,
                 "Y": 121,
-                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_XNH1",
@@ -3129,7 +3131,8 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "AutoSize": true
+                "AutoSize": true,
+                "Wildcard1": {}
               },
               {
                 "Type": "TextArea",

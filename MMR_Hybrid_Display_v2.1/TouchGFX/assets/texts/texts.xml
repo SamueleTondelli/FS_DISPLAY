@@ -7,7 +7,7 @@
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
       <Text Id="__SingleUse_CKPD" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_KI9X" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">RPM</Translation>
@@ -22,13 +22,13 @@
         <Translation Language="GB">V BAT</Translation>
       </Text>
       <Text Id="__SingleUse_9WFV" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_UMQ8" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_GD5U" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_H49I" Alignment="Left" TypographyId="TyKmH">
         <Translation Language="GB">°C</Translation>
@@ -43,7 +43,7 @@
         <Translation Language="GB">°C</Translation>
       </Text>
       <Text Id="__SingleUse_LSLL" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_8EXG" Alignment="Left" TypographyId="TyKmH">
         <Translation Language="GB">KM/H</Translation>
@@ -52,16 +52,16 @@
         <Translation Language="GB">SPEED</Translation>
       </Text>
       <Text Id="__SingleUse_2OJ3" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_DMFP" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_BT6G" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_ZMGF" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_DJKD" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">RR</Translation>
@@ -79,16 +79,16 @@
         <Translation Language="GB">GEAR</Translation>
       </Text>
       <Text Id="__SingleUse_79E4" Alignment="Center" TypographyId="tyGear80BoldItalic">
-        <Translation Language="GB">N</Translation>
+        <Translation Language="GB">&lt;N&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_G02S" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_S4GK" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_18HI" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_48K2" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">AIR T°</Translation>
@@ -99,17 +99,14 @@
       <Text Id="__SingleUse_654D" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">WATER T°</Translation>
       </Text>
-      <Text Id="__SingleUse_AH3D" Alignment="Left" TypographyId="tyText10">
-        <Translation Language="GB">AIR T°</Translation>
-      </Text>
       <Text Id="__SingleUse_C7UZ" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_WNCC" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_VJSA" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_9PQ8" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">FUEL P</Translation>
@@ -157,7 +154,7 @@
         <Translation Language="GB">2</Translation>
       </Text>
       <Text Id="__SingleUse_8AD0" Alignment="Center" TypographyId="tyGear80BoldItalic">
-        <Translation Language="GB">N</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_OYK2" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">GEAR</Translation>
@@ -172,25 +169,25 @@
         <Translation Language="GB">°</Translation>
       </Text>
       <Text Id="__SingleUse_XNH1" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_DRKW" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_PWEQ" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_CXD7" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">TRACTION</Translation>
       </Text>
       <Text Id="__SingleUse_T260" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_TQVT" Alignment="Left" TypographyId="TyKmH">
         <Translation Language="GB">KM/H</Translation>
       </Text>
       <Text Id="__SingleUse_TQAW" Alignment="Left" TypographyId="tyText25">
-        <Translation Language="GB">NA</Translation>
+        <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_FBFK" Alignment="Left" TypographyId="tyText10">
         <Translation Language="GB">SPEED</Translation>

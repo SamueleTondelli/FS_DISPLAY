@@ -1,5 +1,7 @@
-TouchGFX/gui/src/common/FrontendApplication.o: \
- ../TouchGFX/gui/src/common/FrontendApplication.cpp \
+TouchGFX/gui/src/home_screen/HOMEPresenter.o: \
+ ../TouchGFX/gui/src/home_screen/HOMEPresenter.cpp \
+ ../TouchGFX/gui/include/gui/home_screen/HOMEView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/home_screen/HOMEViewBase.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -83,7 +85,18 @@ TouchGFX/gui/src/common/FrontendApplication.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
+ ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
+ ../TouchGFX/gui/include/gui/home_screen/HOMEPresenter.hpp \
+ ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
+../TouchGFX/gui/include/gui/home_screen/HOMEView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/home_screen/HOMEViewBase.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -169,3 +182,12 @@ TouchGFX/gui/src/common/FrontendApplication.o: \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
+../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
+../TouchGFX/gui/include/gui/home_screen/HOMEPresenter.hpp:
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:

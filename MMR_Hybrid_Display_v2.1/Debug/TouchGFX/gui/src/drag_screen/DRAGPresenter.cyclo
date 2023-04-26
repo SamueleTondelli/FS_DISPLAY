@@ -1,0 +1,14 @@
+Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	1
+Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	1
+Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	1
+Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	1
+Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	1
+ModelListener.hpp:9:5:ModelListener::ModelListener()	1
+ModelListener.hpp:11:13:ModelListener::~ModelListener()	1
+ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	1
+ModelListener.hpp:18:18:virtual void ModelListener::updateDisplay()	1
+DRAGPresenter.hpp:28:13:DRAGPresenter::~DRAGPresenter()	1
+DRAGPresenter.hpp:28:13:virtual DRAGPresenter::~DRAGPresenter()	1
+DRAGPresenter.cpp:4:1:DRAGPresenter::DRAGPresenter(DRAGView&)	1
+DRAGPresenter.cpp:10:6:virtual void DRAGPresenter::activate()	1
+DRAGPresenter.cpp:15:6:virtual void DRAGPresenter::deactivate()	1

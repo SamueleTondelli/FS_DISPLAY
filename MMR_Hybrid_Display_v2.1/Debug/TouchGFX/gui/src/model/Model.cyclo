@@ -1,0 +1,5 @@
+Model.cpp:23:1:Model::Model()	1
+Model.cpp:27:6:void Model::tick()	1
+Model.cpp:83:6:void Model::saveCurrentScreenIndex(uint8_t)	1
+Model.cpp:87:9:uint8_t Model::getCurrentScreenIndex()	1
+Model.cpp:91:6:void Model::updateDisplay()	1
