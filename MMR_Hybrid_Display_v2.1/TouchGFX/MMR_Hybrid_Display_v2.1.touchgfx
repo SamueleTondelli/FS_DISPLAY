@@ -1582,7 +1582,6 @@
                 "Y": 39,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_VJSA",
                 "TextRotation": "0",
@@ -1592,7 +1591,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_LJHC",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
               },
               {
                 "Type": "TextArea",
@@ -1601,7 +1604,6 @@
                 "Y": 99,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_WNCC",
                 "TextRotation": "0",
@@ -1611,7 +1613,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_9C0K",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
               },
               {
                 "Type": "TextArea",
@@ -1620,7 +1626,6 @@
                 "Y": 159,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_C7UZ",
                 "TextRotation": "0",
@@ -1630,7 +1635,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_CBGK"
+                }
               }
             ]
           },
@@ -1730,7 +1737,6 @@
                 "Y": 159,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_18HI",
                 "TextRotation": "0",
@@ -1740,7 +1746,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_BWGK",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
               },
               {
                 "Type": "TextArea",
@@ -1749,7 +1759,6 @@
                 "Y": 99,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_S4GK",
                 "TextRotation": "0",
@@ -1759,7 +1768,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_PD1H",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
               },
               {
                 "Type": "TextArea",
@@ -1768,7 +1781,6 @@
                 "Y": 39,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_G02S",
                 "TextRotation": "0",
@@ -1778,7 +1790,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2UIA"
+                }
               }
             ]
           },
@@ -1855,7 +1869,9 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Z28E"
+                }
               },
               {
                 "Type": "TextArea",
@@ -1949,7 +1965,6 @@
                 "Y": 60,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_ZMGF",
                 "TextRotation": "0",
@@ -1959,7 +1974,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_BIRP"
+                }
               },
               {
                 "Type": "TextArea",
@@ -1968,7 +1985,6 @@
                 "Y": 60,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_BT6G",
                 "TextRotation": "0",
@@ -1978,7 +1994,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_V551",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
               },
               {
                 "Type": "TextArea",
@@ -1987,7 +2007,6 @@
                 "Y": 121,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_DMFP",
                 "TextRotation": "0",
@@ -1997,7 +2016,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_R6GE"
+                }
               },
               {
                 "Type": "TextArea",
@@ -2006,7 +2027,6 @@
                 "Y": 121,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_2OJ3",
                 "TextRotation": "0",
@@ -2016,7 +2036,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_5E25"
+                }
               },
               {
                 "Type": "TextArea",
@@ -2069,7 +2091,6 @@
                 "Y": 179,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_LSLL",
                 "TextRotation": "0",
@@ -2079,7 +2100,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_GCKV"
+                }
               },
               {
                 "Type": "Image",
@@ -2115,7 +2138,6 @@
                 "Y": 179,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_CKPD",
                 "TextRotation": "0",
@@ -2125,7 +2147,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_SA2Y",
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                }
               },
               {
                 "Type": "TextArea",
@@ -2248,7 +2274,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_KBDJ"
+                }
               },
               {
                 "Type": "TextArea",
@@ -2267,7 +2295,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_5529"
+                }
               },
               {
                 "Type": "TextArea",
@@ -2276,7 +2306,6 @@
                 "Y": 20,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_9WFV",
                 "TextRotation": "0",
@@ -2286,7 +2315,11 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_N8WP",
+                  "UseBuffer": true,
+                  "BufferSize": 1
+                }
               },
               {
                 "Type": "TextArea",
@@ -2661,6 +2694,7 @@
                 "Name": "txtRPM",
                 "X": 87,
                 "Y": 122,
+                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_T260",
@@ -2671,7 +2705,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_DGI6"
+                }
               },
               {
                 "Type": "Container",
@@ -2949,7 +2985,9 @@
                   "Green": 255,
                   "Blue": 255
                 },
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_TM8O"
+                }
               }
             ]
           },
@@ -2959,6 +2997,7 @@
             "Y": 177,
             "Width": 480,
             "Height": 83,
+            "LockPosition": true,
             "Components": [
               {
                 "Type": "TextArea",
@@ -2991,6 +3030,7 @@
                 "Name": "txtSpeed",
                 "X": 222,
                 "Y": 23,
+                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_TQAW",
@@ -3001,7 +3041,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_7XVF"
+                }
               },
               {
                 "Type": "TextArea",
@@ -3061,6 +3103,7 @@
                 "Name": "txtTraction",
                 "X": 69,
                 "Y": 23,
+                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_PWEQ",
@@ -3071,13 +3114,16 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_1NTS"
+                }
               },
               {
                 "Type": "TextArea",
                 "Name": "txtLaunchControl",
                 "X": 374,
                 "Y": 23,
+                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_DRKW",
@@ -3088,7 +3134,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_1OJJ"
+                }
               },
               {
                 "Type": "TextArea",
@@ -3122,6 +3170,7 @@
                 "Name": "txtSteeringWheel",
                 "X": 32,
                 "Y": 121,
+                "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
                 "TextId": "__SingleUse_XNH1",
@@ -3132,7 +3181,9 @@
                   "Blue": 255
                 },
                 "AutoSize": true,
-                "Wildcard1": {}
+                "Wildcard1": {
+                  "TextId": "__SingleUse_8VGX"
+                }
               },
               {
                 "Type": "TextArea",
