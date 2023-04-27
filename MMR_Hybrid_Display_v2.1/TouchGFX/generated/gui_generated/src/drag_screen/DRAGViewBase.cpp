@@ -140,6 +140,8 @@ DRAGViewBase::DRAGViewBase()
     txtRPM.setXY(87, 122);
     txtRPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRPM.setLinespacing(0);
+    txtRPM.setWildcard(touchgfx::TypedText(T___SINGLEUSE_DGI6).getText());
+    txtRPM.resizeToCurrentText();
     txtRPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T260));
     ctRPM.add(txtRPM);
 
@@ -237,6 +239,7 @@ DRAGViewBase::DRAGViewBase()
     txtGear.setPosition(8, 17, 75, 103);
     txtGear.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtGear.setLinespacing(0);
+    txtGear.setWildcard(touchgfx::TypedText(T___SINGLEUSE_TM8O).getText());
     txtGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8AD0));
     ctGear.add(txtGear);
 
@@ -256,6 +259,8 @@ DRAGViewBase::DRAGViewBase()
     txtSpeed.setXY(222, 23);
     txtSpeed.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSpeed.setLinespacing(0);
+    txtSpeed.setWildcard(touchgfx::TypedText(T___SINGLEUSE_7XVF).getText());
+    txtSpeed.resizeToCurrentText();
     txtSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TQAW));
     ctDown.add(txtSpeed);
 
@@ -282,12 +287,16 @@ DRAGViewBase::DRAGViewBase()
     txtTraction.setXY(69, 23);
     txtTraction.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTraction.setLinespacing(0);
+    txtTraction.setWildcard(touchgfx::TypedText(T___SINGLEUSE_1NTS).getText());
+    txtTraction.resizeToCurrentText();
     txtTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PWEQ));
     ctDown.add(txtTraction);
 
     txtLaunchControl.setXY(374, 23);
     txtLaunchControl.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtLaunchControl.setLinespacing(0);
+    txtLaunchControl.setWildcard(touchgfx::TypedText(T___SINGLEUSE_1OJJ).getText());
+    txtLaunchControl.resizeToCurrentText();
     txtLaunchControl.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DRKW));
     ctDown.add(txtLaunchControl);
 
@@ -303,6 +312,8 @@ DRAGViewBase::DRAGViewBase()
     txtSteeringWheel.setXY(32, 121);
     txtSteeringWheel.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSteeringWheel.setLinespacing(0);
+    txtSteeringWheel.setWildcard(touchgfx::TypedText(T___SINGLEUSE_8VGX).getText());
+    txtSteeringWheel.resizeToCurrentText();
     txtSteeringWheel.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XNH1));
     ctSW.add(txtSteeringWheel);
 
@@ -323,6 +334,40 @@ DRAGViewBase::DRAGViewBase()
     ctSW.add(imageSteeringWheel);
 
     add(ctSW);
+
+    ctAlarm.setPosition(11, 11, 460, 250);
+    ctAlarm.setVisible(false);
+    bxAlarm.setPosition(0, 0, 460, 250);
+    bxAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxAlarm.setBorderColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    bxAlarm.setBorderSize(8);
+    ctAlarm.add(bxAlarm);
+
+    txtAlarm.setPosition(5, 5, 450, 240);
+    txtAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    txtAlarm.setLinespacing(0);
+    Unicode::snprintf(txtAlarmBuffer, TXTALARM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_VRKQ).getText());
+    txtAlarm.setWildcard(txtAlarmBuffer);
+    txtAlarm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6TMB));
+    ctAlarm.add(txtAlarm);
+
+    add(ctAlarm);
+
+    ctScreenName.setPosition(165, 91, 150, 100);
+    ctScreenName.setVisible(false);
+    bxScreenName.setPosition(0, 0, 150, 100);
+    bxScreenName.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxScreenName.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 255));
+    bxScreenName.setBorderSize(5);
+    ctScreenName.add(bxScreenName);
+
+    txtScreenName.setPosition(5, 25, 140, 50);
+    txtScreenName.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtScreenName.setLinespacing(0);
+    txtScreenName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1DT2));
+    ctScreenName.add(txtScreenName);
+
+    add(ctScreenName);
 }
 
 DRAGViewBase::~DRAGViewBase()

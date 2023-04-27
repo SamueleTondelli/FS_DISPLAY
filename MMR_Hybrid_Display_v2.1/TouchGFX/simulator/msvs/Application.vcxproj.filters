@@ -172,12 +172,6 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>63AC951B-C85D-2453-B1EC-CAC192151085</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\screen1combustion_screen">
-      <UniqueIdentifier>290EECE9-B9E8-C8EB-4931-4171F0040B38</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\screen1combustion_screen">
-      <UniqueIdentifier>92FDCBF9-B959-98CD-8322-DCEAE4A78790</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\home_screen">
       <UniqueIdentifier>A69A9F6D-B90A-3B29-E38F-ADD84878DE7C</UniqueIdentifier>
     </Filter>
@@ -190,12 +184,6 @@
     <Filter Include="Header Files\generated\gui_generated\home_screen">
       <UniqueIdentifier>F0AF86E9-A97E-31C2-DBD3-EDE9012256AD</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1combustion_screen">
-      <UniqueIdentifier>D665AEEF-BD0F-EE11-2196-C59A2C274561</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1combustion_screen">
-      <UniqueIdentifier>4F32711A-AFF2-F368-00E6-FC4880559C2A</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\drag_screen">
       <UniqueIdentifier>C82ECDA4-F29C-E7C4-C983-DC64687667E3</UniqueIdentifier>
     </Filter>
@@ -207,18 +195,6 @@
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\drag_screen">
       <UniqueIdentifier>A48ED968-6B75-CE37-7A48-163D9E4F98B9</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\drag_2_screen">
-      <UniqueIdentifier>D0461B0E-E44B-F164-2E8E-F0A2D05306EF</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\drag_2_screen">
-      <UniqueIdentifier>5DC7CD1D-3E48-B220-DADB-9336DA7EEE9F</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\drag_2_screen">
-      <UniqueIdentifier>A8A06415-4D11-E95C-A265-A6985D97DCD0</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\drag_2_screen">
-      <UniqueIdentifier>F525E21B-6EE8-5169-9A3E-A068EC0F5BF2</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -261,15 +237,6 @@
     <ClCompile Include="..\..\generated\gui_generated\src\home_screen\HOMEViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\home_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionPresenter.cpp">
-      <Filter>Source Files\gui\screen1combustion_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1combustion_screen\Screen1CombustionView.cpp">
-      <Filter>Source Files\gui\screen1combustion_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1combustion_screen\Screen1CombustionViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1combustion_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGPresenter.cpp">
       <Filter>Source Files\gui\drag_screen</Filter>
     </ClCompile>
@@ -278,15 +245,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\drag_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\drag_2_screen\DRAG_2Presenter.cpp">
-      <Filter>Source Files\gui\drag_2_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\drag_2_screen\DRAG_2View.cpp">
-      <Filter>Source Files\gui\drag_2_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\drag_2_screen\DRAG_2ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\drag_2_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -739,15 +697,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\home_screen\HOMEViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\home_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionPresenter.hpp">
-      <Filter>Header Files\gui\screen1combustion_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1combustion_screen\Screen1CombustionView.hpp">
-      <Filter>Header Files\gui\screen1combustion_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1combustion_screen\Screen1CombustionViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1combustion_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGPresenter.hpp">
       <Filter>Header Files\gui\drag_screen</Filter>
     </ClInclude>
@@ -756,15 +705,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\drag_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\drag_2_screen\DRAG_2Presenter.hpp">
-      <Filter>Header Files\gui\drag_2_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\drag_2_screen\DRAG_2View.hpp">
-      <Filter>Header Files\gui\drag_2_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_2_screen\DRAG_2ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\drag_2_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

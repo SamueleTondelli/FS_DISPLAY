@@ -171,7 +171,9 @@
                 },
                 "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_CBGK"
+                  "TextId": "__SingleUse_CBGK",
+                  "UseBuffer": true,
+                  "BufferSize": 3
                 }
               }
             ]
@@ -188,7 +190,7 @@
                 "Type": "Image",
                 "Name": "imageWaterT",
                 "X": 1,
-                "Y": 32,
+                "Y": 92,
                 "Width": 83,
                 "Height": 52,
                 "LockPosition": true,
@@ -198,7 +200,7 @@
                 "Type": "Image",
                 "Name": "imageOilT",
                 "X": 1,
-                "Y": 92,
+                "Y": 32,
                 "Width": 83,
                 "Height": 52,
                 "LockPosition": true,
@@ -218,7 +220,7 @@
                 "Type": "TextArea",
                 "Name": "nameWaterT",
                 "X": 17,
-                "Y": 19,
+                "Y": 79,
                 "Width": 50,
                 "Height": 13,
                 "LockPosition": true,
@@ -235,7 +237,7 @@
                 "Type": "TextArea",
                 "Name": "nameOilT",
                 "X": 26,
-                "Y": 80,
+                "Y": 20,
                 "Width": 33,
                 "Height": 13,
                 "LockPosition": true,
@@ -291,7 +293,7 @@
                 "Type": "TextArea",
                 "Name": "txtOilT",
                 "X": 24,
-                "Y": 99,
+                "Y": 39,
                 "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
@@ -313,7 +315,7 @@
                 "Type": "TextArea",
                 "Name": "txtWaterT",
                 "X": 24,
-                "Y": 39,
+                "Y": 99,
                 "Width": 36,
                 "Height": 31,
                 "LockPosition": true,
@@ -326,7 +328,9 @@
                 },
                 "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_2UIA"
+                  "TextId": "__SingleUse_2UIA",
+                  "UseBuffer": true,
+                  "BufferSize": 10
                 }
               }
             ]
@@ -405,7 +409,9 @@
                   "Blue": 255
                 },
                 "Wildcard1": {
-                  "TextId": "__SingleUse_Z28E"
+                  "TextId": "__SingleUse_Z28E",
+                  "UseBuffer": true,
+                  "BufferSize": 1
                 }
               },
               {
@@ -636,7 +642,9 @@
                 },
                 "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_GCKV"
+                  "TextId": "__SingleUse_GCKV",
+                  "UseBuffer": true,
+                  "BufferSize": 3
                 }
               },
               {
@@ -809,7 +817,9 @@
                 },
                 "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_KBDJ"
+                  "TextId": "__SingleUse_KBDJ",
+                  "UseBuffer": true,
+                  "BufferSize": 3
                 }
               },
               {
@@ -829,7 +839,9 @@
                 },
                 "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_5529"
+                  "TextId": "__SingleUse_5529",
+                  "UseBuffer": true,
+                  "BufferSize": 3
                 }
               },
               {
@@ -851,7 +863,7 @@
                 "Wildcard1": {
                   "TextId": "__SingleUse_N8WP",
                   "UseBuffer": true,
-                  "BufferSize": 1
+                  "BufferSize": 3
                 }
               },
               {

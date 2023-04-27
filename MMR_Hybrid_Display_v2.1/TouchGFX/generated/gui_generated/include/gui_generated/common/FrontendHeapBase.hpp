@@ -12,14 +12,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screen1combustion_screen/Screen1CombustionView.hpp>
-#include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/drag_2_screen/DRAG_2View.hpp>
-#include <gui/drag_2_screen/DRAG_2Presenter.hpp>
 
 
 /**
@@ -42,11 +38,9 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen1CombustionView,
-            touchgfx::meta::TypeList< HOMEView,
+    typedef touchgfx::meta::TypeList< HOMEView,
             touchgfx::meta::TypeList< DRAGView,
-            touchgfx::meta::TypeList< DRAG_2View,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
     /**
@@ -58,11 +52,9 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen1CombustionPresenter,
-            touchgfx::meta::TypeList< HOMEPresenter,
+    typedef touchgfx::meta::TypeList< HOMEPresenter,
             touchgfx::meta::TypeList< DRAGPresenter,
-            touchgfx::meta::TypeList< DRAG_2Presenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
     /**

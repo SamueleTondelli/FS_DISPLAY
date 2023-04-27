@@ -12,6 +12,7 @@
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class HOMEViewBase : public touchgfx::View<HOMEPresenter>
 {
@@ -37,43 +38,42 @@ protected:
     touchgfx::TextArea nameOilP;
     touchgfx::TextArea nameFuelT;
     touchgfx::TextArea nameFuelP;
-    touchgfx::TextArea txtOilP;
-    touchgfx::TextArea txtFuelT;
-    touchgfx::TextArea txtFuelP;
+    touchgfx::TextAreaWithOneWildcard txtOilP;
+    touchgfx::TextAreaWithOneWildcard txtFuelT;
+    touchgfx::TextAreaWithOneWildcard txtFuelP;
     touchgfx::Container ctRight;
-    touchgfx::TextArea nameAirT_1;
     touchgfx::Image imageWaterT;
     touchgfx::Image imageOilT;
     touchgfx::Image imageAirT;
     touchgfx::TextArea nameWaterT;
     touchgfx::TextArea nameOilT;
     touchgfx::TextArea nameAirT;
-    touchgfx::TextArea txtAirT;
-    touchgfx::TextArea txtOilT;
-    touchgfx::TextArea txtWaterT;
+    touchgfx::TextAreaWithOneWildcard txtAirT;
+    touchgfx::TextAreaWithOneWildcard txtOilT;
+    touchgfx::TextAreaWithOneWildcard txtWaterT;
     touchgfx::Container ctUp;
     touchgfx::Image imageFL;
     touchgfx::Image imageFR;
     touchgfx::Image imageRR;
     touchgfx::Image imageRL;
     touchgfx::Image imageGear;
-    touchgfx::TextArea txtGear;
+    touchgfx::TextAreaWithOneWildcard txtGear;
     touchgfx::TextArea nameGear;
     touchgfx::TextArea nameFL;
     touchgfx::TextArea nameFR;
     touchgfx::TextArea nameRL;
     touchgfx::TextArea nameRR;
-    touchgfx::TextArea txtFL;
-    touchgfx::TextArea txtFR;
-    touchgfx::TextArea txtRL;
-    touchgfx::TextArea txtRR;
+    touchgfx::TextAreaWithOneWildcard txtFL;
+    touchgfx::TextAreaWithOneWildcard txtFR;
+    touchgfx::TextAreaWithOneWildcard txtRL;
+    touchgfx::TextAreaWithOneWildcard txtRR;
     touchgfx::TextArea nameSpeed;
     touchgfx::Image imageSpeed;
     touchgfx::TextArea txtKmH;
-    touchgfx::TextArea txtSpeed;
+    touchgfx::TextAreaWithOneWildcard txtSpeed;
     touchgfx::Image imageRPM;
     touchgfx::TextArea nameRPM;
-    touchgfx::TextArea txtRPM;
+    touchgfx::TextAreaWithOneWildcard txtRPM;
     touchgfx::TextArea nameC1;
     touchgfx::TextArea nameC2;
     touchgfx::TextArea NameC3;
@@ -82,12 +82,50 @@ protected:
     touchgfx::Image imageVbat;
     touchgfx::Image imageTps;
     touchgfx::Image imageTraction;
-    touchgfx::TextArea txtVbat;
-    touchgfx::TextArea txtTps;
-    touchgfx::TextArea txtTraction;
+    touchgfx::TextAreaWithOneWildcard txtVbat;
+    touchgfx::TextAreaWithOneWildcard txtTps;
+    touchgfx::TextAreaWithOneWildcard txtTraction;
     touchgfx::TextArea nameVbat;
     touchgfx::TextArea nameTps;
     touchgfx::TextArea nameTraction;
+    touchgfx::Container ctAlarm;
+    touchgfx::BoxWithBorder bxAlarm;
+    touchgfx::TextAreaWithOneWildcard txtAlarm;
+    touchgfx::Container ctScreenName;
+    touchgfx::BoxWithBorder bxScreenName;
+    touchgfx::TextArea txtScreenName;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TXTOILP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilPBuffer[TXTOILP_SIZE];
+    static const uint16_t TXTFUELT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtFuelTBuffer[TXTFUELT_SIZE];
+    static const uint16_t TXTFUELP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtFuelPBuffer[TXTFUELP_SIZE];
+    static const uint16_t TXTAIRT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtAirTBuffer[TXTAIRT_SIZE];
+    static const uint16_t TXTOILT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilTBuffer[TXTOILT_SIZE];
+    static const uint16_t TXTWATERT_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtWaterTBuffer[TXTWATERT_SIZE];
+    static const uint16_t TXTGEAR_SIZE = 1;
+    touchgfx::Unicode::UnicodeChar txtGearBuffer[TXTGEAR_SIZE];
+    static const uint16_t TXTFR_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtFRBuffer[TXTFR_SIZE];
+    static const uint16_t TXTSPEED_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtSpeedBuffer[TXTSPEED_SIZE];
+    static const uint16_t TXTRPM_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar txtRPMBuffer[TXTRPM_SIZE];
+    static const uint16_t TXTVBAT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtVbatBuffer[TXTVBAT_SIZE];
+    static const uint16_t TXTTPS_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtTpsBuffer[TXTTPS_SIZE];
+    static const uint16_t TXTTRACTION_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtTractionBuffer[TXTTRACTION_SIZE];
+    static const uint16_t TXTALARM_SIZE = 33;
+    touchgfx::Unicode::UnicodeChar txtAlarmBuffer[TXTALARM_SIZE];
 
 private:
 

@@ -52,38 +52,38 @@ HOMEViewBase::HOMEViewBase()
     txtOilP.setXY(47, 39);
     txtOilP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtOilP.setLinespacing(0);
+    Unicode::snprintf(txtOilPBuffer, TXTOILP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_LJHC).getText());
+    txtOilP.setWildcard(txtOilPBuffer);
+    txtOilP.resizeToCurrentText();
     txtOilP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VJSA));
-    txtOilP.setVisible(false);
     ctLeft.add(txtOilP);
 
     txtFuelT.setXY(47, 99);
     txtFuelT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFuelT.setLinespacing(0);
+    Unicode::snprintf(txtFuelTBuffer, TXTFUELT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_9C0K).getText());
+    txtFuelT.setWildcard(txtFuelTBuffer);
+    txtFuelT.resizeToCurrentText();
     txtFuelT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WNCC));
-    txtFuelT.setVisible(false);
     ctLeft.add(txtFuelT);
 
     txtFuelP.setXY(47, 159);
     txtFuelP.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFuelP.setLinespacing(0);
+    Unicode::snprintf(txtFuelPBuffer, TXTFUELP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_CBGK).getText());
+    txtFuelP.setWildcard(txtFuelPBuffer);
+    txtFuelP.resizeToCurrentText();
     txtFuelP.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C7UZ));
-    txtFuelP.setVisible(false);
     ctLeft.add(txtFuelP);
 
     add(ctLeft);
 
     ctRight.setPosition(373, -10, 107, 266);
-    nameAirT_1.setXY(24, 140);
-    nameAirT_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    nameAirT_1.setLinespacing(0);
-    nameAirT_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AH3D));
-    ctRight.add(nameAirT_1);
-
-    imageWaterT.setXY(1, 32);
+    imageWaterT.setXY(1, 92);
     imageWaterT.setBitmap(touchgfx::Bitmap(BITMAP_RECTANGLE_10_ID));
     ctRight.add(imageWaterT);
 
-    imageOilT.setXY(1, 92);
+    imageOilT.setXY(1, 32);
     imageOilT.setBitmap(touchgfx::Bitmap(BITMAP_RECTANGLE_10_ID));
     ctRight.add(imageOilT);
 
@@ -91,13 +91,13 @@ HOMEViewBase::HOMEViewBase()
     imageAirT.setBitmap(touchgfx::Bitmap(BITMAP_RECTANGLE_10_ID));
     ctRight.add(imageAirT);
 
-    nameWaterT.setXY(17, 19);
+    nameWaterT.setXY(17, 79);
     nameWaterT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameWaterT.setLinespacing(0);
     nameWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_654D));
     ctRight.add(nameWaterT);
 
-    nameOilT.setXY(26, 80);
+    nameOilT.setXY(26, 20);
     nameOilT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     nameOilT.setLinespacing(0);
     nameOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P7JX));
@@ -112,22 +112,28 @@ HOMEViewBase::HOMEViewBase()
     txtAirT.setXY(24, 159);
     txtAirT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtAirT.setLinespacing(0);
+    Unicode::snprintf(txtAirTBuffer, TXTAIRT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_BWGK).getText());
+    txtAirT.setWildcard(txtAirTBuffer);
+    txtAirT.resizeToCurrentText();
     txtAirT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_18HI));
-    txtAirT.setVisible(false);
     ctRight.add(txtAirT);
 
-    txtOilT.setXY(24, 99);
+    txtOilT.setXY(24, 39);
     txtOilT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtOilT.setLinespacing(0);
+    Unicode::snprintf(txtOilTBuffer, TXTOILT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PD1H).getText());
+    txtOilT.setWildcard(txtOilTBuffer);
+    txtOilT.resizeToCurrentText();
     txtOilT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S4GK));
-    txtOilT.setVisible(false);
     ctRight.add(txtOilT);
 
-    txtWaterT.setXY(24, 39);
+    txtWaterT.setXY(24, 99);
     txtWaterT.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtWaterT.setLinespacing(0);
+    Unicode::snprintf(txtWaterTBuffer, TXTWATERT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_2UIA).getText());
+    txtWaterT.setWildcard(txtWaterTBuffer);
+    txtWaterT.resizeToCurrentText();
     txtWaterT.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G02S));
-    txtWaterT.setVisible(false);
     ctRight.add(txtWaterT);
 
     add(ctRight);
@@ -156,6 +162,8 @@ HOMEViewBase::HOMEViewBase()
     txtGear.setPosition(93, 55, 75, 103);
     txtGear.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtGear.setLinespacing(0);
+    Unicode::snprintf(txtGearBuffer, TXTGEAR_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z28E).getText());
+    txtGear.setWildcard(txtGearBuffer);
     txtGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_79E4));
     ctUp.add(txtGear);
 
@@ -192,29 +200,34 @@ HOMEViewBase::HOMEViewBase()
     txtFL.setXY(34, 60);
     txtFL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFL.setLinespacing(0);
+    txtFL.setWildcard(touchgfx::TypedText(T___SINGLEUSE_BIRP).getText());
+    txtFL.resizeToCurrentText();
     txtFL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZMGF));
-    txtFL.setVisible(false);
     ctUp.add(txtFL);
 
     txtFR.setXY(193, 60);
     txtFR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtFR.setLinespacing(0);
+    Unicode::snprintf(txtFRBuffer, TXTFR_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_V551).getText());
+    txtFR.setWildcard(txtFRBuffer);
+    txtFR.resizeToCurrentText();
     txtFR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BT6G));
-    txtFR.setVisible(false);
     ctUp.add(txtFR);
 
     txtRL.setXY(35, 121);
     txtRL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRL.setLinespacing(0);
+    txtRL.setWildcard(touchgfx::TypedText(T___SINGLEUSE_R6GE).getText());
+    txtRL.resizeToCurrentText();
     txtRL.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DMFP));
-    txtRL.setVisible(false);
     ctUp.add(txtRL);
 
     txtRR.setXY(193, 121);
     txtRR.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRR.setLinespacing(0);
+    txtRR.setWildcard(touchgfx::TypedText(T___SINGLEUSE_5E25).getText());
+    txtRR.resizeToCurrentText();
     txtRR.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2OJ3));
-    txtRR.setVisible(false);
     ctUp.add(txtRR);
 
     nameSpeed.setXY(56, 161);
@@ -236,8 +249,10 @@ HOMEViewBase::HOMEViewBase()
     txtSpeed.setXY(54, 179);
     txtSpeed.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSpeed.setLinespacing(0);
+    Unicode::snprintf(txtSpeedBuffer, TXTSPEED_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_GCKV).getText());
+    txtSpeed.setWildcard(txtSpeedBuffer);
+    txtSpeed.resizeToCurrentText();
     txtSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LSLL));
-    txtSpeed.setVisible(false);
     ctUp.add(txtSpeed);
 
     imageRPM.setXY(137, 174);
@@ -253,8 +268,10 @@ HOMEViewBase::HOMEViewBase()
     txtRPM.setXY(175, 179);
     txtRPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRPM.setLinespacing(0);
+    Unicode::snprintf(txtRPMBuffer, TXTRPM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_SA2Y).getText());
+    txtRPM.setWildcard(txtRPMBuffer);
+    txtRPM.resizeToCurrentText();
     txtRPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CKPD));
-    txtRPM.setVisible(false);
     ctUp.add(txtRPM);
 
     nameC1.setPosition(77, 85, 15, 16);
@@ -299,22 +316,28 @@ HOMEViewBase::HOMEViewBase()
     txtVbat.setXY(21, 20);
     txtVbat.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtVbat.setLinespacing(0);
+    Unicode::snprintf(txtVbatBuffer, TXTVBAT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KBDJ).getText());
+    txtVbat.setWildcard(txtVbatBuffer);
+    txtVbat.resizeToCurrentText();
     txtVbat.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GD5U));
-    txtVbat.setVisible(false);
     ctDown.add(txtVbat);
 
     txtTps.setXY(115, 20);
     txtTps.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTps.setLinespacing(0);
+    Unicode::snprintf(txtTpsBuffer, TXTTPS_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_5529).getText());
+    txtTps.setWildcard(txtTpsBuffer);
+    txtTps.resizeToCurrentText();
     txtTps.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UMQ8));
-    txtTps.setVisible(false);
     ctDown.add(txtTps);
 
     txtTraction.setXY(207, 20);
     txtTraction.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTraction.setLinespacing(0);
+    Unicode::snprintf(txtTractionBuffer, TXTTRACTION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_N8WP).getText());
+    txtTraction.setWildcard(txtTractionBuffer);
+    txtTraction.resizeToCurrentText();
     txtTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9WFV));
-    txtTraction.setVisible(false);
     ctDown.add(txtTraction);
 
     nameVbat.setXY(24, 0);
@@ -336,6 +359,40 @@ HOMEViewBase::HOMEViewBase()
     ctDown.add(nameTraction);
 
     add(ctDown);
+
+    ctAlarm.setPosition(11, 11, 460, 250);
+    ctAlarm.setVisible(false);
+    bxAlarm.setPosition(0, 0, 460, 250);
+    bxAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxAlarm.setBorderColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    bxAlarm.setBorderSize(8);
+    ctAlarm.add(bxAlarm);
+
+    txtAlarm.setPosition(5, 5, 450, 240);
+    txtAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    txtAlarm.setLinespacing(0);
+    Unicode::snprintf(txtAlarmBuffer, TXTALARM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_HHDS).getText());
+    txtAlarm.setWildcard(txtAlarmBuffer);
+    txtAlarm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IO0N));
+    ctAlarm.add(txtAlarm);
+
+    add(ctAlarm);
+
+    ctScreenName.setPosition(165, 91, 150, 100);
+    ctScreenName.setVisible(false);
+    bxScreenName.setPosition(0, 0, 150, 100);
+    bxScreenName.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxScreenName.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 255));
+    bxScreenName.setBorderSize(5);
+    ctScreenName.add(bxScreenName);
+
+    txtScreenName.setPosition(5, 25, 140, 50);
+    txtScreenName.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtScreenName.setLinespacing(0);
+    txtScreenName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KOFP));
+    ctScreenName.add(txtScreenName);
+
+    add(ctScreenName);
 }
 
 HOMEViewBase::~HOMEViewBase()

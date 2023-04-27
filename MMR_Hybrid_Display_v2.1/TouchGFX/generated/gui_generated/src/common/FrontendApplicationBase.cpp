@@ -9,14 +9,10 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/screen1combustion_screen/Screen1CombustionView.hpp>
-#include <gui/screen1combustion_screen/Screen1CombustionPresenter.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/drag_2_screen/DRAG_2View.hpp>
-#include <gui/drag_2_screen/DRAG_2Presenter.hpp>
 
 using namespace touchgfx;
 

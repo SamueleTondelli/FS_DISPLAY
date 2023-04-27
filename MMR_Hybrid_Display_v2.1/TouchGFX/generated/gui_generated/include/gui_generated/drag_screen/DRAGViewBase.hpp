@@ -14,6 +14,7 @@
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Image.hpp>
 
 class DRAGViewBase : public touchgfx::View<DRAGPresenter>
@@ -58,7 +59,7 @@ protected:
     touchgfx::Line line2_1_1;
     touchgfx::PainterRGB565 line2_1_1Painter;
     touchgfx::TextArea nameRPM;
-    touchgfx::TextArea txtRPM;
+    touchgfx::TextAreaWithOneWildcard txtRPM;
     touchgfx::Container ctNumberLeft;
     touchgfx::TextArea textArea1_4_1_1;
     touchgfx::TextArea textArea1_4_2;
@@ -76,23 +77,35 @@ protected:
     touchgfx::Container ctGear;
     touchgfx::TextArea nameGear;
     touchgfx::Image imageGear;
-    touchgfx::TextArea txtGear;
+    touchgfx::TextAreaWithOneWildcard txtGear;
     touchgfx::Container ctDown;
     touchgfx::TextArea nameSpeed;
     touchgfx::Image imageSpeed;
-    touchgfx::TextArea txtSpeed;
+    touchgfx::TextAreaWithOneWildcard txtSpeed;
     touchgfx::TextArea txtKmH;
     touchgfx::Image imageTraction;
     touchgfx::Image imageLaunchControl;
     touchgfx::TextArea nameTraction;
-    touchgfx::TextArea txtTraction;
-    touchgfx::TextArea txtLaunchControl;
+    touchgfx::TextAreaWithOneWildcard txtTraction;
+    touchgfx::TextAreaWithOneWildcard txtLaunchControl;
     touchgfx::TextArea nameLaunchControl;
     touchgfx::Container ctSW;
-    touchgfx::TextArea txtSteeringWheel;
+    touchgfx::TextAreaWithOneWildcard txtSteeringWheel;
     touchgfx::TextArea txtSteeringWheelGrade;
     touchgfx::TextArea nameSteeringWheel;
     touchgfx::Image imageSteeringWheel;
+    touchgfx::Container ctAlarm;
+    touchgfx::BoxWithBorder bxAlarm;
+    touchgfx::TextAreaWithOneWildcard txtAlarm;
+    touchgfx::Container ctScreenName;
+    touchgfx::BoxWithBorder bxScreenName;
+    touchgfx::TextArea txtScreenName;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TXTALARM_SIZE = 33;
+    touchgfx::Unicode::UnicodeChar txtAlarmBuffer[TXTALARM_SIZE];
 
 private:
 
