@@ -2,1471 +2,6 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Screen1Combustion",
-        "CanvasBufferSize": 7200,
-        "Components": [
-          {
-            "Type": "Container",
-            "Name": "ctScreen1",
-            "Width": 480,
-            "Height": 271,
-            "LockPosition": true,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxBackground",
-                "Width": 480,
-                "Height": 272,
-                "LockPosition": true,
-                "BorderSize": 10
-              },
-              {
-                "Type": "Container",
-                "Name": "ctRPM",
-                "Width": 480,
-                "Height": 272,
-                "LockPosition": true,
-                "Components": [
-                  {
-                    "Type": "Box",
-                    "Name": "bxRPMBackground",
-                    "X": 130,
-                    "Y": 10,
-                    "Width": 340,
-                    "Height": 51,
-                    "LockPosition": true
-                  },
-                  {
-                    "Type": "Box",
-                    "Name": "bxRPM",
-                    "X": 134,
-                    "Y": 10,
-                    "Width": 336,
-                    "Height": 51
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "ctRPMLayout1",
-                    "Width": 480,
-                    "Height": 272,
-                    "LockPosition": true,
-                    "Components": [
-                      {
-                        "Type": "Circle",
-                        "Name": "clGaugeBorderOut",
-                        "X": -1,
-                        "Y": -1,
-                        "Width": 272,
-                        "Height": 272,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "CenterX": 136.0,
-                        "CenterY": 136.0,
-                        "Radius": 129.0,
-                        "StartAngle": 180.0,
-                        "EndAngle": 359.0,
-                        "CapPrecision": "Butt"
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "clRPMBackground",
-                    "X": 10,
-                    "Y": 10,
-                    "Width": 250,
-                    "Height": 250,
-                    "LockPosition": true,
-                    "CenterX": 125.0,
-                    "CenterY": 125.0,
-                    "Radius": 125.0,
-                    "StartAngle": 180.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Round"
-                  },
-                  {
-                    "Type": "Circle",
-                    "Name": "clRPM",
-                    "X": 10,
-                    "Y": 10,
-                    "Width": 250,
-                    "Height": 250,
-                    "LockPosition": true,
-                    "CenterX": 125.0,
-                    "CenterY": 125.0,
-                    "Radius": 125.0,
-                    "StartAngle": 180.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Round"
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "ctRPMLayout2",
-                    "Width": 480,
-                    "Height": 272,
-                    "LockPosition": true,
-                    "Components": [
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeEnd",
-                        "X": 460,
-                        "Y": 2,
-                        "Width": 20,
-                        "Height": 66,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 10.0,
-                        "StartY": 6.0,
-                        "EndX": 10.0,
-                        "EndY": 59.0,
-                        "LineWidth": 4.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeBottom",
-                        "X": 126,
-                        "Y": 200,
-                        "Width": 88,
-                        "Height": 22,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 8.0,
-                        "StartY": 8.0,
-                        "EndX": 344.0,
-                        "EndY": 8.0,
-                        "LineWidth": 4.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeBottom_2",
-                        "X": 126,
-                        "Y": 254,
-                        "Width": 89,
-                        "Height": 19,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 8.0,
-                        "StartY": 8.0,
-                        "EndX": 700.0,
-                        "EndY": 8.0,
-                        "LineWidth": 4.5,
-                        "LineEndingStyle": "Square"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeBottom_1",
-                        "X": 126,
-                        "Y": 54,
-                        "Width": 348,
-                        "Height": 22,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 8.0,
-                        "StartY": 8.0,
-                        "EndX": 344.0,
-                        "EndY": 8.0,
-                        "LineWidth": 4.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeTop",
-                        "X": 125,
-                        "Width": 349,
-                        "Height": 20,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 8.0,
-                        "StartY": 8.0,
-                        "EndX": 344.0,
-                        "EndY": 8.0,
-                        "LineWidth": 4.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Line",
-                        "Name": "lnGaugeStart",
-                        "X": 204,
-                        "Y": 203,
-                        "Width": 26,
-                        "Height": 61,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "StartX": 10.0,
-                        "StartY": 5.0,
-                        "EndX": 10.0,
-                        "EndY": 60.0,
-                        "LineWidth": 4.0,
-                        "LineEndingStyle": "Round"
-                      },
-                      {
-                        "Type": "Circle",
-                        "Name": "clGaugeBorderIn",
-                        "X": 10,
-                        "Y": 10,
-                        "Width": 250,
-                        "Height": 250,
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "CenterX": 125.0,
-                        "CenterY": 125.0,
-                        "Radius": 75.0,
-                        "StartAngle": 180.0,
-                        "EndAngle": 360.0,
-                        "CapPrecision": "Butt"
-                      },
-                      {
-                        "Type": "Circle",
-                        "Name": "clGaugeCover",
-                        "X": 10,
-                        "Y": 10,
-                        "Width": 250,
-                        "Height": 250,
-                        "CenterX": 125.0,
-                        "CenterY": 125.0,
-                        "Radius": 71.0,
-                        "EndAngle": 360.0,
-                        "CapPrecision": "Butt"
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "ctRPMNumbers",
-                    "Y": -2,
-                    "Width": 480,
-                    "Height": 272,
-                    "Components": [
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMTwelwe",
-                        "X": 410,
-                        "Y": 21,
-                        "Width": 38,
-                        "Height": 37,
-                        "TextId": "__SingleUse_U1AQ",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMEleven",
-                        "X": 345,
-                        "Y": 20,
-                        "Width": 38,
-                        "Height": 37,
-                        "TextId": "__SingleUse_PIDE",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMTen",
-                        "X": 280,
-                        "Y": 20,
-                        "Width": 38,
-                        "Height": 37,
-                        "TextId": "__SingleUse_UTNA",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMNine",
-                        "X": 221,
-                        "Y": 20,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_JMVN",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMEight",
-                        "X": 160,
-                        "Y": 20,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_JFWH",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMSeven",
-                        "X": 106,
-                        "Y": 22,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_RO8U",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMSix",
-                        "X": 55,
-                        "Y": 49,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_45MR",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMFive",
-                        "X": 26,
-                        "Y": 101,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_HMTT",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMFour",
-                        "X": 35,
-                        "Y": 161,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_KH9A",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMThree",
-                        "X": 74,
-                        "Y": 204,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_27Z9",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 251
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMTwo",
-                        "X": 128,
-                        "Y": 220,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_VZCQ",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 255
-                        },
-                        "AutoSize": true
-                      },
-                      {
-                        "Type": "TextArea",
-                        "Name": "txtRPMOne",
-                        "X": 185,
-                        "Y": 220,
-                        "Width": 19,
-                        "Height": 37,
-                        "TextId": "__SingleUse_0VPV",
-                        "TextRotation": "0",
-                        "Color": {
-                          "Red": 255,
-                          "Green": 255,
-                          "Blue": 250
-                        },
-                        "AutoSize": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "Type": "Container",
-                "Name": "ctValues",
-                "X": 221,
-                "Y": 65,
-                "Width": 259,
-                "Height": 205,
-                "Components": [
-                  {
-                    "Type": "Container",
-                    "Name": "ctLeft",
-                    "Width": 124,
-                    "Height": 208,
-                    "Components": [
-                      {
-                        "Type": "Container",
-                        "Name": "ctToil",
-                        "X": 9,
-                        "Y": 73,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxToil",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnToilDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnToilUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnToilLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnToilRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "lblToil",
-                            "X": 16,
-                            "Y": 7,
-                            "Width": 75,
-                            "Height": 22,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_2AOS",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            }
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtToil",
-                            "Y": 27,
-                            "Width": 110,
-                            "Height": 30,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_UMDE",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_T3QA",
-                              "UseBuffer": true,
-                              "BufferSize": 7
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "Type": "Container",
-                        "Name": "ctPoil",
-                        "X": 9,
-                        "Y": 7,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxPoil",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPoilDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPoilUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "InPoilLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPoilRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "lblPoil",
-                            "X": 13,
-                            "Y": 7,
-                            "Width": 85,
-                            "Height": 22,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_B8ND",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "AutoSize": true
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtPoil",
-                            "X": -2,
-                            "Y": 27,
-                            "Width": 111,
-                            "Height": 32,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_NIAK",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_UX8S",
-                              "UseBuffer": true,
-                              "BufferSize": 7
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "Type": "Container",
-                        "Name": "ctVbat",
-                        "X": 9,
-                        "Y": 139,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxVbat",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnVbatDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnVbatUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnVbatLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnVbatRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "lblVbatLV",
-                            "X": 18,
-                            "Y": 7,
-                            "Width": 76,
-                            "Height": 22,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_8ZPL",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "AutoSize": true
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtVbatLV",
-                            "X": -1,
-                            "Y": 27,
-                            "Width": 112,
-                            "Height": 30,
-                            "TextId": "__SingleUse_B8P9",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_MPE5",
-                              "UseBuffer": true,
-                              "BufferSize": 7
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "Container",
-                    "Name": "ctRight",
-                    "X": 128,
-                    "Width": 124,
-                    "Height": 208,
-                    "Components": [
-                      {
-                        "Type": "Container",
-                        "Name": "ctPfuel",
-                        "X": 9,
-                        "Y": 139,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxPfuel",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPfuelDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPfuelUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPfuelLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnPfuelRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "lblPfuel",
-                            "X": 34,
-                            "Y": 7,
-                            "Width": 44,
-                            "Height": 22,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_9618",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "AutoSize": true
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtPfuel",
-                            "X": -1,
-                            "Y": 27,
-                            "Width": 112,
-                            "Height": 30,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_TKTU",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_6FZ7",
-                              "UseBuffer": true,
-                              "BufferSize": 7
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "Type": "Container",
-                        "Name": "ctTwater",
-                        "X": 9,
-                        "Y": 7,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxTwater",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTwaterDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTwaterUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "InTwaterLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTwaterRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "lblTwaterC",
-                            "X": 13,
-                            "Y": 7,
-                            "Width": 87,
-                            "Height": 22,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_99UJ",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "AutoSize": true
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtTwaterC",
-                            "X": -1,
-                            "Y": 28,
-                            "Width": 112,
-                            "Height": 30,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_H2KM",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_2LJW",
-                              "UseBuffer": true,
-                              "BufferSize": 7
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "Type": "Container",
-                        "Name": "ctTair",
-                        "X": 9,
-                        "Y": 73,
-                        "Width": 113,
-                        "Height": 60,
-                        "Components": [
-                          {
-                            "Type": "Box",
-                            "Name": "boxTair",
-                            "Y": 5,
-                            "Width": 113,
-                            "Height": 55,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255
-                            }
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTairDown",
-                            "X": -6,
-                            "Y": 50,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTairUp",
-                            "X": -6,
-                            "Y": -4,
-                            "Width": 123,
-                            "Height": 14,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 8.0,
-                            "StartY": 8.0,
-                            "EndX": 117.0,
-                            "EndY": 8.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTairLeft",
-                            "X": -3,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "Line",
-                            "Name": "lnTairRight",
-                            "X": 108,
-                            "Y": -3,
-                            "Width": 10,
-                            "Height": 65,
-                            "LockPosition": true,
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "StartX": 4.0,
-                            "StartY": 10.0,
-                            "EndX": 4.0,
-                            "EndY": 60.0,
-                            "LineWidth": 4.0,
-                            "LineEndingStyle": "Round"
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "ITair",
-                            "X": 8,
-                            "Y": 6,
-                            "Width": 95,
-                            "Height": 26,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_914K",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            }
-                          },
-                          {
-                            "Type": "TextArea",
-                            "Name": "txtTair",
-                            "Y": 26,
-                            "Width": 110,
-                            "Height": 30,
-                            "LockPosition": true,
-                            "TextId": "__SingleUse_5MI2",
-                            "TextRotation": "0",
-                            "Color": {
-                              "Red": 255,
-                              "Green": 255,
-                              "Blue": 255
-                            },
-                            "Wildcard1": {
-                              "TextId": "__SingleUse_THD5",
-                              "UseBuffer": true,
-                              "BufferSize": 8
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Type": "Container",
-            "Name": "ctAlarm",
-            "X": 11,
-            "Y": 11,
-            "Width": 460,
-            "Height": 250,
-            "Visible": false,
-            "LockPosition": true,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxAlarm",
-                "Width": 460,
-                "Height": 250,
-                "LockPosition": true,
-                "Color": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderColor": {
-                  "Red": 255
-                },
-                "BorderSize": 8
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtAlarm",
-                "X": 5,
-                "Y": 5,
-                "Width": 450,
-                "Height": 240,
-                "LockPosition": true,
-                "TextId": "__SingleUse_ADVZ",
-                "TextRotation": "0",
-                "Color": {
-                  "Red": 255
-                },
-                "Wildcard1": {
-                  "TextId": "__SingleUse_79R3",
-                  "UseBuffer": true,
-                  "BufferSize": 33
-                }
-              }
-            ]
-          },
-          {
-            "Type": "Container",
-            "Name": "ctMessage",
-            "Width": 480,
-            "Height": 272,
-            "Visible": false,
-            "LockPosition": true,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxMessage",
-                "X": 90,
-                "Y": 61,
-                "Width": 300,
-                "Height": 150,
-                "LockPosition": true,
-                "Color": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderColor": {
-                  "Green": 255
-                },
-                "BorderSize": 5
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtMessage",
-                "X": 95,
-                "Y": 61,
-                "Width": 290,
-                "Height": 150,
-                "LockPosition": true,
-                "TextId": "__SingleUse_12NF",
-                "TextRotation": "0",
-                "Wildcard1": {
-                  "TextId": "__SingleUse_IZ4X",
-                  "UseBuffer": true,
-                  "BufferSize": 33
-                }
-              }
-            ]
-          },
-          {
-            "Type": "Container",
-            "Name": "ctScreenName",
-            "X": 165,
-            "Y": 91,
-            "Width": 150,
-            "Height": 100,
-            "Visible": false,
-            "LockPosition": true,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxScreenName",
-                "Width": 150,
-                "Height": 100,
-                "LockPosition": true,
-                "Color": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderColor": {
-                  "Blue": 255
-                },
-                "BorderSize": 5
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtScreenName",
-                "X": 5,
-                "Y": 25,
-                "Width": 140,
-                "Height": 50,
-                "LockPosition": true,
-                "TextId": "__SingleUse_ZEHU",
-                "TextRotation": "0"
-              }
-            ]
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textGear",
-            "X": 126,
-            "Y": 49,
-            "Width": 90,
-            "Height": 146,
-            "TextId": "__SingleUse_YF3A",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          }
-        ],
-        "Interactions": []
-      },
-      {
         "Name": "HOME",
         "Components": [
           {
@@ -2264,7 +799,6 @@
                 "Y": 20,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_GD5U",
                 "TextRotation": "0",
@@ -2285,7 +819,6 @@
                 "Y": 20,
                 "Width": 36,
                 "Height": 31,
-                "Visible": false,
                 "LockPosition": true,
                 "TextId": "__SingleUse_UMQ8",
                 "TextRotation": "0",
@@ -2368,6 +901,92 @@
                   "Blue": 255
                 },
                 "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "X": 11,
+            "Y": 11,
+            "Width": 460,
+            "Height": 250,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 460,
+                "Height": 250,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255
+                },
+                "BorderSize": 8
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarm",
+                "X": 5,
+                "Y": 5,
+                "Width": 450,
+                "Height": 240,
+                "LockPosition": true,
+                "TextId": "__SingleUse_IO0N",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "Wildcard1": {
+                  "TextId": "__SingleUse_HHDS",
+                  "UseBuffer": true,
+                  "BufferSize": 33
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctScreenName",
+            "X": 165,
+            "Y": 91,
+            "Width": 150,
+            "Height": 100,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxScreenName",
+                "Width": 150,
+                "Height": 100,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtScreenName",
+                "X": 5,
+                "Y": 25,
+                "Width": 140,
+                "Height": 50,
+                "LockPosition": true,
+                "TextId": "__SingleUse_KOFP",
+                "TextRotation": "0"
               }
             ]
           }
@@ -3229,327 +1848,92 @@
                 "RelativeFilename": "steering_wheel.png"
               }
             ]
-          }
-        ],
-        "Interactions": []
-      },
-      {
-        "Name": "DRAG_2",
-        "Components": [
-          {
-            "Type": "BoxWithBorder",
-            "Name": "bxBackGround",
-            "Width": 480,
-            "Height": 272,
-            "LockPosition": true,
-            "Color": {
-              "Red": 13,
-              "Green": 13,
-              "Blue": 13
-            },
-            "BorderColor": {
-              "Red": 13,
-              "Green": 13,
-              "Blue": 13
-            },
-            "BorderSize": 5
           },
           {
-            "Type": "TextArea",
-            "Name": "nameRPM",
-            "X": 230,
-            "Y": 98,
-            "Width": 21,
-            "Height": 13,
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "X": 11,
+            "Y": 11,
+            "Width": 460,
+            "Height": 250,
+            "Visible": false,
             "LockPosition": true,
-            "TextId": "__SingleUse_C471",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 460,
+                "Height": 250,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255
+                },
+                "BorderSize": 8
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarm",
+                "X": 5,
+                "Y": 5,
+                "Width": 450,
+                "Height": 240,
+                "LockPosition": true,
+                "TextId": "__SingleUse_6TMB",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "Wildcard1": {
+                  "TextId": "__SingleUse_VRKQ",
+                  "UseBuffer": true,
+                  "BufferSize": 33
+                }
+              }
+            ]
           },
           {
-            "Type": "TextArea",
-            "Name": "nameSpeed",
-            "X": 224,
-            "Y": 167,
-            "Width": 33,
-            "Height": 13,
+            "Type": "Container",
+            "Name": "ctScreenName",
+            "X": 165,
+            "Y": 91,
+            "Width": 150,
+            "Height": 100,
+            "Visible": false,
             "LockPosition": true,
-            "TextId": "__SingleUse_N1E4",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Image",
-            "Name": "imageSpeed",
-            "X": 169,
-            "Y": 179,
-            "Width": 143,
-            "Height": 52,
-            "LockPosition": true,
-            "RelativeFilename": "Rectangle 23.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "imageRPM",
-            "X": 169,
-            "Y": 110,
-            "Width": 143,
-            "Height": 52,
-            "LockPosition": true,
-            "RelativeFilename": "Rectangle 23.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSpeed",
-            "X": 222,
-            "Y": 190,
-            "Width": 36,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_STAO",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtKmH",
-            "X": 286,
-            "Y": 218,
-            "Width": 22,
-            "Height": 10,
-            "LockPosition": true,
-            "TextId": "__SingleUse_8S4F",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtRPM",
-            "X": 222,
-            "Y": 121,
-            "Width": 36,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_24QQ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Image",
-            "Name": "imageTraction",
-            "X": 40,
-            "Y": 180,
-            "Width": 95,
-            "Height": 52,
-            "LockPosition": true,
-            "RelativeFilename": "Rectangle 19.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "imageLaunchControl",
-            "X": 345,
-            "Y": 180,
-            "Width": 95,
-            "Height": 52,
-            "LockPosition": true,
-            "RelativeFilename": "Rectangle 19.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameTraction",
-            "X": 61,
-            "Y": 167,
-            "Width": 53,
-            "Height": 13,
-            "LockPosition": true,
-            "TextId": "__SingleUse_0LY5",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtTraction",
-            "X": 69,
-            "Y": 190,
-            "Width": 36,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_S368",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtLaunchControl",
-            "X": 374,
-            "Y": 190,
-            "Width": 36,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_HQCZ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSteeringWheel",
-            "X": 374,
-            "Y": 121,
-            "Width": 36,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_F8OO",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSteeringWheelGrade",
-            "X": 410,
-            "Y": 121,
-            "Width": 14,
-            "Height": 31,
-            "LockPosition": true,
-            "TextId": "__SingleUse_VPX9",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameLaunchControl",
-            "X": 345,
-            "Y": 167,
-            "Width": 94,
-            "Height": 13,
-            "LockPosition": true,
-            "TextId": "__SingleUse_0FAM",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameSteeringWheel",
-            "X": 347,
-            "Y": 29,
-            "Width": 91,
-            "Height": 13,
-            "LockPosition": true,
-            "TextId": "__SingleUse_0NDU",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameGear",
-            "X": 73,
-            "Y": 29,
-            "Width": 28,
-            "Height": 13,
-            "LockPosition": true,
-            "TextId": "__SingleUse_4RKQ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Image",
-            "Name": "imageSteeringWheel",
-            "X": 342,
-            "Y": 42,
-            "Width": 100,
-            "Height": 68,
-            "LockPosition": true,
-            "RelativeFilename": "steering_wheel.png"
-          },
-          {
-            "Type": "Image",
-            "Name": "imageGear",
-            "X": 48,
-            "Y": 42,
-            "Width": 79,
-            "Height": 104,
-            "LockPosition": true,
-            "RelativeFilename": "Rectangle 22.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtGear",
-            "X": 48,
-            "Y": 42,
-            "Width": 75,
-            "Height": 103,
-            "LockPosition": true,
-            "TextId": "__SingleUse_U5YC",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            }
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxScreenName",
+                "Width": 150,
+                "Height": 100,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Blue": 255
+                },
+                "BorderSize": 5
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtScreenName",
+                "X": 5,
+                "Y": 25,
+                "Width": 140,
+                "Height": 50,
+                "LockPosition": true,
+                "TextId": "__SingleUse_1DT2",
+                "TextRotation": "0"
+              }
+            ]
           }
         ],
         "Interactions": []
