@@ -11,7 +11,7 @@ void initializeDataControls(DataControls* dataControls) {
 	initializeData(&(dataControls->pedal), EMPTY_VALUE, PEDAL_CONVERSION_FACTOR);
 	initializeData(&(dataControls->brake), EMPTY_VALUE, BRAKE_CONVERSION_FACTOR);
 	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR);
-	dataControls->tractionControl = 0;
+	dataControls->tractionControl = EMPTY_VALUE;
 }
 
 void setFlagNotUpdatedDataControls(DataControls* dataControls) {
