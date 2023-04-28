@@ -140,7 +140,8 @@ DRAGViewBase::DRAGViewBase()
     txtRPM.setXY(87, 122);
     txtRPM.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtRPM.setLinespacing(0);
-    txtRPM.setWildcard(touchgfx::TypedText(T___SINGLEUSE_DGI6).getText());
+    Unicode::snprintf(txtRPMBuffer, TXTRPM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_DGI6).getText());
+    txtRPM.setWildcard(txtRPMBuffer);
     txtRPM.resizeToCurrentText();
     txtRPM.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T260));
     ctRPM.add(txtRPM);
@@ -239,7 +240,8 @@ DRAGViewBase::DRAGViewBase()
     txtGear.setPosition(8, 17, 75, 103);
     txtGear.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtGear.setLinespacing(0);
-    txtGear.setWildcard(touchgfx::TypedText(T___SINGLEUSE_TM8O).getText());
+    Unicode::snprintf(txtGearBuffer, TXTGEAR_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_TM8O).getText());
+    txtGear.setWildcard(txtGearBuffer);
     txtGear.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8AD0));
     ctGear.add(txtGear);
 
@@ -259,7 +261,8 @@ DRAGViewBase::DRAGViewBase()
     txtSpeed.setXY(222, 23);
     txtSpeed.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSpeed.setLinespacing(0);
-    txtSpeed.setWildcard(touchgfx::TypedText(T___SINGLEUSE_7XVF).getText());
+    Unicode::snprintf(txtSpeedBuffer, TXTSPEED_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_7XVF).getText());
+    txtSpeed.setWildcard(txtSpeedBuffer);
     txtSpeed.resizeToCurrentText();
     txtSpeed.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TQAW));
     ctDown.add(txtSpeed);
@@ -287,7 +290,8 @@ DRAGViewBase::DRAGViewBase()
     txtTraction.setXY(69, 23);
     txtTraction.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtTraction.setLinespacing(0);
-    txtTraction.setWildcard(touchgfx::TypedText(T___SINGLEUSE_1NTS).getText());
+    Unicode::snprintf(txtTractionBuffer, TXTTRACTION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1NTS).getText());
+    txtTraction.setWildcard(txtTractionBuffer);
     txtTraction.resizeToCurrentText();
     txtTraction.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PWEQ));
     ctDown.add(txtTraction);
@@ -295,7 +299,8 @@ DRAGViewBase::DRAGViewBase()
     txtLaunchControl.setXY(374, 23);
     txtLaunchControl.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtLaunchControl.setLinespacing(0);
-    txtLaunchControl.setWildcard(touchgfx::TypedText(T___SINGLEUSE_1OJJ).getText());
+    Unicode::snprintf(txtLaunchControlBuffer, TXTLAUNCHCONTROL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1OJJ).getText());
+    txtLaunchControl.setWildcard(txtLaunchControlBuffer);
     txtLaunchControl.resizeToCurrentText();
     txtLaunchControl.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DRKW));
     ctDown.add(txtLaunchControl);
@@ -312,7 +317,8 @@ DRAGViewBase::DRAGViewBase()
     txtSteeringWheel.setXY(32, 121);
     txtSteeringWheel.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txtSteeringWheel.setLinespacing(0);
-    txtSteeringWheel.setWildcard(touchgfx::TypedText(T___SINGLEUSE_8VGX).getText());
+    Unicode::snprintf(txtSteeringWheelBuffer, TXTSTEERINGWHEEL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8VGX).getText());
+    txtSteeringWheel.setWildcard(txtSteeringWheelBuffer);
     txtSteeringWheel.resizeToCurrentText();
     txtSteeringWheel.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XNH1));
     ctSW.add(txtSteeringWheel);

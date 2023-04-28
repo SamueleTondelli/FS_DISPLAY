@@ -22,6 +22,15 @@ void HOMEView::tearDownScreen()
 
 void HOMEView::updateDisplay()
 {
+	// Screen Name
+		if(ds.screen.screenNameFlag) {
+			bxScreenName.setVisible(true);
+			txtScreenName.setVisible(true);
+		} else {
+			bxScreenName.setVisible(false);
+			txtScreenName.setVisible(false);
+		}
+
 	//Poil
 	float pOil = getValueData(&(ds.thermalPressure.oilPressure));
 	Unicode::snprintf(txtOilPBuffer, TXTOILP_SIZE, "%.1f", pOil);

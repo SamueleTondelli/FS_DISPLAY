@@ -104,6 +104,18 @@ protected:
     /*
      * Wildcard Buffers
      */
+    static const uint16_t TXTRPM_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar txtRPMBuffer[TXTRPM_SIZE];
+    static const uint16_t TXTGEAR_SIZE = 1;
+    touchgfx::Unicode::UnicodeChar txtGearBuffer[TXTGEAR_SIZE];
+    static const uint16_t TXTSPEED_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtSpeedBuffer[TXTSPEED_SIZE];
+    static const uint16_t TXTTRACTION_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtTractionBuffer[TXTTRACTION_SIZE];
+    static const uint16_t TXTLAUNCHCONTROL_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtLaunchControlBuffer[TXTLAUNCHCONTROL_SIZE];
+    static const uint16_t TXTSTEERINGWHEEL_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtSteeringWheelBuffer[TXTSTEERINGWHEEL_SIZE];
     static const uint16_t TXTALARM_SIZE = 33;
     touchgfx::Unicode::UnicodeChar txtAlarmBuffer[TXTALARM_SIZE];
 

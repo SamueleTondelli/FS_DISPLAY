@@ -38,7 +38,7 @@ MEMORY
 {
   RAM    	(xrw)	: ORIGIN = 0x20000000,   LENGTH = 512K
   FLASH		(rx)	: ORIGIN = 0x8000000,    LENGTH = 2048K 
-/*  SDRAM		(xrw)	: ORIGIN = 0xC0000000,   LENGTH = 16M  */
+  SDRAM		(xrw)	: ORIGIN = 0xC0000000,   LENGTH = 16M  
   QSPI 		(r)		: ORIGIN = 0x90000000,   LENGTH = 64M
 }
 
@@ -198,7 +198,7 @@ SECTIONS
         . = ALIGN(0x4);
 	} >QSPI
 
-/*
+
 	BufferSection :
   {
     *(TouchGFX_Framebuffer TouchGFX_Framebuffer.*)
@@ -209,8 +209,7 @@ SECTIONS
     *(.gnu.linkonce.r.*)
     . = ALIGN(0x4);
   } >SDRAM
-*/
 
-/*	.mySdramSegment 0xC0000000 : {KEEP(*(.SDRAM))} */
+	.mySdramSegment 0xC0000000 : {KEEP(*(.SDRAM))} 
 
 }
