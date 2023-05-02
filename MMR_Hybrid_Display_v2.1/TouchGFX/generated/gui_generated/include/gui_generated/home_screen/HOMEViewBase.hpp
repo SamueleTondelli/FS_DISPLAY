@@ -90,8 +90,8 @@ protected:
     touchgfx::TextArea nameTraction;
     touchgfx::Container ctAlarm;
     touchgfx::BoxWithBorder bxAlarm;
-    touchgfx::TextAreaWithOneWildcard txtName;
-    touchgfx::TextAreaWithOneWildcard txtValue;
+    touchgfx::TextAreaWithOneWildcard txtAlarmName;
+    touchgfx::TextAreaWithOneWildcard txtAlarmValue;
     touchgfx::Container ctScreenName;
     touchgfx::BoxWithBorder bxScreenName;
     touchgfx::TextArea txtScreenName;
@@ -125,10 +125,10 @@ protected:
     touchgfx::Unicode::UnicodeChar txtTpsBuffer[TXTTPS_SIZE];
     static const uint16_t TXTTRACTION_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtTractionBuffer[TXTTRACTION_SIZE];
-    static const uint16_t TXTNAME_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar txtNameBuffer[TXTNAME_SIZE];
-    static const uint16_t TXTVALUE_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar txtValueBuffer[TXTVALUE_SIZE];
+    static const uint16_t TXTALARMNAME_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmNameBuffer[TXTALARMNAME_SIZE];
+    static const uint16_t TXTALARMVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmValueBuffer[TXTALARMVALUE_SIZE];
 
 private:
 
