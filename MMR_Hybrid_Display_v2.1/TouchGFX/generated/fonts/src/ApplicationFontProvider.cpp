@@ -93,6 +93,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::TYGEAR80BOLDITALIC:
         // verdanaz_80_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[17]);
+    case Typography::TYGEARBOLDITALIC100:
+        // verdanaz_100_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[18]);
     default:
         return 0;
     }

@@ -13,6 +13,8 @@
 #include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/race_screen/RACEView.hpp>
+#include <gui/race_screen/RACEPresenter.hpp>
 
 using namespace touchgfx;
 

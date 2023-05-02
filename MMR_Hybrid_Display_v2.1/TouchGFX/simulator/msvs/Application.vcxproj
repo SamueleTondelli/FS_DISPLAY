@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\race_screen\RACEPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\race_screen\RACEView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\race_screen\RACEViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -183,6 +186,9 @@
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\race_screen\RACEPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\race_screen\RACEView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\race_screen\RACEViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

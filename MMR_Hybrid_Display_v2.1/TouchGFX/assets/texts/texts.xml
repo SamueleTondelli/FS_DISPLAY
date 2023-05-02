@@ -6,6 +6,105 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_L33T" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">VALUE</Translation>
+      </Text>
+      <Text Id="__SingleUse_6RIG" Alignment="Left" TypographyId="tyGear80BoldItalic">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_S39I" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAME</Translation>
+      </Text>
+      <Text Id="__SingleUse_V4JA" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_4SPB" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_N325" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_REBG" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTHP" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_2KZX" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_O840" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_T4I7" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">AIR T°</Translation>
+      </Text>
+      <Text Id="__SingleUse_QYDU" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">OIL T°</Translation>
+      </Text>
+      <Text Id="__SingleUse_MPHM" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">WAT T°</Translation>
+      </Text>
+      <Text Id="__SingleUse_49HN" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_EGUV" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_CEPX" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZVOS" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R3H0" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_4C61" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M7PW" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">FUEL P</Translation>
+      </Text>
+      <Text Id="__SingleUse_U72G" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">FUEL T°</Translation>
+      </Text>
+      <Text Id="__SingleUse_JVCJ" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">OIL P</Translation>
+      </Text>
+      <Text Id="__SingleUse_U9BO" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">00000</Translation>
+      </Text>
+      <Text Id="__SingleUse_9LZL" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_S8RD" Alignment="Left" TypographyId="TyKmH">
+        <Translation Language="GB">KM/H</Translation>
+      </Text>
+      <Text Id="__SingleUse_KI4P" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_8OZ1" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_V5NR" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">N</Translation>
+      </Text>
+      <Text Id="__SingleUse_84RE" Alignment="Center" TypographyId="TyGearBoldItalic100">
+        <Translation Language="GB">&lt;N&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_N4KB" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">VALUE</Translation>
+      </Text>
+      <Text Id="__SingleUse_O6YU" Alignment="Left" TypographyId="tyGear80BoldItalic">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9YAT" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAME</Translation>
+      </Text>
+      <Text Id="__SingleUse_H52F" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_1DT2" Alignment="Center" TypographyId="tyScreenName">
         <Translation Language="GB">DRV2</Translation>
       </Text>
@@ -16,12 +115,6 @@
         <Translation Language="GB">ERROR</Translation>
       </Text>
       <Text Id="__SingleUse_6TMB" Alignment="Center" TypographyId="tyAlarm">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_HHDS" Alignment="Left" TypographyId="tyAlarm">
-        <Translation Language="GB">ERROR</Translation>
-      </Text>
-      <Text Id="__SingleUse_IO0N" Alignment="Center" TypographyId="tyAlarm">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_DGI6" Alignment="Left" TypographyId="tyText25">
@@ -310,5 +403,6 @@
     <Typography Id="TyGear" Font="verdana.ttf" Size="120" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="TyKmH" Font="verdana.ttf" Size="8" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="tyGear80BoldItalic" Font="verdanaz.ttf" Size="80" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="TyGearBoldItalic100" Font="verdanaz.ttf" Size="100" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

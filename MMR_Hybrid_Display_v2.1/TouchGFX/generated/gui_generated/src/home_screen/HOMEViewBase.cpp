@@ -360,21 +360,31 @@ HOMEViewBase::HOMEViewBase()
 
     add(ctDown);
 
-    ctAlarm.setPosition(11, 11, 460, 250);
+    ctAlarm.setPosition(0, 0, 480, 272);
     ctAlarm.setVisible(false);
-    bxAlarm.setPosition(0, 0, 460, 250);
-    bxAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    bxAlarm.setBorderColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-    bxAlarm.setBorderSize(8);
+    bxAlarm.setPosition(0, 0, 480, 272);
+    bxAlarm.setColor(touchgfx::Color::getColorFromRGB(3, 32, 255));
+    bxAlarm.setBorderColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxAlarm.setBorderSize(4);
     ctAlarm.add(bxAlarm);
 
-    txtAlarm.setPosition(5, 5, 450, 240);
-    txtAlarm.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-    txtAlarm.setLinespacing(0);
-    Unicode::snprintf(txtAlarmBuffer, TXTALARM_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_HHDS).getText());
-    txtAlarm.setWildcard(txtAlarmBuffer);
-    txtAlarm.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IO0N));
-    ctAlarm.add(txtAlarm);
+    txtName.setXY(153, 15);
+    txtName.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtName.setLinespacing(0);
+    Unicode::snprintf(txtNameBuffer, TXTNAME_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S39I).getText());
+    txtName.setWildcard(txtNameBuffer);
+    txtName.resizeToCurrentText();
+    txtName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_V4JA));
+    ctAlarm.add(txtName);
+
+    txtValue.setXY(93, 88);
+    txtValue.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtValue.setLinespacing(0);
+    Unicode::snprintf(txtValueBuffer, TXTVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_L33T).getText());
+    txtValue.setWildcard(txtValueBuffer);
+    txtValue.resizeToCurrentText();
+    txtValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6RIG));
+    ctAlarm.add(txtValue);
 
     add(ctAlarm);
 

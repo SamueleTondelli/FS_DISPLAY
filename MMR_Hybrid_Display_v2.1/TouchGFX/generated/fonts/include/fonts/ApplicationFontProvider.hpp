@@ -41,6 +41,7 @@ struct Typography
     static const touchgfx::FontId TYGEAR = 25;
     static const touchgfx::FontId TYKMH = 26;
     static const touchgfx::FontId TYGEAR80BOLDITALIC = 27;
+    static const touchgfx::FontId TYGEARBOLDITALIC100 = 28;
 };
 
 struct TypographyFontIndex
@@ -73,7 +74,8 @@ struct TypographyFontIndex
     static const touchgfx::FontId TYGEAR = 15;              // verdana_120_4bpp
     static const touchgfx::FontId TYKMH = 16;               // verdana_8_4bpp
     static const touchgfx::FontId TYGEAR80BOLDITALIC = 17;  // verdanaz_80_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 18;
+    static const touchgfx::FontId TYGEARBOLDITALIC100 = 18; // verdanaz_100_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 19;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

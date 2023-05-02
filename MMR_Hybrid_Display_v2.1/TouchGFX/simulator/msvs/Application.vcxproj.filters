@@ -196,6 +196,18 @@
     <Filter Include="Header Files\generated\gui_generated\drag_screen">
       <UniqueIdentifier>A48ED968-6B75-CE37-7A48-163D9E4F98B9</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\race_screen">
+      <UniqueIdentifier>C4298647-00C7-6F1E-3422-A0F16E42B81E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\race_screen">
+      <UniqueIdentifier>049F7F5F-914D-698D-247C-A51D6550B68E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\race_screen">
+      <UniqueIdentifier>B8BAF192-3E0C-E09C-359D-276F077983B9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\race_screen">
+      <UniqueIdentifier>EBF58C3A-82E4-7B5E-5721-2AB566432EE0</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -245,6 +257,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\drag_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\race_screen\RACEPresenter.cpp">
+      <Filter>Source Files\gui\race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\race_screen\RACEView.cpp">
+      <Filter>Source Files\gui\race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\race_screen\RACEViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\race_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -705,6 +726,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\drag_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\race_screen\RACEPresenter.hpp">
+      <Filter>Header Files\gui\race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\race_screen\RACEView.hpp">
+      <Filter>Header Files\gui\race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\race_screen\RACEViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\race_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
