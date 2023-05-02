@@ -3,6 +3,7 @@
 
 #include "Data/DataConstantAlarms.h"
 #include <string.h>
+#include <stdint.h>
 
 typedef enum {
 	DATA,

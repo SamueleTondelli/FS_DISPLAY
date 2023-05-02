@@ -1,5 +1,6 @@
 // START
 #include "Data/Data.h"
+#include "DisplayConstant.h"
 // END
 
 void initializeData(Data *data, float value, float conv, uint8_t priority, float maxValue, float minValue) {
