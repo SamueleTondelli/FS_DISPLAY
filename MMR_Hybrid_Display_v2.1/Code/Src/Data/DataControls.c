@@ -6,11 +6,11 @@
 #include "adc.h"
 
 void initializeDataControls(DataControls* dataControls) {
-	initializeData(&(dataControls->batteryVoltage), EMPTY_VALUE, BATTERY_VOLTAGE_CONVERSION_FACTOR);
-	initializeData(&(dataControls->launchControlStatus), EMPTY_VALUE, LAUNCH_CONTROL_STATUS_CONVERSION_FACTOR);
-	initializeData(&(dataControls->pedal), EMPTY_VALUE, PEDAL_CONVERSION_FACTOR);
-	initializeData(&(dataControls->brake), EMPTY_VALUE, BRAKE_CONVERSION_FACTOR);
-	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR);
+	initializeData(&(dataControls->batteryVoltage), EMPTY_VALUE, BATTERY_VOLTAGE_CONVERSION_FACTOR, BATTERY_VOLTAGE_ALARM_PRIORITY, BATTERY_VOLTAGE_MAX_VALUE, BATTERY_VOLTAGE_MIN_VALUE);
+	initializeData(&(dataControls->launchControlStatus), EMPTY_VALUE, LAUNCH_CONTROL_STATUS_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataControls->pedal), EMPTY_VALUE, PEDAL_CONVERSION_FACTOR, EMPTY_VALUE);
+	initializeData(&(dataControls->brake), EMPTY_VALUE, BRAKE_CONVERSION_FACTOR, EMPTY_VALUE);
+	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR, EMPTY_VALUE);
 	dataControls->tractionControl = EMPTY_VALUE;
 }
 

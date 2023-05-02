@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 #include "main.h"
+#include "Data/DataAlarms.h"
 
 #define DATA_UPDATED_COUNTER_LIMIT 2
 
@@ -14,11 +15,19 @@ extern "C" {
  * @attr value					-> stored value
  * @attr conversionFactorA		-> numerator conversion factor
  * @attr flag updated			-> flag used as counter to check if this value has been updated
+ * @attr priority				-> priority of the alarm, 0-5 with 0 being the highest priority
+ * @attr alarmIsOn				-> flag to determine if the corresponding alarm is in queue
+ * @attr maxValue				-> max value before triggering alarm
+ * @attr minValue				-> min value before triggering alarm
  */
 typedef struct {
 	float value;
 	float conversionFactor;
 	uint8_t isUpdated;
+	uint8_t priority;
+	uint8_t alarmIsOn;
+	float maxValue;
+	float minValue;
 } Data;
 /*
  * Initialize Data Struct
@@ -26,7 +35,7 @@ typedef struct {
  * @param  value	-> default value
  * @param *convA	-> conversionFactor
  */
-void initializeData(Data *data, float value, float conv);
+void initializeData(Data *data, float value, float conv, uint8_t priority, float maxValue, float minValue);
 /*
  * Get converted value from Data Struct
  * @param *data		-> Data Struct
@@ -34,7 +43,7 @@ void initializeData(Data *data, float value, float conv);
  */
 float getValueData(Data *data);
 /*
- * Set value in the Data Struct
+ * Set value in the Data Struct and check if it's critical
  * @param *data		-> Data Struct
  * @param  newValue	-> new Value to store
  */
