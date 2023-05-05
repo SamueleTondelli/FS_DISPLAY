@@ -183,7 +183,7 @@ void HOMEView::updateDisplay()
 		}
 		else
 		{
-			if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_START_TIME))
+			if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_TIMEOUT_TIME))
 			{
 				//we invalidate current alarm
 				currentAlarm.contents = NULL;
