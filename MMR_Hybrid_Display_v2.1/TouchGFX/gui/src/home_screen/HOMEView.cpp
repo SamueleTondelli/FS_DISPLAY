@@ -159,35 +159,45 @@ void HOMEView::updateDisplay()
 		  after that if there's an alarm with same or lower priority (more important), we switch to that, otherwise we give a bonus time to the current alarm because
 		  it's more important
 		*/
-		if (uwTick - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
+		//TODO: improve
+		if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_AUTOMATIC_TIMEOUT_TIME))
 		{
 			if (currentAlarm.type == DATA)
 			{
-				Data* alarmData = (Data*)currentAlarm.contents;
-				if (alarmData->alarmIsOn == 1)
-				{
-					Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
-					//check if size needs to be strlen + 1
-					Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
-				}
-				else
-				{
-					ctAlarm.setVisible(false);
-					currentAlarm.contents = NULL;
-				}
+				Data* data = (Data*)currentAlarm.contents;
+				data->alarmIsOn = 0; //so we can insert again the alarm in the queue
 			}
 			else
 			{
-				//alarm from telemetry
+				//telemetry
 			}
+			//we invalidate current alarm
+			currentAlarm.contents = NULL;
+			invalidateCurrentAlarmFlag = 0;
 		}
 		else
 		{
-			if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_TIMEOUT_TIME))
+			if (uwTick - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
 			{
-				//we invalidate current alarm
-				currentAlarm.contents = NULL;
-				invalidateCurrentAlarmFlag = 0;
+				if (currentAlarm.type == DATA)
+				{
+					Data* alarmData = (Data*)currentAlarm.contents;
+					if (alarmData->alarmIsOn == 1)
+					{
+						Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
+						//check if size needs to be strlen + 1
+						Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+					}
+					else
+					{
+						ctAlarm.setVisible(false);
+						currentAlarm.contents = NULL;
+					}
+				}
+				else
+				{
+					//alarm from telemetry
+				}
 			}
 			else
 			{
@@ -196,8 +206,61 @@ void HOMEView::updateDisplay()
 				{
 					if (nextAlarm->priority <= currentAlarm.priority || (uwTick - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
 					{
+						if (currentAlarm.type == DATA)
+						{
+							Data* data = (Data*)currentAlarm.contents;
+							data->alarmIsOn = 0; //so we can insert again the alarm in the queue
+						}
+						else
+						{
+							//telemetry
+						}
 						//we invalidate current alarm
 						currentAlarm.contents = NULL;
+					}
+					else
+					{
+						if (currentAlarm.type == DATA)
+						{
+							Data* alarmData = (Data*)currentAlarm.contents;
+							if (alarmData->alarmIsOn == 1)
+							{
+								Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
+								//check if size needs to be strlen + 1
+								Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+							}
+							else
+							{
+								ctAlarm.setVisible(false);
+								currentAlarm.contents = NULL;
+							}
+						}
+						else
+						{
+							//alarm from telemetry
+						}
+					}
+				}
+				else
+				{
+					if (currentAlarm.type == DATA)
+					{
+						Data* alarmData = (Data*)currentAlarm.contents;
+						if (alarmData->alarmIsOn == 1)
+						{
+							Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
+							//check if size needs to be strlen + 1
+							Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+						}
+						else
+						{
+							ctAlarm.setVisible(false);
+							currentAlarm.contents = NULL;
+						}
+					}
+					else
+					{
+						//alarm from telemetry
 					}
 				}
 			}
