@@ -151,14 +151,14 @@ void HOMEView::updateDisplay()
 		if (currentAlarm.contents == NULL)
 		{
 			currentAlarm = extractAlarmFromQueue();
-			currentAlarmStartTime = uwTick();
+			currentAlarmStartTime = uwTick;
 		}
 
 		/*Alarms works by having a not interruptable time, which unless the button is pressed we show the alarm even if there's an alarm after with a higher priority,
 		  after that if there's an alarm with same or lower priority (more important), we switch to that, otherwise we give a bonus time to the current alarm because
 		  it's more important
 		*/
-		if (uwTick() - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
+		if (uwTick - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
 		{
 			if (currentAlarm.type == DATA)
 			{
@@ -185,7 +185,7 @@ void HOMEView::updateDisplay()
 			Alarm* nextAlarm = peekAlarmFromQueue();
 			if (nextAlarm != NULL)
 			{
-				if (nextAlarm->priority <= currentAlarm.priority || (uwTick() - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
+				if (nextAlarm->priority <= currentAlarm.priority || (uwTick - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
 				{
 					//we invalidate current alarm
 					currentAlarm.contents = NULL;
