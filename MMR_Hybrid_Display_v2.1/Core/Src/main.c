@@ -87,6 +87,7 @@ extern TIM_HandleTypeDef htim5;
 Dataset ds;
 Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
 int queueSize[PRIORITIES] = { 0 };
+uint8_t invalidateCurrentAlarmFlag = 0;
 
 TimersList timList;
 

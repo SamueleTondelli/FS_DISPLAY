@@ -4,6 +4,7 @@
 
 extern Dataset ds;
 extern Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
+extern uint8_t invalidateCurrentAlarmFlag; //bad, move to somewhere else
 
 HOMEView::HOMEView()
 {
@@ -182,13 +183,22 @@ void HOMEView::updateDisplay()
 		}
 		else
 		{
-			Alarm* nextAlarm = peekAlarmFromQueue();
-			if (nextAlarm != NULL)
+			if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_START_TIME))
 			{
-				if (nextAlarm->priority <= currentAlarm.priority || (uwTick - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
+				//we invalidate current alarm
+				currentAlarm.contents = NULL;
+				invalidateCurrentAlarmFlag = 0;
+			}
+			else
+			{
+				Alarm* nextAlarm = peekAlarmFromQueue();
+				if (nextAlarm != NULL)
 				{
-					//we invalidate current alarm
-					currentAlarm.contents = NULL;
+					if (nextAlarm->priority <= currentAlarm.priority || (uwTick - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
+					{
+						//we invalidate current alarm
+						currentAlarm.contents = NULL;
+					}
 				}
 			}
 
