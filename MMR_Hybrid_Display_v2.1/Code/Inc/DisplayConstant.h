@@ -8,6 +8,10 @@
 #define DRAG 1
 #define DRAG_2 2
 
+	// ALARMS CONSTANTS
+#define ALARM_NOT_INTERRUPTABLE_TIME	4000 //ms
+#define ALARM_BONUS_TIME				3000 //ms
+
 	// ALARMS
 #define POIL_ALARM 				"OIL\nPRESSURE\nLOW"
 #define POIL_ALARM_LENGTH 		16

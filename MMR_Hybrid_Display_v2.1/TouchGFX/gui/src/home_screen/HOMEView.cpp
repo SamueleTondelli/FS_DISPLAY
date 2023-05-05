@@ -23,8 +23,9 @@ void HOMEView::tearDownScreen()
 
 void HOMEView::updateDisplay()
 {
-	static Alarm currentAlarm = {-1, NULL, NULL, DATA};
-	if (peekAlarmFromQueue() == NULL)
+	static Alarm currentAlarm = {.contents = NULL};
+	static uint32_t currentAlarmStartTime;
+	if (peekAlarmFromQueue() == NULL && currentAlarm.contents == NULL)
 	{
 		// Screen Name
 		if(ds.screen.screenNameFlag) {
@@ -146,30 +147,51 @@ void HOMEView::updateDisplay()
 	{
 		ctAlarm.setVisible(true);
 
-		//if it's first time we enter here, we initialize currentAlarm
+		//if it's first time we enter here, we initialize currentAlarm and get the timestamp at which the alarm starts
 		if (currentAlarm.contents == NULL)
 		{
 			currentAlarm = extractAlarmFromQueue();
+			currentAlarmStartTime = uwTick();
 		}
 
-		if (currentAlarm.type == DATA)
+		/*Alarms works by having a not interruptable time, which unless the button is pressed we show the alarm even if there's an alarm after with a higher priority,
+		  after that if there's an alarm with same or lower priority (more important), we switch to that, otherwise we give a bonus time to the current alarm because
+		  it's more important
+		*/
+		if (uwTick() - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
 		{
-			Data* alarmData = (Data*)currentAlarm.contents;
-			if (alarmData->alarmIsOn == 1)
+			if (currentAlarm.type == DATA)
 			{
-				Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
-				//check if size needs to be strlen + 1
-				Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+				Data* alarmData = (Data*)currentAlarm.contents;
+				if (alarmData->alarmIsOn == 1)
+				{
+					Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
+					//check if size needs to be strlen + 1
+					Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+				}
+				else
+				{
+					ctAlarm.setVisible(false);
+					currentAlarm.contents = NULL;
+				}
 			}
 			else
 			{
-				ctAlarm.setVisible(false);
-				currentAlarm.contents = NULL;
+				//alarm from telemetry
 			}
 		}
 		else
 		{
-			//alarm from telemetry
+			Alarm* nextAlarm = peekAlarmFromQueue();
+			if (nextAlarm != NULL)
+			{
+				if (nextAlarm->priority <= currentAlarm.priority || (uwTick() - currentAlarmStartTime >= ALARM_NOT_INTERRUPTABLE_TIME + ALARM_BONUS_TIME))
+				{
+					//we invalidate current alarm
+					currentAlarm.contents = NULL;
+				}
+			}
+
 		}
 
 		ctAlarm.invalidate();

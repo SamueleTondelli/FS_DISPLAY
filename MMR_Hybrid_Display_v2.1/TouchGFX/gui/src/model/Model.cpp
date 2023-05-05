@@ -53,6 +53,7 @@ void Model::tick() {
 			case HOME:
 				static_cast<FrontendApplication*>(Application::getInstance())->gotoHOMEScreenNoTransition();
 				break;
+			//TODO: CHANGE
 			case DRAG:
 				//call gotoDRAGScreen
 				break;
