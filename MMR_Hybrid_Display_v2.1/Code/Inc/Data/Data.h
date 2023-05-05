@@ -70,6 +70,19 @@ void setNotUpdateData(Data* data);
  * @return Data Updated Flag
  */
 uint8_t isDataUpdated(Data* data);
+/*
+ * Check if current data value is critical
+ * @param *data		-> Data Struct
+ * @return	if the data is in a critical state
+ */
+uint8_t isDataCritical(Data* data);
+
+/*
+ *  Activates and insert alarm in queue of data with name = name
+ *  @param *data	-> Data Struct
+ *  @param *name	-> name to give to the alarm
+ */
+void activateDataAlarm(Data* data, char* name);
 
 #ifdef __cplusplus
 }
