@@ -67,7 +67,8 @@ void activateDataAlarm(Data* data, char* name)
 	if (data->alarmIsOn == 0)
 	{
 		data->alarmIsOn = 1;
-		Alarm alarm = {data->priority, name, data, DATA};
+		Alarm alarm = {.priority = data->priority,.contents = (void *)data, .type = DATA};
+		strcpy(alarm.name, name);
 		insertAlarmInQueue(&alarm);
 	}
 }
