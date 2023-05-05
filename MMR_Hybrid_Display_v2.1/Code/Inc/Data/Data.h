@@ -16,7 +16,7 @@ extern "C" {
  * @attr conversionFactorA		-> numerator conversion factor
  * @attr flag updated			-> flag used as counter to check if this value has been updated
  * @attr priority				-> priority of the alarm, 0-5 with 0 being the highest priority
- * @attr alarmIsOn				-> flag to determine if the corresponding alarm is in queue
+ * @attr alarmStatus			-> status of the alarm (OFF, ON, DEACTIVATED)
  * @attr maxValue				-> max value before triggering alarm
  * @attr minValue				-> min value before triggering alarm
  */
@@ -25,7 +25,7 @@ typedef struct {
 	float conversionFactor;
 	uint8_t isUpdated;
 	uint8_t priority;
-	uint8_t alarmIsOn;
+	ALARM_STATUS alarmStatus;
 	float maxValue;
 	float minValue;
 } Data;

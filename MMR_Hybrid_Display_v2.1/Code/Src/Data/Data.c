@@ -7,7 +7,7 @@ void initializeData(Data *data, float value, float conv, uint8_t priority, float
 	data->value = value;
 	data->conversionFactor = conv;
 	data->isUpdated = 0;
-	data->alarmIsOn = 0;
+	data->alarmStatus = OFF_QUEUE;
 	data->priority = priority;
 	data->maxValue = maxValue;
 	data->minValue = minValue;
@@ -64,12 +64,11 @@ uint8_t isDataCritical(Data* data)
 
 void activateDataAlarm(Data* data, char* name)
 {
-	if (data->alarmIsOn == 0)
+	if (data->alarmStatus == OFF_QUEUE)
 	{
-		data->alarmIsOn = 1;
+		data->alarmStatus = ON;
 		Alarm alarm = {.priority = data->priority,.contents = (void *)data, .type = DATA};
 		strcpy(alarm.name, name);
 		insertAlarmInQueue(&alarm);
 	}
 }
-

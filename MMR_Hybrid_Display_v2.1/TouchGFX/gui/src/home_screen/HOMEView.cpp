@@ -146,6 +146,7 @@ void HOMEView::updateDisplay()
 	}
 	else
 	{
+		//TODO: move to model
 		ctAlarm.setVisible(true);
 
 		//if it's first time we enter here, we initialize currentAlarm and get the timestamp at which the alarm starts
@@ -165,7 +166,7 @@ void HOMEView::updateDisplay()
 			if (currentAlarm.type == DATA)
 			{
 				Data* data = (Data*)currentAlarm.contents;
-				data->alarmIsOn = 0; //so we can insert again the alarm in the queue
+				data->alarmStatus = DEACTIVATED; //so we can insert again the alarm in the queue
 			}
 			else
 			{
@@ -182,7 +183,7 @@ void HOMEView::updateDisplay()
 				if (currentAlarm.type == DATA)
 				{
 					Data* alarmData = (Data*)currentAlarm.contents;
-					if (alarmData->alarmIsOn == 1)
+					if (alarmData->alarmStatus == ON)
 					{
 						Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
 						//check if size needs to be strlen + 1
@@ -209,7 +210,7 @@ void HOMEView::updateDisplay()
 						if (currentAlarm.type == DATA)
 						{
 							Data* data = (Data*)currentAlarm.contents;
-							data->alarmIsOn = 0; //so we can insert again the alarm in the queue
+							data->alarmStatus = OFF_QUEUE; //so we can insert again the alarm in the queue
 						}
 						else
 						{
@@ -223,7 +224,7 @@ void HOMEView::updateDisplay()
 						if (currentAlarm.type == DATA)
 						{
 							Data* alarmData = (Data*)currentAlarm.contents;
-							if (alarmData->alarmIsOn == 1)
+							if (alarmData->alarmStatus == ON)
 							{
 								Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
 								//check if size needs to be strlen + 1
@@ -246,7 +247,7 @@ void HOMEView::updateDisplay()
 					if (currentAlarm.type == DATA)
 					{
 						Data* alarmData = (Data*)currentAlarm.contents;
-						if (alarmData->alarmIsOn == 1)
+						if (alarmData->alarmStatus == ON)
 						{
 							Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
 							//check if size needs to be strlen + 1

@@ -6,6 +6,12 @@
 #include <stdint.h>
 
 typedef enum {
+	OFF_QUEUE,
+	ON,
+	DEACTIVATED
+} ALARM_STATUS;
+
+typedef enum {
 	DATA,
 	STRING
 } CONTENT_TYPE;
