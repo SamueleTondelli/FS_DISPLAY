@@ -15,7 +15,7 @@ void FrontendApplication::gotoHOMEScreenNoTransition()
 }
 
 
-void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
+void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
 {
 	if (alarm == NULL || nameBuffer == NULL || valueBuffer == NULL)
 	{
@@ -33,4 +33,4 @@ void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_
 	}
 }
 
-//END MODIFIED
+//END MODIFIEDS
