@@ -15,7 +15,7 @@ void FrontendApplication::gotoHOMEScreenNoTransition()
 }
 
 
-void writeAlarmInBuffers(Alarm* alarm, touchgfx::Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, touchgfx::Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
+void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
 {
 	if (alarm == NULL || nameBuffer == NULL || valueBuffer == NULL)
 	{

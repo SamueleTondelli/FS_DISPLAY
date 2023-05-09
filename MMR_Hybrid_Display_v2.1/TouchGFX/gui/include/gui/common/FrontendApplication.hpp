@@ -18,7 +18,7 @@ public:
     void gotoHOMEScreenNoTransition();
     //missing DRAG and DRAG_2 screen transitions
 
-    static void writeAlarmInBuffers(Alarm* alarm, touchgfx::Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, touchgfx::Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize);
+    static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize);
 
     //END MODIFIED
 
