@@ -1,4 +1,5 @@
 #include "Data/DataAlarms.h"
+#include "Data/Data.h"
 
 extern Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
 extern int queueSize[PRIORITIES];
@@ -110,7 +111,7 @@ ALARM_STATUS getAlarmStatus(Alarm* alarm)
 	else
 	{
 		//telemetry
-		return OFF;
+		return OFF_QUEUE;
 	}
 }
 

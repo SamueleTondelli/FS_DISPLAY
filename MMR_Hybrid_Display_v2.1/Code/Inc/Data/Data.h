@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #include "main.h"
-#include "Data/DataAlarms.h"
+#include "DataAlarms.h"
 
 #define DATA_UPDATED_COUNTER_LIMIT 2
 

@@ -1,5 +1,5 @@
 #include <gui/home_screen/HOMEView.hpp>
-
+#include <gui/common/FrontendApplication.hpp>
 #include "Data/Dataset.h"
 
 extern Dataset ds;
@@ -172,7 +172,7 @@ void HOMEView::updateDisplay()
 			{
 				if (getAlarmStatus(&currentAlarm) == ON)
 				{
-					FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
+					//FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
 				}
 				else
 				{
@@ -203,7 +203,7 @@ void HOMEView::updateDisplay()
 					{
 						if (getAlarmStatus(&currentAlarm) == ON)
 						{
-							FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
+							//FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
 						}
 						else
 						{
@@ -216,7 +216,7 @@ void HOMEView::updateDisplay()
 				{
 					if (getAlarmStatus(&currentAlarm) == ON)
 					{
-						FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
+						//FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
 					}
 					else
 					{

@@ -2,15 +2,16 @@
 #define DATA_ALARMS_H
 
 #include "Data/DataConstantAlarms.h"
+#include "main.h"
 #include <string.h>
 #include <stdint.h>
-#include <touchgfx/Unicode.hpp>
 
 typedef enum {
 	OFF_QUEUE,
 	ON,
 	DEACTIVATED
 } ALARM_STATUS;
+
 
 typedef enum {
 	DATA,
