@@ -4,6 +4,7 @@
 #include "Data/DataConstantAlarms.h"
 #include <string.h>
 #include <stdint.h>
+#include <touchgfx/Unicode.hpp>
 
 typedef enum {
 	OFF_QUEUE,
@@ -30,5 +31,7 @@ uint8_t isQueueFull(int priority);
 uint8_t isQueueEmpty(int priority);
 void updateQueue();
 
+void deactivateAlarm(Alarm* alarm);
+ALARM_STATUS getAlarmStatus(Alarm* alarm);
 
 #endif	/*DATA_ALARMS_H*/

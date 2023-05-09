@@ -19,6 +19,7 @@ extern "C" {
  * @attr alarmStatus			-> status of the alarm (OFF, ON, DEACTIVATED)
  * @attr maxValue				-> max value before triggering alarm
  * @attr minValue				-> min value before triggering alarm
+ * @attr alarmDeactivationTime	-> time when alarm was deactivated
  */
 typedef struct {
 	float value;
@@ -28,6 +29,7 @@ typedef struct {
 	ALARM_STATUS alarmStatus;
 	float maxValue;
 	float minValue;
+	uint32_t alarmDeactivationTime;
 } Data;
 /*
  * Initialize Data Struct

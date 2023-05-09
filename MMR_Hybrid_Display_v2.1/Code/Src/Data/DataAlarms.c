@@ -73,3 +73,64 @@ void updateQueue()
 		}
 	}
 }
+
+void deactivateAlarm(Alarm* alarm)
+{
+	if (alarm == NULL)
+	{
+		return;
+	}
+
+	if (alarm->type == DATA)
+	{
+		Data* d = (Data*)alarm->contents;
+		d->alarmDeactivationTime = uwTick;
+		d->alarmStatus = DEACTIVATED;
+	}
+	else
+	{
+		//telemetry
+	}
+
+	alarm->contents = NULL;
+}
+
+ALARM_STATUS getAlarmStatus(Alarm* alarm)
+{
+	if (alarm == NULL)
+	{
+		return DEACTIVATED;
+	}
+
+	if (alarm->type == DATA)
+	{
+		Data* d = (Data*)alarm->contents;
+		return d->alarmStatus;
+	}
+	else
+	{
+		//telemetry
+		return OFF;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

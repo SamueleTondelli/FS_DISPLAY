@@ -2,6 +2,7 @@
 #define FRONTENDAPPLICATION_HPP
 
 #include <gui_generated/common/FrontendApplicationBase.hpp>
+#include "Data/Data.h"
 
 class FrontendHeap;
 
@@ -14,9 +15,10 @@ public:
     virtual ~FrontendApplication() { }
 
     //MODIFIED
-
     void gotoHOMEScreenNoTransition();
     //missing DRAG and DRAG_2 screen transitions
+
+    static void writeAlarmInBuffers(Alarm* alarm, touchgfx::Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, touchgfx::Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize);
 
     //END MODIFIED
 

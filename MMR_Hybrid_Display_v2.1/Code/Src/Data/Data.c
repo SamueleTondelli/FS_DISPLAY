@@ -64,7 +64,7 @@ uint8_t isDataCritical(Data* data)
 
 void activateDataAlarm(Data* data, char* name)
 {
-	if (data->alarmStatus == OFF_QUEUE)
+	if (data->alarmStatus == OFF_QUEUE || (data->alarmStatus == DEACTIVATED && uwTick - data->alarmDeactivationTime >= ALARM_DEACTIVATION_TIME))
 	{
 		data->alarmStatus = ON;
 		Alarm alarm = {.priority = data->priority,.contents = (void *)data, .type = DATA};

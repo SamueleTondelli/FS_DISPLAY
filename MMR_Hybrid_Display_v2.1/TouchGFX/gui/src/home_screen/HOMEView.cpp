@@ -163,41 +163,21 @@ void HOMEView::updateDisplay()
 		//TODO: improve
 		if ((invalidateCurrentAlarmFlag == 1) || (uwTick - currentAlarmStartTime >= ALARM_AUTOMATIC_TIMEOUT_TIME))
 		{
-			if (currentAlarm.type == DATA)
-			{
-				Data* data = (Data*)currentAlarm.contents;
-				data->alarmStatus = DEACTIVATED; //so we can insert again the alarm in the queue
-			}
-			else
-			{
-				//telemetry
-			}
-			//we invalidate current alarm
-			currentAlarm.contents = NULL;
+			deactivateAlarm(&currentAlarm);
 			invalidateCurrentAlarmFlag = 0;
 		}
 		else
 		{
 			if (uwTick - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
 			{
-				if (currentAlarm.type == DATA)
+				if (getAlarmStatus(&currentAlarm) == ON)
 				{
-					Data* alarmData = (Data*)currentAlarm.contents;
-					if (alarmData->alarmStatus == ON)
-					{
-						Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
-						//check if size needs to be strlen + 1
-						Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
-					}
-					else
-					{
-						ctAlarm.setVisible(false);
-						currentAlarm.contents = NULL;
-					}
+					FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
 				}
 				else
 				{
-					//alarm from telemetry
+					ctAlarm.setVisible(false);
+					currentAlarm.contents = NULL;
 				}
 			}
 			else
@@ -221,37 +201,9 @@ void HOMEView::updateDisplay()
 					}
 					else
 					{
-						if (currentAlarm.type == DATA)
+						if (getAlarmStatus(&currentAlarm) == ON)
 						{
-							Data* alarmData = (Data*)currentAlarm.contents;
-							if (alarmData->alarmStatus == ON)
-							{
-								Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
-								//check if size needs to be strlen + 1
-								Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
-							}
-							else
-							{
-								ctAlarm.setVisible(false);
-								currentAlarm.contents = NULL;
-							}
-						}
-						else
-						{
-							//alarm from telemetry
-						}
-					}
-				}
-				else
-				{
-					if (currentAlarm.type == DATA)
-					{
-						Data* alarmData = (Data*)currentAlarm.contents;
-						if (alarmData->alarmStatus == ON)
-						{
-							Unicode::snprintf(txtAlarmValueBuffer, TXTALARMVALUE_SIZE, "%f", getValueData(alarmData));
-							//check if size needs to be strlen + 1
-							Unicode::snprintf(txtAlarmNameBuffer, strlen(currentAlarm.name), "%s", currentAlarm.name);
+							FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
 						}
 						else
 						{
@@ -259,9 +211,17 @@ void HOMEView::updateDisplay()
 							currentAlarm.contents = NULL;
 						}
 					}
+				}
+				else
+				{
+					if (getAlarmStatus(&currentAlarm) == ON)
+					{
+						FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE);
+					}
 					else
 					{
-						//alarm from telemetry
+						ctAlarm.setVisible(false);
+						currentAlarm.contents = NULL;
 					}
 				}
 			}
