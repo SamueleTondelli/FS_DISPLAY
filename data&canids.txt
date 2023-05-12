@@ -1,25 +1,30 @@
 /--------DATA STRUCTURES-----------/
 -)thermal & pressure
-	waterT
-	oilP
-	oilT
-	fuelP
-	airT
-	fuelT
+	waterT		0
+	oilP		0
+	oilT		1
+	fuelP		2
+	airT		4
+	fuelT		2
 -)mechanics
-	rpm
-	gear
-	slip
-	speed
-	tps
+	rpm		-
+	gear		-
+	slip		-
+	speed		-
+	tps		-
 -)controls
-	batteryV
+	batteryV	0		
 	launchControlStatus -> 0/1
 	pedal -> posizione pedale accelleratore
 	brake -> pressione freno generale?
 	brakeRear -> freno posteriore
 -)tyreData
 	...
+
+/-------MESSAGES-------------/
+STOP		0
+BOX		2
+COOLDOWN	3
 
 /-------CAN ID---------------/
 0x200)	rpm = [0] << 8 | [1]
