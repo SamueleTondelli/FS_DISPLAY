@@ -29,6 +29,7 @@
 
 #include "can.h"
 #include "Data/Dataset.h"
+#include "Data/DataConstantControls.h"
 #include "app_touchgfx.h"
 
 /* USER CODE END Includes */
@@ -184,7 +185,7 @@ void tractionAcquisition(void const * argument)
   for(;;)
   {
 	readTractionControlData(&(ds.controls));
-    osDelay(1);
+    osDelay(TRACTION_REFRESH_TIME);
   }
   /* USER CODE END tractionAcquisition */
 }
