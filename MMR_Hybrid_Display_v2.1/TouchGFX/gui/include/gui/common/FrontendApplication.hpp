@@ -3,6 +3,7 @@
 
 #include <gui_generated/common/FrontendApplicationBase.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
 #include "DisplayConstant.h"
 #include "Data/Data.h"
 
@@ -24,7 +25,7 @@ public:
 
     static void writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
 
-    static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize);
+    static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
 
     //END MODIFIED
 

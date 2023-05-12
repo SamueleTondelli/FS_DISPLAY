@@ -50,11 +50,22 @@ uint8_t isDataUpdated(Data* data) {
 	}
 }
 
-uint8_t isDataCritical(Data* data)
+int8_t isDataCritical(Data* data)
 {
 	if ((data->value != EMPTY_VALUE) && ((data->maxValue != EMPTY_VALUE && data->value > data->maxValue) || (data->minValue != EMPTY_VALUE && data->value < data->minValue)))
 	{
-		return 1;
+		if ((data->minValue != EMPTY_VALUE && data->value < data->minValue))
+		{
+			return -1;
+		}
+		else if (data->maxValue != EMPTY_VALUE && data->value > data->maxValue)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
 	}
 	else
 	{

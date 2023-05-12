@@ -1,5 +1,7 @@
 #include <gui/common/FrontendApplication.hpp>
 
+#include <touchgfx/Color.hpp>
+
 FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
     : FrontendApplicationBase(m, heap)
 {
@@ -50,7 +52,7 @@ void FrontendApplication::writeFloatDataInBuffer(Data* data, Unicode::UnicodeCha
 	}
 }
 
-void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
+void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm)
 {
 	if (alarm == NULL || nameBuffer == NULL || valueBuffer == NULL)
 	{
@@ -65,6 +67,15 @@ void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar
 			Unicode::snprintf(nameBuffer, strlen(alarm->name), "%s", alarm->name);
 		}
 		Unicode::snprintf(valueBuffer, valueBufferSize, "%f", getValueData(d));
+
+		if (isDataCritical(d) < 0)
+		{
+			bxAlarm->setColor(Color::getColorFromRGB(3, 32, 255));
+		}
+		else
+		{
+			bxAlarm->setColor(Color::getColorFromRGB(255, 0, 0));
+		}
 	}
 }
 

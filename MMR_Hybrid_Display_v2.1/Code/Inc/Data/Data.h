@@ -75,9 +75,9 @@ uint8_t isDataUpdated(Data* data);
 /*
  * Check if current data value is critical
  * @param *data		-> Data Struct
- * @return	if the data is in a critical state
+ * @return	0 = OK, -1 = less than min, 1 = more than max
  */
-uint8_t isDataCritical(Data* data);
+int8_t isDataCritical(Data* data);
 
 /*
  *  Activates and insert alarm in queue of data with name = name
