@@ -26,6 +26,7 @@ void HOMEView::updateDisplay()
 {
 	static Alarm currentAlarm = {.contents = NULL};
 	static uint32_t currentAlarmStartTime;
+	static uint32_t lastValueUpdate = 0;
 	if (peekAlarmFromQueue() == NULL && currentAlarm.contents == NULL)
 	{
 		// Screen Name
@@ -37,23 +38,40 @@ void HOMEView::updateDisplay()
 			txtScreenName.setVisible(false);
 		}
 
-		//Poil
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilPressure), txtOilPBuffer, TXTOILP_SIZE, &txtOilP);
+		if ((uwTick - lastValueUpdate) >= ANTI_FLICKER_TIME || lastValueUpdate == 0)
+		{
+			lastValueUpdate = uwTick;
 
-		//Toil
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilTemperature), txtOilTBuffer, TXTOILT_SIZE, &txtOilT);
+			//Poil
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilPressure), txtOilPBuffer, TXTOILP_SIZE, &txtOilP);
 
-		//tWater
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.waterTemperature), txtWaterTBuffer, TXTWATERT_SIZE, &txtWaterT);
+			//Toil
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilTemperature), txtOilTBuffer, TXTOILT_SIZE, &txtOilT);
 
-		//tAir
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.airTemperature), txtAirTBuffer, TXTAIRT_SIZE, &txtAirT);
+			//tWater
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.waterTemperature), txtWaterTBuffer, TXTWATERT_SIZE, &txtWaterT);
 
-		//pFuel
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelPressure), txtFuelPBuffer, TXTFUELP_SIZE, &txtFuelP);
+			//tAir
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.airTemperature), txtAirTBuffer, TXTAIRT_SIZE, &txtAirT);
 
-		//tFuel
-		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelTemperature), txtFuelTBuffer, TXTFUELT_SIZE, &txtFuelT);
+			//pFuel
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelPressure), txtFuelPBuffer, TXTFUELP_SIZE, &txtFuelP);
+
+			//tFuel
+			FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelTemperature), txtFuelTBuffer, TXTFUELT_SIZE, &txtFuelT);
+
+			//vBat
+			FrontendApplication::writeFloatDataInBuffer(&(ds.controls.batteryVoltage), txtVbatBuffer, TXTVBAT_SIZE, &txtVbat);
+		}
+
+		//speed
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.speed), txtSpeedBuffer, TXTSPEED_SIZE, &txtSpeed);
+
+		//rpm
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.rpm), txtRPMBuffer, TXTRPM_SIZE, &txtRPM);
+
+		//tps
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.tps), txtTpsBuffer, TXTTPS_SIZE, &txtTps);
 
 		//gear
 		int gear = getValueData(&(ds.mechanics.gear));
@@ -75,18 +93,6 @@ void HOMEView::updateDisplay()
 			break;
 		}
 		txtGear.invalidate();
-
-		//speed
-		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.speed), txtSpeedBuffer, TXTSPEED_SIZE, &txtSpeed);
-
-		//rpm
-		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.rpm), txtRPMBuffer, TXTRPM_SIZE, &txtRPM);
-
-		//vBat
-		FrontendApplication::writeFloatDataInBuffer(&(ds.controls.batteryVoltage), txtVbatBuffer, TXTVBAT_SIZE, &txtVbat);
-
-		//tps
-		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.tps), txtTpsBuffer, TXTTPS_SIZE, &txtTps);
 
 		//traction
 		int traction = ds.controls.tractionControl;
