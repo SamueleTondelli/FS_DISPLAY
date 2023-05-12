@@ -16,6 +16,8 @@
 #include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/drag_screen/DRAGView.hpp>
 #include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/skidpad_screen/SKIDPADView.hpp>
+#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
 #include <gui/race_screen/RACEView.hpp>
 #include <gui/race_screen/RACEPresenter.hpp>
 
@@ -42,8 +44,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< HOMEView,
             touchgfx::meta::TypeList< DRAGView,
+            touchgfx::meta::TypeList< SKIDPADView,
             touchgfx::meta::TypeList< RACEView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -57,8 +60,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< HOMEPresenter,
             touchgfx::meta::TypeList< DRAGPresenter,
+            touchgfx::meta::TypeList< SKIDPADPresenter,
             touchgfx::meta::TypeList< RACEPresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

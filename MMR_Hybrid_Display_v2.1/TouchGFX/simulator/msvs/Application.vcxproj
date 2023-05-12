@@ -30,6 +30,9 @@
     <ClCompile Include="..\..\gui\src\race_screen\RACEPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\race_screen\RACEView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\race_screen\RACEViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\skidpad_screen\SKIDPADViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -189,6 +192,9 @@
     <ClInclude Include="..\..\gui\include\gui\race_screen\RACEPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\race_screen\RACEView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\race_screen\RACEViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\skidpad_screen\SKIDPADViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

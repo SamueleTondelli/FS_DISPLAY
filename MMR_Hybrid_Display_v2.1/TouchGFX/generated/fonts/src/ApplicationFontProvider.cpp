@@ -15,8 +15,8 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::TYLABEL18:
         // verdana_18_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
-    case Typography::TYGEAR140:
-        // verdana_140_4bpp
+    case Typography::TYGEAR150BOLDITALIC:
+        // verdanaz_150_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::TYTEXT10:
         // verdana_10_4bpp
@@ -77,25 +77,31 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     case Typography::BIG:
         // verdana_140_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[14]);
     case Typography::TYMESSAGE:
         // verdana_20_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     case Typography::TXTPRESENTATION:
         // ariblk_35_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[14]);
-    case Typography::TYGEAR:
-        // verdana_120_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[15]);
+    case Typography::TYGEAR130:
+        // verdanaz_130_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[16]);
     case Typography::TYKMH:
         // verdana_8_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[16]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[17]);
     case Typography::TYGEAR80BOLDITALIC:
         // verdanaz_80_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[17]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[18]);
     case Typography::TYGEARBOLDITALIC100:
         // verdanaz_100_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[18]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[19]);
+    case Typography::TYRPM:
+        // verdana_30_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[11]);
+    case Typography::TYLABEL22:
+        // verdana_22_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[20]);
     default:
         return 0;
     }

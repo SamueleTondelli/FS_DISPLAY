@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\race_screen">
       <UniqueIdentifier>EBF58C3A-82E4-7B5E-5721-2AB566432EE0</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\skidpad_screen">
+      <UniqueIdentifier>35E8D4CA-B48D-8930-BCB7-40824F669E3C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\skidpad_screen">
+      <UniqueIdentifier>F2D1883C-0135-A076-A3D3-379DF7330813</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\skidpad_screen">
+      <UniqueIdentifier>776EF1FB-7CE0-F20D-3DCB-C1DF9855F6F1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\skidpad_screen">
+      <UniqueIdentifier>F2F8065A-442C-1912-87D3-51FF309D0436</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -266,6 +278,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\race_screen\RACEViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADPresenter.cpp">
+      <Filter>Source Files\gui\skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADView.cpp">
+      <Filter>Source Files\gui\skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\skidpad_screen\SKIDPADViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\skidpad_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -735,6 +756,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\race_screen\RACEViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADPresenter.hpp">
+      <Filter>Header Files\gui\skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADView.hpp">
+      <Filter>Header Files\gui\skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\skidpad_screen\SKIDPADViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\skidpad_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

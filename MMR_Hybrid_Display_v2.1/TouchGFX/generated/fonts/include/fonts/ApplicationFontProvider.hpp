@@ -15,7 +15,7 @@ struct Typography
 {
     static const touchgfx::FontId TYTEXT25 = 0;
     static const touchgfx::FontId TYLABEL18 = 1;
-    static const touchgfx::FontId TYGEAR140 = 2;
+    static const touchgfx::FontId TYGEAR150BOLDITALIC = 2;
     static const touchgfx::FontId TYTEXT10 = 3;
     static const touchgfx::FontId TYPOGRAPHY_02 = 4;
     static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 5;
@@ -38,17 +38,19 @@ struct Typography
     static const touchgfx::FontId BIG = 22;
     static const touchgfx::FontId TYMESSAGE = 23;
     static const touchgfx::FontId TXTPRESENTATION = 24;
-    static const touchgfx::FontId TYGEAR = 25;
+    static const touchgfx::FontId TYGEAR130 = 25;
     static const touchgfx::FontId TYKMH = 26;
     static const touchgfx::FontId TYGEAR80BOLDITALIC = 27;
     static const touchgfx::FontId TYGEARBOLDITALIC100 = 28;
+    static const touchgfx::FontId TYRPM = 29;
+    static const touchgfx::FontId TYLABEL22 = 30;
 };
 
 struct TypographyFontIndex
 {
     static const touchgfx::FontId TYTEXT25 = 0;            // verdana_25_4bpp
     static const touchgfx::FontId TYLABEL18 = 1;           // verdana_18_4bpp
-    static const touchgfx::FontId TYGEAR140 = 2;           // verdana_140_4bpp
+    static const touchgfx::FontId TYGEAR150BOLDITALIC = 2; // verdanaz_150_4bpp
     static const touchgfx::FontId TYTEXT10 = 3;            // verdana_10_4bpp
     static const touchgfx::FontId TYPOGRAPHY_02 = 4;       // verdana_16_4bpp
     static const touchgfx::FontId TYRPMNUBERSLAYOUT1 = 5;  // verdana_20_4bpp
@@ -68,14 +70,16 @@ struct TypographyFontIndex
     static const touchgfx::FontId TYALARM = 8;             // verdana_60_4bpp
     static const touchgfx::FontId TYLABEL13 = 13;           // verdana_13_4bpp
     static const touchgfx::FontId DEFAULT = 5;             // verdana_20_4bpp
-    static const touchgfx::FontId BIG = 2;                 // verdana_140_4bpp
+    static const touchgfx::FontId BIG = 14;                 // verdana_140_4bpp
     static const touchgfx::FontId TYMESSAGE = 5;           // verdana_20_4bpp
-    static const touchgfx::FontId TXTPRESENTATION = 14;     // ariblk_35_4bpp
-    static const touchgfx::FontId TYGEAR = 15;              // verdana_120_4bpp
-    static const touchgfx::FontId TYKMH = 16;               // verdana_8_4bpp
-    static const touchgfx::FontId TYGEAR80BOLDITALIC = 17;  // verdanaz_80_4bpp
-    static const touchgfx::FontId TYGEARBOLDITALIC100 = 18; // verdanaz_100_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 19;
+    static const touchgfx::FontId TXTPRESENTATION = 15;     // ariblk_35_4bpp
+    static const touchgfx::FontId TYGEAR130 = 16;           // verdanaz_130_4bpp
+    static const touchgfx::FontId TYKMH = 17;               // verdana_8_4bpp
+    static const touchgfx::FontId TYGEAR80BOLDITALIC = 18;  // verdanaz_80_4bpp
+    static const touchgfx::FontId TYGEARBOLDITALIC100 = 19; // verdanaz_100_4bpp
+    static const touchgfx::FontId TYRPM = 11;               // verdana_30_4bpp
+    static const touchgfx::FontId TYLABEL22 = 20;           // verdana_22_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 21;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider
