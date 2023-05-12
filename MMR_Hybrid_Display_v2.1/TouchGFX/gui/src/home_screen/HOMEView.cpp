@@ -38,34 +38,22 @@ void HOMEView::updateDisplay()
 		}
 
 		//Poil
-		float pOil = getValueData(&(ds.thermalPressure.oilPressure));
-		Unicode::snprintf(txtOilPBuffer, TXTOILP_SIZE, "%.1f", pOil);
-		txtOilP.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilPressure), txtOilPBuffer, TXTOILP_SIZE, &txtOilP);
 
 		//Toil
-		float tOil = getValueData(&(ds.thermalPressure.oilTemperature));
-		Unicode::snprintf(txtOilTBuffer, TXTOILT_SIZE, "%.1f", tOil);
-		txtOilT.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.oilTemperature), txtOilTBuffer, TXTOILT_SIZE, &txtOilT);
 
 		//tWater
-		float tWater = getValueData(&(ds.thermalPressure.waterTemperature));
-		Unicode::snprintf(txtWaterTBuffer, TXTWATERT_SIZE, "%.1f", tWater);
-		txtWaterT.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.waterTemperature), txtWaterTBuffer, TXTWATERT_SIZE, &txtWaterT);
 
 		//tAir
-		float tAir = getValueData(&(ds.thermalPressure.airTemperature));
-		Unicode::snprintf(txtAirTBuffer, TXTAIRT_SIZE, "%.1f", tAir);
-		txtAirT.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.airTemperature), txtAirTBuffer, TXTAIRT_SIZE, &txtAirT);
 
 		//pFuel
-		float pFuel = getValueData(&(ds.thermalPressure.fuelPressure));
-		Unicode::snprintf(txtFuelPBuffer, TXTFUELP_SIZE, "%.1f", pFuel);
-		txtFuelP.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelPressure), txtFuelPBuffer, TXTFUELP_SIZE, &txtFuelP);
 
 		//tFuel
-		float tFuel = getValueData(&(ds.thermalPressure.fuelTemperature));
-		Unicode::snprintf(txtFuelTBuffer, TXTFUELT_SIZE, "%.1f", tFuel);
-		txtFuelT.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.thermalPressure.fuelTemperature), txtFuelTBuffer, TXTFUELT_SIZE, &txtFuelT);
 
 		//gear
 		int gear = getValueData(&(ds.mechanics.gear));
@@ -89,24 +77,16 @@ void HOMEView::updateDisplay()
 		txtGear.invalidate();
 
 		//speed
-		int speed = getValueData(&(ds.mechanics.speed));
-		Unicode::snprintf(txtSpeedBuffer, TXTSPEED_SIZE, "%d", speed);
-		txtSpeed.invalidate();
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.speed), txtSpeedBuffer, TXTSPEED_SIZE, &txtSpeed);
 
 		//rpm
-		int rpm = getValueData(&(ds.mechanics.rpm));
-		Unicode::snprintf(txtRPMBuffer, TXTRPM_SIZE, "%d", rpm);
-		txtRPM.invalidate();
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.rpm), txtRPMBuffer, TXTRPM_SIZE, &txtRPM);
 
 		//vBat
-		float vBat = getValueData(&(ds.controls.batteryVoltage));
-		Unicode::snprintf(txtVbatBuffer, TXTVBAT_SIZE, "%.1f", vBat);
-		txtVbat.invalidate();
+		FrontendApplication::writeFloatDataInBuffer(&(ds.controls.batteryVoltage), txtVbatBuffer, TXTVBAT_SIZE, &txtVbat);
 
 		//tps
-		int tps = getValueData(&(ds.mechanics.tps));
-		Unicode::snprintf(txtTpsBuffer, TXTTPS_SIZE, "%d", tps);
-		txtTps.invalidate();
+		FrontendApplication::writeIntDataInBuffer(&(ds.mechanics.tps), txtTpsBuffer, TXTTPS_SIZE, &txtTps);
 
 		//traction
 		int traction = ds.controls.tractionControl;

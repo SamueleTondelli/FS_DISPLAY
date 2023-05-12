@@ -2,6 +2,8 @@
 #define FRONTENDAPPLICATION_HPP
 
 #include <gui_generated/common/FrontendApplicationBase.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include "DisplayConstant.h"
 #include "Data/Data.h"
 
 class FrontendHeap;
@@ -17,6 +19,10 @@ public:
     //MODIFIED
     void gotoHOMEScreenNoTransition();
     //missing DRAG and DRAG_2 screen transitions
+
+    static void writeIntDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
+
+    static void writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
 
     static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize);
 

@@ -14,6 +14,41 @@ void FrontendApplication::gotoHOMEScreenNoTransition()
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
+void FrontendApplication::writeIntDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea)
+{
+	int value = getValueData(data);
+	if (value != EMPTY_VALUE)
+	{
+		Unicode::snprintf(buffer, bufferSize, "%d", value);
+		txtArea->invalidate();
+	}
+	else
+	{
+		buffer[0] = 'N';
+		if (bufferSize >= 2)
+		{
+			buffer[1] = 'A';
+		}
+	}
+}
+
+void FrontendApplication::writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea)
+{
+	float value = getValueData(data);
+	if (value != EMPTY_VALUE)
+	{
+		Unicode::snprintf(buffer, bufferSize, "%.1f", value);
+		txtArea->invalidate();
+	}
+	else
+	{
+		buffer[0] = 'N';
+		if (bufferSize >= 2)
+		{
+			buffer[1] = 'A';
+		}
+	}
+}
 
 void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize)
 {
