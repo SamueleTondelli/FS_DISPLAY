@@ -68,13 +68,20 @@ void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar
 		}
 		Unicode::snprintf(valueBuffer, valueBufferSize, "%f", getValueData(d));
 
-		if (isDataCritical(d) < 0)
+		if (alarm->priority == NOTIFICATION_PRIORITY)
 		{
-			bxAlarm->setColor(Color::getColorFromRGB(3, 32, 255));
+			bxAlarm->setColor(Color::getColorFromRGB(60, 255, 202));
 		}
 		else
 		{
-			bxAlarm->setColor(Color::getColorFromRGB(255, 0, 0));
+			if (isDataCritical(d) < 0)
+			{
+				bxAlarm->setColor(Color::getColorFromRGB(3, 32, 255));
+			}
+			else
+			{
+				bxAlarm->setColor(Color::getColorFromRGB(255, 0, 0));
+			}
 		}
 	}
 }
