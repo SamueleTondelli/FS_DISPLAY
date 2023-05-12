@@ -10,7 +10,7 @@ extern "C" {
 #include "string.h"
 // END
 
-#define DATA_STATUS_DEFAUL_DEFINE_LENGTH 20 //TODO Controllare se sufficiente
+#define DATA_STATUS_DEFAULT_DEFINE_LENGTH 20 //TODO Controllare se sufficiente
 #define DATA_STATUS_ERROR "ERROR"
 #define DATA_STATUS_ERROR_LENGTH 5
 #define DATA_STATUS_ERROR_VALUE -1
@@ -26,7 +26,7 @@ extern "C" {
  */
 typedef struct {
 	int8_t status;
-	char* statusDef[DATA_STATUS_DEFAUL_DEFINE_LENGTH];	
+	char* statusDef[DATA_STATUS_DEFAULT_DEFINE_LENGTH];
 	uint8_t statusDefLength;
 } DataStatus;
 /*
