@@ -11,7 +11,7 @@ void initializeDataControls(DataControls* dataControls) {
 	initializeData(&(dataControls->pedal), EMPTY_VALUE, PEDAL_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->brake), EMPTY_VALUE, BRAKE_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
-	dataControls->tractionControl = EMPTY_VALUE;
+	initializeData(&(dataControls->tractionControl), EMPTY_VALUE, TRACTION_CONTROL_CONVERSION_FACTOR, NOTIFICATION_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 }
 
 void setFlagNotUpdatedDataControls(DataControls* dataControls) {
@@ -28,21 +28,31 @@ void readTractionControlData(DataControls* dataControls) {
 	while (HAL_ADC_PollForConversion(&hadc3, 1) != HAL_OK) {} //wait for available data
 
 	uint16_t rawData = HAL_ADC_GetValue(&hadc3);
-
+	uint8_t newValue;
 	if (rawData <= TRACTION_OFF_UPPER_VALUE) {
-		dataControls->tractionControl = 0;
+		newValue = 0;
 	}
 	else if (rawData <= TRACTION_1_UPPER_VALUE) {
-		dataControls->tractionControl = 1;
+		newValue = 1;
 	}
 	else if (rawData <= TRACTION_2_UPPER_VALUE) {
-		dataControls->tractionControl = 2;
+		newValue = 2;
 	}
 	else if (rawData <= TRACTION_3_UPPER_VALUE) {
-		dataControls->tractionControl = 3;
+		newValue = 3;
 	}
 	else {
-		dataControls->tractionControl = 4;
+		newValue = 4;
+	}
+
+	if (newValue != getValueData(&(dataControls->tractionControl)))
+	{
+		setValueData(&(dataControls->tractionControl), newValue);
+		activateDataAlarm(&(dataControls->tractionControl), "NEW TRC");
+	}
+	else
+	{
+		dataControls->tractionControl.alarmStatus = OFF_QUEUE;
 	}
 }
 

@@ -22,7 +22,7 @@ typedef struct {
 	Data pedal;
 	Data brake;
 	Data brakeRear;
-	uint8_t tractionControl;
+	Data tractionControl;
 } DataControls;
 
 /*

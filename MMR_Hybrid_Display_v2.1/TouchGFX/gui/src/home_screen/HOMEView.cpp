@@ -95,7 +95,7 @@ void HOMEView::updateDisplay()
 		txtGear.invalidate();
 
 		//traction
-		int traction = ds.controls.tractionControl;
+		int traction = getValueData(&(ds.controls.tractionControl));
 		switch(traction) {
 			case 1:
 				txtTractionBuffer[0] = '1';
@@ -156,7 +156,7 @@ void HOMEView::updateDisplay()
 		{
 			if (uwTick - currentAlarmStartTime < ALARM_NOT_INTERRUPTABLE_TIME)
 			{
-				if (getAlarmStatus(&currentAlarm) == ON)
+				if ((getAlarmStatus(&currentAlarm) == ON) || currentAlarm.priority == NOTIFICATION_PRIORITY) //if the alarm has lowest priority, it means it's a notification, therefore we need to show it for the whole non interruptible time
 				{
 					FrontendApplication::writeAlarmInBuffers(&currentAlarm, txtAlarmNameBuffer, TXTALARMNAME_SIZE, txtAlarmValueBuffer, TXTALARMVALUE_SIZE, &bxAlarm);
 				}
