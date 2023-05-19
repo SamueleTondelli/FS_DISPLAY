@@ -13,7 +13,7 @@ extern CAN_TxHeaderTypeDef ptxHeader;
 extern uint32_t txMailbox;
 #endif
 
-void decodifyCanMsg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload) {
+void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload) {
 	switch (id) {
 	case 0x200:
 		setValueData(&(dataset->mechanics.rpm), ((payload[0] << 8) | payload[1]));
@@ -118,6 +118,11 @@ void decodifyCanMsg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload
 	default:
 		break;
 	}
+}
+
+void decodifyCan2Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload)
+{
+
 }
 
 // Old Messages

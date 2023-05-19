@@ -204,6 +204,9 @@ int main(void)
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
+  HAL_CAN_Start(&hcan2);
+  HAL_CAN_ActivateNotification(&hcan2, CAN_IT_RX_FIFO1_MSG_PENDING);
+
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -327,7 +330,27 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     uint8_t canDlcMsg = prxHeader.DLC;
 
     // Decodify a CAN message and get informations
-    decodifyCanMsg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
+    decodifyCan1Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
+
+    // DEBUG
+    counterMessages++;
+}
+
+void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+
+	//DEBUG
+	//uint8_t value = 0x01;
+	//HAL_UART_Transmit(&huart1, &value, 1, 1);
+	uint8_t rawDataCAN[8] = {0};
+
+    // Get a CAN message
+    HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &prxHeader, rawDataCAN);
+
+    uint16_t canIdMsg = prxHeader.StdId;
+    uint8_t canDlcMsg = prxHeader.DLC;
+
+    // Decodify a CAN message and get informations
+    decodifyCan2Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
 
     // DEBUG
     counterMessages++;
