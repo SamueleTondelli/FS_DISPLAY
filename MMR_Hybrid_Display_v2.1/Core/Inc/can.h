@@ -46,7 +46,8 @@ void MX_CAN3_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-void CAN1_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_RxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig);
+void CAN1_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_TxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig);
+void CAN2_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_TxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig);
 
 /* USER CODE END Prototypes */
 

@@ -122,7 +122,18 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 
 void decodifyCan2Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload)
 {
-
+	switch (id)
+	{
+	case 0x308:
+		setValueData(&(dataset->controls.steer), ((payload[5] << 8) | payload[4]));
+		break;
+	case 0x390: //GPS longitude / latitude
+		break;
+	case 0x394: //GPS altitude
+		break;
+	default:
+		break;
+	}
 }
 
 // Old Messages

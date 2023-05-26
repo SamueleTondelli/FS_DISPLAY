@@ -23,6 +23,7 @@ typedef struct {
 	Data brake;
 	Data brakeRear;
 	Data tractionControl;
+	Data steer;
 } DataControls;
 
 /*

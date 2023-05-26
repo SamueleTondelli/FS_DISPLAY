@@ -72,11 +72,14 @@
 
 /* USER CODE BEGIN PV */
 
-extern CAN_TxHeaderTypeDef ptxHeader;
-extern CAN_RxHeaderTypeDef prxHeader;
+extern CAN_TxHeaderTypeDef ptxHeaderCan1;
+extern CAN_RxHeaderTypeDef prxHeaderCan1;
+extern CAN_TxHeaderTypeDef ptxHeaderCan2;
+extern CAN_RxHeaderTypeDef prxHeaderCan2;
 extern uint32_t rxMailbox;
 extern uint32_t txMailbox;
-extern CAN_FilterTypeDef sFilterConfig;
+extern CAN_FilterTypeDef sFilterConfigCan1;
+extern CAN_FilterTypeDef sFilterConfigCan2;
 
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
@@ -199,11 +202,13 @@ int main(void)
   HAL_TIM_Base_Start_IT(timList.tim5sec);
 
   // Enable CAN Routine
-  CAN1_Config(&prxHeader, &prxHeader, &sFilterConfig);
-  HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
+  CAN1_Config(&prxHeaderCan1, &ptxHeaderCan1, &sFilterConfigCan1);
+  HAL_CAN_ConfigFilter(&hcan1, &sFilterConfigCan1);
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
+  CAN2_Config(&prxHeaderCan2, &ptxHeaderCan2, &sFilterConfigCan2);
+  HAL_CAN_ConfigFilter(&hcan2, &sFilterConfigCan2);
   HAL_CAN_Start(&hcan2);
   HAL_CAN_ActivateNotification(&hcan2, CAN_IT_RX_FIFO1_MSG_PENDING);
 
@@ -324,10 +329,10 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	uint8_t rawDataCAN[8] = {0};
 
     // Get a CAN message
-    HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &prxHeader, rawDataCAN);
+    HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &prxHeaderCan1, rawDataCAN);
 
-    uint16_t canIdMsg = prxHeader.StdId;
-    uint8_t canDlcMsg = prxHeader.DLC;
+    uint16_t canIdMsg = prxHeaderCan1.StdId;
+    uint8_t canDlcMsg = prxHeaderCan1.DLC;
 
     // Decodify a CAN message and get informations
     decodifyCan1Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
@@ -337,23 +342,13 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 }
 
 void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-
-	//DEBUG
-	//uint8_t value = 0x01;
-	//HAL_UART_Transmit(&huart1, &value, 1, 1);
 	uint8_t rawDataCAN[8] = {0};
+	HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &prxHeaderCan2, rawDataCAN);
 
-    // Get a CAN message
-    HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &prxHeader, rawDataCAN);
+	uint16_t canIdMsg = prxHeaderCan2.StdId;
+	uint8_t canDlcMsg = prxHeaderCan2.DLC;
 
-    uint16_t canIdMsg = prxHeader.StdId;
-    uint8_t canDlcMsg = prxHeader.DLC;
-
-    // Decodify a CAN message and get informations
-    decodifyCan2Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
-
-    // DEBUG
-    counterMessages++;
+	decodifyCan2Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
 }
 
 /* USER CODE END 4 */

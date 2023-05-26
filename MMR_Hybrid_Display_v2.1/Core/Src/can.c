@@ -23,13 +23,17 @@
 /* USER CODE BEGIN 0 */
 
 // CAN header TX & RX
-CAN_TxHeaderTypeDef ptxHeader;
-CAN_RxHeaderTypeDef prxHeader;
+CAN_TxHeaderTypeDef ptxHeaderCan1;
+CAN_RxHeaderTypeDef prxHeaderCan1;
+
+CAN_TxHeaderTypeDef ptxHeaderCan2;
+CAN_RxHeaderTypeDef prxHeaderCan2;
 	// CAN Mailbox
 uint32_t txMailbox;
 uint32_t rxMailbox;
 	// CAN Filter
-CAN_FilterTypeDef sFilterConfig;
+CAN_FilterTypeDef sFilterConfigCan1;
+CAN_FilterTypeDef sFilterConfigCan2;
 
 /* USER CODE END 0 */
 
@@ -334,7 +338,7 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* canHandle)
 
 /* USER CODE BEGIN 1 */
 
-void CAN1_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_RxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig) {
+void CAN1_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_TxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig) {
 	// CAN
 	  // Configuration CAN header TX
 	  txHeader->IDE=CAN_ID_STD;
@@ -350,6 +354,31 @@ void CAN1_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_RxHeaderTypeDef *txHeader, C
 
 	  // Configuration CAN filter
 	  filterConfig->FilterFIFOAssignment=CAN_FILTER_FIFO0;
+	  filterConfig->FilterMode=CAN_FILTERMODE_IDMASK;
+	  filterConfig->FilterIdHigh=0x000<<5;
+	  filterConfig->FilterIdLow=0;
+	  filterConfig->FilterMaskIdHigh=0x000<<5;
+	  filterConfig->FilterMaskIdLow=0;
+	  filterConfig->FilterScale=CAN_FILTERSCALE_32BIT;
+	  filterConfig->FilterActivation=ENABLE;
+}
+
+void CAN2_Config(CAN_RxHeaderTypeDef *rxHeader, CAN_TxHeaderTypeDef *txHeader, CAN_FilterTypeDef *filterConfig) {
+	// CAN
+	  // Configuration CAN header TX
+	  txHeader->IDE=CAN_ID_STD;
+	  txHeader->RTR=CAN_RTR_DATA;
+	  txHeader->StdId=0x200;
+	  txHeader->DLC=8;
+
+	  // Configuration CAN header RX
+	  rxHeader->IDE=CAN_ID_STD;
+	  rxHeader->RTR=CAN_RTR_DATA;
+	  rxHeader->StdId=0x200;
+	  rxHeader->DLC=8;
+
+	  // Configuration CAN filter
+	  filterConfig->FilterFIFOAssignment=CAN_FILTER_FIFO1;
 	  filterConfig->FilterMode=CAN_FILTERMODE_IDMASK;
 	  filterConfig->FilterIdHigh=0x000<<5;
 	  filterConfig->FilterIdLow=0;

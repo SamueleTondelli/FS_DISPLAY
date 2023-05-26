@@ -12,6 +12,7 @@ void initializeDataControls(DataControls* dataControls) {
 	initializeData(&(dataControls->brake), EMPTY_VALUE, BRAKE_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->tractionControl), EMPTY_VALUE, TRACTION_CONTROL_CONVERSION_FACTOR, NOTIFICATION_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataControls->steer), EMPTY_VALUE, STEER_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 }
 
 void setFlagNotUpdatedDataControls(DataControls* dataControls) {
@@ -20,6 +21,8 @@ void setFlagNotUpdatedDataControls(DataControls* dataControls) {
 	setNotUpdateData(&(dataControls->pedal));
 	setNotUpdateData(&(dataControls->brake));
 	setNotUpdateData(&(dataControls->brakeRear));
+	setNotUpdateData(&(dataControls->tractionControl));
+	setNotUpdateData(&(dataControls->steer));
 }
 
 void readTractionControlData(DataControls* dataControls) {
