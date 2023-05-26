@@ -1,4 +1,5 @@
 #include "Data/DataAlarms.h"
+
 #include "Data/Data.h"
 
 extern Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
@@ -115,7 +116,20 @@ ALARM_STATUS getAlarmStatus(Alarm* alarm)
 	}
 }
 
+void newMessageFromTelemetry(int id, DataMessage* telemetryMessages)
+{
+	if (id < 0 || id > 2)
+	{
+		return;
+	}
 
+	Alarm a;
+	a.priority = getPriority(&telemetryMessages[id]);
+	strcpy(a.name, "TELEMETRY");
+	a.contents = (void*)getMessage(&telemetryMessages[id]);
+	a.type = STRING;
+	insertAlarmInQueue(&a);
+}
 
 
 

@@ -10,6 +10,7 @@ extern "C" {
 #include "DataMechanics.h"
 #include "DataControls.h"
 #include "DataScreen.h"
+#include "DataMessage.h"
 // END
 
 /*
@@ -24,6 +25,8 @@ typedef struct {
 	DataMechanics mechanics;
 	DataControls controls;
 	DataScreen screen;
+
+	DataMessage telemetryMessage[3];
 } Dataset;
 /*
  * Initialize Dataset Struct

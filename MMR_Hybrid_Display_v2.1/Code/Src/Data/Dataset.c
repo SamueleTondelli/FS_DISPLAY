@@ -21,6 +21,13 @@ void initializeDataset(Dataset *dataset) {
 	initializeDataMechanics(&(dataset->mechanics));
 	initializeDataControls(&(dataset->controls));
 	initializeDataScreen(&(dataset->screen));
+
+	setMessage(&dataset->telemetryMessage[0], "STOP");
+	setPriority(&dataset->telemetryMessage[0], 0);
+	setMessage(&dataset->telemetryMessage[0], "BOX");
+	setPriority(&dataset->telemetryMessage[0], 2);
+	setMessage(&dataset->telemetryMessage[0], "COOLDOWN");
+	setPriority(&dataset->telemetryMessage[0], 3);
 }
 
 void setFlagNotUpdatedDataset(Dataset* dataset) {

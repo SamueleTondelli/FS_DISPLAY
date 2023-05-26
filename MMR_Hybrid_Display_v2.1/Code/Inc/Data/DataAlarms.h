@@ -5,13 +5,13 @@
 #include "main.h"
 #include <string.h>
 #include <stdint.h>
+#include "Data/DataMessage.h"
 
 typedef enum {
 	OFF_QUEUE,
 	ON,
 	DEACTIVATED
 } ALARM_STATUS;
-
 
 typedef enum {
 	DATA,
@@ -34,5 +34,7 @@ void updateQueue();
 
 void deactivateAlarm(Alarm* alarm);
 ALARM_STATUS getAlarmStatus(Alarm* alarm);
+
+void newMessageFromTelemetry(int id, DataMessage* messages);
 
 #endif	/*DATA_ALARMS_H*/
