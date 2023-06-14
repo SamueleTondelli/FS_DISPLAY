@@ -27,6 +27,10 @@ public:
 
     static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
 
+    static Alarm* getCurrentAlarm();
+
+    static void handleAlarms(touchgfx::Container* ctAlarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
+
     //END MODIFIED
 
     virtual void handleTickEvent()
