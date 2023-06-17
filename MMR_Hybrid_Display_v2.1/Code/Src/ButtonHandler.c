@@ -29,6 +29,10 @@ void buttonsActionHandler(Dataset* dataset) {
 			dataset->screen.invalidateCurrentAlarmFlag = 1;
 			dataset->okBtn.state = BUTTON_DISABLED;
 		}
+		else
+		{
+			dataset->screen.invalidateCurrentAlarmFlag = 1;
+		}
 	}
 
 	if(!updateButton(&(dataset->mapBtn)))
