@@ -3,10 +3,16 @@
 
 // DISPLAY CONSTANTS
 
+#define NUMBER_OF_SCREENS 6
+#define STARTING_SCREEN 0
+
 	// SCREEN NAMES
 #define HOME 0
-#define DRAG 1
-#define DRAG_2 2
+#define RACE 1
+#define DRAG 2
+#define ENDURANCE 3
+#define SKIDPAD 4
+#define SETUP 5
 
 	// ALARMS CONSTANTS
 #define ALARM_NOT_INTERRUPTABLE_TIME	4000 //ms

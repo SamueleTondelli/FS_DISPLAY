@@ -4,7 +4,6 @@
 #include "Data/Dataset.h"
 #include "Data/DataScreen.h"
 #include "Data/DataNotification.h"
-#include "SDcardHandler.h"
 // END
 
 //#define DEBUG_TIMERHANDLER 1
@@ -39,27 +38,7 @@ void stopTimer(TIM_HandleTypeDef* htim) {
 void timerHandlerOld(TIM_HandleTypeDef *htim) {
 
 	if(htim == &htim1) {	//TIM2 33ms for 30 FPS Display Update
-
-			ds.screen.updateFlag = 1;
-	} else if(htim == &htim2) {
-		if (ds.screen.isSimulationModeEnabled == 1 && ds.screen.simulationFlag == 1) {
-
-			ds.screen.simulationReadFlag = 1;
-
-			/*
-			 * TODO Creare un task per gestire la Simulation Mode
-			 * (Inserire questo codice in una routine)
-			 */
-			/*
-			if(ds.screen.simulationReadFlag == 1) {
-				int res = readFileRow(sdCard, dataset);
-				if (res != 0) {	// Run Time Errors
-					dataset->screen.simulationFlag = 0;
-					stopSimulationMode(dataset, res, -1);
-				}
-			}
-			*/
-		}
+		ds.screen.updateFlag = 1;
 	} else if(htim == &htim3) {	//TIM7 1s timeout for FPS counter
 
 		// Update FPS
@@ -103,9 +82,6 @@ void timerHandlerOld(TIM_HandleTypeDef *htim) {
 		HAL_CAN_AddTxMessage(&hcan1, &ptxHeader, dummyData, &txMailbox);
 #endif
 
-	    // Disable Animation flag
-	    ds.screen.screenNameFlag = 0;
-
 #ifdef DEBUG_TIMERHANDLER
 	    //DEBUG
 		//uint8_t dummyData[8] = {0};
@@ -136,12 +112,5 @@ void timerHandler(TIM_HandleTypeDef* htim, TimersList* timers, Dataset* dataset)
 		cleanFpsCounter(&(dataset->screen));
 		// Change status blink 1s flag
 		changeBlinkFlag(&(dataset->screen));
-	} else if(htim == timList.tim2sec) {	//2s for ScreenName enable time
-	    // Stop Animation Timer
-	    stopTimer(timList.tim2sec);
-
-	    // Disable Animation flag
-		dataset->screen.screenNameFlag = 0;
-
-    }
+	}
 }

@@ -19,7 +19,16 @@ public:
 
     //MODIFIED
     void gotoHOMEScreenNoTransition();
-    //missing DRAG and DRAG_2 screen transitions
+
+    void gotoRACEScreenNoTransition();
+
+    void gotoDRAGScreenNoTransition();
+
+    void gotoENDURANCEScreenNoTransition();
+
+    void gotoSKIDPADScreenNoTransition();
+
+    void gotoSETUPScreenNoTransition();
 
     static void writeIntDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
 

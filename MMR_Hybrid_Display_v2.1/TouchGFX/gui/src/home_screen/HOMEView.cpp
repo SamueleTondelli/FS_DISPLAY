@@ -26,14 +26,6 @@ void HOMEView::updateDisplay()
 	static uint32_t lastValueUpdate = 0;
 	if (peekAlarmFromQueue() == NULL && FrontendApplication::getCurrentAlarm()->contents == NULL)
 	{
-		// Screen Name
-		if(ds.screen.screenNameFlag) {
-			bxScreenName.setVisible(true);
-			txtScreenName.setVisible(true);
-		} else {
-			bxScreenName.setVisible(false);
-			txtScreenName.setVisible(false);
-		}
 
 		if ((uwTick - lastValueUpdate) >= ANTI_FLICKER_TIME || lastValueUpdate == 0)
 		{

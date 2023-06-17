@@ -33,17 +33,9 @@ void Model::tick() {
 
 		// Check for Changed Screen Event
 		uint8_t currentScreen = Model::getCurrentScreenIndex();
-
-		if(ds.screen.introductionPresentationFlag == 1) {
-			updateDisplay();
-			return;
-		}
-
 		uint8_t screen = getCurrentScreen(&(ds.screen));
 
 		if(screen != currentScreen) {
-			// To active Animation Screen Name
-			ds.screen.screenNameFlag = 1;
 
 			//startTimer(&htim4);
 			startTimer(timList.tim2sec);
@@ -53,12 +45,20 @@ void Model::tick() {
 			case HOME:
 				static_cast<FrontendApplication*>(Application::getInstance())->gotoHOMEScreenNoTransition();
 				break;
-			//TODO: CHANGE
-			case DRAG:
-				//call gotoDRAGScreen
+			case RACE:
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoRACEScreenNoTransition();
 				break;
-			case DRAG_2:
-				//call gotoDRAGScreen
+			case DRAG:
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoDRAGScreenNoTransition();
+				break;
+			case ENDURANCE:
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoENDURANCEScreenNoTransition();
+				break;
+			case SKIDPAD:
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoSKIDPADScreenNoTransition();
+				break;
+			case SETUP:
+				static_cast<FrontendApplication*>(Application::getInstance())->gotoSETUPScreenNoTransition();
 				break;
 			default:
 				updateDisplay();
