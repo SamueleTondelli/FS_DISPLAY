@@ -1118,1074 +1118,19 @@
             ]
           }
         ],
-        "Interactions": []
-      },
-      {
-        "Name": "SKIDPAD",
-        "CanvasBufferSize": 7200,
-        "Components": [
+        "Interactions": [
           {
-            "Type": "BoxWithBorder",
-            "Name": "bxBackGround",
-            "Width": 480,
-            "Height": 272,
-            "LockPosition": true,
-            "BorderSize": 5
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtRR",
-            "X": 320,
-            "Y": 170,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_VUG1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+            "InteractionName": "toRACE",
+            "Trigger": {
+              "Type": "TriggerNone"
             },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_JDCG"
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "RACE"
             }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtRL",
-            "X": 122,
-            "Y": 170,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_9QCJ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_STIP"
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtFR",
-            "X": 320,
-            "Y": 106,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_IC1G",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_9GXF",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtFL",
-            "X": 122,
-            "Y": 106,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_KKNJ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_TALP"
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameRR",
-            "X": 323,
-            "Y": 144,
-            "Width": 31,
-            "Height": 27,
-            "TextId": "__SingleUse_OQIP",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameRL",
-            "X": 126,
-            "Y": 144,
-            "Width": 28,
-            "Height": 27,
-            "TextId": "__SingleUse_2V8N",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameFR",
-            "X": 324,
-            "Y": 79,
-            "Width": 28,
-            "Height": 27,
-            "TextId": "__SingleUse_JQ6F",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameFL",
-            "X": 128,
-            "Y": 79,
-            "Width": 25,
-            "Height": 27,
-            "TextId": "__SingleUse_A62L",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Line",
-            "Name": "up_line",
-            "X": -3,
-            "Y": -4,
-            "Width": 484,
-            "Height": 19,
-            "LockPosition": true,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 480.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "rpm_line",
-            "X": -3,
-            "Y": 30,
-            "Width": 484,
-            "Height": 19,
-            "LockPosition": true,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 480.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_2",
-            "X": -3,
-            "Y": 136,
-            "Width": 201,
-            "Height": 17,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 190.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_2_1",
-            "X": -3,
-            "Y": 71,
-            "Width": 201,
-            "Height": 17,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 190.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_5",
-            "X": 292,
-            "Y": 136,
-            "Width": 201,
-            "Height": 17,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 186.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_5_1",
-            "X": 292,
-            "Y": 71,
-            "Width": 201,
-            "Height": 17,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 186.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_1",
-            "X": -3,
-            "Y": 200,
-            "Width": 484,
-            "Height": 19,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 480.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "right_line",
-            "X": 473,
-            "Width": 15,
-            "Height": 272,
-            "LockPosition": true,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 5.0,
-            "EndX": 5.0,
-            "EndY": 272.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "left_line",
-            "X": -3,
-            "Y": -1,
-            "Width": 33,
-            "Height": 272,
-            "LockPosition": true,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 4.0,
-            "EndX": 4.0,
-            "EndY": 272.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_4",
-            "X": 184,
-            "Y": 34,
-            "Width": 15,
-            "Height": 237,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 4.0,
-            "EndX": 4.0,
-            "EndY": 238.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_4_1",
-            "X": 92,
-            "Y": 77,
-            "Width": 15,
-            "Height": 193,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 4.0,
-            "EndX": 4.0,
-            "EndY": 195.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_4_1_1",
-            "X": 380,
-            "Y": 77,
-            "Width": 15,
-            "Height": 193,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 4.0,
-            "EndX": 4.0,
-            "EndY": 195.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "design_line_3",
-            "X": 289,
-            "Y": 34,
-            "Width": 15,
-            "Height": 238,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartX": 4.0,
-            "EndX": 4.0,
-            "EndY": 238.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "Line",
-            "Name": "bottom_line",
-            "X": -3,
-            "Y": 266,
-            "Width": 483,
-            "Height": 18,
-            "LockPosition": true,
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "StartY": 5.0,
-            "EndX": 480.0,
-            "EndY": 5.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSpeed",
-            "X": 320,
-            "Y": 237,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_IA0H",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_CGH5",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtGear",
-            "X": 187,
-            "Y": 44,
-            "Width": 107,
-            "Height": 183,
-            "LockPosition": true,
-            "TextId": "__SingleUse_WSFX",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_BXNH",
-              "UseBuffer": true,
-              "BufferSize": 1
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtRPM",
-            "X": 193,
-            "Y": 38,
-            "Width": 95,
-            "Height": 37,
-            "TextId": "__SingleUse_7BJS",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_S90H",
-              "UseBuffer": true,
-              "BufferSize": 5
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtVbat",
-            "X": 122,
-            "Y": 237,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_Z2QG",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_TMOE",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameVbat",
-            "X": 110,
-            "Y": 208,
-            "Width": 60,
-            "Height": 27,
-            "TextId": "__SingleUse_IXH2",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameWaterT",
-            "X": 17,
-            "Y": 144,
-            "Width": 64,
-            "Height": 27,
-            "TextId": "__SingleUse_6EC4",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameOilT",
-            "X": 24,
-            "Y": 79,
-            "Width": 51,
-            "Height": 27,
-            "TextId": "__SingleUse_HT5B",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameAirT",
-            "X": 23,
-            "Y": 208,
-            "Width": 52,
-            "Height": 27,
-            "TextId": "__SingleUse_8VSY",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtAirT",
-            "X": 31,
-            "Y": 237,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_3JKG",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_CU4C",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtOilT",
-            "X": 31,
-            "Y": 106,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_0600",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_XUHK",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtWaterT",
-            "X": 31,
-            "Y": 170,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_DAPO",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_QUK3",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameOilP",
-            "X": 405,
-            "Y": 79,
-            "Width": 50,
-            "Height": 27,
-            "TextId": "__SingleUse_9OL8",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameFuelP",
-            "X": 397,
-            "Y": 143,
-            "Width": 67,
-            "Height": 27,
-            "TextId": "__SingleUse_J2MJ",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtOilP",
-            "X": 412,
-            "Y": 106,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_BICX",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_2EC9",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtFuelT",
-            "X": 412,
-            "Y": 170,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_NLHX",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_LV78",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameSteeringWheelRight",
-            "X": 301,
-            "Y": 44,
-            "Width": 91,
-            "Height": 26,
-            "TextId": "__SingleUse_J69A",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 175,
-              "Green": 185,
-              "Blue": 196
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameSteeringWheelLeft",
-            "X": 92,
-            "Y": 44,
-            "Width": 92,
-            "Height": 25,
-            "TextId": "__SingleUse_9X25",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 175,
-              "Green": 185,
-              "Blue": 196
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtTps",
-            "X": 222,
-            "Y": 237,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_YWR5",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_H8J5",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameTps",
-            "X": 219,
-            "Y": 208,
-            "Width": 42,
-            "Height": 27,
-            "TextId": "__SingleUse_2K8E",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtTraction",
-            "X": 406,
-            "Y": 237,
-            "Width": 48,
-            "Height": 31,
-            "TextId": "__SingleUse_UELT",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 77,
-              "Green": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_AON6",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameTraction",
-            "X": 408,
-            "Y": 209,
-            "Width": 44,
-            "Height": 27,
-            "TextId": "__SingleUse_FCL1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSteeringWheelRight",
-            "X": 412,
-            "Y": 41,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_4LPN",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_MBAN",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "txtSteeringWheelLeft",
-            "X": 31,
-            "Y": 41,
-            "Width": 36,
-            "Height": 31,
-            "TextId": "__SingleUse_WZ5T",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_OYHP",
-              "UseBuffer": true,
-              "BufferSize": 3
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "nameSpeed",
-            "X": 304,
-            "Y": 208,
-            "Width": 69,
-            "Height": 27,
-            "TextId": "__SingleUse_T50X",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "Box",
-            "Name": "bxRPMLowRange",
-            "X": 2,
-            "Y": 2,
-            "Width": 200,
-            "Height": 32,
-            "Color": {
-              "Red": 17,
-              "Blue": 255
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "bxRPMMediumRange",
-            "X": 201,
-            "Y": 2,
-            "Width": 157,
-            "Height": 32,
-            "Color": {
-              "Red": 235,
-              "Green": 207
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "bxRPMHighRange",
-            "X": 358,
-            "Y": 2,
-            "Width": 119,
-            "Height": 32,
-            "Color": {
-              "Red": 255,
-              "Blue": 21
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "bxRPMCover",
-            "X": 2,
-            "Y": 2,
-            "Width": 475,
-            "Height": 32,
-            "Visible": false
-          },
-          {
-            "Type": "Container",
-            "Name": "ctTemp",
-            "Width": 480,
-            "Height": 272,
-            "Visible": false,
-            "LockPosition": true,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxOilTemp",
-                "Width": 240,
-                "Height": 272,
-                "Color": {
-                  "Red": 255
-                },
-                "BorderColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderSize": 2
-              },
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxWaterTemp",
-                "X": 240,
-                "Width": 240,
-                "Height": 272,
-                "Color": {
-                  "Red": 51,
-                  "Green": 78,
-                  "Blue": 255
-                },
-                "BorderColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderSize": 2
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtWaterTemp",
-                "X": 55,
-                "Y": 136,
-                "Width": 130,
-                "Height": 98,
-                "LockPosition": true,
-                "TextId": "__SingleUse_X9LZ",
-                "TextRotation": "0",
-                "AutoSize": true,
-                "Wildcard1": {
-                  "TextId": "__SingleUse_X1J5",
-                  "UseBuffer": true,
-                  "BufferSize": 3
-                }
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtOilTemp",
-                "X": 295,
-                "Y": 136,
-                "Width": 130,
-                "Height": 98,
-                "LockPosition": true,
-                "TextId": "__SingleUse_P6BV",
-                "TextRotation": "0",
-                "AutoSize": true,
-                "Wildcard1": {
-                  "TextId": "__SingleUse_0A0O",
-                  "UseBuffer": true,
-                  "BufferSize": 3
-                }
-              },
-              {
-                "Type": "TextArea",
-                "Name": "nameWaterTemp",
-                "X": 265,
-                "Y": 19,
-                "Width": 190,
-                "Height": 73,
-                "LockPosition": true,
-                "TextId": "__SingleUse_76TS",
-                "TextRotation": "0",
-                "AutoSize": true
-              },
-              {
-                "Type": "TextArea",
-                "Name": "nameOilTemp",
-                "X": 38,
-                "Y": 20,
-                "Width": 164,
-                "Height": 73,
-                "LockPosition": true,
-                "TextId": "__SingleUse_109S",
-                "TextRotation": "0",
-                "AutoSize": true
-              }
-            ]
-          },
-          {
-            "Type": "Container",
-            "Name": "ctAlarm",
-            "Width": 480,
-            "Height": 272,
-            "Visible": false,
-            "Components": [
-              {
-                "Type": "BoxWithBorder",
-                "Name": "bxAlarm",
-                "Width": 480,
-                "Height": 272,
-                "LockPosition": true,
-                "Color": {
-                  "Red": 3,
-                  "Green": 32,
-                  "Blue": 255
-                },
-                "BorderColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "BorderSize": 4
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtAlarmName",
-                "X": 153,
-                "Y": 15,
-                "Width": 174,
-                "Height": 73,
-                "LockPosition": true,
-                "TextId": "__SingleUse_JN63",
-                "TextRotation": "0",
-                "AutoSize": true,
-                "Wildcard1": {
-                  "TextId": "__SingleUse_KISK",
-                  "UseBuffer": true,
-                  "BufferSize": 10
-                }
-              },
-              {
-                "Type": "TextArea",
-                "Name": "txtAlarmValue",
-                "X": 93,
-                "Y": 88,
-                "Width": 294,
-                "Height": 98,
-                "LockPosition": true,
-                "TextId": "__SingleUse_FNF3",
-                "TextRotation": "0",
-                "AutoSize": true,
-                "Wildcard1": {
-                  "TextId": "__SingleUse_GX2W",
-                  "UseBuffer": true,
-                  "BufferSize": 10
-                }
-              }
-            ]
           }
-        ],
-        "Interactions": []
+        ]
       },
       {
         "Name": "RACE",
@@ -3263,7 +2208,19 @@
             ]
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "toDRAG",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "DRAG"
+            }
+          }
+        ]
       },
       {
         "Name": "DRAG",
@@ -3984,7 +2941,19 @@
             ]
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "toENDURANCE",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ENDURANCE"
+            }
+          }
+        ]
       },
       {
         "Name": "ENDURANCE",
@@ -4954,7 +3923,1098 @@
             ]
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "toSKIDPAD",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SKIDPAD"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SKIDPAD",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Name": "bxBackGround",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "BorderSize": 5
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtRR",
+            "X": 320,
+            "Y": 170,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_VUG1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_JDCG"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtRL",
+            "X": 122,
+            "Y": 170,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_9QCJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_STIP"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtFR",
+            "X": 320,
+            "Y": 106,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_IC1G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_9GXF",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtFL",
+            "X": 122,
+            "Y": 106,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_KKNJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_TALP"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameRR",
+            "X": 323,
+            "Y": 144,
+            "Width": 31,
+            "Height": 27,
+            "TextId": "__SingleUse_OQIP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameRL",
+            "X": 126,
+            "Y": 144,
+            "Width": 28,
+            "Height": 27,
+            "TextId": "__SingleUse_2V8N",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameFR",
+            "X": 324,
+            "Y": 79,
+            "Width": 28,
+            "Height": 27,
+            "TextId": "__SingleUse_JQ6F",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameFL",
+            "X": 128,
+            "Y": 79,
+            "Width": 25,
+            "Height": 27,
+            "TextId": "__SingleUse_A62L",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Line",
+            "Name": "up_line",
+            "X": -3,
+            "Y": -4,
+            "Width": 484,
+            "Height": 19,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 480.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "rpm_line",
+            "X": -3,
+            "Y": 30,
+            "Width": 484,
+            "Height": 19,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 480.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_2",
+            "X": -3,
+            "Y": 136,
+            "Width": 201,
+            "Height": 17,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 190.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_2_1",
+            "X": -3,
+            "Y": 71,
+            "Width": 201,
+            "Height": 17,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 190.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_5",
+            "X": 292,
+            "Y": 136,
+            "Width": 201,
+            "Height": 17,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 186.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_5_1",
+            "X": 292,
+            "Y": 71,
+            "Width": 201,
+            "Height": 17,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 186.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_1",
+            "X": -3,
+            "Y": 200,
+            "Width": 484,
+            "Height": 19,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 480.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "right_line",
+            "X": 473,
+            "Width": 15,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 5.0,
+            "EndX": 5.0,
+            "EndY": 272.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "left_line",
+            "X": -3,
+            "Y": -1,
+            "Width": 33,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 4.0,
+            "EndX": 4.0,
+            "EndY": 272.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_4",
+            "X": 184,
+            "Y": 34,
+            "Width": 15,
+            "Height": 237,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 4.0,
+            "EndX": 4.0,
+            "EndY": 238.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_4_1",
+            "X": 92,
+            "Y": 77,
+            "Width": 15,
+            "Height": 193,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 4.0,
+            "EndX": 4.0,
+            "EndY": 195.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_4_1_1",
+            "X": 380,
+            "Y": 77,
+            "Width": 15,
+            "Height": 193,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 4.0,
+            "EndX": 4.0,
+            "EndY": 195.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "design_line_3",
+            "X": 289,
+            "Y": 34,
+            "Width": 15,
+            "Height": 238,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 4.0,
+            "EndX": 4.0,
+            "EndY": 238.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "bottom_line",
+            "X": -3,
+            "Y": 266,
+            "Width": 483,
+            "Height": 18,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartY": 5.0,
+            "EndX": 480.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtSpeed",
+            "X": 320,
+            "Y": 237,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_IA0H",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_CGH5",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtGear",
+            "X": 187,
+            "Y": 44,
+            "Width": 107,
+            "Height": 183,
+            "LockPosition": true,
+            "TextId": "__SingleUse_WSFX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_BXNH",
+              "UseBuffer": true,
+              "BufferSize": 1
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtRPM",
+            "X": 193,
+            "Y": 38,
+            "Width": 95,
+            "Height": 37,
+            "TextId": "__SingleUse_7BJS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_S90H",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtVbat",
+            "X": 122,
+            "Y": 237,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_Z2QG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_TMOE",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameVbat",
+            "X": 110,
+            "Y": 208,
+            "Width": 60,
+            "Height": 27,
+            "TextId": "__SingleUse_IXH2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameWaterT",
+            "X": 17,
+            "Y": 144,
+            "Width": 64,
+            "Height": 27,
+            "TextId": "__SingleUse_6EC4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameOilT",
+            "X": 24,
+            "Y": 79,
+            "Width": 51,
+            "Height": 27,
+            "TextId": "__SingleUse_HT5B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameAirT",
+            "X": 23,
+            "Y": 208,
+            "Width": 52,
+            "Height": 27,
+            "TextId": "__SingleUse_8VSY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtAirT",
+            "X": 31,
+            "Y": 237,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_3JKG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_CU4C",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtOilT",
+            "X": 31,
+            "Y": 106,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_0600",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_XUHK",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtWaterT",
+            "X": 31,
+            "Y": 170,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_DAPO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_QUK3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameOilP",
+            "X": 405,
+            "Y": 79,
+            "Width": 50,
+            "Height": 27,
+            "TextId": "__SingleUse_9OL8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameFuelP",
+            "X": 397,
+            "Y": 143,
+            "Width": 67,
+            "Height": 27,
+            "TextId": "__SingleUse_J2MJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtOilP",
+            "X": 412,
+            "Y": 106,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_BICX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_2EC9",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtFuelT",
+            "X": 412,
+            "Y": 170,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_NLHX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LV78",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameSteeringWheelRight",
+            "X": 301,
+            "Y": 44,
+            "Width": 91,
+            "Height": 26,
+            "TextId": "__SingleUse_J69A",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 175,
+              "Green": 185,
+              "Blue": 196
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameSteeringWheelLeft",
+            "X": 92,
+            "Y": 44,
+            "Width": 92,
+            "Height": 25,
+            "TextId": "__SingleUse_9X25",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 175,
+              "Green": 185,
+              "Blue": 196
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtTps",
+            "X": 222,
+            "Y": 237,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_YWR5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_H8J5",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameTps",
+            "X": 219,
+            "Y": 208,
+            "Width": 42,
+            "Height": 27,
+            "TextId": "__SingleUse_2K8E",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtTraction",
+            "X": 406,
+            "Y": 237,
+            "Width": 48,
+            "Height": 31,
+            "TextId": "__SingleUse_UELT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 77,
+              "Green": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_AON6",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameTraction",
+            "X": 408,
+            "Y": 209,
+            "Width": 44,
+            "Height": 27,
+            "TextId": "__SingleUse_FCL1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtSteeringWheelRight",
+            "X": 412,
+            "Y": 41,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_4LPN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_MBAN",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txtSteeringWheelLeft",
+            "X": 31,
+            "Y": 41,
+            "Width": 36,
+            "Height": 31,
+            "TextId": "__SingleUse_WZ5T",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OYHP",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nameSpeed",
+            "X": 304,
+            "Y": 208,
+            "Width": 69,
+            "Height": 27,
+            "TextId": "__SingleUse_T50X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "bxRPMLowRange",
+            "X": 2,
+            "Y": 2,
+            "Width": 200,
+            "Height": 32,
+            "Color": {
+              "Red": 17,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "bxRPMMediumRange",
+            "X": 201,
+            "Y": 2,
+            "Width": 157,
+            "Height": 32,
+            "Color": {
+              "Red": 235,
+              "Green": 207
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "bxRPMHighRange",
+            "X": 358,
+            "Y": 2,
+            "Width": 119,
+            "Height": 32,
+            "Color": {
+              "Red": 255,
+              "Blue": 21
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "bxRPMCover",
+            "X": 2,
+            "Y": 2,
+            "Width": 475,
+            "Height": 32,
+            "Visible": false
+          },
+          {
+            "Type": "Container",
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_X9LZ",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_X1J5",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_P6BV",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_0A0O",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_76TS",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_109S",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 480,
+                "Height": 272,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 3,
+                  "Green": 32,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 4
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmName",
+                "X": 153,
+                "Y": 15,
+                "Width": 174,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JN63",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_KISK",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmValue",
+                "X": 93,
+                "Y": 88,
+                "Width": 294,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_FNF3",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_GX2W",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "toSETUP",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SETUP"
+            }
+          }
+        ]
       },
       {
         "Name": "SETUP",
@@ -5276,7 +5336,19 @@
             "LineEndingStyle": "Round"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "toHOME",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HOME"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
