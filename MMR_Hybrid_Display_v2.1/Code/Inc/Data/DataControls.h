@@ -30,7 +30,7 @@ typedef struct {
 
 /*
  * Initialize DataControls Struct
- * @param dataMechanics	-> DataMechanics Struct
+ * @param dataControls	-> DataControls Struct
  */
 void initializeDataControls(DataControls* dataControls);
 
