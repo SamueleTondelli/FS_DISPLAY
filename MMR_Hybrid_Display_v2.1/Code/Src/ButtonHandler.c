@@ -39,7 +39,7 @@ void buttonsActionHandler(Dataset* dataset) {
 	{
 		if ((dataset->mapBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->mapBtn.timeWhenPressed >= DEBOUNCE_TIME))
 		{
-			//send map
+			toggleMap(&(dataset->controls));
 			dataset->mapBtn.state = BUTTON_DISABLED;
 		}
 	}

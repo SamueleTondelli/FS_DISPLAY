@@ -71,13 +71,21 @@ void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar
 		return;
 	}
 
-	if (alarm->type == DATA)
+	//antiflicker
+	static uint32_t lastValueUpdate = 0;
+
+	Unicode::strncpy(nameBuffer, alarm->name, nameBufferSize);
+
+	switch (alarm->type)
 	{
-		Data* d = (Data*)alarm->contents;
-		if (strlen(alarm->name) <= nameBufferSize)
+	case DATA: {
+		if (lastValueUpdate != 0 && (uwTick - lastValueUpdate) < ANTI_FLICKER_TIME)
 		{
-			Unicode::snprintf(nameBuffer, strlen(alarm->name), "%s", alarm->name);
+			return;
 		}
+		lastValueUpdate = uwTick;
+
+		Data* d = (Data*)alarm->contents;
 		Unicode::snprintf(valueBuffer, valueBufferSize, "%f", getValueData(d));
 
 		if (alarm->priority == NOTIFICATION_PRIORITY)
@@ -95,6 +103,22 @@ void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar
 				bxAlarm->setColor(Color::getColorFromRGB(255, 0, 0));
 			}
 		}
+		break;
+	}
+	case STRING: {
+		char* s = (char*)alarm->contents;
+		Unicode::strncpy(valueBuffer, s, valueBufferSize);
+		bxAlarm->setColor(Color::getColorFromRGB(60, 255, 202));
+		break;
+	}
+	case MAP: {
+		uint8_t map = *(uint8_t*)alarm->contents;
+		Unicode::strncpy(valueBuffer, map == 0 ? "BASE" : "ECO", valueBufferSize);
+		bxAlarm->setColor(Color::getColorFromRGB(60, 255, 202));
+		break;
+	}
+	default:
+		break;
 	}
 }
 

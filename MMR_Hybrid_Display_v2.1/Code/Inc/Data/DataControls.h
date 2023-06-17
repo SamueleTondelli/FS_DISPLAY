@@ -24,6 +24,8 @@ typedef struct {
 	Data brakeRear;
 	Data tractionControl;
 	Data steer;
+
+	uint8_t map;
 } DataControls;
 
 /*
@@ -43,6 +45,9 @@ void setFlagNotUpdatedDataControls(DataControls* dataControls);
  * @param dataControls	-> DataControls Struct
  */
 void readTractionControlData(DataControls* dataControls);
+
+void toggleMap(DataControls* dataControls);
+void writeMap(DataControls* dataControls);
 
 #ifdef __cplusplus
 }

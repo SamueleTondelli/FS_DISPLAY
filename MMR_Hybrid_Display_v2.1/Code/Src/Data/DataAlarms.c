@@ -89,10 +89,6 @@ void deactivateAlarm(Alarm* alarm)
 		d->alarmDeactivationTime = uwTick;
 		d->alarmStatus = DEACTIVATED;
 	}
-	else
-	{
-		//telemetry
-	}
 
 	alarm->contents = NULL;
 }

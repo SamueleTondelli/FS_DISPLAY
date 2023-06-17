@@ -13,6 +13,9 @@ void initializeDataControls(DataControls* dataControls) {
 	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->tractionControl), EMPTY_VALUE, TRACTION_CONTROL_CONVERSION_FACTOR, NOTIFICATION_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->steer), EMPTY_VALUE, STEER_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+
+	dataControls->map = 0;
+	writeMap(dataControls);
 }
 
 void setFlagNotUpdatedDataControls(DataControls* dataControls) {
@@ -59,13 +62,16 @@ void readTractionControlData(DataControls* dataControls) {
 	}
 }
 
+void toggleMap(DataControls* dataControls)
+{
+	dataControls->map = !dataControls->map;
+	writeMap(dataControls);
+	Alarm a = {.priority = NOTIFICATION_PRIORITY, .contents = (void*)(&(dataControls->map)), .type = MAP};
+	strcpy(a.name, "MAP");
+	insertAlarmInQueue(&a);
+}
 
-
-
-
-
-
-
-
-
-
+void writeMap(DataControls* dataControls)
+{
+	HAL_GPIO_WritePin(MAP_OUT_GPIO_Port, MAP_OUT_Pin, !dataControls->map); //!map because of push pull
+}

@@ -15,7 +15,8 @@ typedef enum {
 
 typedef enum {
 	DATA,
-	STRING
+	STRING,
+	MAP
 } CONTENT_TYPE;
 
 typedef struct {
