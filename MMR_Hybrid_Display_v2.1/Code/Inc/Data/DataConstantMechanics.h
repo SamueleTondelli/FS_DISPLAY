@@ -7,8 +7,7 @@
 #define SPEED_CONVERSION_FACTOR		0.1f
 #define TPS_CONVERSION_FACTOR		0.1f
 
-#define RPM_ALARM_PRIORITY			1
-#define RPM_MAX_VALUE				15000
-#define RPM_MIN_VALUE				1500
+
+#define RPM_MAX_VALUE				((float) 12500)
 
 #endif /* DATACONSTANTMECHANICS_H_ */
