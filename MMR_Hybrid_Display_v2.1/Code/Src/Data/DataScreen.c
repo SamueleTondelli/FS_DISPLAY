@@ -59,6 +59,8 @@ void initializeDataScreen(DataScreen *dataScreen) {
 	dataScreen->presentationFlag = 0;
 	// Enable/Disable Presentation Mode
 	dataScreen->isPresentationModeEnabled = 1;
+
+	dataScreen->invalidateCurrentAlarmFlag = 0;
 }
 
 uint8_t getCurrentScreen(DataScreen *dataScreen) {

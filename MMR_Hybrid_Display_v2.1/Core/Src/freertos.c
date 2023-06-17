@@ -31,6 +31,7 @@
 #include "Data/Dataset.h"
 #include "Data/DataConstantControls.h"
 #include "app_touchgfx.h"
+#include "ButtonHandler.h"
 
 /* USER CODE END Includes */
 
@@ -71,6 +72,7 @@ extern TIM_HandleTypeDef htim8;
 /* USER CODE END Variables */
 osThreadId touchGFXTaskHandle;
 osThreadId tractionTaskHandle;
+osThreadId buttonHandlingTHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -79,6 +81,7 @@ osThreadId tractionTaskHandle;
 
 void StartTouchGFXTask(void const * argument);
 void tractionAcquisition(void const * argument);
+void buttonHandling(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -130,8 +133,12 @@ void MX_FREERTOS_Init(void) {
   touchGFXTaskHandle = osThreadCreate(osThread(touchGFXTask), NULL);
 
   /* definition and creation of tractionTask */
-  osThreadDef(tractionTask, tractionAcquisition, osPriorityNormal, 0, 128);
+  osThreadDef(tractionTask, tractionAcquisition, osPriorityNormal, 0, 512);
   tractionTaskHandle = osThreadCreate(osThread(tractionTask), NULL);
+
+  /* definition and creation of buttonHandlingT */
+  osThreadDef(buttonHandlingT, buttonHandling, osPriorityIdle, 0, 512);
+  buttonHandlingTHandle = osThreadCreate(osThread(buttonHandlingT), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -188,6 +195,25 @@ void tractionAcquisition(void const * argument)
     osDelay(TRACTION_REFRESH_TIME);
   }
   /* USER CODE END tractionAcquisition */
+}
+
+/* USER CODE BEGIN Header_buttonHandling */
+/**
+* @brief Function implementing the buttonHandlingT thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_buttonHandling */
+void buttonHandling(void const * argument)
+{
+  /* USER CODE BEGIN buttonHandling */
+  /* Infinite loop */
+  for(;;)
+  {
+	buttonsActionHandler(&ds);
+    osDelay(1);
+  }
+  /* USER CODE END buttonHandling */
 }
 
 /* Private application code --------------------------------------------------*/

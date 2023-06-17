@@ -3,28 +3,44 @@
 #include "Data/Dataset.h"
 // END
 
-void buttonsActionHandler(Dataset* dataset, uint16_t GPIO_Pin) {
+void buttonsActionHandler(Dataset* dataset) {
+	if(!updateButton(&(dataset->dispBtn)))
+	{
+		if ((dataset->dispBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->dispBtn.timeWhenPressed >= DEBOUNCE_TIME))
+		{
+			changeScreenButton(dataset);
+			dataset->dispBtn.state = BUTTON_DISABLED;
+		}
+	}
 
-	if (GPIO_Pin == BTN_SCREEN_Pin) {
-		changeScreenButton(dataset);
-	} else if(GPIO_Pin == BTN_CLEAR_Pin) {
-		clearButton(dataset);
+	if(!updateButton(&(dataset->markBtn)))
+	{
+		if ((dataset->markBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->markBtn.timeWhenPressed >= GPS_SET_TIME))
+		{
+			//set gps start to current location
+			dataset->markBtn.state = BUTTON_DISABLED;
+		}
+	}
+
+	if(!updateButton(&(dataset->okBtn)))
+	{
+		if ((dataset->okBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->okBtn.timeWhenPressed >= DEBOUNCE_TIME))
+		{
+			dataset->screen.invalidateCurrentAlarmFlag = 1;
+			dataset->okBtn.state = BUTTON_DISABLED;
+		}
+	}
+
+	if(!updateButton(&(dataset->mapBtn)))
+	{
+		if ((dataset->mapBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->mapBtn.timeWhenPressed >= DEBOUNCE_TIME))
+		{
+			//send map
+			dataset->mapBtn.state = BUTTON_DISABLED;
+		}
 	}
 }
 
 void changeScreenButton(Dataset* dataset) {
-	// Not change screen during presentation
-	if (dataset->screen.introductionPresentationFlag == 0) {
-		incrementCurrentScreen(&(dataset->screen));
-	}
-}
-
-void clearButton(Dataset* dataset) {
-	// Clear all Notifications and/or Alarms
-	if (dataset->screen.alarmFlag == 1) {
-		dataset->screen.alarmFlag = 0;
-	}
-	if (dataset->screen.notificationFlag == 1) {
-		dataset->screen.notificationFlag = 0;
-	}
+	incrementCurrentScreen(&(dataset->screen));
 }

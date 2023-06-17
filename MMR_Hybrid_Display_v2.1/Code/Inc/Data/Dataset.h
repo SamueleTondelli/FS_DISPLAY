@@ -11,6 +11,7 @@ extern "C" {
 #include "DataControls.h"
 #include "DataScreen.h"
 #include "DataMessage.h"
+#include "Button.h"
 // END
 
 /*
@@ -27,6 +28,11 @@ typedef struct {
 	DataScreen screen;
 
 	DataMessage telemetryMessage[3];
+
+	Button dispBtn;
+	Button okBtn;
+	Button markBtn;
+	Button mapBtn;
 } Dataset;
 /*
  * Initialize Dataset Struct

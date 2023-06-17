@@ -10,7 +10,9 @@ FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
 
 //MODIFIED
 
-extern uint8_t invalidateCurrentAlarmFlag; //bad, move to somewhere else
+#include "Data/Dataset.h"
+
+extern Dataset ds;
 
 enum HANDLEALARM_STATUS {
 	NO_ALARM, //no active alarma
@@ -127,7 +129,7 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		break;
 
 	case ALARM_NOTINT: //current alarm is showed even if there is a more important alarm after
-		if (invalidateCurrentAlarmFlag == 1) //check if we need to disable current alarm
+		if (ds.screen.invalidateCurrentAlarmFlag == 1) //check if we need to disable current alarm
 		{
 			status = DEACTIVATE_ALARM;
 		}
@@ -173,7 +175,7 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		break;
 
 	case ALARM_BONUST: //there is an alarm after this which is less important
-		if (invalidateCurrentAlarmFlag == 1) //check if we need to disable current alarm
+		if (ds.screen.invalidateCurrentAlarmFlag == 1) //check if we need to disable current alarm
 		{
 			status = DEACTIVATE_ALARM;
 		}
@@ -200,7 +202,7 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		break;
 
 	case ALARM_INT: //current alarm can be interrupted by any alarm if there is one
-		if (invalidateCurrentAlarmFlag == 1 || (uwTick - currentAlarmStartTime >= ALARM_AUTOMATIC_TIMEOUT_TIME)) //check if we need to disable current alarm (also in case of timeout)
+		if (ds.screen.invalidateCurrentAlarmFlag == 1 || (uwTick - currentAlarmStartTime >= ALARM_AUTOMATIC_TIMEOUT_TIME)) //check if we need to disable current alarm (also in case of timeout)
 		{
 			status = DEACTIVATE_ALARM;
 		}
@@ -223,8 +225,8 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		break;
 
 	case DEACTIVATE_ALARM: //deactivate current alarm
-		deactivateAlarm(currentAlarm); //wither by the global flag (set by associated button) or timeout
-		invalidateCurrentAlarmFlag = 0;
+		deactivateAlarm(currentAlarm); //either by the dataset flag (set by associated button) or timeout
+		ds.screen.invalidateCurrentAlarmFlag = 0;
 		status = NO_ALARM;
 		break;
 

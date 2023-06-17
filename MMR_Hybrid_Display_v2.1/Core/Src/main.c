@@ -310,14 +310,6 @@ void PeriphCommonClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-/**
- * HAL for Interrup Event Button Pressed on Rising Edge Button
- */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-
-	buttonsActionHandler(&(ds), GPIO_Pin);
-}
-
 /*
  * Callback for a received CAN message
  */

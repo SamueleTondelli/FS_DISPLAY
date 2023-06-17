@@ -4,7 +4,6 @@
 
 extern Dataset ds;
 extern Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
-extern uint8_t invalidateCurrentAlarmFlag; //bad, move to somewhere else
 
 HOMEView::HOMEView()
 {

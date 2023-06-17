@@ -68,6 +68,8 @@ typedef struct {
 	uint8_t presentationFlag;
 	// Enable/Disable Presentation Mode
 	uint8_t isPresentationModeEnabled;
+
+	uint8_t invalidateCurrentAlarmFlag;
 } DataScreen;
 /*
 * Initialize DataScreen Struct

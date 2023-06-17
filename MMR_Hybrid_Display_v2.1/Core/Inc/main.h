@@ -128,16 +128,14 @@ void Error_Handler(void);
 #define DIG4_F_GPIO_Port GPIOB
 #define DIG3_F_Pin GPIO_PIN_5
 #define DIG3_F_GPIO_Port GPIOB
-#define DIG2_F_Pin GPIO_PIN_6
-#define DIG2_F_GPIO_Port GPIOB
-#define DIG1_F_Pin GPIO_PIN_7
-#define DIG1_F_GPIO_Port GPIOB
-#define BTN_CLEAR_Pin GPIO_PIN_8
-#define BTN_CLEAR_GPIO_Port GPIOB
-#define BTN_CLEAR_EXTI_IRQn EXTI9_5_IRQn
-#define BTN_SCREEN_Pin GPIO_PIN_9
-#define BTN_SCREEN_GPIO_Port GPIOB
-#define BTN_SCREEN_EXTI_IRQn EXTI9_5_IRQn
+#define OK_BTN_Pin GPIO_PIN_6
+#define OK_BTN_GPIO_Port GPIOB
+#define MARK_BTN_Pin GPIO_PIN_7
+#define MARK_BTN_GPIO_Port GPIOB
+#define MAP_BTN_Pin GPIO_PIN_8
+#define MAP_BTN_GPIO_Port GPIOB
+#define DISP_BTN_Pin GPIO_PIN_9
+#define DISP_BTN_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

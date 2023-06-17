@@ -13,19 +13,13 @@ extern "C" {
 /*
  * Handle all the actions related to the buttons
  * @param *dataset	-> Dataset Struct
- * @param  GPIO_Pin	-> Button identifier
  */
-void buttonsActionHandler(Dataset* dataset, uint16_t GPIO_Pin);
+void buttonsActionHandler(Dataset* dataset);
 /*
  * Manage the procedure to change the screen to the next page
  * @param *dataset	-> Dataset Struct
  */
 void changeScreenButton(Dataset* dataset);
-/*
- * "Clear Button" using this driver can manually disable notifications and/or Alarms
- * @param *dataset  -> Dataset Struct
- */
-void clearButton(Dataset* dataset);
 
 #ifdef __cplusplus
 }
