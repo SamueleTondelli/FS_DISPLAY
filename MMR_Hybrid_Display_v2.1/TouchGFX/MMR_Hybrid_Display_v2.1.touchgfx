@@ -918,6 +918,107 @@
           },
           {
             "Type": "Container",
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_LCJ5",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_YIA7",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JV9K",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_3HLP",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_1LBZ",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_XPQE",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
             "Name": "ctAlarm",
             "Width": 480,
             "Height": 272,
@@ -1923,47 +2024,162 @@
           },
           {
             "Type": "Container",
-            "Name": "ctAlarm",
-            "X": 11,
-            "Y": 11,
-            "Width": 460,
-            "Height": 250,
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
             "Visible": false,
             "LockPosition": true,
             "Components": [
               {
                 "Type": "BoxWithBorder",
-                "Name": "bxAlarm",
-                "Width": 460,
-                "Height": 250,
-                "LockPosition": true,
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
                 "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
                   "Red": 255,
                   "Green": 255,
                   "Blue": 255
                 },
-                "BorderColor": {
-                  "Red": 255
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
                 },
-                "BorderSize": 8
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
               },
               {
                 "Type": "TextArea",
-                "Name": "txtAlarm",
-                "X": 5,
-                "Y": 5,
-                "Width": 450,
-                "Height": 240,
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
                 "LockPosition": true,
-                "TextId": "__SingleUse_FXL8",
+                "TextId": "__SingleUse_X9LZ",
                 "TextRotation": "0",
-                "Color": {
-                  "Red": 255
-                },
+                "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_5F98",
+                  "TextId": "__SingleUse_X1J5",
                   "UseBuffer": true,
-                  "BufferSize": 33
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_P6BV",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_0A0O",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_76TS",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_109S",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 480,
+                "Height": 272,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 3,
+                  "Green": 32,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 4
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmName",
+                "X": 153,
+                "Y": 15,
+                "Width": 174,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JN63",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_KISK",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmValue",
+                "X": 93,
+                "Y": 88,
+                "Width": 294,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_FNF3",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_GX2W",
+                  "UseBuffer": true,
+                  "BufferSize": 10
                 }
               }
             ]
@@ -2682,9 +2898,8 @@
             "TextId": "__SingleUse_4SVJ",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 77,
+              "Green": 255
             },
             "AutoSize": true,
             "Wildcard1": {
@@ -2887,47 +3102,162 @@
           },
           {
             "Type": "Container",
-            "Name": "ctAlarm",
-            "X": 11,
-            "Y": 11,
-            "Width": 460,
-            "Height": 250,
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
             "Visible": false,
             "LockPosition": true,
             "Components": [
               {
                 "Type": "BoxWithBorder",
-                "Name": "bxAlarm",
-                "Width": 460,
-                "Height": 250,
-                "LockPosition": true,
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
                 "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
                   "Red": 255,
                   "Green": 255,
                   "Blue": 255
                 },
-                "BorderColor": {
-                  "Red": 255
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
                 },
-                "BorderSize": 8
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
               },
               {
                 "Type": "TextArea",
-                "Name": "txtAlarm",
-                "X": 5,
-                "Y": 5,
-                "Width": 450,
-                "Height": 240,
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
                 "LockPosition": true,
-                "TextId": "__SingleUse_KLZP",
+                "TextId": "__SingleUse_GNLW",
                 "TextRotation": "0",
-                "Color": {
-                  "Red": 255
-                },
+                "AutoSize": true,
                 "Wildcard1": {
-                  "TextId": "__SingleUse_CE0Z",
+                  "TextId": "__SingleUse_KF78",
                   "UseBuffer": true,
-                  "BufferSize": 33
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_GBHR",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_WZBG",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_EBWZ",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_7JD0",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 480,
+                "Height": 272,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 3,
+                  "Green": 32,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 4
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmName",
+                "X": 153,
+                "Y": 15,
+                "Width": 174,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_A7W3",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_DLDN",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmValue",
+                "X": 93,
+                "Y": 88,
+                "Width": 294,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_YIW9",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_13QO",
+                  "UseBuffer": true,
+                  "BufferSize": 10
                 }
               }
             ]
@@ -3490,6 +3820,168 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "Container",
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_GN4I",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_9CXB",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_T450",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_U8IW",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_IMIO",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_6K87",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm",
+                "Width": 480,
+                "Height": 272,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 3,
+                  "Green": 32,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 4
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmName",
+                "X": 153,
+                "Y": 15,
+                "Width": 174,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_Z7NE",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_8ENN",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmValue",
+                "X": 93,
+                "Y": 88,
+                "Width": 294,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_DU6W",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_1EXV",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
           }
         ],
         "Interactions": []
@@ -4297,6 +4789,169 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "Container",
+            "Name": "ctTemp",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxOilTemp",
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxWaterTemp",
+                "X": 240,
+                "Width": 240,
+                "Height": 272,
+                "Color": {
+                  "Red": 51,
+                  "Green": 78,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 2
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtWaterTemp",
+                "X": 55,
+                "Y": 136,
+                "Width": 130,
+                "Height": 97,
+                "LockPosition": true,
+                "TextId": "__SingleUse_71DI",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_JXY5",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtOilTemp",
+                "X": 295,
+                "Y": 136,
+                "Width": 130,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_TJZT",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_ORVT",
+                  "UseBuffer": true,
+                  "BufferSize": 3
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameWaterTemp",
+                "X": 265,
+                "Y": 19,
+                "Width": 190,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_WP8U",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "nameOilTemp",
+                "X": 38,
+                "Y": 20,
+                "Width": 164,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_UA8O",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctAlarm",
+            "Width": 480,
+            "Height": 272,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "BoxWithBorder",
+                "Name": "bxAlarm_1",
+                "Width": 480,
+                "Height": 272,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 3,
+                  "Green": 32,
+                  "Blue": 255
+                },
+                "BorderColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "BorderSize": 4
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmName",
+                "X": 153,
+                "Y": 15,
+                "Width": 174,
+                "Height": 73,
+                "LockPosition": true,
+                "TextId": "__SingleUse_BNHA",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_QFC8",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "txtAlarmValue",
+                "X": 93,
+                "Y": 88,
+                "Width": 294,
+                "Height": 98,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JSEC",
+                "TextRotation": "0",
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_WTTL",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
           }
         ],
         "Interactions": []
