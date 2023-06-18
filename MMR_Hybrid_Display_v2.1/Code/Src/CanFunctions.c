@@ -3,14 +3,7 @@
 #include "DisplayConstant.h"
 // END
 
-#define DEBUG_CANFUNCTION 1
-
-#ifdef DEBUG_CANFUNCTION
-//DEBUG
-extern CAN_HandleTypeDef hcan1;
-extern CAN_TxHeaderTypeDef ptxHeader;
-extern uint32_t txMailbox;
-#endif
+extern void lapTimer(float lat, float lon, int samplingTime, Dataset* dataset);
 
 void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload) {
 	switch (id) {
@@ -113,19 +106,17 @@ void decodifyCan2Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 	case 0x308:
 		setValueData(&(dataset->controls.steer), ((payload[5] << 8) | payload[4]));
 		break;
-	case 0x390:
+	case 0x390:{
+		int samplingTime = (int)uwTick;
 		setValueData(&(dataset->controls.gpsLongitude), ((payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3]));
 		setValueData(&(dataset->controls.gpsLatitude), ((payload[4] << 24) | (payload[5] << 16) | (payload[6] << 8) | payload[7]));
+		lapTimer(getValueData(&(dataset->controls.gpsLatitude)), getValueData(&(dataset->controls.gpsLongitude)), samplingTime, dataset);
 		break;
+	}
 	case 0x394:
 		setValueData(&(dataset->controls.gpsAltitude), ((payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3]));
 		break;
 	default:
 		break;
 	}
-}
-
-// Old Messages
-void decodifyCanMsgOld(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t *payload) {
-	// TODO Implementare dati messaggi "Current Messages"
 }

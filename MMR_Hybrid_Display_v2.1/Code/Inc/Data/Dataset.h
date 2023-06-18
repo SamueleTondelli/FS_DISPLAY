@@ -35,6 +35,15 @@ typedef struct {
 	Button okBtn;
 	Button markBtn;
 	Button mapBtn;
+
+	/*variables for lap timer*/
+	float						lapStartLat;
+	float						lapStartLon;
+	int32_t						bestLapTime;
+	int32_t						lapTime;
+	int32_t						lapTimeDelta;
+	int32_t						lapNumber;
+	int32_t						lapSector;
 } Dataset;
 /*
  * Initialize Dataset Struct

@@ -3,6 +3,9 @@
 #include "Data/Dataset.h"
 // END
 
+extern void GPS_lapTimerReset(void);
+extern void GPS_lapSetStarPoint(float lat, float lon);
+
 void buttonsActionHandler(Dataset* dataset) {
 	if(!updateButton(&(dataset->dispBtn)))
 	{
@@ -17,7 +20,8 @@ void buttonsActionHandler(Dataset* dataset) {
 	{
 		if ((dataset->markBtn.state == BUTTON_PRESSED) && (uwTick -  dataset->markBtn.timeWhenPressed >= GPS_SET_TIME))
 		{
-			//set gps start to current location
+			GPS_lapTimerReset();
+			GPS_lapSetStarPoint(getValueData(&(dataset->controls.gpsLatitude)), getValueData(&(dataset->controls.gpsLongitude)));
 			dataset->markBtn.state = BUTTON_DISABLED;
 		}
 	}

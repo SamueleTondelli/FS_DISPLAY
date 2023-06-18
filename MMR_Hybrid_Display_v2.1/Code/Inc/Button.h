@@ -4,7 +4,7 @@
 #include "main.h"
 
 #define DEBOUNCE_TIME 100
-#define GPS_SET_TIME 4000
+#define GPS_SET_TIME 5000
 
 typedef enum {
 	BUTTON_PRESSED,

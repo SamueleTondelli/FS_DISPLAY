@@ -24,7 +24,6 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 * @param *payload	-> Data
 */
 void decodifyCan2Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload);
-void decodifyCanMsgOld(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payload);
 
 #ifdef __cplusplus
 }
