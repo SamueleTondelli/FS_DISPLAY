@@ -1,7 +1,7 @@
 # FS_DISPLAY
 This is the software of the display mounted on the dashboard of the MMR Combustion car, which runs on a STM32F769 microcontroller with a 480x272 display.  
 This is an adaptation of the MMR Hybrid display.    
-##Data  
+## Data  
 Almost every single parameter is represented by the _Data_ struct, which contains:
  * **value**, which is the actual value
  *  **conversionFactor**, value needed to be multiplied when the data is read
@@ -18,7 +18,7 @@ There are 2 exceptions:
    
 In both of these cases, when they change they send a notification to the display to inform the driver of the change.  
 
-##Data Classes
+## Data Classes
 Every _Data_ is grouped in a class, currently there are:
  * **DataThermalPressure**, which contains datas regarding thermals and pressure sensors
  * **DataMechanics**, which contains mechanical values of the car
@@ -38,14 +38,14 @@ It contains every single parameter, there is only _one_ global instance of this 
   4. **mapBtn**, used to change the map
 * **Lap Timer Variables**
 
-##Tyres
+## Tyres
 
 The temperature of the single tyres is read with a thermal imager, the tyre is divided in 16 sectors, and the temperature is the mean value of the temperature of the single sectors. Because a CAN message can only contain 8 bytes, 2 messages are sent fot every tyre, with every single byte being the temperature of a single sector.  
 In order to know the temperature of a single tyre, the software:
 1. Reads 2 messages from CAN and stores them in a 16 byte array **tempSectors**, every time it updates a sector it sets the corresponding bit in a 16 bit variable called **tempSectorsUpdated**
 2. Once every bit of **tempSectorsUpdated** is set, the software calculates the mean value of **tempSectors** and stores it in **temperature**, then it resets all bit of **tempSectorsUpdated**
 
-##Buttons
+## Buttons
 Buttons are represented by their own struct, **Button**, which contains:
 * **port**, the corresponding GPIO port
 * **pin**, the corresponding GPIO pin
@@ -54,7 +54,7 @@ Buttons are represented by their own struct, **Button**, which contains:
 
 They are handled in their own thread by the **buttonsHandler()** function, which checks if a button has been held for long enough for the corresponding action to be done, even if for something only the single press of the button is required (ex. to change screen), there is an anti-debounce time in which the button needs to be held down.
 
-##Alarms
+## Alarms
 Alarms is a generic term to indicate something that needs to be communicated to the driver with a pop-up, which contains 2 fields:
  1. **name**, which is the name of the source of the alarm
  2. **value**, which is the actual "value" of the alarm (can either be the value of the corresponding _Data_ or additional information) 
