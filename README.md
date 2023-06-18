@@ -59,7 +59,9 @@ Alarms is a generic term to indicate something that needs to be communicated to 
  1. **name**, which is the name of the source of the alarm
  2. **value**, which is the actual "value" of the alarm (can either be the value of the corresponding _Data_ or additional information) 
 
-They are represented by the **Alarm** struct:
+#### The Alarm Queue
+
+Alarms are represented by the **Alarm** struct:
  * **priority**, the priority of the alarm, goes from _0_ to _5_ with 0 being the highestand 5 being  simple notifications
  * **name**, name to be diplayed in the _name_ field
  * **contents**, _void*_ which points to the contents of the alarm
@@ -70,3 +72,16 @@ As mentioned in the last paragraph, all of the alarms go in the same **queue** w
 1. **extractAlarmFromQueue()**, which _removes_ the first Alarm from the highest priority row and returns it, after this operation the queue is updated, every Alarm gets moved forward by one place, if it's in the head of the row it gets "promoted" to the next higher priority row, by doing this we don't have the problem of lower priority alarms never getting shown because of the continous presence of higher-priority ones
 2. **peekAlarmFromQueue()**, which returns the pointer to the first Alarm of the highest priority row _without_ removing it, whis is used just to check if there are active alarms
 
+#### How Alarms are showed
+
+The algorithm that handles how an alarm is showed can be found in the _handleAlarms()_ method of the _FrontendApplication_ class, and it uses the following finite state machine:  
+////////screen FSM////////  
+
+1. **NO_ALARM** state: no alarm is shown, if we detect an alarm in the _queue_ we extract it and we go to the **ALARM_NOTINT** state
+2. **ALARM_NOTINT**: we are showing the current alarm, it lasts for 4 seconds as long as the alarm doesn't turn off or it gets disabled by the pilot, after this tere are 3 possible cases:
+  1. There isn't another alarm in queue, we go in **ALARM_INT**
+  2. There is another alarm in queue and it has higher or equal priority, we go back **NO_ALARM** so that the next alarm can be shown
+  3.  There is another alarm in queue and it has lower priority, we go in **ALARM_BONUST**
+3. **ALARM_INT**, as long the alarm is on and there isn't another alarm in queue, we show it, once the alarm goes off or another alarm comes in queue we go to **NO_ALARM** to change the current alarm. In this state we can also go to **DEACTIVATE_ALARM** if enough time (60s) passes to disable the alarm
+4. **ALARM_BONUST**, we stay here until either 3s passes or the current alarm goes off, if we are here we know that there is another alarm in queue with a lower priority, this state represents a "bonus" time we give the current alarm because of it having a higher priority then the next alarm
+5. **DEACTIVATE_ALARM**, we come here from every state with an active alarm when the driver presses the **okBtn** button, we disable the current alarm, which means we won't show it for the next 30s, then we go to **NO_ALARM**
