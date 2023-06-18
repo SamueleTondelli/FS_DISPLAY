@@ -13,6 +13,9 @@ void initializeDataControls(DataControls* dataControls) {
 	initializeData(&(dataControls->brakeRear), EMPTY_VALUE, BRAKE_REAR_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->tractionControl), EMPTY_VALUE, TRACTION_CONTROL_CONVERSION_FACTOR, NOTIFICATION_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataControls->steer), EMPTY_VALUE, STEER_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataControls->gpsLatitude), EMPTY_VALUE, LATITUDE_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataControls->gpsLongitude), EMPTY_VALUE, LONGITUDE_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataControls->gpsAltitude), EMPTY_VALUE, ALTITUDE_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 
 	dataControls->map = 0;
 	writeMap(dataControls);

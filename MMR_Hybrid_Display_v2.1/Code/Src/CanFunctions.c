@@ -113,9 +113,12 @@ void decodifyCan2Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 	case 0x308:
 		setValueData(&(dataset->controls.steer), ((payload[5] << 8) | payload[4]));
 		break;
-	case 0x390: //GPS longitude / latitude
+	case 0x390:
+		setValueData(&(dataset->controls.gpsLongitude), ((payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3]));
+		setValueData(&(dataset->controls.gpsLatitude), ((payload[4] << 24) | (payload[5] << 16) | (payload[6] << 8) | payload[7]));
 		break;
-	case 0x394: //GPS altitude
+	case 0x394:
+		setValueData(&(dataset->controls.gpsAltitude), ((payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3]));
 		break;
 	default:
 		break;

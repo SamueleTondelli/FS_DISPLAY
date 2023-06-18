@@ -24,6 +24,9 @@ typedef struct {
 	Data brakeRear;
 	Data tractionControl;
 	Data steer;
+	Data gpsLatitude;
+	Data gpsLongitude;
+	Data gpsAltitude;
 
 	uint8_t map;
 } DataControls;
