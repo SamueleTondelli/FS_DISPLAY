@@ -16,15 +16,7 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 	switch (id) {
 	case 0x200:
 		setValueData(&(dataset->mechanics.rpm), ((payload[0] << 8) | payload[1]));
-		if (isDataCritical(&(dataset->mechanics.rpm)) != 0)
-		{
-			activateDataAlarm(&(dataset->mechanics.rpm), "RPM");
-		}
 		setValueData(&(dataset->mechanics.tps), ((payload[2] << 8) | payload[3]));
-		if (isDataCritical(&(dataset->mechanics.tps)) != 0)
-		{
-			activateDataAlarm(&(dataset->mechanics.tps), "TPS");
-		}
 		setValueData(&(dataset->thermalPressure.waterTemperature), ((payload[4] << 8) | payload[5]));
 		if (isDataCritical(&(dataset->thermalPressure.waterTemperature)) != 0)
 		{
@@ -44,10 +36,6 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 			activateDataAlarm(&(dataset->thermalPressure.oilTemperature), "T_OIL");
 		}
 		setValueData(&(dataset->mechanics.gear), payload[4]);
-		if (isDataCritical(&(dataset->mechanics.gear)) != 0)
-		{
-			activateDataAlarm(&(dataset->mechanics.gear), "GEAR");
-		}
 		setValueData(&(dataset->controls.batteryVoltage), payload[6] << 8 | payload[7]);
 		if (isDataCritical(&(dataset->controls.batteryVoltage)) != 0)
 		{
@@ -70,41 +58,17 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 
 	case 0x20C:
 		setValueData(&(dataset->controls.pedal), payload[0]);
-		if (isDataCritical(&(dataset->controls.pedal)) != 0)
-		{
-			activateDataAlarm(&(dataset->controls.pedal), "PEDAL");
-		}
 		setValueData(&(dataset->mechanics.slip), payload[1]);
-		if (isDataCritical(&(dataset->mechanics.slip)) != 0)
-		{
-			activateDataAlarm(&(dataset->mechanics.slip), "SLIP");
-		}
 		setValueData(&(dataset->mechanics.speed), ((payload[2] << 8) | payload[3]));
-		if (isDataCritical(&(dataset->mechanics.speed)) != 0)
-		{
-			activateDataAlarm(&(dataset->mechanics.speed), "SPEED");
-		}
 		setValueData(&(dataset->controls.brake), payload[4]);
-		if (isDataCritical(&(dataset->controls.brake)) != 0)
-		{
-			activateDataAlarm(&(dataset->controls.brake), "BRAKE");
-		}
 		break;
 
 	case 0x220:
 		setValueData(&(dataset->controls.launchControlStatus), payload[3]);
-		if (isDataCritical(&(dataset->controls.launchControlStatus)) != 0)
-		{
-			activateDataAlarm(&(dataset->controls.launchControlStatus), "LAUNCH");
-		}
 		break;
 
 	case 0x30C:
 		setValueData(&(dataset->controls.brakeRear), ((payload[0] << 8) | payload[1]));
-		if (isDataCritical(&(dataset->controls.brakeRear)) != 0)
-		{
-			activateDataAlarm(&(dataset->controls.brakeRear), "BRAKE_R");
-		}
 		break;
 
 	case 0x312:
@@ -114,6 +78,29 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 			activateDataAlarm(&(dataset->thermalPressure.fuelTemperature), "T_FUEL");
 		}
 		break;
+	case 0x240:
+		updateTyreTemp(&(dataset->tyres.RL), (int8_t*)payload, NULL);
+		break;
+	case 0x244:
+		updateTyreTemp(&(dataset->tyres.RL), NULL, (int8_t*)payload);
+		break;
+	case 0x24C:
+		updateTyreTemp(&(dataset->tyres.RR), (int8_t*)payload, NULL);
+		break;
+	case 0x26C:
+		updateTyreTemp(&(dataset->tyres.RR), NULL, (int8_t*)payload);
+		break;
+	case 0x254:
+		updateTyreTemp(&(dataset->tyres.FL), (int8_t*)payload, NULL);
+		break;
+	case 0x25C:
+		updateTyreTemp(&(dataset->tyres.FL), NULL, (int8_t*)payload);
+		break;
+	case 0x260:
+		updateTyreTemp(&(dataset->tyres.FR), (int8_t*)payload, NULL);
+		break;
+	case 0x264:
+		updateTyreTemp(&(dataset->tyres.FR), NULL, (int8_t*)payload);
 	default:
 		break;
 	}

@@ -19,6 +19,7 @@ void initializeDataset(Dataset *dataset) {
 	initializeDataMechanics(&(dataset->mechanics));
 	initializeDataControls(&(dataset->controls));
 	initializeDataScreen(&(dataset->screen));
+	initializeDataTyres(&(dataset->tyres));
 
 	setMessage(&(dataset->telemetryMessage[0]), "STOP");
 	setPriority(&(dataset->telemetryMessage[0]), 0);

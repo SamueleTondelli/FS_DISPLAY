@@ -12,6 +12,7 @@ extern "C" {
 #include "DataScreen.h"
 #include "DataMessage.h"
 #include "Button.h"
+#include "DataTyres.h"
 // END
 
 /*
@@ -25,6 +26,7 @@ typedef struct {
 	DataThermalPressure thermalPressure;
 	DataMechanics mechanics;
 	DataControls controls;
+	DataTyres tyres;
 	DataScreen screen;
 
 	DataMessage telemetryMessage[3];
