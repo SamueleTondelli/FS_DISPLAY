@@ -85,3 +85,17 @@ The algorithm that handles how an alarm is showed can be found in the _handleAla
 3. **ALARM_INT**, as long the alarm is on and there isn't another alarm in queue, we show it, once the alarm goes off or another alarm comes in queue we go to **NO_ALARM** to change the current alarm. In this state we can also go to **DEACTIVATE_ALARM** if enough time (60s) passes to disable the alarm
 4. **ALARM_BONUST**, we stay here until either 3s passes or the current alarm goes off, if we are here we know that there is another alarm in queue with a lower priority, this state represents a "bonus" time we give the current alarm because of it having a higher priority then the next alarm
 5. **DEACTIVATE_ALARM**, we come here from every state with an active alarm when the driver presses the **okBtn** button, we disable the current alarm, which means we won't show it for the next 30s, then we go to **NO_ALARM**
+
+## TouchGFX
+
+The GUI is done using TouchGFX, a software pack of the STM family. On the software side, it uses the Model-View-Presenter pattern, with every screen having their own **View** and **Presenter** while all of them share the same **Model**. 
+
+### Updating the Screen
+
+Every frame, the **Model** checks if it needs to change the current screen, by checking if the current one is the same as the one in the **DataScreen** struct, and then calls the _updateDisplay()_ function of the current **View**.
+Every View is a subclass of its **ViewBase**, an automatically generated class by TouchGFX which contains all of the references to the GUI elements of the screen, with the most used one being the **TextArea with 1 Wildcard**, a TextArea with one buffer (the wildcard) where the **View** writes the values needed to be displayed by the driver. Not every wildcard is updated every frame, but some, such as temperatures and pressures, are updated every **ANTI_FLICKER_TIME** seconds (currently at 0.3s) to make them more readable to the driver.
+Views are updated _only_ if there are no alarms to show, in that case we call _handleAlarms()_ which will handle the showing of the alarms as described before, the GUI is made with a **Container** _ctAlrm_, by default not visible and with its background changing based on the type and how the alarm was triggered, and **2 TextArea with 1 wildcard**, being the **name** and the **value** fields.
+
+### FrontendApplication
+
+**FrontendApplication** is a class which contains methods common between all of the Views, such as _writeFloat/IntDataInBuffer()_ used to write float/int data in wildcards, _handleAlarms()_, or the methods to handle the oil and water temperature pop-up.
