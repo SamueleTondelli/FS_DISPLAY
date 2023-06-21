@@ -15,10 +15,18 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 		{
 			activateDataAlarm(&(dataset->thermalPressure.waterTemperature), "T_WATER");
 		}
+		else if (dataset->thermalPressure.waterTemperature.alarmStatus == ON)
+		{
+			dataset->thermalPressure.waterTemperature.alarmStatus = OFF_QUEUE;
+		}
 		setValueData(&(dataset->thermalPressure.oilPressure), ((payload[6] << 8) | payload[7]));
 		if (isDataCritical(&(dataset->thermalPressure.oilPressure)) != 0)
 		{
 			activateDataAlarm(&(dataset->thermalPressure.oilPressure), "P_OIL");
+		}
+		else if (dataset->thermalPressure.oilPressure.alarmStatus == ON)
+		{
+			dataset->thermalPressure.oilPressure.alarmStatus = OFF_QUEUE;
 		}
 		break;
 
@@ -28,11 +36,19 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 		{
 			activateDataAlarm(&(dataset->thermalPressure.oilTemperature), "T_OIL");
 		}
+		else if (dataset->thermalPressure.oilTemperature.alarmStatus == ON)
+		{
+			dataset->thermalPressure.oilTemperature.alarmStatus = OFF_QUEUE;
+		}
 		setValueData(&(dataset->mechanics.gear), payload[4]);
 		setValueData(&(dataset->controls.batteryVoltage), payload[6] << 8 | payload[7]);
 		if (isDataCritical(&(dataset->controls.batteryVoltage)) != 0)
 		{
 			activateDataAlarm(&(dataset->controls.batteryVoltage), "VBAT");
+		}
+		else if (dataset->controls.batteryVoltage.alarmStatus == ON)
+		{
+			dataset->controls.batteryVoltage.alarmStatus = OFF_QUEUE;
 		}
 		break;
 
@@ -42,10 +58,18 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 		{
 			activateDataAlarm(&(dataset->thermalPressure.oilTemperature), "P_FUEL");
 		}
+		else if (dataset->thermalPressure.fuelPressure.alarmStatus == ON)
+		{
+			dataset->thermalPressure.fuelPressure.alarmStatus = OFF_QUEUE;
+		}
 		setValueData(&(dataset->thermalPressure.airTemperature), ((payload[4] << 8) | payload[5]));
 		if (isDataCritical(&(dataset->thermalPressure.airTemperature)) != 0)
 		{
 			activateDataAlarm(&(dataset->thermalPressure.airTemperature), "T_AIR");
+		}
+		else if (dataset->thermalPressure.airTemperature.alarmStatus == ON)
+		{
+			dataset->thermalPressure.airTemperature.alarmStatus = OFF_QUEUE;
 		}
 		break;
 
@@ -69,6 +93,10 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 		if (isDataCritical(&(dataset->thermalPressure.fuelTemperature)) != 0)
 		{
 			activateDataAlarm(&(dataset->thermalPressure.fuelTemperature), "T_FUEL");
+		}
+		else if (dataset->thermalPressure.fuelTemperature.alarmStatus == ON)
+		{
+			dataset->thermalPressure.fuelTemperature.alarmStatus = OFF_QUEUE;
 		}
 		break;
 	case 0x240:
