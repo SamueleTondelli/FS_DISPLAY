@@ -251,6 +251,10 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		}
 		else //bonus time has passed, we switch to NO_ALARM so that we can go to the next alarm (we know there is one because we end here only if there's an alarm less important after)
 		{
+			if (currentAlarm->type == DATA) //we remove current alarm from queue
+			{
+				((Data*)currentAlarm->contents)->alarmStatus = OFF_QUEUE;
+			}
 			status = NO_ALARM;
 		}
 		break;
@@ -260,9 +264,9 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 		{
 			status = DEACTIVATE_ALARM;
 		}
-		else // we switch to NO_ALARM only if the current alarm is not on
+		else // we switch to NO_ALARM only if the current alarm is not on and if there are no alarms in queue
 		{
-			if (getAlarmStatus(currentAlarm) == ON)
+			if (getAlarmStatus(currentAlarm) == ON && peekAlarmFromQueue() == NULL)
 			{
 				ctAlarm->setVisible(true);
 				FrontendApplication::writeAlarmInBuffers(currentAlarm, nameBuffer, nameBufferSize, valueBuffer, valueBufferSize, bxAlarm);
