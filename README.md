@@ -80,10 +80,10 @@ The algorithm that handles how an alarm is showed can be found in the _handleAla
 1. **NO_ALARM** state: no alarm is shown, if we detect an alarm in the _queue_ we extract it and we go to the **ALARM_NOTINT** state
 2. **ALARM_NOTINT**: we are showing the current alarm, it lasts for 4 seconds as long as the alarm doesn't turn off or it gets disabled by the pilot, after this tere are 3 possible cases:
    1. There isn't another alarm in queue, we go in **ALARM_INT**
-   2. There is another alarm in queue and it has higher or equal priority, we go back **NO_ALARM** so that the next alarm can be shown
+   2. There is another alarm in queue and it has higher or equal priority, we change tthe current alarm to the next one and we return to **ALARM_NOTINT**
    3.  There is another alarm in queue and it has lower priority, we go in **ALARM_BONUST**
-3. **ALARM_INT**, as long the alarm is on and there isn't another alarm in queue, we show it, once the alarm goes off or another alarm comes in queue we go to **NO_ALARM** to change the current alarm. In this state we can also go to **DEACTIVATE_ALARM** if enough time (60s) passes to disable the alarm
-4. **ALARM_BONUST**, we stay here until either 3s passes or the current alarm goes off, if we are here we know that there is another alarm in queue with a lower priority, this state represents a "bonus" time we give the current alarm because of it having a higher priority then the next alarm
+3. **ALARM_INT**, as long the alarm is on and there isn't another alarm in queue, we show it, once the alarm goes off we go to **NO_ALARM**, if another alarm turns on we change the current alarm to the next one and we go to **ALARM_NOTINT**. In this state we can also go to **DEACTIVATE_ALARM** if enough time (60s) passes to disable the alarm
+4. **ALARM_BONUST**, we stay here until either 3s passes or the current alarm goes off, if we are here we know that there is another alarm in queue with a lower priority, this state represents a "bonus" time we give the current alarm because of it having a higher priority then the next alarm, we then switch to the next alarm and go to **ALARM_NOTINT** 
 5. **DEACTIVATE_ALARM**, we come here from every state with an active alarm when the driver presses the **okBtn** button, we disable the current alarm, which means we won't show it for the next 30s, then we go to **NO_ALARM**
 
 ## TouchGFX
