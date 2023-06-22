@@ -218,7 +218,9 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 					{
 						((Data*)currentAlarm->contents)->alarmStatus = OFF_QUEUE;
 					}
-					status = NO_ALARM; //next alarm is more important, we switch to NO_ALARM so that we can extract from queue the next alarm
+					*currentAlarm = extractAlarmFromQueue(); //change to the next alarm because it's more important
+					currentAlarmStartTime = uwTick;
+					status = ALARM_NOTINT;
 				}
 				else
 				{
@@ -246,16 +248,18 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 				{
 					((Data*)currentAlarm->contents)->alarmStatus = OFF_QUEUE;
 				}
-				status = NO_ALARM;
+				status = NO_ALARM; //TODO: check if it needs to witch to the next alarm and go to ALARM_NOTINT instead of doing this
 			}
 		}
-		else //bonus time has passed, we switch to NO_ALARM so that we can go to the next alarm (we know there is one because we end here only if there's an alarm less important after)
+		else //bonus time has passed, we switch to the next alarm (we know there is one because we end here only if there's an alarm less important after) and go back to ALARM_NOTINT
 		{
 			if (currentAlarm->type == DATA) //we remove current alarm from queue
 			{
 				((Data*)currentAlarm->contents)->alarmStatus = OFF_QUEUE;
 			}
-			status = NO_ALARM;
+			*currentAlarm = extractAlarmFromQueue(); //change to the next alarm
+			currentAlarmStartTime = uwTick;
+			status = ALARM_NOTINT;
 		}
 		break;
 
@@ -277,7 +281,9 @@ void FrontendApplication::handleAlarms(touchgfx::Container* ctAlarm, Unicode::Un
 				{
 					((Data*)currentAlarm->contents)->alarmStatus = OFF_QUEUE;
 				}
-				status = NO_ALARM;
+				*currentAlarm = extractAlarmFromQueue(); //change to the next alarm
+				currentAlarmStartTime = uwTick;
+				status = ALARM_NOTINT;
 			}
 		}
 		break;
