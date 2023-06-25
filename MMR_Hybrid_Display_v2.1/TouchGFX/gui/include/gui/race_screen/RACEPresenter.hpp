@@ -27,6 +27,7 @@ public:
 
     virtual ~RACEPresenter() {};
 
+    virtual void updateDisplay();
 private:
     RACEPresenter();
 

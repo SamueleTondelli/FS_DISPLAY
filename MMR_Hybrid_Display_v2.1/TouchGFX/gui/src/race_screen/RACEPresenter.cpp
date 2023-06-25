@@ -16,3 +16,8 @@ void RACEPresenter::deactivate()
 {
 
 }
+
+void RACEPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}

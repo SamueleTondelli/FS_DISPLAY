@@ -11,6 +11,8 @@ public:
     virtual ~RACEView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    virtual void updateDisplay();
 protected:
 };
 
