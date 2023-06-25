@@ -27,6 +27,8 @@ public:
 
     virtual ~DRAGPresenter() {};
 
+    virtual void updateDisplay();
+
 private:
     DRAGPresenter();
 

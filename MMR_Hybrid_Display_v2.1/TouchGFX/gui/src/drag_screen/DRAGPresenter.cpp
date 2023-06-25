@@ -16,3 +16,8 @@ void DRAGPresenter::deactivate()
 {
 
 }
+
+void DRAGPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}
