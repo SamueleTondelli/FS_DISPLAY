@@ -121,6 +121,21 @@ void RACEView::updateDisplay()
 		}
 		txtTraction.invalidate();
 
+		if (ds.controls.map == 0)
+		{
+			txtMapBuffer[0] = 'B';
+			txtMapBuffer[1] = 'A';
+			txtMapBuffer[2] = 'S';
+			txtMapBuffer[3] = 'E';
+		}
+		else
+		{
+			txtMapBuffer[0] = 'E';
+			txtMapBuffer[1] = 'C';
+			txtMapBuffer[2] = 'O';
+			txtMapBuffer[3] = ' ';
+		}
+
 	}
 	else
 	{
