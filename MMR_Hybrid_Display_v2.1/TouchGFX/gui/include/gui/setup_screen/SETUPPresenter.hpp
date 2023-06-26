@@ -27,6 +27,7 @@ public:
 
     virtual ~SETUPPresenter() {};
 
+    virtual void updateDisplay();
 private:
     SETUPPresenter();
 

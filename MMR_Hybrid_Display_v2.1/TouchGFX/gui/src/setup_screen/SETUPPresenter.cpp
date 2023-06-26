@@ -16,3 +16,8 @@ void SETUPPresenter::deactivate()
 {
 
 }
+
+void SETUPPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}

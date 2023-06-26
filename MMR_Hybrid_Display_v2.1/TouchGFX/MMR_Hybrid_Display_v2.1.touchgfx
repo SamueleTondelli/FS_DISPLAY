@@ -3779,7 +3779,7 @@
             "Type": "TextArea",
             "Name": "txtSpeed",
             "X": 122,
-            "Y": 41,
+            "Y": 40,
             "Width": 36,
             "Height": 31,
             "TextId": "__SingleUse_B8KE",
@@ -5151,7 +5151,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_0BYF"
+              "TextId": "__SingleUse_0BYF",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
@@ -5191,7 +5193,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_C7Y9"
+              "TextId": "__SingleUse_C7Y9",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
@@ -5210,12 +5214,14 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_73N8"
+              "TextId": "__SingleUse_73N8",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
             "Type": "TextArea",
-            "Name": "txtSteeringWheelLeft",
+            "Name": "txtSteeringWheel",
             "X": 332,
             "Y": 213,
             "Width": 57,
