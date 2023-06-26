@@ -3806,7 +3806,7 @@
                 "X": 55,
                 "Y": 136,
                 "Width": 130,
-                "Height": 97,
+                "Height": 98,
                 "LockPosition": true,
                 "TextId": "__SingleUse_71DI",
                 "TextRotation": "0",
@@ -3870,7 +3870,7 @@
             "Components": [
               {
                 "Type": "BoxWithBorder",
-                "Name": "bxAlarm_1",
+                "Name": "bxAlarm",
                 "Width": 480,
                 "Height": 272,
                 "LockPosition": true,

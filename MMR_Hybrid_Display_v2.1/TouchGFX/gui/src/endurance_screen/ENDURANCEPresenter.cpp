@@ -16,3 +16,8 @@ void ENDURANCEPresenter::deactivate()
 {
 
 }
+
+void ENDURANCEPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}

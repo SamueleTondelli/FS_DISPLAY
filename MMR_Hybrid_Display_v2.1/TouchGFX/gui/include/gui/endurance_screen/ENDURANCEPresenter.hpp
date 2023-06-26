@@ -27,6 +27,7 @@ public:
 
     virtual ~ENDURANCEPresenter() {};
 
+    virtual void updateDisplay();
 private:
     ENDURANCEPresenter();
 
