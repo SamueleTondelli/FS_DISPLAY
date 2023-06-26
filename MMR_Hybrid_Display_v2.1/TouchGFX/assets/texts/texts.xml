@@ -6,6 +6,15 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_N168" Alignment="Left" TypographyId="TyLabel22">
+        <Translation Language="GB">SPEED</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZMU" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_B8KE" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">&lt;NA&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_XPQE" Alignment="Left" TypographyId="tyGear60">
         <Translation Language="GB">OIL T</Translation>
       </Text>
@@ -469,7 +478,7 @@
         <Translation Language="GB">&lt;NA&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_T50X" Alignment="Left" TypographyId="TyLabel22">
-        <Translation Language="GB">Speed</Translation>
+        <Translation Language="GB">SPEED</Translation>
       </Text>
       <Text Id="__SingleUse_MBAN" Alignment="Left" TypographyId="tyText25">
         <Translation Language="GB">NA</Translation>
@@ -574,7 +583,7 @@
         <Translation Language="GB">Brake</Translation>
       </Text>
       <Text Id="__SingleUse_L7M2" Alignment="Left" TypographyId="TyLabel22">
-        <Translation Language="GB">Speed</Translation>
+        <Translation Language="GB">SPEED</Translation>
       </Text>
       <Text Id="__SingleUse_0EQM" Alignment="Left" TypographyId="tyText25">
         <Translation Language="GB">NA</Translation>
