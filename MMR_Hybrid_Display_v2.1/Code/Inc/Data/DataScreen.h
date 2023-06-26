@@ -38,6 +38,7 @@ typedef struct {
 	// Counter of frames displayed
 	uint8_t frameCounter;
 
+	uint8_t updateLapTimes;
 	uint8_t invalidateCurrentAlarmFlag;
 } DataScreen;
 /*

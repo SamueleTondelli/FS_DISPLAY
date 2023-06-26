@@ -14,7 +14,7 @@ void initializeDataScreen(DataScreen *dataScreen) {
 	// Counter of frames displayed
 	dataScreen->frameCounter = 0;							// frameCounter
 
-
+	dataScreen->updateLapTimes = 0;
 	dataScreen->invalidateCurrentAlarmFlag = 0;
 }
 

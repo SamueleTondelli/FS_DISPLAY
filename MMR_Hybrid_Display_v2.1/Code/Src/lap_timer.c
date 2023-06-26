@@ -1108,7 +1108,7 @@ void GPS_CAR_DataCopy(Dataset* dataset)
 		dataset->bestLapTime = laps[fastestLapPointer].time;
 		dataset->lapTime = laps[lapCounter - 1].time;
 		dataset->lapTimeDelta = liveTimeDelta;
-
+		dataset->screen.updateLapTimes = 1;
 		dataset->lapSector = sectorNumber;
 	}
 

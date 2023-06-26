@@ -65,6 +65,16 @@ void RACEView::updateDisplay()
 		//steer
 		FrontendApplication::writeIntDataInBuffer(&(ds.controls.steer), txtSteeringWheelBuffer, TXTSTEERINGWHEEL_SIZE, &txtSteeringWheel);
 
+		//lap times
+		if (ds.screen.updateLapTimes == 1)
+		{
+			ds.screen.updateLapTimes = 0;
+			Unicode::snprintf(txtLastLapBuffer, TXTLASTLAP_SIZE, "%d:%d:%d", ds.lapTime / 60000, (ds.lapTime % 60000) / 1000, ((ds.lapTime % 60000) % 1000) / 10);
+			txtLastLap.invalidate();
+			Unicode::snprintf(txtBestLapBuffer, TXTBESTLAP_SIZE, "%d:%d:%d", ds.bestLapTime / 60000, (ds.bestLapTime % 60000) / 1000, ((ds.bestLapTime % 60000) % 1000) / 10);
+			txtBestLap.invalidate();
+		}
+
 		int gear = getValueData(&(ds.mechanics.gear));
 		switch(gear) {
 		case 1:
