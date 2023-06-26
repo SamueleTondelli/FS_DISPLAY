@@ -122,6 +122,15 @@ void decodifyCan1Msg(Dataset *dataset, uint16_t id, uint8_t dlc, uint8_t* payloa
 		break;
 	case 0x264:
 		updateTyreTemp(&(dataset->tyres.FR), NULL, (int8_t*)payload);
+		break;
+	case 0x318:
+		setValueData(&(dataset->mechanics.carHeightFL), ((payload[0] << 8) | payload[1]));
+		setValueData(&(dataset->mechanics.carHeightFR), ((payload[2] << 8) | payload[3]));
+		break;
+	case 0x314:
+		setValueData(&(dataset->mechanics.carHeightRL), ((payload[0] << 8) | payload[1]));
+		setValueData(&(dataset->mechanics.carHeightRR), ((payload[2] << 8) | payload[3]));
+		break;
 	default:
 		break;
 	}

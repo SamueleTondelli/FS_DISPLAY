@@ -8,6 +8,10 @@ void initializeDataMechanics(DataMechanics* dataMechanics) {
 	initializeData(&(dataMechanics->slip), EMPTY_VALUE, SLIP_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataMechanics->speed), EMPTY_VALUE, SPEED_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 	initializeData(&(dataMechanics->tps), EMPTY_VALUE, TPS_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataMechanics->carHeightFR), EMPTY_VALUE, CAR_HEIGHT_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataMechanics->carHeightFL), EMPTY_VALUE, CAR_HEIGHT_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataMechanics->carHeightRR), EMPTY_VALUE, CAR_HEIGHT_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
+	initializeData(&(dataMechanics->carHeightRL), EMPTY_VALUE, CAR_HEIGHT_CONVERSION_FACTOR, DEFAULT_PRIORITY, EMPTY_VALUE, EMPTY_VALUE);
 }
 
 void setFlagNotUpdatedDataMechanics(DataMechanics* dataMechanics) {

@@ -21,6 +21,10 @@ typedef struct {
 	Data slip;
 	Data speed;
 	Data tps;
+	Data carHeightFR;
+	Data carHeightFL;
+	Data carHeightRR;
+	Data carHeightRL;
 } DataMechanics;
 
 /*
