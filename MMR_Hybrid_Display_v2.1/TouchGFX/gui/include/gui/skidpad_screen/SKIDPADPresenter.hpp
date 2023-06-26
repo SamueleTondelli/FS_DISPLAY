@@ -27,6 +27,7 @@ public:
 
     virtual ~SKIDPADPresenter() {};
 
+    virtual void updateDisplay();
 private:
     SKIDPADPresenter();
 

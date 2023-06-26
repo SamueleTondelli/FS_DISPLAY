@@ -34,6 +34,8 @@ public:
 
     static void writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
 
+    static void writeFloatValueInBuffer(float value, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
+
     static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
 
     static Alarm* getCurrentAlarm();

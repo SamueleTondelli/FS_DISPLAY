@@ -64,7 +64,6 @@ void FrontendApplication::writeIntDataInBuffer(Data* data, Unicode::UnicodeChar*
 	if (value != EMPTY_VALUE)
 	{
 		Unicode::snprintf(buffer, bufferSize, "%d", value);
-		txtArea->invalidate();
 	}
 	else
 	{
@@ -74,6 +73,7 @@ void FrontendApplication::writeIntDataInBuffer(Data* data, Unicode::UnicodeChar*
 			buffer[1] = 'A';
 		}
 	}
+	txtArea->invalidate();
 }
 
 void FrontendApplication::writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea)
@@ -82,7 +82,6 @@ void FrontendApplication::writeFloatDataInBuffer(Data* data, Unicode::UnicodeCha
 	if (value != EMPTY_VALUE)
 	{
 		Unicode::snprintf(buffer, bufferSize, "%.1f", value);
-		txtArea->invalidate();
 	}
 	else
 	{
@@ -92,6 +91,24 @@ void FrontendApplication::writeFloatDataInBuffer(Data* data, Unicode::UnicodeCha
 			buffer[1] = 'A';
 		}
 	}
+	txtArea->invalidate();
+}
+
+void FrontendApplication::writeFloatValueInBuffer(float value, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea)
+{
+	if (value != EMPTY_VALUE)
+	{
+		Unicode::snprintf(buffer, bufferSize, "%.1f", value);
+	}
+	else
+	{
+		buffer[0] = 'N';
+		if (bufferSize >= 2)
+		{
+			buffer[1] = 'A';
+		}
+	}
+	txtArea->invalidate();
 }
 
 void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm)
@@ -150,6 +167,7 @@ void FrontendApplication::writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar
 	default:
 		break;
 	}
+	//TODO: check if we need to invalidate box and text areas
 }
 
 //weird way to have a static variable of a class initialized even if there is no instance of the class

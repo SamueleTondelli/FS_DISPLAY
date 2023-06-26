@@ -16,3 +16,8 @@ void SKIDPADPresenter::deactivate()
 {
 
 }
+
+void SKIDPADPresenter::updateDisplay()
+{
+	view.updateDisplay();
+}

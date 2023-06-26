@@ -4002,7 +4002,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_JDCG"
+              "TextId": "__SingleUse_JDCG",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
@@ -4021,7 +4023,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_STIP"
+              "TextId": "__SingleUse_STIP",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
@@ -4061,7 +4065,9 @@
             },
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_TALP"
+              "TextId": "__SingleUse_TALP",
+              "UseBuffer": true,
+              "BufferSize": 3
             }
           },
           {
