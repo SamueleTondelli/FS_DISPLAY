@@ -1927,7 +1927,7 @@
             "Name": "bxRPMLowRange",
             "X": 2,
             "Y": 2,
-            "Width": 200,
+            "Width": 211,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -1938,9 +1938,9 @@
           {
             "Type": "Box",
             "Name": "bxRPMMediumRange",
-            "X": 201,
+            "X": 214,
             "Y": 2,
-            "Width": 157,
+            "Width": 189,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -1951,9 +1951,9 @@
           {
             "Type": "Box",
             "Name": "bxRPMHighRange",
-            "X": 358,
+            "X": 403,
             "Y": 2,
-            "Width": 119,
+            "Width": 74,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -1968,6 +1968,7 @@
             "Y": 106,
             "Width": 36,
             "Height": 31,
+            "LockPosition": true,
             "TextId": "__SingleUse_EZ4A",
             "TextRotation": "0",
             "Color": {
@@ -1988,9 +1989,7 @@
             "X": 2,
             "Y": 2,
             "Width": 475,
-            "Height": 32,
-            "Visible": false,
-            "LockPosition": true
+            "Height": 32
           },
           {
             "Type": "TextArea",
@@ -2237,9 +2236,9 @@
           {
             "Type": "Box",
             "Name": "bxRPMHighRange",
-            "X": 358,
+            "X": 403,
             "Y": 2,
-            "Width": 119,
+            "Width": 74,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -2249,23 +2248,10 @@
           },
           {
             "Type": "Box",
-            "Name": "bxRPMLowRange",
-            "X": 2,
-            "Y": 2,
-            "Width": 200,
-            "Height": 32,
-            "LockPosition": true,
-            "Color": {
-              "Red": 17,
-              "Blue": 255
-            }
-          },
-          {
-            "Type": "Box",
             "Name": "bxRPMMediumRange",
-            "X": 201,
+            "X": 214,
             "Y": 2,
-            "Width": 157,
+            "Width": 189,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -2275,13 +2261,24 @@
           },
           {
             "Type": "Box",
+            "Name": "bxRPMLowRange",
+            "X": 2,
+            "Y": 2,
+            "Width": 211,
+            "Height": 32,
+            "LockPosition": true,
+            "Color": {
+              "Red": 17,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
             "Name": "bxRPMCover",
             "X": 2,
             "Y": 2,
             "Width": 475,
-            "Height": 32,
-            "Visible": false,
-            "LockPosition": true
+            "Height": 32
           },
           {
             "Type": "Line",
@@ -3024,36 +3021,10 @@
           },
           {
             "Type": "Box",
-            "Name": "bxRPMLowRange",
-            "X": 2,
-            "Y": 2,
-            "Width": 200,
-            "Height": 32,
-            "LockPosition": true,
-            "Color": {
-              "Red": 17,
-              "Blue": 255
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "bxRPMMediumRange",
-            "X": 201,
-            "Y": 2,
-            "Width": 157,
-            "Height": 32,
-            "LockPosition": true,
-            "Color": {
-              "Red": 235,
-              "Green": 207
-            }
-          },
-          {
-            "Type": "Box",
             "Name": "bxRPMHighRange",
-            "X": 358,
+            "X": 403,
             "Y": 2,
-            "Width": 119,
+            "Width": 74,
             "Height": 32,
             "LockPosition": true,
             "Color": {
@@ -3063,13 +3034,37 @@
           },
           {
             "Type": "Box",
+            "Name": "bxRPMMediumRange",
+            "X": 214,
+            "Y": 2,
+            "Width": 189,
+            "Height": 32,
+            "LockPosition": true,
+            "Color": {
+              "Red": 235,
+              "Green": 207
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "bxRPMLowRange",
+            "X": 2,
+            "Y": 2,
+            "Width": 211,
+            "Height": 32,
+            "LockPosition": true,
+            "Color": {
+              "Red": 17,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
             "Name": "bxRPMCover",
             "X": 2,
             "Y": 2,
             "Width": 475,
-            "Height": 32,
-            "Visible": false,
-            "LockPosition": true
+            "Height": 32
           },
           {
             "Type": "Line",
@@ -4839,23 +4834,25 @@
           },
           {
             "Type": "Box",
-            "Name": "bxRPMLowRange",
-            "X": 2,
+            "Name": "bxRPMHighRange",
+            "X": 403,
             "Y": 2,
-            "Width": 200,
+            "Width": 74,
             "Height": 32,
+            "LockPosition": true,
             "Color": {
-              "Red": 17,
-              "Blue": 255
+              "Red": 255,
+              "Blue": 21
             }
           },
           {
             "Type": "Box",
             "Name": "bxRPMMediumRange",
-            "X": 201,
+            "X": 214,
             "Y": 2,
-            "Width": 157,
+            "Width": 189,
             "Height": 32,
+            "LockPosition": true,
             "Color": {
               "Red": 235,
               "Green": 207
@@ -4863,14 +4860,15 @@
           },
           {
             "Type": "Box",
-            "Name": "bxRPMHighRange",
-            "X": 358,
+            "Name": "bxRPMLowRange",
+            "X": 2,
             "Y": 2,
-            "Width": 119,
+            "Width": 211,
             "Height": 32,
+            "LockPosition": true,
             "Color": {
-              "Red": 255,
-              "Blue": 21
+              "Red": 17,
+              "Blue": 255
             }
           },
           {
@@ -4880,7 +4878,7 @@
             "Y": 2,
             "Width": 475,
             "Height": 32,
-            "Visible": false
+            "LockPosition": true
           },
           {
             "Type": "Container",

@@ -121,6 +121,9 @@ void DRAGView::updateDisplay()
 			txtMapBuffer[3] = ' ';
 		}
 
+		//rpm bar
+		bxRPMCover.setPosition((getValueData(&(ds.mechanics.rpm)) * SCREEN_WIDTH) / MAX_RPM, bxRPMCover.getY(), bxRPMCover.getWidth(), bxRPMCover.getHeight());
+		bxRPMCover.invalidate();
 	}
 	else
 	{
