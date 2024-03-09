@@ -360,6 +360,52 @@ HOMEViewBase::HOMEViewBase()
 
     add(ctDown);
 
+    ctTemp.setPosition(0, 0, 480, 272);
+    ctTemp.setVisible(false);
+    bxOilTemp.setPosition(0, 0, 240, 272);
+    bxOilTemp.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    bxOilTemp.setBorderColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxOilTemp.setBorderSize(2);
+    ctTemp.add(bxOilTemp);
+
+    bxWaterTemp.setPosition(240, 0, 240, 272);
+    bxWaterTemp.setColor(touchgfx::Color::getColorFromRGB(51, 78, 255));
+    bxWaterTemp.setBorderColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bxWaterTemp.setBorderSize(2);
+    ctTemp.add(bxWaterTemp);
+
+    txtWaterTemp.setXY(55, 136);
+    txtWaterTemp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtWaterTemp.setLinespacing(0);
+    Unicode::snprintf(txtWaterTempBuffer, TXTWATERTEMP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_YIA7).getText());
+    txtWaterTemp.setWildcard(txtWaterTempBuffer);
+    txtWaterTemp.resizeToCurrentText();
+    txtWaterTemp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LCJ5));
+    ctTemp.add(txtWaterTemp);
+
+    txtOilTemp.setXY(295, 136);
+    txtOilTemp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    txtOilTemp.setLinespacing(0);
+    Unicode::snprintf(txtOilTempBuffer, TXTOILTEMP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_3HLP).getText());
+    txtOilTemp.setWildcard(txtOilTempBuffer);
+    txtOilTemp.resizeToCurrentText();
+    txtOilTemp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JV9K));
+    ctTemp.add(txtOilTemp);
+
+    nameWaterTemp.setXY(265, 19);
+    nameWaterTemp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    nameWaterTemp.setLinespacing(0);
+    nameWaterTemp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1LBZ));
+    ctTemp.add(nameWaterTemp);
+
+    nameOilTemp.setXY(38, 20);
+    nameOilTemp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    nameOilTemp.setLinespacing(0);
+    nameOilTemp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XPQE));
+    ctTemp.add(nameOilTemp);
+
+    add(ctTemp);
+
     ctAlarm.setPosition(0, 0, 480, 272);
     ctAlarm.setVisible(false);
     bxAlarm.setPosition(0, 0, 480, 272);

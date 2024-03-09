@@ -1,7 +1,10 @@
-Data.c:5:6:inizializeData	24	static
-Data.c:11:7:getValueData	16	static
-Data.c:15:6:setValueData	16	static
-Data.c:20:6:setValueDataNoConversion	16	static
-Data.c:25:6:setUpdateData	16	static
-Data.c:29:6:setNotUpdateData	16	static
-Data.c:36:9:isDataUpdated	16	static
+../Code/Src/Data/Data.c:6:6:initializeData	32	static
+../Code/Src/Data/Data.c:16:7:getValueData	16	static
+../Code/Src/Data/Data.c:20:8:getPointerValueData	16	static
+../Code/Src/Data/Data.c:24:6:setValueData	16	static
+../Code/Src/Data/Data.c:29:6:setValueDataNoConversion	16	static
+../Code/Src/Data/Data.c:34:6:setUpdateData	16	static
+../Code/Src/Data/Data.c:38:6:setNotUpdateData	16	static
+../Code/Src/Data/Data.c:45:9:isDataUpdated	16	static
+../Code/Src/Data/Data.c:53:8:isDataCritical	16	static
+../Code/Src/Data/Data.c:76:6:activateDataAlarm	40	static

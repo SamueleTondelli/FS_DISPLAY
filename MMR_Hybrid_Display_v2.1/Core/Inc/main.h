@@ -136,6 +136,7 @@ void Error_Handler(void);
 #define MAP_BTN_GPIO_Port GPIOB
 #define DISP_BTN_Pin GPIO_PIN_9
 #define DISP_BTN_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

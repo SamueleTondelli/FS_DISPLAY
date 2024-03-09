@@ -1,0 +1,5 @@
+../Code/Src/Data/DataControls.c:8:6:initializeDataControls	16	static
+../Code/Src/Data/DataControls.c:24:6:setFlagNotUpdatedDataControls	16	static
+../Code/Src/Data/DataControls.c:34:6:readTractionControlData	32	static
+../Code/Src/Data/DataControls.c:68:6:toggleMap	40	static
+../Code/Src/Data/DataControls.c:77:6:writeMap	16	static

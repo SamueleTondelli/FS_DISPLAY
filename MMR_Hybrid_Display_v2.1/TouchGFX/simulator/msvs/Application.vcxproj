@@ -33,6 +33,12 @@
     <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\skidpad_screen\SKIDPADViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\endurance_screen\ENDURANCEViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\setup_screen\SETUPPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\setup_screen\SETUPView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\setup_screen\SETUPViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -195,6 +201,12 @@
     <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\skidpad_screen\SKIDPADViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\endurance_screen\ENDURANCEViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setup_screen\SETUPViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

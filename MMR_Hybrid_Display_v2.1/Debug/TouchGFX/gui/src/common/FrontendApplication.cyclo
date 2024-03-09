@@ -1,35 +1,49 @@
-UIEventListener.hpp:44:18:virtual void touchgfx::UIEventListener::handleClickEvent(const touchgfx::ClickEvent&)	1
-UIEventListener.hpp:54:18:virtual void touchgfx::UIEventListener::handleDragEvent(const touchgfx::DragEvent&)	1
-UIEventListener.hpp:64:18:virtual void touchgfx::UIEventListener::handleGestureEvent(const touchgfx::GestureEvent&)	1
-UIEventListener.hpp:74:18:virtual void touchgfx::UIEventListener::handleKeyEvent(uint8_t)	1
-UIEventListener.hpp:83:18:virtual void touchgfx::UIEventListener::handleTickEvent()	1
-UIEventListener.hpp:88:18:virtual void touchgfx::UIEventListener::handlePendingScreenTransition()	1
-UIEventListener.hpp:93:13:touchgfx::UIEventListener::~UIEventListener()	1
-UIEventListener.hpp:93:13:virtual touchgfx::UIEventListener::~UIEventListener()	1
-Application.hpp:72:18:virtual void touchgfx::Application::changeToStartScreen()	1
-Application.hpp:91:18:virtual void touchgfx::Application::appSwitchScreen(uint8_t)	1
-Application.hpp:104:18:virtual void touchgfx::Application::requestRedraw(touchgfx::Rect&)	1
-Callback.hpp:179:13:touchgfx::GenericCallback<void>::~GenericCallback()	1
-Callback.hpp:179:13:virtual touchgfx::GenericCallback<void>::~GenericCallback()	1
-Application.hpp:41:7:touchgfx::Application::~Application()	1
-Application.hpp:41:7:virtual touchgfx::Application::~Application()	1
-MVPApplication.hpp:59:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	1
-MVPApplication.hpp:73:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	4
-MVPApplication.hpp:43:7:touchgfx::MVPApplication::~MVPApplication()	1
-MVPApplication.hpp:43:7:virtual touchgfx::MVPApplication::~MVPApplication()	1
-FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	1
-FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	1
-FrontendApplicationBase.hpp:18:18:virtual void FrontendApplicationBase::changeToStartScreen()	1
-FrontendApplication.hpp:14:13:FrontendApplication::~FrontendApplication()	1
-FrontendApplication.hpp:14:13:virtual FrontendApplication::~FrontendApplication()	1
-FrontendApplication.hpp:35:18:virtual void FrontendApplication::handleTickEvent()	1
-FrontendApplication.cpp:3:1:FrontendApplication::FrontendApplication(Model&, FrontendHeap&)	1
-FrontendApplication.cpp:12:6:void FrontendApplication::gotoScreen1ScreenNoTransition()	1
-FrontendApplication.cpp:18:6:void FrontendApplication::gotoScreen2ScreenNoTransition()	1
-FrontendApplication.cpp:24:6:void FrontendApplication::gotoScreen3ScreenNoTransition()	1
-FrontendApplication.cpp:30:6:void FrontendApplication::gotoScreen4ScreenNoTransition()	1
-FrontendApplication.cpp:37:6:void FrontendApplication::gotoScreen5ScreenNoTransition()	1
-Callback.hpp:424:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
-Callback.hpp:424:8:virtual touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
-Callback.hpp:449:18:void touchgfx::Callback<dest_type, void, void, void>::execute() [with dest_type = FrontendApplicationBase]	2
-Callback.hpp:459:18:bool touchgfx::Callback<dest_type, void, void, void>::isValid() const [with dest_type = FrontendApplicationBase]	5
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:44:18:virtual void touchgfx::UIEventListener::handleClickEvent(const touchgfx::ClickEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:54:18:virtual void touchgfx::UIEventListener::handleDragEvent(const touchgfx::DragEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:64:18:virtual void touchgfx::UIEventListener::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:74:18:virtual void touchgfx::UIEventListener::handleKeyEvent(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:83:18:virtual void touchgfx::UIEventListener::handleTickEvent()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:88:18:virtual void touchgfx::UIEventListener::handlePendingScreenTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:93:13:touchgfx::UIEventListener::~UIEventListener()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:93:13:virtual touchgfx::UIEventListener::~UIEventListener()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:72:18:virtual void touchgfx::Application::changeToStartScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:91:18:virtual void touchgfx::Application::appSwitchScreen(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:104:18:virtual void touchgfx::Application::requestRedraw(touchgfx::Rect&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:179:13:touchgfx::GenericCallback<void>::~GenericCallback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:179:13:virtual touchgfx::GenericCallback<void>::~GenericCallback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:41:7:touchgfx::Application::~Application()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:41:7:virtual touchgfx::Application::~Application()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:59:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:73:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	4
+../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:43:7:touchgfx::MVPApplication::~MVPApplication()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:43:7:virtual touchgfx::MVPApplication::~MVPApplication()	1
+../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	1
+../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	1
+../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:18:18:virtual void FrontendApplicationBase::changeToStartScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:virtual FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:47:18:virtual void FrontendApplication::handleTickEvent()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:5:1:FrontendApplication::FrontendApplication(Model&, FrontendHeap&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:25:6:void FrontendApplication::gotoHOMEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:31:6:void FrontendApplication::gotoRACEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:37:6:void FrontendApplication::gotoDRAGScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:43:6:void FrontendApplication::gotoENDURANCEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:49:6:void FrontendApplication::gotoSKIDPADScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:55:6:void FrontendApplication::gotoSETUPScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:61:6:static void FrontendApplication::writeIntDataInBuffer(Data*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
+../TouchGFX/gui/src/common/FrontendApplication.cpp:79:6:static void FrontendApplication::writeFloatDataInBuffer(Data*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
+../TouchGFX/gui/src/common/FrontendApplication.cpp:97:6:static void FrontendApplication::writeFloatValueInBuffer(float, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
+../TouchGFX/gui/src/common/FrontendApplication.cpp:114:6:static void FrontendApplication::writeAlarmInBuffers(Alarm*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::BoxWithBorder*)	14
+../TouchGFX/gui/src/common/FrontendApplication.cpp:174:8:static Alarm* FrontendApplication::getCurrentAlarm()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:184:6:static void FrontendApplication::handleAlarms(touchgfx::Container*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::BoxWithBorder*)	28
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>::GenericCallback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:440:5:touchgfx::Callback<dest_type, void, void, void>::Callback(dest_type*, void (dest_type::*)()) [with dest_type = FrontendApplicationBase]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:virtual touchgfx::Callback<FrontendApplicationBase>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:449:18:void touchgfx::Callback<dest_type, void, void, void>::execute() [with dest_type = FrontendApplicationBase]	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:459:18:bool touchgfx::Callback<dest_type, void, void, void>::isValid() const [with dest_type = FrontendApplicationBase]	5

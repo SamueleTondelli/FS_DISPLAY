@@ -1,0 +1,15 @@
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateDisplay()	16	static
+../TouchGFX/gui/include/gui/setup_screen/SETUPPresenter.hpp:28:13:SETUPPresenter::~SETUPPresenter()	16	static
+../TouchGFX/gui/include/gui/setup_screen/SETUPPresenter.hpp:28:13:virtual SETUPPresenter::~SETUPPresenter()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPPresenter.cpp:4:1:SETUPPresenter::SETUPPresenter(SETUPView&)	16	static
+../TouchGFX/gui/src/setup_screen/SETUPPresenter.cpp:10:6:virtual void SETUPPresenter::activate()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPPresenter.cpp:15:6:virtual void SETUPPresenter::deactivate()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPPresenter.cpp:20:6:virtual void SETUPPresenter::updateDisplay()	16	static

@@ -1,2 +1,2 @@
-CanFunctions.c:16:6:decodifyCanMsg	24	static
-CanFunctions.c:265:6:decodifyCanMsgOld	24	static
+../Code/Src/CanFunctions.c:8:6:decodifyCan1Msg	24	static
+../Code/Src/CanFunctions.c:139:6:decodifyCan2Msg	40	static

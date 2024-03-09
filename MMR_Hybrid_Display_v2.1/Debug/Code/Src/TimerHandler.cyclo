@@ -1,0 +1,4 @@
+../Code/Src/TimerHandler.c:20:6:startTimer	1
+../Code/Src/TimerHandler.c:24:6:stopTimer	1
+../Code/Src/TimerHandler.c:28:6:timerHandlerOld	5
+../Code/Src/TimerHandler.c:53:6:timerHandler	3

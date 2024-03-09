@@ -9,13 +9,12 @@
 #include <gui/drag_screen/DRAGPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/containers/Container.hpp>
-#include <touchgfx/widgets/canvas/Shape.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/containers/Container.hpp>
 
 class DRAGViewBase : public touchgfx::View<DRAGPresenter>
 {
@@ -34,72 +33,56 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::BoxWithBorder bxBackGround;
-    touchgfx::Container ctRPM;
-    touchgfx::BoxWithBorder boxWithBorder1;
-    touchgfx::Shape<4> centralRPM;
-    touchgfx::PainterRGB565 centralRPMPainter;
-    touchgfx::Shape<4> lateralsxRPM;
-    touchgfx::PainterRGB565 lateralsxRPMPainter;
-    touchgfx::Shape<4> lateraldxRPM;
-    touchgfx::PainterRGB565 lateraldxRPMPainter;
-    touchgfx::Shape<4> downTXT;
-    touchgfx::PainterRGB565 downTXTPainter;
-    touchgfx::Line line1;
-    touchgfx::PainterRGB565 line1Painter;
-    touchgfx::Line line1_2;
-    touchgfx::PainterRGB565 line1_2Painter;
-    touchgfx::Line line1_1;
-    touchgfx::PainterRGB565 line1_1Painter;
-    touchgfx::Line line1_1_1;
-    touchgfx::PainterRGB565 line1_1_1Painter;
-    touchgfx::Line line2;
-    touchgfx::PainterRGB565 line2Painter;
-    touchgfx::Line line2_1;
-    touchgfx::PainterRGB565 line2_1Painter;
-    touchgfx::Line line2_1_1;
-    touchgfx::PainterRGB565 line2_1_1Painter;
-    touchgfx::TextArea nameRPM;
+    touchgfx::Box bxRPMHighRange;
+    touchgfx::Box bxRPMMediumRange;
+    touchgfx::Box bxRPMLowRange;
+    touchgfx::Box bxRPMCover;
+    touchgfx::Line bottom_line;
+    touchgfx::PainterRGB565 bottom_linePainter;
+    touchgfx::Line left_line;
+    touchgfx::PainterRGB565 left_linePainter;
+    touchgfx::Line right_line;
+    touchgfx::PainterRGB565 right_linePainter;
+    touchgfx::Line rpm_line;
+    touchgfx::PainterRGB565 rpm_linePainter;
+    touchgfx::Line up_line;
+    touchgfx::PainterRGB565 up_linePainter;
+    touchgfx::Image image2;
     touchgfx::TextAreaWithOneWildcard txtRPM;
-    touchgfx::Container ctNumberLeft;
-    touchgfx::TextArea textArea1_4_1_1;
-    touchgfx::TextArea textArea1_4_2;
-    touchgfx::TextArea textArea1_3_1;
-    touchgfx::TextArea textArea1_2_1;
-    touchgfx::TextArea textArea1_1_1;
-    touchgfx::TextArea textArea1_5;
-    touchgfx::Container ctNumberRight;
-    touchgfx::TextArea textArea1;
-    touchgfx::TextArea textArea1_1;
-    touchgfx::TextArea textArea1_2;
-    touchgfx::TextArea textArea1_3;
-    touchgfx::TextArea textArea1_4;
-    touchgfx::TextArea textArea1_4_1;
-    touchgfx::Container ctGear;
-    touchgfx::TextArea nameGear;
-    touchgfx::Image imageGear;
     touchgfx::TextAreaWithOneWildcard txtGear;
-    touchgfx::Container ctDown;
-    touchgfx::TextArea nameSpeed;
-    touchgfx::Image imageSpeed;
     touchgfx::TextAreaWithOneWildcard txtSpeed;
-    touchgfx::TextArea txtKmH;
-    touchgfx::Image imageTraction;
-    touchgfx::Image imageLaunchControl;
+    touchgfx::Image image1;
+    touchgfx::Image image1_1;
+    touchgfx::Image image1_1_1;
+    touchgfx::Image image1_1_1_2;
+    touchgfx::Image image1_1_1_1;
+    touchgfx::Image image1_1_1_1_1;
+    touchgfx::TextArea nameOilP;
+    touchgfx::TextAreaWithOneWildcard txtWaterT;
+    touchgfx::TextAreaWithOneWildcard txtOilT;
+    touchgfx::TextArea nameOilT;
+    touchgfx::TextArea nameWaterT;
+    touchgfx::TextAreaWithOneWildcard txtOilP;
+    touchgfx::TextArea nameSpeed;
     touchgfx::TextArea nameTraction;
     touchgfx::TextAreaWithOneWildcard txtTraction;
-    touchgfx::TextAreaWithOneWildcard txtLaunchControl;
-    touchgfx::TextArea nameLaunchControl;
-    touchgfx::Container ctSW;
-    touchgfx::TextAreaWithOneWildcard txtSteeringWheel;
-    touchgfx::TextArea txtSteeringWheelGrade;
-    touchgfx::TextArea nameSteeringWheel;
-    touchgfx::Image imageSteeringWheel;
+    touchgfx::TextArea nameTps;
+    touchgfx::TextArea nameMap;
+    touchgfx::TextArea nameVbat;
+    touchgfx::TextAreaWithOneWildcard txtVbat;
+    touchgfx::TextAreaWithOneWildcard txtMap;
+    touchgfx::TextAreaWithOneWildcard txtTps;
+    touchgfx::Container ctTemp;
+    touchgfx::BoxWithBorder bxOilTemp;
+    touchgfx::BoxWithBorder bxWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtOilTemp;
+    touchgfx::TextArea nameWaterTemp;
+    touchgfx::TextArea nameOilTemp;
     touchgfx::Container ctAlarm;
     touchgfx::BoxWithBorder bxAlarm;
-    touchgfx::TextAreaWithOneWildcard txtAlarm;
-    touchgfx::Container ctScreenName;
-    touchgfx::BoxWithBorder bxScreenName;
-    touchgfx::TextArea txtScreenName;
+    touchgfx::TextAreaWithOneWildcard txtAlarmName;
+    touchgfx::TextAreaWithOneWildcard txtAlarmValue;
 
     /*
      * Wildcard Buffers
@@ -110,14 +93,28 @@ protected:
     touchgfx::Unicode::UnicodeChar txtGearBuffer[TXTGEAR_SIZE];
     static const uint16_t TXTSPEED_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtSpeedBuffer[TXTSPEED_SIZE];
+    static const uint16_t TXTWATERT_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtWaterTBuffer[TXTWATERT_SIZE];
+    static const uint16_t TXTOILT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilTBuffer[TXTOILT_SIZE];
+    static const uint16_t TXTOILP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilPBuffer[TXTOILP_SIZE];
     static const uint16_t TXTTRACTION_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtTractionBuffer[TXTTRACTION_SIZE];
-    static const uint16_t TXTLAUNCHCONTROL_SIZE = 3;
-    touchgfx::Unicode::UnicodeChar txtLaunchControlBuffer[TXTLAUNCHCONTROL_SIZE];
-    static const uint16_t TXTSTEERINGWHEEL_SIZE = 3;
-    touchgfx::Unicode::UnicodeChar txtSteeringWheelBuffer[TXTSTEERINGWHEEL_SIZE];
-    static const uint16_t TXTALARM_SIZE = 33;
-    touchgfx::Unicode::UnicodeChar txtAlarmBuffer[TXTALARM_SIZE];
+    static const uint16_t TXTVBAT_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtVbatBuffer[TXTVBAT_SIZE];
+    static const uint16_t TXTMAP_SIZE = 4;
+    touchgfx::Unicode::UnicodeChar txtMapBuffer[TXTMAP_SIZE];
+    static const uint16_t TXTTPS_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtTpsBuffer[TXTTPS_SIZE];
+    static const uint16_t TXTWATERTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtWaterTempBuffer[TXTWATERTEMP_SIZE];
+    static const uint16_t TXTOILTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilTempBuffer[TXTOILTEMP_SIZE];
+    static const uint16_t TXTALARMNAME_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmNameBuffer[TXTALARMNAME_SIZE];
+    static const uint16_t TXTALARMVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmValueBuffer[TXTALARMVALUE_SIZE];
 
 private:
 

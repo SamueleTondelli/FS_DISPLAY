@@ -88,6 +88,13 @@ protected:
     touchgfx::TextArea nameVbat;
     touchgfx::TextArea nameTps;
     touchgfx::TextArea nameTraction;
+    touchgfx::Container ctTemp;
+    touchgfx::BoxWithBorder bxOilTemp;
+    touchgfx::BoxWithBorder bxWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtOilTemp;
+    touchgfx::TextArea nameWaterTemp;
+    touchgfx::TextArea nameOilTemp;
     touchgfx::Container ctAlarm;
     touchgfx::BoxWithBorder bxAlarm;
     touchgfx::TextAreaWithOneWildcard txtAlarmName;
@@ -125,6 +132,10 @@ protected:
     touchgfx::Unicode::UnicodeChar txtTpsBuffer[TXTTPS_SIZE];
     static const uint16_t TXTTRACTION_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtTractionBuffer[TXTTRACTION_SIZE];
+    static const uint16_t TXTWATERTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtWaterTempBuffer[TXTWATERTEMP_SIZE];
+    static const uint16_t TXTOILTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilTempBuffer[TXTOILTEMP_SIZE];
     static const uint16_t TXTALARMNAME_SIZE = 10;
     touchgfx::Unicode::UnicodeChar txtAlarmNameBuffer[TXTALARMNAME_SIZE];
     static const uint16_t TXTALARMVALUE_SIZE = 10;

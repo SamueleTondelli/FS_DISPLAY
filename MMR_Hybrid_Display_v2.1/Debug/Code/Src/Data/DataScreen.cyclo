@@ -1,0 +1,8 @@
+../Code/Src/Data/DataScreen.c:6:6:initializeDataScreen	1
+../Code/Src/Data/DataScreen.c:21:9:getCurrentScreen	1
+../Code/Src/Data/DataScreen.c:25:6:incrementCurrentScreen	1
+../Code/Src/Data/DataScreen.c:29:9:getFpsScreen	1
+../Code/Src/Data/DataScreen.c:33:6:setFpsScreen	1
+../Code/Src/Data/DataScreen.c:37:6:setFpsScreenFromStruct	1
+../Code/Src/Data/DataScreen.c:41:6:cleanFpsCounter	1
+../Code/Src/Data/DataScreen.c:45:6:changeBlinkFlag	1

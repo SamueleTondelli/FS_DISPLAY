@@ -1,5 +1,5 @@
 ../TouchGFX/gui/src/model/Model.cpp:23:1:Model::Model()	16	static
-../TouchGFX/gui/src/model/Model.cpp:27:6:void Model::tick()	16	static
-../TouchGFX/gui/src/model/Model.cpp:83:6:void Model::saveCurrentScreenIndex(uint8_t)	16	static
-../TouchGFX/gui/src/model/Model.cpp:87:9:uint8_t Model::getCurrentScreenIndex()	16	static
-../TouchGFX/gui/src/model/Model.cpp:91:6:void Model::updateDisplay()	16	static
+../TouchGFX/gui/src/model/Model.cpp:27:6:void Model::tick()	24	static
+../TouchGFX/gui/src/model/Model.cpp:72:6:void Model::saveCurrentScreenIndex(uint8_t)	16	static
+../TouchGFX/gui/src/model/Model.cpp:76:9:uint8_t Model::getCurrentScreenIndex()	16	static
+../TouchGFX/gui/src/model/Model.cpp:80:6:void Model::updateDisplay()	16	static

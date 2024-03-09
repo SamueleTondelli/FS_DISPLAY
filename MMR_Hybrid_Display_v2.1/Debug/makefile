@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -11,27 +11,23 @@ RM := rm -rf
 -include sources.mk
 -include TouchGFX/target/generated/subdir.mk
 -include TouchGFX/target/subdir.mk
--include TouchGFX/gui/src/screen7_screen/subdir.mk
--include TouchGFX/gui/src/screen6_screen/subdir.mk
--include TouchGFX/gui/src/screen5_screen/subdir.mk
--include TouchGFX/gui/src/screen4_screen/subdir.mk
--include TouchGFX/gui/src/screen3_screen/subdir.mk
--include TouchGFX/gui/src/screen2_screen/subdir.mk
--include TouchGFX/gui/src/screen1_screen/subdir.mk
--include TouchGFX/gui/src/screen0_screen/subdir.mk
+-include TouchGFX/gui/src/skidpad_screen/subdir.mk
+-include TouchGFX/gui/src/setup_screen/subdir.mk
+-include TouchGFX/gui/src/race_screen/subdir.mk
 -include TouchGFX/gui/src/model/subdir.mk
+-include TouchGFX/gui/src/home_screen/subdir.mk
+-include TouchGFX/gui/src/endurance_screen/subdir.mk
+-include TouchGFX/gui/src/drag_screen/subdir.mk
 -include TouchGFX/gui/src/common/subdir.mk
 -include TouchGFX/generated/videos/obj/subdir.mk
 -include TouchGFX/generated/texts/src/subdir.mk
 -include TouchGFX/generated/images/src/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen7_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen6_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen5_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen4_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen3_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen2_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen1_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/screen0_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/skidpad_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/setup_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/race_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/home_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/endurance_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/drag_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/common/subdir.mk
 -include TouchGFX/generated/fonts/src/subdir.mk
 -include TouchGFX/App/subdir.mk
@@ -59,6 +55,9 @@ endif
 ifneq ($(strip $(C++_DEPS)),)
 -include $(C++_DEPS)
 endif
+ifneq ($(strip $(CCM_DEPS)),)
+-include $(CCM_DEPS)
+endif
 ifneq ($(strip $(C_UPPER_DEPS)),)
 -include $(C_UPPER_DEPS)
 endif
@@ -70,6 +69,12 @@ ifneq ($(strip $(S_DEPS)),)
 endif
 ifneq ($(strip $(S_UPPER_DEPS)),)
 -include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(CXXM_DEPS)),)
+-include $(CXXM_DEPS)
+endif
+ifneq ($(strip $(C++M_DEPS)),)
+-include $(C++M_DEPS)
 endif
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
@@ -96,14 +101,14 @@ BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ART
 EXECUTABLES += \
 MMR_Hybrid_Display_v2.1.elf \
 
+MAP_FILES += \
+MMR_Hybrid_Display_v2.1.map \
+
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
 MMR_Hybrid_Display_v2.1.list \
-
-OBJCOPY_BIN += \
-MMR_Hybrid_Display_v2.1.bin \
 
 
 # All Target
@@ -113,8 +118,8 @@ all: main-build
 main-build: MMR_Hybrid_Display_v2.1.elf secondary-outputs
 
 # Tool invocations
-MMR_Hybrid_Display_v2.1.elf: $(OBJS) $(USER_OBJS) C:\Users\IlMio\STM32CubeIDE\workspace_1.2.0\MMR_Hybrid_Display_v2.1\STM32F769BITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "MMR_Hybrid_Display_v2.1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\IlMio\STM32CubeIDE\workspace_1.2.0\MMR_Hybrid_Display_v2.1\STM32F769BITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MMR_Hybrid_Display_v2.1.map" -Wl,--gc-sections -static -L"C:\Users\IlMio\STM32CubeIDE\workspace_1.2.0\MMR_Hybrid_Display_v2.1\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" -L"C:\Users\IlMio\Desktop\MMR_Hybrid\Display\New\Versioni\MMR_Hybrid_Display_v2.0\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+MMR_Hybrid_Display_v2.1.elf MMR_Hybrid_Display_v2.1.map: $(OBJS) $(USER_OBJS) E:\Documenti\stmworkspace\FS_DISPLAY\MMR_Hybrid_Display_v2.1\STM32F769BITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "MMR_Hybrid_Display_v2.1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"E:\Documenti\stmworkspace\FS_DISPLAY\MMR_Hybrid_Display_v2.1\STM32F769BITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MMR_Hybrid_Display_v2.1.map" -Wl,--gc-sections -static -L"E:\Documenti\stmworkspace\FS_DISPLAY\MMR_Hybrid_Display_v2.1\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -128,17 +133,12 @@ MMR_Hybrid_Display_v2.1.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TO
 	@echo 'Finished building: $@'
 	@echo ' '
 
-MMR_Hybrid_Display_v2.1.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "MMR_Hybrid_Display_v2.1.bin"
-	@echo 'Finished building: $@'
-	@echo ' '
-
 # Other Targets
 clean:
-	-$(RM) MMR_Hybrid_Display_v2.1.bin MMR_Hybrid_Display_v2.1.elf MMR_Hybrid_Display_v2.1.list default.size.stdout
+	-$(RM) MMR_Hybrid_Display_v2.1.elf MMR_Hybrid_Display_v2.1.list MMR_Hybrid_Display_v2.1.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

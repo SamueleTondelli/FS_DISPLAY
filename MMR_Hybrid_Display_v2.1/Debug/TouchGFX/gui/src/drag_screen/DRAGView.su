@@ -1,9 +1,16 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:283:13:int16_t touchgfx::Drawable::getY() const	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:303:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
 ../TouchGFX/gui/include/gui/drag_screen/DRAGView.hpp:11:13:DRAGView::~DRAGView()	16	static
 ../TouchGFX/gui/include/gui/drag_screen/DRAGView.hpp:11:13:virtual DRAGView::~DRAGView()	16	static
-../TouchGFX/gui/src/drag_screen/DRAGView.cpp:3:1:DRAGView::DRAGView()	16	static
-../TouchGFX/gui/src/drag_screen/DRAGView.cpp:8:6:virtual void DRAGView::setupScreen()	16	static
-../TouchGFX/gui/src/drag_screen/DRAGView.cpp:13:6:virtual void DRAGView::tearDownScreen()	16	static
+../TouchGFX/gui/src/drag_screen/DRAGView.cpp:7:1:DRAGView::DRAGView()	16	static
+../TouchGFX/gui/src/drag_screen/DRAGView.cpp:12:6:virtual void DRAGView::setupScreen()	16	static
+../TouchGFX/gui/src/drag_screen/DRAGView.cpp:17:6:virtual void DRAGView::tearDownScreen()	16	static
+../TouchGFX/gui/src/drag_screen/DRAGView.cpp:22:6:virtual void DRAGView::updateDisplay()	48	static

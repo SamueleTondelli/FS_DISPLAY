@@ -1,0 +1,5 @@
+../Core/Src/freertos.c:95:6:vApplicationGetIdleTaskMemory	1
+../Core/Src/freertos.c:109:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:156:6:StartTouchGFXTask	1
+../Core/Src/freertos.c:188:6:tractionAcquisition	1
+../Core/Src/freertos.c:207:6:buttonHandling	1

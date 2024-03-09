@@ -84,19 +84,31 @@ TouchGFX/gui/src/model/Model.o: ../TouchGFX/gui/src/model/Model.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataThermalPressure.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMechanics.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataControls.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataScreen.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/DisplayConstant.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataStatus.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimerHandler.h \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/DisplayConstant.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataAlarms.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataConstantAlarms.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMessage.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataThermalPressure.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMechanics.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataControls.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataScreen.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataStatus.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMessage.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Button.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataTyres.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimerHandler.h \
  ../Core/Inc/tim.h ../Core/Inc/main.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimersList.h \
- C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/SDcardHandler.h
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h \
+ E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimersList.h
 ../TouchGFX/gui/include/gui/model/Model.hpp:
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
@@ -183,17 +195,29 @@ TouchGFX/gui/src/model/Model.o: ../TouchGFX/gui/src/model/Model.cpp \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataThermalPressure.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMechanics.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataControls.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataScreen.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/DisplayConstant.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataStatus.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimerHandler.h:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/BoxWithBorder.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/DisplayConstant.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataAlarms.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataConstantAlarms.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMessage.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataThermalPressure.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Data.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMechanics.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataControls.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataScreen.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataStatus.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataMessage.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Button.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/DataTyres.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimerHandler.h:
 ../Core/Inc/tim.h:
 ../Core/Inc/main.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimersList.h:
-C:/Users/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/SDcardHandler.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/Data/Dataset.h:
+E:/Documenti/stmworkspace/FS_DISPLAY/MMR_Hybrid_Display_v2.1/Code/Inc/TimersList.h:

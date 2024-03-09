@@ -14,12 +14,16 @@
 
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
-#include <gui/drag_screen/DRAGView.hpp>
-#include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/skidpad_screen/SKIDPADView.hpp>
-#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
 #include <gui/race_screen/RACEView.hpp>
 #include <gui/race_screen/RACEPresenter.hpp>
+#include <gui/drag_screen/DRAGView.hpp>
+#include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/endurance_screen/ENDURANCEView.hpp>
+#include <gui/endurance_screen/ENDURANCEPresenter.hpp>
+#include <gui/skidpad_screen/SKIDPADView.hpp>
+#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
+#include <gui/setup_screen/SETUPView.hpp>
+#include <gui/setup_screen/SETUPPresenter.hpp>
 
 
 /**
@@ -43,10 +47,12 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< HOMEView,
-            touchgfx::meta::TypeList< DRAGView,
-            touchgfx::meta::TypeList< SKIDPADView,
             touchgfx::meta::TypeList< RACEView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< DRAGView,
+            touchgfx::meta::TypeList< ENDURANCEView,
+            touchgfx::meta::TypeList< SKIDPADView,
+            touchgfx::meta::TypeList< SETUPView,
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -59,10 +65,12 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< HOMEPresenter,
-            touchgfx::meta::TypeList< DRAGPresenter,
-            touchgfx::meta::TypeList< SKIDPADPresenter,
             touchgfx::meta::TypeList< RACEPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< DRAGPresenter,
+            touchgfx::meta::TypeList< ENDURANCEPresenter,
+            touchgfx::meta::TypeList< SKIDPADPresenter,
+            touchgfx::meta::TypeList< SETUPPresenter,
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -1,4 +1,4 @@
-TimerHandler.c:31:6:startTimer	16	static
-TimerHandler.c:35:6:stopTimer	16	static
-TimerHandler.c:39:6:timerHandlerOld	16	static
-TimerHandler.c:129:6:timerHandler	24	static
+../Code/Src/TimerHandler.c:20:6:startTimer	16	static
+../Code/Src/TimerHandler.c:24:6:stopTimer	16	static
+../Code/Src/TimerHandler.c:28:6:timerHandlerOld	16	static
+../Code/Src/TimerHandler.c:53:6:timerHandler	24	static

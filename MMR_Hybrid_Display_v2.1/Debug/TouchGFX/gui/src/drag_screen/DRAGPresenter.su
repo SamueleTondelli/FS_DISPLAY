@@ -12,3 +12,4 @@
 ../TouchGFX/gui/src/drag_screen/DRAGPresenter.cpp:4:1:DRAGPresenter::DRAGPresenter(DRAGView&)	16	static
 ../TouchGFX/gui/src/drag_screen/DRAGPresenter.cpp:10:6:virtual void DRAGPresenter::activate()	16	static
 ../TouchGFX/gui/src/drag_screen/DRAGPresenter.cpp:15:6:virtual void DRAGPresenter::deactivate()	16	static
+../TouchGFX/gui/src/drag_screen/DRAGPresenter.cpp:20:6:virtual void DRAGPresenter::updateDisplay()	16	static

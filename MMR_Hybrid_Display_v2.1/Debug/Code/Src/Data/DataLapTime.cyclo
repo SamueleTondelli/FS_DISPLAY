@@ -1,0 +1,7 @@
+../Code/Src/Data/DataLapTime.c:5:6:initializeDataLapTime	1
+../Code/Src/Data/DataLapTime.c:11:6:setDataLapTime	1
+../Code/Src/Data/DataLapTime.c:19:6:setDataDataLapTime	1
+../Code/Src/Data/DataLapTime.c:27:9:getMinutesDataLapTime	1
+../Code/Src/Data/DataLapTime.c:31:9:getSecondsDataLapTime	1
+../Code/Src/Data/DataLapTime.c:35:10:getmilliSecondsDataLapTime	1
+../Code/Src/Data/DataLapTime.c:39:6:getLapTimeDataLapTime	1

@@ -9,10 +9,10 @@
 #include <gui/skidpad_screen/SKIDPADPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/widgets/canvas/Line.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/Container.hpp>
 
 class SKIDPADViewBase : public touchgfx::View<SKIDPADPresenter>
@@ -32,6 +32,14 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::BoxWithBorder bxBackGround;
+    touchgfx::TextAreaWithOneWildcard txtRR;
+    touchgfx::TextAreaWithOneWildcard txtRL;
+    touchgfx::TextAreaWithOneWildcard txtFR;
+    touchgfx::TextAreaWithOneWildcard txtFL;
+    touchgfx::TextArea nameRR;
+    touchgfx::TextArea nameRL;
+    touchgfx::TextArea nameFR;
+    touchgfx::TextArea nameFL;
     touchgfx::Line up_line;
     touchgfx::PainterRGB565 up_linePainter;
     touchgfx::Line rpm_line;
@@ -84,16 +92,33 @@ protected:
     touchgfx::TextAreaWithOneWildcard txtSteeringWheelRight;
     touchgfx::TextAreaWithOneWildcard txtSteeringWheelLeft;
     touchgfx::TextArea nameSpeed;
-    touchgfx::Box bxRPMLowRange;
-    touchgfx::Box bxRPMMediumRange;
     touchgfx::Box bxRPMHighRange;
+    touchgfx::Box bxRPMMediumRange;
+    touchgfx::Box bxRPMLowRange;
+    touchgfx::Box bxRPMCover;
+    touchgfx::Container ctTemp;
+    touchgfx::BoxWithBorder bxOilTemp;
+    touchgfx::BoxWithBorder bxWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtWaterTemp;
+    touchgfx::TextAreaWithOneWildcard txtOilTemp;
+    touchgfx::TextArea nameWaterTemp;
+    touchgfx::TextArea nameOilTemp;
     touchgfx::Container ctAlarm;
     touchgfx::BoxWithBorder bxAlarm;
-    touchgfx::TextAreaWithOneWildcard txtAlarm;
+    touchgfx::TextAreaWithOneWildcard txtAlarmName;
+    touchgfx::TextAreaWithOneWildcard txtAlarmValue;
 
     /*
      * Wildcard Buffers
      */
+    static const uint16_t TXTRR_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtRRBuffer[TXTRR_SIZE];
+    static const uint16_t TXTRL_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtRLBuffer[TXTRL_SIZE];
+    static const uint16_t TXTFR_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtFRBuffer[TXTFR_SIZE];
+    static const uint16_t TXTFL_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtFLBuffer[TXTFL_SIZE];
     static const uint16_t TXTSPEED_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtSpeedBuffer[TXTSPEED_SIZE];
     static const uint16_t TXTGEAR_SIZE = 1;
@@ -120,8 +145,14 @@ protected:
     touchgfx::Unicode::UnicodeChar txtSteeringWheelRightBuffer[TXTSTEERINGWHEELRIGHT_SIZE];
     static const uint16_t TXTSTEERINGWHEELLEFT_SIZE = 3;
     touchgfx::Unicode::UnicodeChar txtSteeringWheelLeftBuffer[TXTSTEERINGWHEELLEFT_SIZE];
-    static const uint16_t TXTALARM_SIZE = 33;
-    touchgfx::Unicode::UnicodeChar txtAlarmBuffer[TXTALARM_SIZE];
+    static const uint16_t TXTWATERTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtWaterTempBuffer[TXTWATERTEMP_SIZE];
+    static const uint16_t TXTOILTEMP_SIZE = 3;
+    touchgfx::Unicode::UnicodeChar txtOilTempBuffer[TXTOILTEMP_SIZE];
+    static const uint16_t TXTALARMNAME_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmNameBuffer[TXTALARMNAME_SIZE];
+    static const uint16_t TXTALARMVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar txtAlarmValueBuffer[TXTALARMVALUE_SIZE];
 
 private:
 

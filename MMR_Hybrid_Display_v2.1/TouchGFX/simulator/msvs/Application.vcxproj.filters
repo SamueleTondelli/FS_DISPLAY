@@ -220,6 +220,30 @@
     <Filter Include="Header Files\generated\gui_generated\skidpad_screen">
       <UniqueIdentifier>F2F8065A-442C-1912-87D3-51FF309D0436</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\setup_screen">
+      <UniqueIdentifier>47EBC188-582A-D269-7B82-FB49BF9FBD34</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\setup_screen">
+      <UniqueIdentifier>024353C0-E37D-FAF9-F70B-1E9D5CE4395E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\endurance_screen">
+      <UniqueIdentifier>5CD1BEDD-1DFE-BC58-B678-D6DD3BEA56ED</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\endurance_screen">
+      <UniqueIdentifier>22EB6FAC-4E5E-EF27-A501-25FC76926A67</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\endurance_screen">
+      <UniqueIdentifier>C7A74574-4476-CD64-FBEA-ADB7577567B8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\setup_screen">
+      <UniqueIdentifier>83884269-B501-F174-354E-DA651247D5B9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\endurance_screen">
+      <UniqueIdentifier>4CF74E90-C7D7-5CC7-7E82-CB8D398EC65A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\setup_screen">
+      <UniqueIdentifier>A49C8F33-4A79-1BBD-5F55-8CEBCAD2DAC1</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -287,6 +311,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\skidpad_screen\SKIDPADViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEPresenter.cpp">
+      <Filter>Source Files\gui\endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEView.cpp">
+      <Filter>Source Files\gui\endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\endurance_screen\ENDURANCEViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\setup_screen\SETUPPresenter.cpp">
+      <Filter>Source Files\gui\setup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\setup_screen\SETUPView.cpp">
+      <Filter>Source Files\gui\setup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\setup_screen\SETUPViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\setup_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -765,6 +807,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\skidpad_screen\SKIDPADViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEPresenter.hpp">
+      <Filter>Header Files\gui\endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEView.hpp">
+      <Filter>Header Files\gui\endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\endurance_screen\ENDURANCEViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPPresenter.hpp">
+      <Filter>Header Files\gui\setup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPView.hpp">
+      <Filter>Header Files\gui\setup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setup_screen\SETUPViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\setup_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

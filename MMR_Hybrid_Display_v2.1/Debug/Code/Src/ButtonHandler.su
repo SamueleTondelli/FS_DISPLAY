@@ -1,3 +1,2 @@
-ButtonHandler.c:6:6:buttonsActionHandler	16	static
-ButtonHandler.c:15:6:changeScreenButton	16	static
-ButtonHandler.c:22:6:clearButton	16	static
+../Code/Src/ButtonHandler.c:9:6:buttonsActionHandler	24	static
+../Code/Src/ButtonHandler.c:52:6:changeScreenButton	16	static

@@ -11,12 +11,16 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/home_screen/HOMEView.hpp>
 #include <gui/home_screen/HOMEPresenter.hpp>
-#include <gui/drag_screen/DRAGView.hpp>
-#include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/skidpad_screen/SKIDPADView.hpp>
-#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
 #include <gui/race_screen/RACEView.hpp>
 #include <gui/race_screen/RACEPresenter.hpp>
+#include <gui/drag_screen/DRAGView.hpp>
+#include <gui/drag_screen/DRAGPresenter.hpp>
+#include <gui/endurance_screen/ENDURANCEView.hpp>
+#include <gui/endurance_screen/ENDURANCEPresenter.hpp>
+#include <gui/skidpad_screen/SKIDPADView.hpp>
+#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
+#include <gui/setup_screen/SETUPView.hpp>
+#include <gui/setup_screen/SETUPPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -46,4 +50,69 @@ void FrontendApplicationBase::gotoHOMEScreenNoTransition()
 void FrontendApplicationBase::gotoHOMEScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<HOMEView, HOMEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// RACE
+
+void FrontendApplicationBase::gotoRACEScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoRACEScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoRACEScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<RACEView, RACEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// DRAG
+
+void FrontendApplicationBase::gotoDRAGScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoDRAGScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoDRAGScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<DRAGView, DRAGPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ENDURANCE
+
+void FrontendApplicationBase::gotoENDURANCEScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoENDURANCEScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoENDURANCEScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ENDURANCEView, ENDURANCEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SKIDPAD
+
+void FrontendApplicationBase::gotoSKIDPADScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoSKIDPADScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSKIDPADScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SKIDPADView, SKIDPADPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SETUP
+
+void FrontendApplicationBase::gotoSETUPScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoSETUPScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSETUPScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SETUPView, SETUPPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

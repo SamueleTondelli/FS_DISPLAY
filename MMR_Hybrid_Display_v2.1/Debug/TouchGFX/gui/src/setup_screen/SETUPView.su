@@ -1,0 +1,10 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../TouchGFX/gui/include/gui/setup_screen/SETUPView.hpp:11:13:SETUPView::~SETUPView()	16	static
+../TouchGFX/gui/include/gui/setup_screen/SETUPView.hpp:11:13:virtual SETUPView::~SETUPView()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:7:1:SETUPView::SETUPView()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:12:6:virtual void SETUPView::setupScreen()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:17:6:virtual void SETUPView::tearDownScreen()	16	static
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:22:6:virtual void SETUPView::updateDisplay()	16	static

@@ -12,3 +12,4 @@
 ../TouchGFX/gui/src/home_screen/HOMEPresenter.cpp:4:1:HOMEPresenter::HOMEPresenter(HOMEView&)	16	static
 ../TouchGFX/gui/src/home_screen/HOMEPresenter.cpp:10:6:virtual void HOMEPresenter::activate()	16	static
 ../TouchGFX/gui/src/home_screen/HOMEPresenter.cpp:15:6:virtual void HOMEPresenter::deactivate()	16	static
+../TouchGFX/gui/src/home_screen/HOMEPresenter.cpp:20:6:virtual void HOMEPresenter::updateDisplay()	16	static

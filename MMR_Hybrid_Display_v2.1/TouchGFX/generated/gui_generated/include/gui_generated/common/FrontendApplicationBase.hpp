@@ -23,6 +23,21 @@ public:
     // HOME
     void gotoHOMEScreenNoTransition();
 
+    // RACE
+    void gotoRACEScreenNoTransition();
+
+    // DRAG
+    void gotoDRAGScreenNoTransition();
+
+    // ENDURANCE
+    void gotoENDURANCEScreenNoTransition();
+
+    // SKIDPAD
+    void gotoSKIDPADScreenNoTransition();
+
+    // SETUP
+    void gotoSETUPScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -30,6 +45,21 @@ protected:
 
     // HOME
     void gotoHOMEScreenNoTransitionImpl();
+
+    // RACE
+    void gotoRACEScreenNoTransitionImpl();
+
+    // DRAG
+    void gotoDRAGScreenNoTransitionImpl();
+
+    // ENDURANCE
+    void gotoENDURANCEScreenNoTransitionImpl();
+
+    // SKIDPAD
+    void gotoSKIDPADScreenNoTransitionImpl();
+
+    // SETUP
+    void gotoSETUPScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
