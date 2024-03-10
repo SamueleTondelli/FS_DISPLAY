@@ -41,11 +41,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "Data/Dataset.h"
-#include "CanFunctions.h"
-#include "TimersList.h"
-#include "TimerHandler.h"
 #include "ButtonHandler.h"
+
+#include "c_interface.h"
 
 /*	// TODO Inserire Task per gestire Simulation Mode e SD
 #include "SimulationMode.h"
@@ -87,12 +85,6 @@ extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim4;
 extern TIM_HandleTypeDef htim5;
 
-Dataset ds;
-Alarm queue[PRIORITIES][ALARMS_PER_PRIORITY];
-int queueSize[PRIORITIES] = { 0 };
-
-TimersList timList;
-
 // DEBUG CAN
 long counterMessages = 0;
 
@@ -120,16 +112,6 @@ int main(void)
 
   /* MPU Configuration--------------------------------------------------------*/
   MPU_Config();
-
-  // Initialize Dataset
-  initializeDataset(&ds);
-
-  // Initialize Timer List
-  initializeTimersList(&timList, &htim1, 1);
-  initializeTimersList(&timList, &htim2, 2);
-  initializeTimersList(&timList, &htim3, 3);
-  initializeTimersList(&timList, &htim4, 4);
-  initializeTimersList(&timList, &htim5, 5);
 
   /* USER CODE END 1 */
 /* Enable the CPU Cache */
@@ -333,7 +315,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     uint8_t canDlcMsg = prxHeaderCan1.DLC;
 
     // Decodify a CAN message and get informations
-    decodifyCan1Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
+    decodeCAN1Msg(canIdMsg, canDlcMsg, rawDataCAN);
 
     // DEBUG
     counterMessages++;
@@ -346,7 +328,7 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	uint16_t canIdMsg = prxHeaderCan2.StdId;
 	uint8_t canDlcMsg = prxHeaderCan2.DLC;
 
-	decodifyCan2Msg(&ds, canIdMsg, canDlcMsg, rawDataCAN);
+	decodeCAN2Msg(canIdMsg, canDlcMsg, rawDataCAN);
 }
 
 /* USER CODE END 4 */
