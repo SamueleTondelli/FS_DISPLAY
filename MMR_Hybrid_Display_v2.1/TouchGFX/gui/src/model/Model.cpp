@@ -6,6 +6,8 @@
 #include "Data/Dataset.h"
 #include "TimerHandler.h"
 
+#include "main_application.hpp"
+
 #define DEBUG_MODEL 1
 
 extern Dataset ds;
@@ -25,6 +27,7 @@ Model::Model() : modelListener(0), currentScreenIndex(0) {
 }
 
 void Model::tick() {
+	/*
 	if(ds.screen.updateFlag) {
 		ds.screen.updateFlag = 0;
 
@@ -67,6 +70,14 @@ void Model::tick() {
 			updateDisplay();
 		}
 	}
+	*/
+	HAL_IWDG_Refresh(&hiwdg);
+	if (mainApp.currentPageChanged()) {
+		switch (mainApp.getCurrentPage()) {
+		default:
+		}
+	}
+	updateDisplay();
 }
 
 void Model::saveCurrentScreenIndex(uint8_t cScreen) {
