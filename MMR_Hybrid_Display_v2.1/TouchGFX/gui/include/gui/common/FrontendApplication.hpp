@@ -18,6 +18,7 @@ public:
     virtual ~FrontendApplication() { }
 
     //MODIFIED
+
     void gotoHOMEScreenNoTransition();
 
     void gotoRACEScreenNoTransition();
@@ -29,18 +30,6 @@ public:
     void gotoSKIDPADScreenNoTransition();
 
     void gotoSETUPScreenNoTransition();
-
-    static void writeIntDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
-
-    static void writeFloatDataInBuffer(Data* data, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
-
-    static void writeFloatValueInBuffer(float value, Unicode::UnicodeChar* buffer, uint16_t bufferSize, TextAreaWithOneWildcard* txtArea);
-
-    static void writeAlarmInBuffers(Alarm* alarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
-
-    static Alarm* getCurrentAlarm();
-
-    static void handleAlarms(touchgfx::Container* ctAlarm, Unicode::UnicodeChar* nameBuffer, uint16_t nameBufferSize, Unicode::UnicodeChar* valueBuffer, uint16_t valueBufferSize, BoxWithBorder* bxAlarm);
 
     //END MODIFIED
 
