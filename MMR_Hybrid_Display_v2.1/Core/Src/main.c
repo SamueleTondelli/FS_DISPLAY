@@ -41,8 +41,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "ButtonHandler.h"
-
 #include "c_interface.h"
 
 /*	// TODO Inserire Task per gestire Simulation Mode e SD
