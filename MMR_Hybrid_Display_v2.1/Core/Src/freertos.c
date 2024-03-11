@@ -28,10 +28,7 @@
 /* USER CODE BEGIN Includes */
 
 #include "can.h"
-#include "Data/Dataset.h"
-#include "Data/DataConstantControls.h"
 #include "app_touchgfx.h"
-#include "ButtonHandler.h"
 #include "c_interface.h"
 
 /* USER CODE END Includes */
@@ -54,7 +51,6 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 
-extern Dataset ds;
 
 // CAN header TX & RX
 extern CAN_HandleTypeDef hcan1;
