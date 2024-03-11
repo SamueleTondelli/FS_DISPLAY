@@ -1,16 +1,10 @@
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:283:13:int16_t touchgfx::Drawable::getY() const	16	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:303:13:int16_t touchgfx::Drawable::getHeight() const	16	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
 ../TouchGFX/gui/include/gui/race_screen/RACEView.hpp:11:13:RACEView::~RACEView()	16	static
 ../TouchGFX/gui/include/gui/race_screen/RACEView.hpp:11:13:virtual RACEView::~RACEView()	16	static
-../TouchGFX/gui/src/race_screen/RACEView.cpp:7:1:RACEView::RACEView()	16	static
-../TouchGFX/gui/src/race_screen/RACEView.cpp:12:6:virtual void RACEView::setupScreen()	16	static
-../TouchGFX/gui/src/race_screen/RACEView.cpp:17:6:virtual void RACEView::tearDownScreen()	16	static
-../TouchGFX/gui/src/race_screen/RACEView.cpp:22:6:virtual void RACEView::updateDisplay()	48	static
+../TouchGFX/gui/src/race_screen/RACEView.cpp:4:1:RACEView::RACEView()	16	static
+../TouchGFX/gui/src/race_screen/RACEView.cpp:9:6:virtual void RACEView::setupScreen()	16	static
+../TouchGFX/gui/src/race_screen/RACEView.cpp:14:6:virtual void RACEView::tearDownScreen()	16	static
+../TouchGFX/gui/src/race_screen/RACEView.cpp:19:6:virtual void RACEView::updateDisplay()	16	static

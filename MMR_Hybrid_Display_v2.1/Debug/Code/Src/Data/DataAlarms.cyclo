@@ -1,9 +1,0 @@
-../Code/Src/Data/DataAlarms.c:8:9:insertAlarmInQueue	2
-../Code/Src/Data/DataAlarms.c:19:7:extractAlarmFromQueue	4
-../Code/Src/Data/DataAlarms.c:40:8:peekAlarmFromQueue	3
-../Code/Src/Data/DataAlarms.c:52:9:isQueueFull	1
-../Code/Src/Data/DataAlarms.c:57:9:isQueueEmpty	1
-../Code/Src/Data/DataAlarms.c:62:6:updateQueue	5
-../Code/Src/Data/DataAlarms.c:79:6:deactivateAlarm	3
-../Code/Src/Data/DataAlarms.c:96:14:getAlarmStatus	3
-../Code/Src/Data/DataAlarms.c:115:6:newMessageFromTelemetry	3

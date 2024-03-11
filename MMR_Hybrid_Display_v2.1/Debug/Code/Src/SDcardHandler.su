@@ -1,8 +1,0 @@
-SDcardHandler.c:12:5:testSDcard	4	static
-SDcardHandler.c:51:5:initializeSDCard	4	static
-SDcardHandler.c:142:5:openFile	288	static
-SDcardHandler.c:172:5:createFile	24	static
-SDcardHandler.c:191:5:readFileRow	280	static
-SDcardHandler.c:225:5:decodifyFileRow	48	static
-SDcardHandler.c:251:6:insertRowDataToDataset	24	static
-SDcardHandler.c:265:6:closeFile	16	static

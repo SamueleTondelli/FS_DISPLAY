@@ -4,9 +4,6 @@
 #include <gui_generated/common/FrontendApplicationBase.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include "DisplayConstant.h"
-#include "Data/Data.h"
-
 class FrontendHeap;
 
 using namespace touchgfx;

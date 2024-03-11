@@ -1,0 +1,54 @@
+\\?\E:\Programmi\stm32ide\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\arm-none-eabi\include\c++\11.3.1\arm-none-eabi\thumb\v7e-m+dp\hard\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../Code/src/../include/popup_handler.hpp:11:7:constexpr IPopUp::IPopUp()	16	static
+../Code/src/popup_handler.cpp:9:1:DataAlarmPopUp::DataAlarmPopUp(DataAlarm*)	16	static
+../Code/src/popup_handler.cpp:11:6:void DataAlarmPopUp::setAlarm(DataAlarm*)	16	static
+../Code/src/popup_handler.cpp:17:6:virtual void DataAlarmPopUp::setColor(uint8_t, uint8_t, uint8_t)	16	static
+../Code/src/popup_handler.cpp:24:6:virtual void DataAlarmPopUp::fillTitle(char*, size_t)	24	static
+../Code/src/popup_handler.cpp:29:6:virtual void DataAlarmPopUp::fillContent(char*, size_t)	40	static
+../Code/src/popup_handler.cpp:36:6:virtual void DataAlarmPopUp::getBgColor(uint8_t*, uint8_t*, uint8_t*)	24	static
+../Code/src/popup_handler.cpp:43:9:virtual uint8_t DataAlarmPopUp::getPriority()	16	static
+../Code/src/popup_handler.cpp:48:13:virtual const char* DataAlarmPopUp::getName()	16	static
+../Code/src/popup_handler.cpp:53:6:virtual void DataAlarmPopUp::turnOn()	16	static
+../Code/src/popup_handler.cpp:57:6:virtual void DataAlarmPopUp::turnOff()	16	static
+../Code/src/popup_handler.cpp:61:6:virtual bool DataAlarmPopUp::isOn()	16	static
+../Code/src/popup_handler.cpp:65:6:virtual void DataAlarmPopUp::deactivate()	16	static
+../Code/src/popup_handler.cpp:70:6:virtual bool DataAlarmPopUp::isDeactivated()	16	static
+../Code/src/popup_handler.cpp:83:6:virtual bool DataAlarmPopUp::isRetained()	16	static
+../Code/src/popup_handler.cpp:89:1:PopUpHandler::PopUpHandler()	16	static
+../Code/src/popup_handler.cpp:91:6:bool PopUpHandler::push(IPopUp*)	16	static
+../Code/src/popup_handler.cpp:96:9:IPopUp* PopUpHandler::peek()	16	static
+../Code/src/popup_handler.cpp:101:9:IPopUp* PopUpHandler::pop()	16	static
+../Code/src/popup_handler.cpp:106:6:bool PopUpHandler::isQueueFull()	16	static
+../Code/src/popup_handler.cpp:111:6:bool PopUpHandler::registerPopUp(IPopUp*)	24	static
+../Code/src/popup_handler.cpp:119:6:void PopUpHandler::onDataAlarmTurnedOn(DataAlarm*)	40	static
+../Code/src/popup_handler.cpp:139:6:void PopUpHandler::onDataAlarmTurnedOff(DataAlarm*)	24	static
+../Code/src/popup_handler.cpp:149:6:void PopUpHandler::deactivateCurrentPopUp()	16	static
+../Code/src/popup_handler.cpp:153:6:bool PopUpHandler::canShowPopUp()	16	static
+../Code/src/popup_handler.cpp:157:9:IPopUp* PopUpHandler::handleShowingPopUp()	72	static
+../Code/src/popup_handler.cpp:269:6:bool PopUpHandler::pushPopUp(IPopUp*)	16	static
+../Code/src/popup_handler.cpp:277:6:void PopUpHandler::swapCurrentPopUp(IPopUp*)	16	static
+../Code/src/../include/alarms.hpp:46:7:constexpr IDataAlarmEventListener::IDataAlarmEventListener()	16	static
+../Code/src/popup_handler.cpp:291:1:DAlarmEventDecoder::DAlarmEventDecoder(PopUpHandler*)	16	static
+../Code/src/popup_handler.cpp:293:6:virtual void DAlarmEventDecoder::onTurnOn(DataAlarm*)	16	static
+../Code/src/popup_handler.cpp:298:6:virtual void DAlarmEventDecoder::onTurnOff(DataAlarm*)	16	static
+../Code/src/../include/dash_utils.hpp:13:2:TSafeQueue<T>::TSafeQueue() [with T = IPopUp]	16	static
+../Code/src/../include/dash_utils.hpp:112:2:HashMap<K, V>::HashMap(HashMap<K, V>::hashFn_t, HashMap<K, V>::compareFn_t) [with K = char*; V = IPopUp*]	32	static
+../Code/src/../include/dash_utils.hpp:15:7:bool TSafeQueue<T>::push(T*) [with T = IPopUp]	24	static
+../Code/src/../include/dash_utils.hpp:23:5:T* TSafeQueue<T>::peek() [with T = IPopUp]	24	static
+../Code/src/../include/dash_utils.hpp:31:5:T* TSafeQueue<T>::pop() [with T = IPopUp]	24	static
+../Code/src/../include/dash_utils.hpp:39:7:bool TSafeQueue<T>::isQueueFull() [with T = IPopUp]	16	static
+../Code/src/../include/dash_utils.hpp:114:7:bool HashMap<K, V>::add(K, V) [with K = char*; V = IPopUp*]	32	static
+../Code/src/../include/dash_utils.hpp:124:15:Entry<K, V>* HashMap<K, V>::get(K) [with K = char*; V = IPopUp*]	32	static
+../Code/src/../include/dash_utils.hpp:85:4:V Entry<K, V>::getValue() [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:77:2:Entry<K, V>::Entry() [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:49:7:bool TSafeQueue<T>::basicPush(T*) [with T = IPopUp]	16	static
+../Code/src/../include/dash_utils.hpp:57:5:T* TSafeQueue<T>::basicPeek() [with T = IPopUp]	16	static
+../Code/src/../include/dash_utils.hpp:62:5:T* TSafeQueue<T>::basicPop() [with T = IPopUp]	24	static
+../Code/src/../include/dash_utils.hpp:140:7:bool HashMap<K, V>::isMapFull() [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:80:4:K Entry<K, V>::getKey() [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:90:7:void Entry<K, V>::setKey(K) [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:95:7:void Entry<K, V>::setValue(V) [with K = char*; V = IPopUp*]	16	static
+../Code/src/../include/dash_utils.hpp:78:2:Entry<K, V>::Entry(K, V) [with K = char*; V = IPopUp*]	24	static
+../Code/src/popup_handler.cpp:301:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Code/src/popup_handler.cpp:301:1:cpp)	8	static
+../Code/src/popup_handler.cpp:301:1:cpp)	8	static

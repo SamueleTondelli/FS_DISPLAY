@@ -1,0 +1,20 @@
+../Code/src/alarms.cpp:7:13:void safeStringCopy(const char*, char*, size_t)	32	static
+../Code/src/alarms.cpp:16:1:DataAlarm::DataAlarm(AlarmableData*, uint8_t, DataAlarmHandler*, const char*)	24	static
+../Code/src/alarms.cpp:20:6:void DataAlarm::turnOn(bool)	32	static
+../Code/src/alarms.cpp:27:6:void DataAlarm::turnOff(bool)	32	static
+../Code/src/alarms.cpp:34:6:bool DataAlarm::isOn()	16	static
+../Code/src/alarms.cpp:39:9:uint8_t DataAlarm::getPriority()	16	static
+../Code/src/alarms.cpp:44:16:AlarmableData* DataAlarm::getData()	16	static
+../Code/src/alarms.cpp:49:13:const char* DataAlarm::getName()	16	static
+../Code/src/alarms.cpp:54:1:DAlarmEvent::DAlarmEvent()	16	static
+../Code/src/alarms.cpp:55:1:DAlarmEvent::DAlarmEvent(DataAlarm*, ALARM_EVENT_TYPE)	24	static
+../Code/src/alarms.cpp:59:1:DataAlarmHandler::DataAlarmHandler()	16	static
+../Code/src/alarms.cpp:61:6:bool DataAlarmHandler::pushAlarm(DataAlarm*)	16	static
+../Code/src/alarms.cpp:69:12:DataAlarm* DataAlarmHandler::getLastAlarm()	16	static
+../Code/src/alarms.cpp:75:12:DataAlarm* DataAlarmHandler::getAlarmAt(size_t)	16	static
+../Code/src/alarms.cpp:81:6:bool DataAlarmHandler::isAlarmVectorFull()	16	static
+../Code/src/alarms.cpp:86:6:void DataAlarmHandler::processAlarmEvent(DAlarmEvent, bool)	24	static
+../Code/src/alarms.cpp:91:6:bool DataAlarmHandler::pushListener(IDataAlarmEventListener*)	16	static
+../Code/src/alarms.cpp:99:6:bool DataAlarmHandler::isListenerVectorFull()	16	static
+../Code/src/alarms.cpp:104:19:const DataAlarm** DataAlarmHandler::getAlarmVector(size_t*)	16	static
+../Code/src/alarms.cpp:110:6:void DataAlarmHandler::handlerTask()	32	static

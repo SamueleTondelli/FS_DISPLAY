@@ -36,9 +36,9 @@
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:18:18:virtual void FrontendApplicationBase::changeToStartScreen()	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:FrontendApplication::~FrontendApplication()	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:virtual FrontendApplication::~FrontendApplication()	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:47:18:virtual void FrontendApplication::handleTickEvent()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:15:13:FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:15:13:virtual FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:33:18:virtual void FrontendApplication::handleTickEvent()	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:94:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:99:5:FrontendHeapBase::FrontendHeapBase(touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, FrontendApplication&)	1
 ../TouchGFX/gui/include/gui/common/FrontendHeap.hpp:56:29:void __tcf_0()	1

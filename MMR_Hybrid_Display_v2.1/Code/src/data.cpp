@@ -1,6 +1,8 @@
 #include "../include/data.hpp"
 #include "../include/alarms.hpp"
 
+#include <string.h>
+
 /*Data Section*/
 
 Data::Data(float gain, float offset) : m_gain(gain), m_offset(offset), m_value(EMPTY_VALUE) {}

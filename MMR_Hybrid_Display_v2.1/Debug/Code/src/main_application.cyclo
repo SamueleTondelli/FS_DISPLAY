@@ -1,0 +1,49 @@
+\\?\E:\Programmi\stm32ide\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\arm-none-eabi\include\c++\11.3.1\arm-none-eabi\thumb\v7e-m+dp\hard\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	1
+../Code/src/../include/data.hpp:21:7:constexpr IDataLisener::IDataLisener()	1
+../Code/src/main_application.cpp:8:1:AckBtnLisener::AckBtnLisener()	1
+../Code/src/main_application.cpp:10:6:virtual void AckBtnLisener::onChange(float, float)	2
+../Code/src/main_application.cpp:16:1:IncrementBtnListener::IncrementBtnListener()	1
+../Code/src/main_application.cpp:18:6:virtual void IncrementBtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:21:1:DecrementBtnListener::DecrementBtnListener()	1
+../Code/src/main_application.cpp:23:6:virtual void DecrementBtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:26:1:RadioBtnListener::RadioBtnListener()	1
+../Code/src/main_application.cpp:28:6:virtual void RadioBtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:31:1:MarkBtnListener::MarkBtnListener()	1
+../Code/src/main_application.cpp:33:6:virtual void MarkBtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:36:1:Special1BtnListener::Special1BtnListener()	1
+../Code/src/main_application.cpp:38:6:virtual void Special1BtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:41:1:Special2BtnListener::Special2BtnListener()	1
+../Code/src/main_application.cpp:43:6:virtual void Special2BtnListener::onChange(float, float)	1
+../Code/src/main_application.cpp:46:1:MapListener::MapListener()	1
+../Code/src/main_application.cpp:48:6:virtual void MapListener::onChange(float, float)	1
+../Code/src/main_application.cpp:54:1:DataControls::DataControls(DataAlarmHandler*, PopUpHandler*)	1
+../Code/src/main_application.cpp:92:6:void DataControls::updateSteeringWheelControlsTime()	1
+../Code/src/main_application.cpp:96:6:bool DataControls::isSteeringWheelOK()	1
+../Code/src/main_application.cpp:102:1:DataMechanics::DataMechanics()	1
+../Code/src/main_application.cpp:116:1:DataThermalPressure::DataThermalPressure(DataAlarmHandler*, PopUpHandler*)	1
+../Code/src/main_application.cpp:160:1:Tyres::Tyres()	1
+../Code/src/../include/popup_handler.hpp:11:7:constexpr IPopUp::IPopUp()	1
+../Code/src/main_application.cpp:164:1:SteerinWheelBrokenPopUp::SteerinWheelBrokenPopUp()	1
+../Code/src/main_application.cpp:166:6:virtual void SteerinWheelBrokenPopUp::fillTitle(char*, size_t)	1
+../Code/src/main_application.cpp:170:6:virtual void SteerinWheelBrokenPopUp::fillContent(char*, size_t)	1
+../Code/src/main_application.cpp:174:6:virtual void SteerinWheelBrokenPopUp::setColor(uint8_t, uint8_t, uint8_t)	1
+../Code/src/main_application.cpp:178:6:virtual void SteerinWheelBrokenPopUp::getBgColor(uint8_t*, uint8_t*, uint8_t*)	1
+../Code/src/main_application.cpp:184:9:virtual uint8_t SteerinWheelBrokenPopUp::getPriority()	1
+../Code/src/main_application.cpp:188:13:virtual const char* SteerinWheelBrokenPopUp::getName()	1
+../Code/src/main_application.cpp:192:6:virtual void SteerinWheelBrokenPopUp::turnOn()	1
+../Code/src/main_application.cpp:196:6:virtual void SteerinWheelBrokenPopUp::turnOff()	1
+../Code/src/main_application.cpp:200:6:virtual bool SteerinWheelBrokenPopUp::isOn()	1
+../Code/src/main_application.cpp:204:6:virtual void SteerinWheelBrokenPopUp::deactivate()	1
+../Code/src/main_application.cpp:208:6:virtual bool SteerinWheelBrokenPopUp::isDeactivated()	1
+../Code/src/main_application.cpp:212:6:virtual bool SteerinWheelBrokenPopUp::isRetained()	1
+../Code/src/main_application.cpp:220:1:MainApplication::MainApplication()	1
+../Code/src/main_application.cpp:231:6:void MainApplication::decodeCAN1Msg(uint16_t, uint8_t, uint8_t*)	1
+../Code/src/main_application.cpp:234:6:void MainApplication::decodeCAN2Msg(uint16_t, uint8_t, uint8_t*)	1
+../Code/src/main_application.cpp:237:6:void MainApplication::decodeCAN3Msg(uint16_t, uint8_t, uint8_t*)	1
+../Code/src/main_application.cpp:240:9:uint8_t MainApplication::getCurrentPage()	1
+../Code/src/main_application.cpp:245:6:void MainApplication::setPage(uint8_t)	3
+../Code/src/main_application.cpp:252:6:bool MainApplication::currentPageChanged()	1
+../Code/src/main_application.cpp:256:6:void MainApplication::controlsHandler()	13
+../Code/src/main_application.cpp:332:1:void __static_initialization_and_destruction_0(int, int)	5
+../Code/src/main_application.cpp:332:1:cpp)	1
+../Code/src/main_application.cpp:332:1:cpp)	1

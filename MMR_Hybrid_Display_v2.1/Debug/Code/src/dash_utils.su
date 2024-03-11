@@ -1,0 +1,7 @@
+\\?\E:\Programmi\stm32ide\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\arm-none-eabi\include\c++\11.3.1\arm-none-eabi\thumb\v7e-m+dp\hard\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../Code/src/dash_utils.cpp:4:15:long unsigned int hashCstr(char*)	24	static
+../Code/src/dash_utils.cpp:15:5:int compCstr(char*, char*)	16	static
+../Code/src/dash_utils.cpp:20:6:void safeStringCopy(const char*, char*, size_t)	32	static
+../Code/src/dash_utils.cpp:25:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Code/src/dash_utils.cpp:25:1:cpp)	8	static
+../Code/src/dash_utils.cpp:25:1:cpp)	8	static

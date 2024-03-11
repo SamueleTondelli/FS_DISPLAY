@@ -41,7 +41,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "c_interface.h"
+#include "../../Code/include/c_interface.h"
 
 /*	// TODO Inserire Task per gestire Simulation Mode e SD
 #include "SimulationMode.h"
@@ -176,12 +176,14 @@ int main(void)
   // Switch on the Screen
   HAL_GPIO_WritePin(LCD_DISP_GPIO_Port, LCD_DISP_Pin, 1);
 
+  /*
   //TIMER
   HAL_TIM_Base_Start_IT(timList.timUpdateDisplay); // Timer for Display Update synchronize
   HAL_TIM_Base_Start_IT(timList.tim1sec); // Timer for FPS counter synchronize
 
   //DEBUG
   HAL_TIM_Base_Start_IT(timList.tim5sec);
+  */
 
   // Enable CAN Routine
   CAN1_Config(&prxHeaderCan1, &ptxHeaderCan1, &sFilterConfigCan1);
@@ -351,7 +353,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
   if(htim->Instance != TIM6) {
 	  //timerHandlerOld(htim);
-	  timerHandler(htim, &timList, &ds);
+	  //timerHandler(htim, &timList, &ds);
   }
 
   /* USER CODE END Callback 1 */

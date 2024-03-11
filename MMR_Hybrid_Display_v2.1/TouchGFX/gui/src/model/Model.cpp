@@ -3,7 +3,7 @@
 
 #include <gui/common/FrontendApplication.hpp>
 
-#include "main_application.hpp"
+#include "../../../../Code/include/main_application.hpp"
 
 extern TIM_HandleTypeDef htim4;
 extern IWDG_HandleTypeDef hiwdg;
@@ -17,6 +17,7 @@ void Model::tick() {
 	if (mainApp.currentPageChanged()) {
 		switch (mainApp.getCurrentPage()) {
 		default:
+			break;
 		}
 	}
 	updateDisplay();
@@ -31,9 +32,6 @@ uint8_t Model::getCurrentScreenIndex() {
 }
 
 void Model::updateDisplay() {
-
-	ds.screen.frameCounter++;
-
 	modelListener->updateDisplay();
 }
 

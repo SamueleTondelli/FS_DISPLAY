@@ -1,5 +1,3 @@
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:44:18:virtual void touchgfx::UIEventListener::handleClickEvent(const touchgfx::ClickEvent&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:54:18:virtual void touchgfx::UIEventListener::handleDragEvent(const touchgfx::DragEvent&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:64:18:virtual void touchgfx::UIEventListener::handleGestureEvent(const touchgfx::GestureEvent&)	1
@@ -22,25 +20,18 @@
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	1
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:18:18:virtual void FrontendApplicationBase::changeToStartScreen()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:FrontendApplication::~FrontendApplication()	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:18:13:virtual FrontendApplication::~FrontendApplication()	1
-../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:47:18:virtual void FrontendApplication::handleTickEvent()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:15:13:FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:15:13:virtual FrontendApplication::~FrontendApplication()	1
+../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:33:18:virtual void FrontendApplication::handleTickEvent()	1
 ../TouchGFX/gui/src/common/FrontendApplication.cpp:5:1:FrontendApplication::FrontendApplication(Model&, FrontendHeap&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:25:6:void FrontendApplication::gotoHOMEScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:31:6:void FrontendApplication::gotoRACEScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:37:6:void FrontendApplication::gotoDRAGScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:43:6:void FrontendApplication::gotoENDURANCEScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:49:6:void FrontendApplication::gotoSKIDPADScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:55:6:void FrontendApplication::gotoSETUPScreenNoTransition()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:61:6:static void FrontendApplication::writeIntDataInBuffer(Data*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
-../TouchGFX/gui/src/common/FrontendApplication.cpp:79:6:static void FrontendApplication::writeFloatDataInBuffer(Data*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
-../TouchGFX/gui/src/common/FrontendApplication.cpp:97:6:static void FrontendApplication::writeFloatValueInBuffer(float, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::TextAreaWithOneWildcard*)	3
-../TouchGFX/gui/src/common/FrontendApplication.cpp:114:6:static void FrontendApplication::writeAlarmInBuffers(Alarm*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::BoxWithBorder*)	14
-../TouchGFX/gui/src/common/FrontendApplication.cpp:174:8:static Alarm* FrontendApplication::getCurrentAlarm()	1
-../TouchGFX/gui/src/common/FrontendApplication.cpp:184:6:static void FrontendApplication::handleAlarms(touchgfx::Container*, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::Unicode::UnicodeChar*, uint16_t, touchgfx::BoxWithBorder*)	28
+../TouchGFX/gui/src/common/FrontendApplication.cpp:13:6:void FrontendApplication::gotoHOMEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:19:6:void FrontendApplication::gotoRACEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:25:6:void FrontendApplication::gotoDRAGScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:31:6:void FrontendApplication::gotoENDURANCEScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:37:6:void FrontendApplication::gotoSKIDPADScreenNoTransition()	1
+../TouchGFX/gui/src/common/FrontendApplication.cpp:43:6:void FrontendApplication::gotoSETUPScreenNoTransition()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>::GenericCallback()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:440:5:touchgfx::Callback<dest_type, void, void, void>::Callback(dest_type*, void (dest_type::*)()) [with dest_type = FrontendApplicationBase]	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	1

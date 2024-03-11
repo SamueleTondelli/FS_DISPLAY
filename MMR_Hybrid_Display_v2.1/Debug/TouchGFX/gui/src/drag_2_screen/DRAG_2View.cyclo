@@ -1,9 +1,0 @@
-Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
-Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
-Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
-Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-DRAG_2View.hpp:11:13:DRAG_2View::~DRAG_2View()	1
-DRAG_2View.hpp:11:13:virtual DRAG_2View::~DRAG_2View()	1
-DRAG_2View.cpp:3:1:DRAG_2View::DRAG_2View()	1
-DRAG_2View.cpp:8:6:virtual void DRAG_2View::setupScreen()	1
-DRAG_2View.cpp:13:6:virtual void DRAG_2View::tearDownScreen()	1

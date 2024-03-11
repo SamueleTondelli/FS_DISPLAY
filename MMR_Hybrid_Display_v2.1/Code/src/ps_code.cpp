@@ -20,7 +20,7 @@ unsigned int millis() {
 }
 
 XQueueWrapper::XQueueWrapper(size_t itemNumber, size_t itemSize) {
-	m_handle = xQueueCreate(itemNumebr, itemSize);
+	m_handle = xQueueCreate(itemNumber, itemSize);
 }
 
 // do NOT use in a ISR
@@ -52,7 +52,7 @@ public:
 		:m_port(port), m_pin(pin), m_lastState(LOW), m_lastChange(0) {}
 
 	DASHBTN_STATE read() {
-		DASHBTN_STATE currState = HAL_GPIO_ReadPin(btn->port, btn->pin) ? DASHBTN_STATE::HIGH : DASHBTN_STATE::LOW;
+		DASHBTN_STATE currState = HAL_GPIO_ReadPin(m_port, m_pin) ? DASHBTN_STATE::HIGH : DASHBTN_STATE::LOW;
 		if (currState != m_lastState) {
 			DASHBTN_STATE retVal = m_lastState;
 			m_lastState = currState;
@@ -116,16 +116,16 @@ uint8_t readDashTractionLevel() {
 	while (HAL_ADC_PollForConversion(&hadc3, 1) != HAL_OK) {}
 
 	uint16_t rawValue = HAL_ADC_GetValue(&hadc3);
-	if (rawData <= TRACTION_OFF_UPPER_VALUE) {
+	if (rawValue <= TRACTION_OFF_UPPER_VALUE) {
 		return 0;
 	}
-	else if (rawData <= TRACTION_1_UPPER_VALUE) {
+	else if (rawValue <= TRACTION_1_UPPER_VALUE) {
 		return 1;
 	}
-	else if (rawData <= TRACTION_2_UPPER_VALUE) {
+	else if (rawValue <= TRACTION_2_UPPER_VALUE) {
 		return 2;
 	}
-	else if (rawData <= TRACTION_3_UPPER_VALUE) {
+	else if (rawValue <= TRACTION_3_UPPER_VALUE) {
 		return 3;
 	}
 	return 4;

@@ -1,5 +1,9 @@
-../TouchGFX/gui/src/model/Model.cpp:23:1:Model::Model()	16	static
-../TouchGFX/gui/src/model/Model.cpp:27:6:void Model::tick()	24	static
-../TouchGFX/gui/src/model/Model.cpp:72:6:void Model::saveCurrentScreenIndex(uint8_t)	16	static
-../TouchGFX/gui/src/model/Model.cpp:76:9:uint8_t Model::getCurrentScreenIndex()	16	static
-../TouchGFX/gui/src/model/Model.cpp:80:6:void Model::updateDisplay()	16	static
+\\?\E:\Programmi\stm32ide\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\arm-none-eabi\include\c++\11.3.1\arm-none-eabi\thumb\v7e-m+dp\hard\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../TouchGFX/gui/src/model/Model.cpp:11:1:Model::Model()	16	static
+../TouchGFX/gui/src/model/Model.cpp:15:6:void Model::tick()	16	static
+../TouchGFX/gui/src/model/Model.cpp:26:6:void Model::saveCurrentScreenIndex(uint8_t)	16	static
+../TouchGFX/gui/src/model/Model.cpp:30:9:uint8_t Model::getCurrentScreenIndex()	16	static
+../TouchGFX/gui/src/model/Model.cpp:34:6:void Model::updateDisplay()	16	static
+../TouchGFX/gui/src/model/Model.cpp:36:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../TouchGFX/gui/src/model/Model.cpp:36:1:cpp)	8	static
+../TouchGFX/gui/src/model/Model.cpp:36:1:cpp)	8	static

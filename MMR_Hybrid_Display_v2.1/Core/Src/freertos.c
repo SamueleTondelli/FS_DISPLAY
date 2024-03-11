@@ -29,7 +29,7 @@
 
 #include "can.h"
 #include "app_touchgfx.h"
-#include "c_interface.h"
+#include "../../Code/include/c_interface.h"
 
 /* USER CODE END Includes */
 

@@ -1,9 +1,0 @@
-stm769_qspi.c:10:16:QSPI_ResetMemory	104	static
-stm769_qspi.c:170:16:QSPI_EnterMemory_QPI	96	static
-stm769_qspi.c:218:16:QSPI_EnterFourBytesAddress	72	static
-stm769_qspi.c:259:16:QSPI_DummyCyclesCfg	88	static,ignoring_inline_asm
-stm769_qspi.c:356:16:QSPI_OutDrvStrengthCfg	88	static,ignoring_inline_asm
-stm769_qspi.c:450:16:QSPI_WriteEnable	96	static
-stm769_qspi.c:496:16:QSPI_AutoPollingMemReady	96	static
-stm769_qspi.c:531:16:BSP_QSPI_EnableMemoryMappedMode	80	static
-stm769_qspi.c:562:6:MPU_Config	24	static

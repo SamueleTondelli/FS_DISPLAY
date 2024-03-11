@@ -1,4 +1,0 @@
-../Code/Src/Button.c:3:6:initializeButton	24	static
-../Code/Src/Button.c:11:15:readButton	16	static
-../Code/Src/Button.c:16:13:readButtonState	16	static
-../Code/Src/Button.c:21:9:updateButton	24	static

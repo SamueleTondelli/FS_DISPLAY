@@ -1,9 +1,0 @@
-../Code/Src/Data/DataAlarms.c:8:9:insertAlarmInQueue	16	static
-../Code/Src/Data/DataAlarms.c:19:7:extractAlarmFromQueue	56	static
-../Code/Src/Data/DataAlarms.c:40:8:peekAlarmFromQueue	16	static
-../Code/Src/Data/DataAlarms.c:52:9:isQueueFull	16	static
-../Code/Src/Data/DataAlarms.c:57:9:isQueueEmpty	16	static
-../Code/Src/Data/DataAlarms.c:62:6:updateQueue	24	static
-../Code/Src/Data/DataAlarms.c:79:6:deactivateAlarm	24	static
-../Code/Src/Data/DataAlarms.c:96:14:getAlarmStatus	24	static
-../Code/Src/Data/DataAlarms.c:115:6:newMessageFromTelemetry	40	static

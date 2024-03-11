@@ -17,6 +17,6 @@ void startAlarmHandlerTask() {
 	mainApp.alarmHandler.handlerTask();
 }
 
-void controlsHandlerTask() {
+void startControlsHandlerTask() {
 	mainApp.controlsHandler();
 }

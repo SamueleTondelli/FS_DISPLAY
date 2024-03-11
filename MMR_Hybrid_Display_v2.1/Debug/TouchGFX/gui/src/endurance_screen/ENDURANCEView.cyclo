@@ -1,16 +1,10 @@
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:283:13:int16_t touchgfx::Drawable::getY() const	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:303:13:int16_t touchgfx::Drawable::getHeight() const	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
 ../TouchGFX/gui/include/gui/endurance_screen/ENDURANCEView.hpp:11:13:ENDURANCEView::~ENDURANCEView()	1
 ../TouchGFX/gui/include/gui/endurance_screen/ENDURANCEView.hpp:11:13:virtual ENDURANCEView::~ENDURANCEView()	1
-../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:7:1:ENDURANCEView::ENDURANCEView()	1
-../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:12:6:virtual void ENDURANCEView::setupScreen()	1
-../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:17:6:virtual void ENDURANCEView::tearDownScreen()	1
-../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:22:6:virtual void ENDURANCEView::updateDisplay()	18
+../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:4:1:ENDURANCEView::ENDURANCEView()	1
+../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:9:6:virtual void ENDURANCEView::setupScreen()	1
+../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:14:6:virtual void ENDURANCEView::tearDownScreen()	1
+../TouchGFX/gui/src/endurance_screen/ENDURANCEView.cpp:19:6:virtual void ENDURANCEView::updateDisplay()	1

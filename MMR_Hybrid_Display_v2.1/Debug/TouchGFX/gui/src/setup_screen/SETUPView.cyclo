@@ -4,7 +4,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
 ../TouchGFX/gui/include/gui/setup_screen/SETUPView.hpp:11:13:SETUPView::~SETUPView()	1
 ../TouchGFX/gui/include/gui/setup_screen/SETUPView.hpp:11:13:virtual SETUPView::~SETUPView()	1
-../TouchGFX/gui/src/setup_screen/SETUPView.cpp:7:1:SETUPView::SETUPView()	1
-../TouchGFX/gui/src/setup_screen/SETUPView.cpp:12:6:virtual void SETUPView::setupScreen()	1
-../TouchGFX/gui/src/setup_screen/SETUPView.cpp:17:6:virtual void SETUPView::tearDownScreen()	1
-../TouchGFX/gui/src/setup_screen/SETUPView.cpp:22:6:virtual void SETUPView::updateDisplay()	1
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:4:1:SETUPView::SETUPView()	1
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:9:6:virtual void SETUPView::setupScreen()	1
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:14:6:virtual void SETUPView::tearDownScreen()	1
+../TouchGFX/gui/src/setup_screen/SETUPView.cpp:19:6:virtual void SETUPView::updateDisplay()	1

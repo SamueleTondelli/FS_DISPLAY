@@ -5,7 +5,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
 ../TouchGFX/gui/include/gui/home_screen/HOMEView.hpp:11:13:HOMEView::~HOMEView()	1
 ../TouchGFX/gui/include/gui/home_screen/HOMEView.hpp:11:13:virtual HOMEView::~HOMEView()	1
-../TouchGFX/gui/src/home_screen/HOMEView.cpp:8:1:HOMEView::HOMEView()	1
-../TouchGFX/gui/src/home_screen/HOMEView.cpp:14:6:virtual void HOMEView::setupScreen()	1
-../TouchGFX/gui/src/home_screen/HOMEView.cpp:19:6:virtual void HOMEView::tearDownScreen()	1
-../TouchGFX/gui/src/home_screen/HOMEView.cpp:24:6:virtual void HOMEView::updateDisplay()	16
+../TouchGFX/gui/src/home_screen/HOMEView.cpp:3:1:HOMEView::HOMEView()	1
+../TouchGFX/gui/src/home_screen/HOMEView.cpp:9:6:virtual void HOMEView::setupScreen()	1
+../TouchGFX/gui/src/home_screen/HOMEView.cpp:14:6:virtual void HOMEView::tearDownScreen()	1
+../TouchGFX/gui/src/home_screen/HOMEView.cpp:19:6:virtual void HOMEView::updateDisplay()	1
