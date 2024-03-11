@@ -10,7 +10,7 @@ extern "C" {
 	void decodeCAN2Msg(uint16_t id, uint8_t dlc, uint8_t* payload);
 	void decodeCAN3Msg(uint16_t id, uint8_t dlc, uint8_t* payload);
 	void startAlarmHandlerTask();
-	void steerWheelControlsCheckTask();
+	void controlsHandlerTask();
 #ifdef __cplusplus
 }
 #endif

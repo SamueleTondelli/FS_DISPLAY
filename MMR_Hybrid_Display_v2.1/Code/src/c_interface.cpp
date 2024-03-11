@@ -17,6 +17,6 @@ void startAlarmHandlerTask() {
 	mainApp.alarmHandler.handlerTask();
 }
 
-void steerWheelControlsCheckTask() {
+void controlsHandlerTask() {
 	mainApp.controlsHandler();
 }

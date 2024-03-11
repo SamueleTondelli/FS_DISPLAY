@@ -72,10 +72,8 @@ extern TIM_HandleTypeDef htim8;
 
 /* USER CODE END Variables */
 osThreadId touchGFXTaskHandle;
-osThreadId tractionTaskHandle;
-osThreadId buttonHandlingTHandle;
 osThreadId rtosAlarmHandleHandle;
-osThreadId rtosWheelCtrlsCHandle;
+osThreadId rtosControlsHanHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -83,10 +81,8 @@ osThreadId rtosWheelCtrlsCHandle;
 /* USER CODE END FunctionPrototypes */
 
 void StartTouchGFXTask(void const * argument);
-void tractionAcquisition(void const * argument);
-void buttonHandling(void const * argument);
 void rtosAlarmHandlerTask(void const * argument);
-void rtosWheelCtrlsCheckTask(void const * argument);
+void rtosControlsHandlerTask(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -137,21 +133,13 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(touchGFXTask, StartTouchGFXTask, osPriorityNormal, 0, 8192);
   touchGFXTaskHandle = osThreadCreate(osThread(touchGFXTask), NULL);
 
-  /* definition and creation of tractionTask */
-  osThreadDef(tractionTask, tractionAcquisition, osPriorityNormal, 0, 512);
-  tractionTaskHandle = osThreadCreate(osThread(tractionTask), NULL);
-
-  /* definition and creation of buttonHandlingT */
-  osThreadDef(buttonHandlingT, buttonHandling, osPriorityIdle, 0, 512);
-  buttonHandlingTHandle = osThreadCreate(osThread(buttonHandlingT), NULL);
-
   /* definition and creation of rtosAlarmHandle */
   osThreadDef(rtosAlarmHandle, rtosAlarmHandlerTask, osPriorityIdle, 0, 128);
   rtosAlarmHandleHandle = osThreadCreate(osThread(rtosAlarmHandle), NULL);
 
-  /* definition and creation of rtosWheelCtrlsC */
-  osThreadDef(rtosWheelCtrlsC, rtosWheelCtrlsCheckTask, osPriorityIdle, 0, 128);
-  rtosWheelCtrlsCHandle = osThreadCreate(osThread(rtosWheelCtrlsC), NULL);
+  /* definition and creation of rtosControlsHan */
+  osThreadDef(rtosControlsHan, rtosControlsHandlerTask, osPriorityIdle, 0, 128);
+  rtosControlsHanHandle = osThreadCreate(osThread(rtosControlsHan), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -191,44 +179,6 @@ void StartTouchGFXTask(void const * argument)
   /* USER CODE END StartTouchGFXTask */
 }
 
-/* USER CODE BEGIN Header_tractionAcquisition */
-/**
-* @brief Function implementing the tractionTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_tractionAcquisition */
-void tractionAcquisition(void const * argument)
-{
-  /* USER CODE BEGIN tractionAcquisition */
-  /* Infinite loop */
-  for(;;)
-  {
-	readTractionControlData(&(ds.controls));
-    osDelay(TRACTION_REFRESH_TIME);
-  }
-  /* USER CODE END tractionAcquisition */
-}
-
-/* USER CODE BEGIN Header_buttonHandling */
-/**
-* @brief Function implementing the buttonHandlingT thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_buttonHandling */
-void buttonHandling(void const * argument)
-{
-  /* USER CODE BEGIN buttonHandling */
-  /* Infinite loop */
-  for(;;)
-  {
-	buttonsActionHandler(&ds);
-    osDelay(1);
-  }
-  /* USER CODE END buttonHandling */
-}
-
 /* USER CODE BEGIN Header_rtosAlarmHandlerTask */
 /**
 * @brief Function implementing the rtosAlarmHandle thread.
@@ -248,23 +198,23 @@ void rtosAlarmHandlerTask(void const * argument)
   /* USER CODE END rtosAlarmHandlerTask */
 }
 
-/* USER CODE BEGIN Header_rtosWheelCtrlsCheckTask */
+/* USER CODE BEGIN Header_rtosControlsHandlerTask */
 /**
-* @brief Function implementing the rtosWheelCtrlsC thread.
+* @brief Function implementing the rtosControlsHan thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_rtosWheelCtrlsCheckTask */
-void rtosWheelCtrlsCheckTask(void const * argument)
+/* USER CODE END Header_rtosControlsHandlerTask */
+void rtosControlsHandlerTask(void const * argument)
 {
-  /* USER CODE BEGIN rtosWheelCtrlsCheckTask */
-  steerWheelControlsCheckTask();
+  /* USER CODE BEGIN rtosControlsHandlerTask */
+  startControlsHandlerTask();
   //should not get here
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END rtosWheelCtrlsCheckTask */
+  /* USER CODE END rtosControlsHandlerTask */
 }
 
 /* Private application code --------------------------------------------------*/

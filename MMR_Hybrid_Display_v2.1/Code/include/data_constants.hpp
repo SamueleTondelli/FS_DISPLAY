@@ -24,6 +24,8 @@
 #define TRACTION_3_UPPER_VALUE		2200
 #define TRACTION_4_UPPER_VALUE		2500
 
+#define DEBOUNCE_TIME 300 //ms
+
 /* DataMechanics section */
 
 #define RPM_CONVERSION_FACTOR			1.0f
@@ -62,3 +64,4 @@
 #define WATER_TEMPERATURE_ALARM_PRIORITY		0
 #define WATER_TEMPERATURE_MAX_VALUE				((float)105)
 #define WATER_TEMPERATURE_MIN_VALUE				((float) 60)
+

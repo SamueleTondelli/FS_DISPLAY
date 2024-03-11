@@ -1,6 +1,7 @@
 #include "../include/main_application.hpp"
 #include "../include/data_constants.hpp"
 #include "../include/dash_utils.hpp"
+#include "../include/ps_code.hpp"
 
 /* pilot's inputs listeners section */
 
@@ -254,10 +255,101 @@ bool MainApplication::currentPageChanged() {
 
 void MainApplication::controlsHandler() {
 	bool steeringWheelWorking = true;
+
+	DASHBTN_STATE dashAck = readDashAckBtn();
+	DASHBTN_STATE dashInc = readDashIncBtn();
+	DASHBTN_STATE dashDec = readDashDecBtn();
+	DASHBTN_STATE dashRadio = readDashRadioBtn();
+	DASHBTN_STATE dashMark = readDashMarkBtn();
+	DASHBTN_STATE dashSp1 = readDashSp1Btn();
+	DASHBTN_STATE dashSp2 = readDashSp2Btn();
+
+	DASHBTN_STATE v;
+
+	uint8_t dashTraction = readDashTractionLevel();
+	uint8_t dashMap = readDashMap();
+
+	uint8_t t;
+
 	while (1) {
 		if (steeringWheelWorking && !dataControls.isSteeringWheelOK()) {
 			steeringWheelWorking = false;
 			popUpHandler.pushPopUp(&m_steerWheelBrokenPopUp);
 		}
+
+		v = readDashAckBtn();
+		if (v != dashAck) {
+			dataControls.ackBtn.setValue(v);
+			dashAck = v;
+		}
+
+		v = readDashIncBtn();
+		if (v != dashInc) {
+			dataControls.incrementBtn.setValue(v);
+			dashInc = v;
+		}
+
+		v = readDashDecBtn();
+		if (v != dashDec) {
+			dataControls.decrementBtn.setValue(v);
+			dashDec = v;
+		}
+
+		v = readDashRadioBtn();
+		if (v != dashRadio) {
+			dataControls.radioBtn.setValue(v);
+			dashRadio = v;
+		}
+
+		v = readDashMarkBtn();
+		if (v != dashMark) {
+			dataControls.markBtn.setValue(v);
+			dashMark = v;
+		}
+
+		v = readDashSp1Btn();
+		if (v != dashSp1) {
+			dataControls.special1Btn.setValue(v);
+			dashSp1 = v;
+		}
+
+		v = readDashSp2Btn();
+		if (v != dashSp2) {
+			dataControls.special2Btn.setValue(v);
+			dashSp2 = v;
+		}
+
+		t = readDashTractionLevel();
+		if (t != dashTraction) {
+			dataControls.tractionControl.setValue(t);
+		}
+
+		t = readDashMap();
+		if (t != dashMap) {
+			dataControls.map.setValue(t);
+		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
