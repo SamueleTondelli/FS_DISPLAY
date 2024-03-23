@@ -44,6 +44,9 @@ struct Typography
     static const touchgfx::FontId TYGEARBOLDITALIC100 = 28;
     static const touchgfx::FontId TYRPM = 29;
     static const touchgfx::FontId TYLABEL22 = 30;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 31;
+    static const touchgfx::FontId TYPOGRAPHY_04 = 32;
+    static const touchgfx::FontId TYPOGRAPHY_05 = 33;
 };
 
 struct TypographyFontIndex
@@ -79,6 +82,9 @@ struct TypographyFontIndex
     static const touchgfx::FontId TYGEARBOLDITALIC100 = 19; // verdanaz_100_4bpp
     static const touchgfx::FontId TYRPM = 11;               // verdana_30_4bpp
     static const touchgfx::FontId TYLABEL22 = 20;           // verdana_22_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_00 = 5;       // verdana_20_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_04 = 5;       // verdana_20_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_05 = 5;       // verdana_20_4bpp
     static const uint16_t NUMBER_OF_FONTS = 21;
 };
 

@@ -12,18 +12,20 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/home_screen/HOMEView.hpp>
-#include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/race_screen/RACEView.hpp>
 #include <gui/race_screen/RACEPresenter.hpp>
-#include <gui/drag_screen/DRAGView.hpp>
-#include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/endurance_screen/ENDURANCEView.hpp>
-#include <gui/endurance_screen/ENDURANCEPresenter.hpp>
-#include <gui/skidpad_screen/SKIDPADView.hpp>
-#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
-#include <gui/setup_screen/SETUPView.hpp>
-#include <gui/setup_screen/SETUPPresenter.hpp>
+#include <gui/old_home_screen/OLD_HOMEView.hpp>
+#include <gui/old_home_screen/OLD_HOMEPresenter.hpp>
+#include <gui/old_race_screen/OLD_RACEView.hpp>
+#include <gui/old_race_screen/OLD_RACEPresenter.hpp>
+#include <gui/old_drag_screen/OLD_DRAGView.hpp>
+#include <gui/old_drag_screen/OLD_DRAGPresenter.hpp>
+#include <gui/old_endurance_screen/OLD_ENDURANCEView.hpp>
+#include <gui/old_endurance_screen/OLD_ENDURANCEPresenter.hpp>
+#include <gui/old_skidpad_screen/OLD_SKIDPADView.hpp>
+#include <gui/old_skidpad_screen/OLD_SKIDPADPresenter.hpp>
+#include <gui/old_setup_screen/OLD_SETUPView.hpp>
+#include <gui/old_setup_screen/OLD_SETUPPresenter.hpp>
 
 
 /**
@@ -46,13 +48,14 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< HOMEView,
-            touchgfx::meta::TypeList< RACEView,
-            touchgfx::meta::TypeList< DRAGView,
-            touchgfx::meta::TypeList< ENDURANCEView,
-            touchgfx::meta::TypeList< SKIDPADView,
-            touchgfx::meta::TypeList< SETUPView,
-            touchgfx::meta::Nil > > > > >
+    typedef touchgfx::meta::TypeList< RACEView,
+            touchgfx::meta::TypeList< OLD_HOMEView,
+            touchgfx::meta::TypeList< OLD_RACEView,
+            touchgfx::meta::TypeList< OLD_DRAGView,
+            touchgfx::meta::TypeList< OLD_ENDURANCEView,
+            touchgfx::meta::TypeList< OLD_SKIDPADView,
+            touchgfx::meta::TypeList< OLD_SETUPView,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -64,13 +67,14 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< HOMEPresenter,
-            touchgfx::meta::TypeList< RACEPresenter,
-            touchgfx::meta::TypeList< DRAGPresenter,
-            touchgfx::meta::TypeList< ENDURANCEPresenter,
-            touchgfx::meta::TypeList< SKIDPADPresenter,
-            touchgfx::meta::TypeList< SETUPPresenter,
-            touchgfx::meta::Nil > > > > >
+    typedef touchgfx::meta::TypeList< RACEPresenter,
+            touchgfx::meta::TypeList< OLD_HOMEPresenter,
+            touchgfx::meta::TypeList< OLD_RACEPresenter,
+            touchgfx::meta::TypeList< OLD_DRAGPresenter,
+            touchgfx::meta::TypeList< OLD_ENDURANCEPresenter,
+            touchgfx::meta::TypeList< OLD_SKIDPADPresenter,
+            touchgfx::meta::TypeList< OLD_SETUPPresenter,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -93,7 +97,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoHOMEScreenNoTransition();
+        app.gotoOLD_HOMEScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

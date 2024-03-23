@@ -9,18 +9,20 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/home_screen/HOMEView.hpp>
-#include <gui/home_screen/HOMEPresenter.hpp>
 #include <gui/race_screen/RACEView.hpp>
 #include <gui/race_screen/RACEPresenter.hpp>
-#include <gui/drag_screen/DRAGView.hpp>
-#include <gui/drag_screen/DRAGPresenter.hpp>
-#include <gui/endurance_screen/ENDURANCEView.hpp>
-#include <gui/endurance_screen/ENDURANCEPresenter.hpp>
-#include <gui/skidpad_screen/SKIDPADView.hpp>
-#include <gui/skidpad_screen/SKIDPADPresenter.hpp>
-#include <gui/setup_screen/SETUPView.hpp>
-#include <gui/setup_screen/SETUPPresenter.hpp>
+#include <gui/old_home_screen/OLD_HOMEView.hpp>
+#include <gui/old_home_screen/OLD_HOMEPresenter.hpp>
+#include <gui/old_race_screen/OLD_RACEView.hpp>
+#include <gui/old_race_screen/OLD_RACEPresenter.hpp>
+#include <gui/old_drag_screen/OLD_DRAGView.hpp>
+#include <gui/old_drag_screen/OLD_DRAGPresenter.hpp>
+#include <gui/old_endurance_screen/OLD_ENDURANCEView.hpp>
+#include <gui/old_endurance_screen/OLD_ENDURANCEPresenter.hpp>
+#include <gui/old_skidpad_screen/OLD_SKIDPADView.hpp>
+#include <gui/old_skidpad_screen/OLD_SKIDPADPresenter.hpp>
+#include <gui/old_setup_screen/OLD_SETUPView.hpp>
+#include <gui/old_setup_screen/OLD_SETUPPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -39,80 +41,80 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// HOME
+// OLD_HOME
 
-void FrontendApplicationBase::gotoHOMEScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_HOMEScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoHOMEScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_HOMEScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoHOMEScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_HOMEScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<HOMEView, HOMEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_HOMEView, OLD_HOMEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// RACE
+// OLD_RACE
 
-void FrontendApplicationBase::gotoRACEScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_RACEScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoRACEScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_RACEScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoRACEScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_RACEScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<RACEView, RACEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_RACEView, OLD_RACEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// DRAG
+// OLD_DRAG
 
-void FrontendApplicationBase::gotoDRAGScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_DRAGScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoDRAGScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_DRAGScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoDRAGScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_DRAGScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<DRAGView, DRAGPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_DRAGView, OLD_DRAGPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// ENDURANCE
+// OLD_ENDURANCE
 
-void FrontendApplicationBase::gotoENDURANCEScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_ENDURANCEScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoENDURANCEScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_ENDURANCEScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoENDURANCEScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_ENDURANCEScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<ENDURANCEView, ENDURANCEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_ENDURANCEView, OLD_ENDURANCEPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// SKIDPAD
+// OLD_SKIDPAD
 
-void FrontendApplicationBase::gotoSKIDPADScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_SKIDPADScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoSKIDPADScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_SKIDPADScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoSKIDPADScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_SKIDPADScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<SKIDPADView, SKIDPADPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_SKIDPADView, OLD_SKIDPADPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// SETUP
+// OLD_SETUP
 
-void FrontendApplicationBase::gotoSETUPScreenNoTransition()
+void FrontendApplicationBase::gotoOLD_SETUPScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoSETUPScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoOLD_SETUPScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoSETUPScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoOLD_SETUPScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<SETUPView, SETUPPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<OLD_SETUPView, OLD_SETUPPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

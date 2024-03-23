@@ -102,6 +102,15 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::TYLABEL22:
         // verdana_22_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[20]);
+    case Typography::TYPOGRAPHY_00:
+        // verdana_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::TYPOGRAPHY_04:
+        // verdana_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::TYPOGRAPHY_05:
+        // verdana_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
     default:
         return 0;
     }

@@ -178,23 +178,11 @@
     <Filter Include="Source Files\gui\home_screen">
       <UniqueIdentifier>ADB9233C-67B4-E679-69E6-1771C9FEE0B8</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\home_screen">
-      <UniqueIdentifier>8778E50A-BEBD-775F-632A-ABF90DC017BF</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\home_screen">
-      <UniqueIdentifier>F0AF86E9-A97E-31C2-DBD3-EDE9012256AD</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\drag_screen">
       <UniqueIdentifier>C82ECDA4-F29C-E7C4-C983-DC64687667E3</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\drag_screen">
       <UniqueIdentifier>1842FF54-7E27-772D-AA37-52A23F471212</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\drag_screen">
-      <UniqueIdentifier>48F0B9BB-BA10-80F8-90F7-09C7AE745452</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\drag_screen">
-      <UniqueIdentifier>A48ED968-6B75-CE37-7A48-163D9E4F98B9</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\race_screen">
       <UniqueIdentifier>C4298647-00C7-6F1E-3422-A0F16E42B81E</UniqueIdentifier>
@@ -214,12 +202,6 @@
     <Filter Include="Source Files\gui\skidpad_screen">
       <UniqueIdentifier>F2D1883C-0135-A076-A3D3-379DF7330813</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\skidpad_screen">
-      <UniqueIdentifier>776EF1FB-7CE0-F20D-3DCB-C1DF9855F6F1</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\skidpad_screen">
-      <UniqueIdentifier>F2F8065A-442C-1912-87D3-51FF309D0436</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\setup_screen">
       <UniqueIdentifier>47EBC188-582A-D269-7B82-FB49BF9FBD34</UniqueIdentifier>
     </Filter>
@@ -232,17 +214,77 @@
     <Filter Include="Header Files\gui\endurance_screen">
       <UniqueIdentifier>22EB6FAC-4E5E-EF27-A501-25FC76926A67</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\endurance_screen">
-      <UniqueIdentifier>C7A74574-4476-CD64-FBEA-ADB7577567B8</UniqueIdentifier>
+    <Filter Include="Header Files\gui\old_race_screen">
+      <UniqueIdentifier>D326EC26-14BF-43C7-2830-352FE92ED31D</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\setup_screen">
-      <UniqueIdentifier>83884269-B501-F174-354E-DA651247D5B9</UniqueIdentifier>
+    <Filter Include="Source Files\gui\old_race_screen">
+      <UniqueIdentifier>22019934-368E-5498-20F2-74F7D981732F</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\endurance_screen">
-      <UniqueIdentifier>4CF74E90-C7D7-5CC7-7E82-CB8D398EC65A</UniqueIdentifier>
+    <Filter Include="Source Files\gui\old_setup_screen">
+      <UniqueIdentifier>BC45156B-E01E-92F0-91DC-37D614105403</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\setup_screen">
-      <UniqueIdentifier>A49C8F33-4A79-1BBD-5F55-8CEBCAD2DAC1</UniqueIdentifier>
+    <Filter Include="Header Files\gui\old_setup_screen">
+      <UniqueIdentifier>F296DA7B-1E7D-A9D8-97B2-B27CEC41F9FE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\old_home_screen">
+      <UniqueIdentifier>0C5301EE-826C-A8EC-014F-2927546AACCC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\old_home_screen">
+      <UniqueIdentifier>E54384C0-7A62-5220-6B4D-5B2A4DD8F321</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\old_skidpad_screen">
+      <UniqueIdentifier>EA14ED53-F63E-D146-E3A5-CBB57347EABA</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\old_endurance_screen">
+      <UniqueIdentifier>36CCA2A5-93DF-5435-81B9-68C51B57F1E7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\old_endurance_screen">
+      <UniqueIdentifier>DC3AFCA0-C68B-E7E3-395F-7C47B098FDD5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\old_skidpad_screen">
+      <UniqueIdentifier>0C52C783-A8EB-81D5-A79D-B5D678B65B41</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\old_drag_screen">
+      <UniqueIdentifier>AA59D466-89EC-5670-05F3-5894C6BC86A5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\old_drag_screen">
+      <UniqueIdentifier>0152EF13-97E6-2A12-A662-4C8D96DD0891</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_race_screen">
+      <UniqueIdentifier>7980762D-05EF-D808-71F4-86628B1E73BD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_skidpad_screen">
+      <UniqueIdentifier>D4A836F4-AB3B-D649-7D33-001811CE04B3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_skidpad_screen">
+      <UniqueIdentifier>FCF1C251-6EBB-D8EF-17FE-74CF8B59A96C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_drag_screen">
+      <UniqueIdentifier>43D90881-042D-F37C-5EC6-BE821821985D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_drag_screen">
+      <UniqueIdentifier>60D5E263-8C01-FB75-C506-DDB5F8FED90C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_endurance_screen">
+      <UniqueIdentifier>AE42126D-3A0B-4D40-D3DA-F46540F994FB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_setup_screen">
+      <UniqueIdentifier>22028D1F-C763-422B-4419-A96422FC96A7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_endurance_screen">
+      <UniqueIdentifier>7F258B96-E906-9C11-6EC5-B3232B49B3F2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_setup_screen">
+      <UniqueIdentifier>FE6F49C6-0F16-7BBA-44B1-3FE8244139F8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\old_home_screen">
+      <UniqueIdentifier>6E80F8FD-2731-5455-53C4-22C915839E2D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_race_screen">
+      <UniqueIdentifier>3CC6E2CB-EDEF-34C3-378B-6F41B47969C4</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\old_home_screen">
+      <UniqueIdentifier>D27AD2D5-34FD-D541-9E38-B4385E2A4D3C</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -282,17 +324,11 @@
     <ClCompile Include="..\..\gui\src\home_screen\HOMEView.cpp">
       <Filter>Source Files\gui\home_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\home_screen\HOMEViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\home_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGPresenter.cpp">
       <Filter>Source Files\gui\drag_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\drag_screen\DRAGView.cpp">
       <Filter>Source Files\gui\drag_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\drag_screen\DRAGViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\drag_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\race_screen\RACEPresenter.cpp">
       <Filter>Source Files\gui\race_screen</Filter>
@@ -309,17 +345,11 @@
     <ClCompile Include="..\..\gui\src\skidpad_screen\SKIDPADView.cpp">
       <Filter>Source Files\gui\skidpad_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\skidpad_screen\SKIDPADViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\skidpad_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEPresenter.cpp">
       <Filter>Source Files\gui\endurance_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\endurance_screen\ENDURANCEView.cpp">
       <Filter>Source Files\gui\endurance_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\endurance_screen\ENDURANCEViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\endurance_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\setup_screen\SETUPPresenter.cpp">
       <Filter>Source Files\gui\setup_screen</Filter>
@@ -327,8 +357,59 @@
     <ClCompile Include="..\..\gui\src\setup_screen\SETUPView.cpp">
       <Filter>Source Files\gui\setup_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\setup_screen\SETUPViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\setup_screen</Filter>
+    <ClCompile Include="..\..\gui\src\old_drag_screen\OLD_DRAGPresenter.cpp">
+      <Filter>Source Files\gui\old_drag_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_drag_screen\OLD_DRAGView.cpp">
+      <Filter>Source Files\gui\old_drag_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_drag_screen\OLD_DRAGViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_drag_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_endurance_screen\OLD_ENDURANCEPresenter.cpp">
+      <Filter>Source Files\gui\old_endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_endurance_screen\OLD_ENDURANCEView.cpp">
+      <Filter>Source Files\gui\old_endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_endurance_screen\OLD_ENDURANCEViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_endurance_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_home_screen\OLD_HOMEPresenter.cpp">
+      <Filter>Source Files\gui\old_home_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_home_screen\OLD_HOMEView.cpp">
+      <Filter>Source Files\gui\old_home_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_home_screen\OLD_HOMEViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_home_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_race_screen\OLD_RACEPresenter.cpp">
+      <Filter>Source Files\gui\old_race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_race_screen\OLD_RACEView.cpp">
+      <Filter>Source Files\gui\old_race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_race_screen\OLD_RACEViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_race_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_setup_screen\OLD_SETUPPresenter.cpp">
+      <Filter>Source Files\gui\old_setup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_setup_screen\OLD_SETUPView.cpp">
+      <Filter>Source Files\gui\old_setup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_setup_screen\OLD_SETUPViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_setup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_skidpad_screen\OLD_SKIDPADPresenter.cpp">
+      <Filter>Source Files\gui\old_skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\old_skidpad_screen\OLD_SKIDPADView.cpp">
+      <Filter>Source Files\gui\old_skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\old_skidpad_screen\OLD_SKIDPADViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\old_skidpad_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -778,17 +859,11 @@
     <ClInclude Include="..\..\gui\include\gui\home_screen\HOMEView.hpp">
       <Filter>Header Files\gui\home_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\home_screen\HOMEViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\home_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGPresenter.hpp">
       <Filter>Header Files\gui\drag_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\drag_screen\DRAGView.hpp">
       <Filter>Header Files\gui\drag_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\drag_screen\DRAGViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\drag_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\race_screen\RACEPresenter.hpp">
       <Filter>Header Files\gui\race_screen</Filter>
@@ -805,17 +880,11 @@
     <ClInclude Include="..\..\gui\include\gui\skidpad_screen\SKIDPADView.hpp">
       <Filter>Header Files\gui\skidpad_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\skidpad_screen\SKIDPADViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\skidpad_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEPresenter.hpp">
       <Filter>Header Files\gui\endurance_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\endurance_screen\ENDURANCEView.hpp">
       <Filter>Header Files\gui\endurance_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\endurance_screen\ENDURANCEViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\endurance_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPPresenter.hpp">
       <Filter>Header Files\gui\setup_screen</Filter>
@@ -823,8 +892,59 @@
     <ClInclude Include="..\..\gui\include\gui\setup_screen\SETUPView.hpp">
       <Filter>Header Files\gui\setup_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\setup_screen\SETUPViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\setup_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\old_drag_screen\OLD_DRAGPresenter.hpp">
+      <Filter>Header Files\gui\old_drag_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_drag_screen\OLD_DRAGView.hpp">
+      <Filter>Header Files\gui\old_drag_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_drag_screen\OLD_DRAGViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_drag_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_endurance_screen\OLD_ENDURANCEPresenter.hpp">
+      <Filter>Header Files\gui\old_endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_endurance_screen\OLD_ENDURANCEView.hpp">
+      <Filter>Header Files\gui\old_endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_endurance_screen\OLD_ENDURANCEViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_endurance_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_home_screen\OLD_HOMEPresenter.hpp">
+      <Filter>Header Files\gui\old_home_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_home_screen\OLD_HOMEView.hpp">
+      <Filter>Header Files\gui\old_home_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_home_screen\OLD_HOMEViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_home_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_race_screen\OLD_RACEPresenter.hpp">
+      <Filter>Header Files\gui\old_race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_race_screen\OLD_RACEView.hpp">
+      <Filter>Header Files\gui\old_race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_race_screen\OLD_RACEViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_race_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_setup_screen\OLD_SETUPPresenter.hpp">
+      <Filter>Header Files\gui\old_setup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_setup_screen\OLD_SETUPView.hpp">
+      <Filter>Header Files\gui\old_setup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_setup_screen\OLD_SETUPViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_setup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_skidpad_screen\OLD_SKIDPADPresenter.hpp">
+      <Filter>Header Files\gui\old_skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\old_skidpad_screen\OLD_SKIDPADView.hpp">
+      <Filter>Header Files\gui\old_skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_skidpad_screen\OLD_SKIDPADViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\old_skidpad_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

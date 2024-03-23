@@ -17,49 +17,49 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoHOMEScreenNoTransition();
+        gotoOLD_HOMEScreenNoTransition();
     }
 
-    // HOME
-    void gotoHOMEScreenNoTransition();
+    // OLD_HOME
+    void gotoOLD_HOMEScreenNoTransition();
 
-    // RACE
-    void gotoRACEScreenNoTransition();
+    // OLD_RACE
+    void gotoOLD_RACEScreenNoTransition();
 
-    // DRAG
-    void gotoDRAGScreenNoTransition();
+    // OLD_DRAG
+    void gotoOLD_DRAGScreenNoTransition();
 
-    // ENDURANCE
-    void gotoENDURANCEScreenNoTransition();
+    // OLD_ENDURANCE
+    void gotoOLD_ENDURANCEScreenNoTransition();
 
-    // SKIDPAD
-    void gotoSKIDPADScreenNoTransition();
+    // OLD_SKIDPAD
+    void gotoOLD_SKIDPADScreenNoTransition();
 
-    // SETUP
-    void gotoSETUPScreenNoTransition();
+    // OLD_SETUP
+    void gotoOLD_SETUPScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // HOME
-    void gotoHOMEScreenNoTransitionImpl();
+    // OLD_HOME
+    void gotoOLD_HOMEScreenNoTransitionImpl();
 
-    // RACE
-    void gotoRACEScreenNoTransitionImpl();
+    // OLD_RACE
+    void gotoOLD_RACEScreenNoTransitionImpl();
 
-    // DRAG
-    void gotoDRAGScreenNoTransitionImpl();
+    // OLD_DRAG
+    void gotoOLD_DRAGScreenNoTransitionImpl();
 
-    // ENDURANCE
-    void gotoENDURANCEScreenNoTransitionImpl();
+    // OLD_ENDURANCE
+    void gotoOLD_ENDURANCEScreenNoTransitionImpl();
 
-    // SKIDPAD
-    void gotoSKIDPADScreenNoTransitionImpl();
+    // OLD_SKIDPAD
+    void gotoOLD_SKIDPADScreenNoTransitionImpl();
 
-    // SETUP
-    void gotoSETUPScreenNoTransitionImpl();
+    // OLD_SETUP
+    void gotoOLD_SETUPScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
