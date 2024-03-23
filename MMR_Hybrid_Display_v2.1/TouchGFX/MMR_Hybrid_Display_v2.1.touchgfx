@@ -884,6 +884,93 @@
         "Interactions": []
       },
       {
+        "Name": "WARMUP",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bxBackground",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true
+          },
+          {
+            "Type": "Container",
+            "Name": "ctLeft",
+            "Width": 185,
+            "Height": 272,
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "ctMap",
+                "Y": 204,
+                "Width": 92,
+                "Height": 68,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "ctVBatt",
+                "X": 93,
+                "Y": 204,
+                "Width": 92,
+                "Height": 68,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "ctLambda",
+                "X": 93,
+                "Y": 136,
+                "Width": 92,
+                "Height": 68,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "ctFuelAlarm",
+                "Y": 136,
+                "Width": 92,
+                "Height": 68,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "ctWaterT",
+                "Width": 185,
+                "Height": 68,
+                "Components": []
+              },
+              {
+                "Type": "Container",
+                "Name": "ctFuelP",
+                "X": 1,
+                "Y": 68,
+                "Width": 185,
+                "Height": 68,
+                "Components": []
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "ctCenter",
+            "X": 185,
+            "Width": 110,
+            "Height": 272,
+            "Components": []
+          },
+          {
+            "Type": "Container",
+            "Name": "ctRight",
+            "X": 295,
+            "Width": 185,
+            "Height": 272,
+            "Components": []
+          }
+        ],
+        "Interactions": []
+      },
+      {
         "Name": "OLD_HOME",
         "Components": [
           {
