@@ -286,6 +286,18 @@
     <Filter Include="Header Files\generated\gui_generated\old_home_screen">
       <UniqueIdentifier>D27AD2D5-34FD-D541-9E38-B4385E2A4D3C</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\warmup_screen">
+      <UniqueIdentifier>A14F5B56-C064-3398-4950-7D282DE8538E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\warmup_screen">
+      <UniqueIdentifier>9ED96FA7-6289-2E7C-CB95-AC36535564F1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\warmup_screen">
+      <UniqueIdentifier>044A5043-6C82-4EFD-9DB1-C021FDCC8EAA</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\warmup_screen">
+      <UniqueIdentifier>71A6A0EE-D9EE-AFE7-52B2-3FD729AD90E5</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -410,6 +422,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\old_skidpad_screen\OLD_SKIDPADViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\old_skidpad_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\warmup_screen\WARMUPPresenter.cpp">
+      <Filter>Source Files\gui\warmup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\warmup_screen\WARMUPView.cpp">
+      <Filter>Source Files\gui\warmup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\warmup_screen\WARMUPViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\warmup_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -945,6 +966,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\old_skidpad_screen\OLD_SKIDPADViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\old_skidpad_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\warmup_screen\WARMUPPresenter.hpp">
+      <Filter>Header Files\gui\warmup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\warmup_screen\WARMUPView.hpp">
+      <Filter>Header Files\gui\warmup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\warmup_screen\WARMUPViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\warmup_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

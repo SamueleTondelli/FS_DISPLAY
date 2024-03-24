@@ -6,6 +6,153 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_288I" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">POPUP\nCONTS</Translation>
+      </Text>
+      <Text Id="__SingleUse_0GT9" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_SZ93" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">POPUP\nNAME</Translation>
+      </Text>
+      <Text Id="__SingleUse_VFCB" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P2CU" Alignment="Left" TypographyId="tyLabel18">
+        <Translation Language="GB">READY</Translation>
+      </Text>
+      <Text Id="__SingleUse_1S54" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_D37A" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_GIU0" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_YA8X" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_37XS" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_5E9S" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">MODE</Translation>
+      </Text>
+      <Text Id="__SingleUse_COJF" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_4MGJ" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IAMF" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">TPS</Translation>
+      </Text>
+      <Text Id="__SingleUse_6QRX" Alignment="Left" TypographyId="tyRPMNumbersLayout2">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_70YN" Alignment="Center" TypographyId="tyAlarm">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P145" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_71OE" Alignment="Center" TypographyId="tyRPMNumbersLayout2">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_4177" Alignment="Center" TypographyId="tyRPMNumbersLayout2">
+        <Translation Language="GB">SOC</Translation>
+      </Text>
+      <Text Id="__SingleUse_C20D" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_SJ7S" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_G039" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">OIL TEMP</Translation>
+      </Text>
+      <Text Id="__SingleUse_4EOO" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_641I" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_N78U" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">OIL PRESSURE</Translation>
+      </Text>
+      <Text Id="__SingleUse_NVAH" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_70IL" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_F7UF" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">BATT T</Translation>
+      </Text>
+      <Text Id="__SingleUse_L94C" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_IDWI" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3WGX" Alignment="Center" TypographyId="tyText13">
+        <Translation Language="GB">OIL ALARM</Translation>
+      </Text>
+      <Text Id="__SingleUse_GYOD" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_EJ39" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P65S" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">V BATT</Translation>
+      </Text>
+      <Text Id="__SingleUse_RK3L" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_GQFV" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_7ZC1" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">MAP</Translation>
+      </Text>
+      <Text Id="__SingleUse_6BC2" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_DYFK" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_4F9Y" Alignment="Center" TypographyId="Typography_02">
+        <Translation Language="GB">LAMBDA</Translation>
+      </Text>
+      <Text Id="__SingleUse_MGHJ" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_8UZC" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DF7P" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">FUEL ALARM</Translation>
+      </Text>
+      <Text Id="__SingleUse_GB3D" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_K5VS" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_YHS1" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">FUEL PRESSURE</Translation>
+      </Text>
+      <Text Id="__SingleUse_RSEX" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_JNSH" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y0PX" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">WATER TEMP</Translation>
+      </Text>
       <Text Id="__SingleUse_WQD7" Alignment="Left" TypographyId="tyGear60">
         <Translation Language="GB">POPUP\nCONTS</Translation>
       </Text>
