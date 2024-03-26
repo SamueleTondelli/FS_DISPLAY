@@ -87,7 +87,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard txtTPS;
     touchgfx::TextAreaWithOneWildcard txtGear;
     touchgfx::TextAreaWithOneWildcard txtRPM;
-    touchgfx::TextAreaWithOneWildcard txtReady;
+    touchgfx::TextArea txtReady;
     touchgfx::Container ctPopUp;
     touchgfx::Box bxPopUpContents;
     touchgfx::Box bxPopUpName;
@@ -127,8 +127,6 @@ protected:
     touchgfx::Unicode::UnicodeChar txtGearBuffer[TXTGEAR_SIZE];
     static const uint16_t TXTRPM_SIZE = 5;
     touchgfx::Unicode::UnicodeChar txtRPMBuffer[TXTRPM_SIZE];
-    static const uint16_t TXTREADY_SIZE = 5;
-    touchgfx::Unicode::UnicodeChar txtReadyBuffer[TXTREADY_SIZE];
     static const uint16_t TXTPOPUPNAME_SIZE = 10;
     touchgfx::Unicode::UnicodeChar txtPopUpNameBuffer[TXTPOPUPNAME_SIZE];
     static const uint16_t TXTPOPUPVALUE_SIZE = 10;

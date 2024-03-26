@@ -96,7 +96,7 @@
                     "Name": "txtOilTLabel",
                     "X": 12,
                     "Y": 5,
-                    "Width": 56,
+                    "Width": 55,
                     "Height": 22,
                     "TextId": "__SingleUse_TI2F",
                     "TextRotation": "0",
@@ -152,7 +152,7 @@
                     "Name": "txtEMotorTLabel",
                     "X": 2,
                     "Y": 5,
-                    "Width": 75,
+                    "Width": 74,
                     "Height": 16,
                     "TextId": "__SingleUse_M06D",
                     "TextRotation": "0",
@@ -208,7 +208,7 @@
                     "Name": "txtBattTLabel",
                     "X": 7,
                     "Y": 5,
-                    "Width": 63,
+                    "Width": 62,
                     "Height": 22,
                     "TextId": "__SingleUse_F1JN",
                     "TextRotation": "0",
@@ -1039,7 +1039,7 @@
                     "Name": "txtBattTLabel",
                     "X": 14,
                     "Y": 10,
-                    "Width": 63,
+                    "Width": 62,
                     "Height": 22,
                     "TextId": "__SingleUse_F7UF",
                     "TextRotation": "0",
@@ -1151,7 +1151,7 @@
                     "Name": "txtOilTLabel",
                     "X": 49,
                     "Y": 5,
-                    "Width": 87,
+                    "Width": 86,
                     "Height": 22,
                     "TextId": "__SingleUse_G039",
                     "TextRotation": "0",
@@ -1333,7 +1333,7 @@
                     "Name": "txtLambdaLabel",
                     "X": 12,
                     "Y": 10,
-                    "Width": 68,
+                    "Width": 67,
                     "Height": 20,
                     "TextId": "__SingleUse_4F9Y",
                     "TextRotation": "0",
@@ -1571,7 +1571,7 @@
                     "Name": "txtModeLabel",
                     "X": 18,
                     "Y": 10,
-                    "Width": 55,
+                    "Width": 54,
                     "Height": 22,
                     "TextId": "__SingleUse_5E9S",
                     "TextRotation": "0",
@@ -1710,18 +1710,14 @@
                 "Y": 245,
                 "Width": 61,
                 "Height": 22,
+                "Visible": false,
                 "TextId": "__SingleUse_1S54",
                 "TextRotation": "0",
                 "Color": {
                   "Red": 16,
                   "Green": 240
                 },
-                "AutoSize": true,
-                "Wildcard1": {
-                  "TextId": "__SingleUse_P2CU",
-                  "UseBuffer": true,
-                  "BufferSize": 5
-                }
+                "AutoSize": true
               }
             ]
           },

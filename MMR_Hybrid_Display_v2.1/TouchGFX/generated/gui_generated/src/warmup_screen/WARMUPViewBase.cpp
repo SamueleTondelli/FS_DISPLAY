@@ -331,10 +331,8 @@ WARMUPViewBase::WARMUPViewBase()
     txtReady.setXY(24, 245);
     txtReady.setColor(touchgfx::Color::getColorFromRGB(16, 240, 0));
     txtReady.setLinespacing(0);
-    Unicode::snprintf(txtReadyBuffer, TXTREADY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_P2CU).getText());
-    txtReady.setWildcard(txtReadyBuffer);
-    txtReady.resizeToCurrentText();
     txtReady.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1S54));
+    txtReady.setVisible(false);
     ctCenter.add(txtReady);
 
     add(ctCenter);

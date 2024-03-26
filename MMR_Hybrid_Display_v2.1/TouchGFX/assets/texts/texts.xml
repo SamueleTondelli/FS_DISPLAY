@@ -18,11 +18,8 @@
       <Text Id="__SingleUse_VFCB" Alignment="Left" TypographyId="tyGear60">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_P2CU" Alignment="Left" TypographyId="tyLabel18">
-        <Translation Language="GB">READY</Translation>
-      </Text>
       <Text Id="__SingleUse_1S54" Alignment="Center" TypographyId="tyLabel18">
-        <Translation Language="GB">&lt;value&gt;</Translation>
+        <Translation Language="GB">READY</Translation>
       </Text>
       <Text Id="__SingleUse_D37A" Alignment="Left" TypographyId="tyText25">
         <Translation Language="GB">NAAAA</Translation>
