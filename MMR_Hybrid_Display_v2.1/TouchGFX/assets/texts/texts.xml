@@ -6,6 +6,120 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_W5GB" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_3DJL" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HE9G" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">MAP</Translation>
+      </Text>
+      <Text Id="__SingleUse_C3LE" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_MS40" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XC77" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">TPS</Translation>
+      </Text>
+      <Text Id="__SingleUse_VFT3" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_AKTQ" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_W291" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">BRAKE PRES</Translation>
+      </Text>
+      <Text Id="__SingleUse_EYM1" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_HURL" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NLE0" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">BIAS</Translation>
+      </Text>
+      <Text Id="__SingleUse_DGU5" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_IA6S" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3XJK" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">BRAKE REAR</Translation>
+      </Text>
+      <Text Id="__SingleUse_7A1W" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">POPUP\nCONTS</Translation>
+      </Text>
+      <Text Id="__SingleUse_3K1U" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_I365" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">POPUP\nNAME</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZH61" Alignment="Left" TypographyId="tyGear60">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_UN8Q" Alignment="Left" TypographyId="tyRPMNumbersLayout2">
+        <Translation Language="GB">NA</Translation>
+      </Text>
+      <Text Id="__SingleUse_SBPU" Alignment="Center" TypographyId="tyAlarm">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IN1H" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAA.A</Translation>
+      </Text>
+      <Text Id="__SingleUse_A337" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;°</Translation>
+      </Text>
+      <Text Id="__SingleUse_XGR6" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_XJH4" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8ZHK" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">V BAT</Translation>
+      </Text>
+      <Text Id="__SingleUse_YWHA" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_P246" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NHDA" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">FL HEIGHT</Translation>
+      </Text>
+      <Text Id="__SingleUse_19M3" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_DZPD" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DIWS" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">RL HEIGHT</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y8LL" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_ILMG" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R4BX" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">FR HEIGHT</Translation>
+      </Text>
+      <Text Id="__SingleUse_LH43" Alignment="Left" TypographyId="tyText25">
+        <Translation Language="GB">NAAAAA</Translation>
+      </Text>
+      <Text Id="__SingleUse_SRG9" Alignment="Center" TypographyId="tyText25">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WC10" Alignment="Center" TypographyId="tyLabel18">
+        <Translation Language="GB">RR HEIGHT</Translation>
+      </Text>
       <Text Id="__SingleUse_288I" Alignment="Left" TypographyId="tyGear60">
         <Translation Language="GB">POPUP\nCONTS</Translation>
       </Text>

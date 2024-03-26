@@ -55,6 +55,9 @@
     <ClCompile Include="..\..\gui\src\warmup_screen\WARMUPPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\warmup_screen\WARMUPView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\warmup_screen\WARMUPViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\set_screen\SETPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\set_screen\SETView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\set_screen\SETViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -239,6 +242,9 @@
     <ClInclude Include="..\..\gui\include\gui\warmup_screen\WARMUPPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\warmup_screen\WARMUPView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\warmup_screen\WARMUPViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\set_screen\SETPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\set_screen\SETView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\set_screen\SETViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

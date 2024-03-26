@@ -16,6 +16,8 @@
 #include <gui/race_screen/RACEPresenter.hpp>
 #include <gui/warmup_screen/WARMUPView.hpp>
 #include <gui/warmup_screen/WARMUPPresenter.hpp>
+#include <gui/set_screen/SETView.hpp>
+#include <gui/set_screen/SETPresenter.hpp>
 #include <gui/old_home_screen/OLD_HOMEView.hpp>
 #include <gui/old_home_screen/OLD_HOMEPresenter.hpp>
 #include <gui/old_race_screen/OLD_RACEView.hpp>
@@ -52,13 +54,14 @@ public:
      */
     typedef touchgfx::meta::TypeList< RACEView,
             touchgfx::meta::TypeList< WARMUPView,
+            touchgfx::meta::TypeList< SETView,
             touchgfx::meta::TypeList< OLD_HOMEView,
             touchgfx::meta::TypeList< OLD_RACEView,
             touchgfx::meta::TypeList< OLD_DRAGView,
             touchgfx::meta::TypeList< OLD_ENDURANCEView,
             touchgfx::meta::TypeList< OLD_SKIDPADView,
             touchgfx::meta::TypeList< OLD_SETUPView,
-            touchgfx::meta::Nil > > > > > > >
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -72,13 +75,14 @@ public:
      */
     typedef touchgfx::meta::TypeList< RACEPresenter,
             touchgfx::meta::TypeList< WARMUPPresenter,
+            touchgfx::meta::TypeList< SETPresenter,
             touchgfx::meta::TypeList< OLD_HOMEPresenter,
             touchgfx::meta::TypeList< OLD_RACEPresenter,
             touchgfx::meta::TypeList< OLD_DRAGPresenter,
             touchgfx::meta::TypeList< OLD_ENDURANCEPresenter,
             touchgfx::meta::TypeList< OLD_SKIDPADPresenter,
             touchgfx::meta::TypeList< OLD_SETUPPresenter,
-            touchgfx::meta::Nil > > > > > > >
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

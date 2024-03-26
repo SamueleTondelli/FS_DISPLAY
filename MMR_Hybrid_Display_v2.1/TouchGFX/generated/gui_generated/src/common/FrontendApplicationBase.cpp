@@ -13,6 +13,8 @@
 #include <gui/race_screen/RACEPresenter.hpp>
 #include <gui/warmup_screen/WARMUPView.hpp>
 #include <gui/warmup_screen/WARMUPPresenter.hpp>
+#include <gui/set_screen/SETView.hpp>
+#include <gui/set_screen/SETPresenter.hpp>
 #include <gui/old_home_screen/OLD_HOMEView.hpp>
 #include <gui/old_home_screen/OLD_HOMEPresenter.hpp>
 #include <gui/old_race_screen/OLD_RACEView.hpp>

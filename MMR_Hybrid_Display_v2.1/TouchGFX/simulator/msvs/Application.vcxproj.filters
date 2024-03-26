@@ -298,6 +298,18 @@
     <Filter Include="Header Files\generated\gui_generated\warmup_screen">
       <UniqueIdentifier>71A6A0EE-D9EE-AFE7-52B2-3FD729AD90E5</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\set_screen">
+      <UniqueIdentifier>E1729F55-8D59-2E41-434F-637BC5BF3048</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\set_screen">
+      <UniqueIdentifier>F0F38FB1-C0B4-E3B9-B206-FAE38F121611</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\set_screen">
+      <UniqueIdentifier>B3331383-9AE0-7FF8-1D1D-4F8BBF363DC3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\set_screen">
+      <UniqueIdentifier>0153957B-BD60-8C02-BF3F-E12464E1C83F</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -431,6 +443,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\warmup_screen\WARMUPViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\warmup_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\set_screen\SETPresenter.cpp">
+      <Filter>Source Files\gui\set_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\set_screen\SETView.cpp">
+      <Filter>Source Files\gui\set_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\set_screen\SETViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\set_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -975,6 +996,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\warmup_screen\WARMUPViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\warmup_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\set_screen\SETPresenter.hpp">
+      <Filter>Header Files\gui\set_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\set_screen\SETView.hpp">
+      <Filter>Header Files\gui\set_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\set_screen\SETViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\set_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
